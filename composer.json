@@ -1,0 +1,38 @@
+{
+  "name": "uctoplus/ubl-wrapper",
+  "description": "A PHP wrapper for UBL documents",
+  "keywords": [
+    "ubl",
+    "validator",
+    "uctoplus",
+    "document",
+    "invoice"
+  ],
+  "type": "library",
+  "license": "GPLv3",
+  "autoload": {
+    "psr-4": {
+      "Uctoplus\\UblWrapper\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Uctoplus\\UblWrapper\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "uctoplus.sk",
+      "email": "info@uctoplus.sk"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "ext-dom": "*",
+    "ext-libxml": "*",
+    "greenter/ubl-validator": "^2.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5"
+  }
+}
