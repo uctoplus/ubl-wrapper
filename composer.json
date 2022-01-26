@@ -30,9 +30,11 @@
     "php": ">=7.0",
     "ext-dom": "*",
     "ext-libxml": "*",
-    "greenter/ubl-validator": "^2.1"
+    "greenter/ubl-validator": "^2.1",
+    "nesbot/carbon": "^2.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^5"
+    "phpunit/phpunit": "^5",
+    "symfony/var-dumper": "^5.4"
   }
 }

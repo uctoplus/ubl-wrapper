@@ -6,6 +6,13 @@ use Uctoplus\UblWrapper\Exceptions\FileNotFoundException;
 use Uctoplus\UblWrapper\Exceptions\FileNotReadableException;
 use Uctoplus\UblWrapper\UBL\Schema\MainDoc;
 
+/**
+ * Class Parser
+ *
+ * @author Mário <mario@uctoplus.sk>
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper
+ */
 class Parser
 {
     /**
