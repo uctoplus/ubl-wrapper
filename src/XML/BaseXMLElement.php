@@ -3,8 +3,11 @@
 namespace Uctoplus\UblWrapper\XML;
 
 use BadMethodCallException;
+use DOMDocument;
+use DOMNode;
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 use Uctoplus\UblWrapper\XML\Exceptions\XSDElementNotImplementedException;
+use Uctoplus\UblWrapper\XML\Exceptions\XSDMinOccurException;
 use Uctoplus\UblWrapper\XML\Exceptions\XSDValidationException;
 
 /**
@@ -31,6 +34,16 @@ abstract class BaseXMLElement
     protected $minOccurs = [];
 
     private static $magicMethods = [];
+
+    /**
+     * @var DOMDocument
+     */
+    protected $xml;
+
+    /**
+     * @return DOMDocument
+     */
+    abstract function toXml();
 
     public function __construct()
     {
@@ -66,10 +79,11 @@ abstract class BaseXMLElement
             }
 
             if ($methodType === "add") {
-                if (!is_array($this->$key))
+                if (!isset($this->$key)) {
                     $this->$key = [];
+                }
 
-                $this->$key = array_merge($this->$key, $arguments);
+                $this->$key = array_merge($this->$key, $this->cast($key, $arguments));
             } elseif ($methodType === "set") {
                 $this->$key = $arguments[0];
             }
@@ -144,15 +158,53 @@ abstract class BaseXMLElement
 
     private function cast($name, $value)
     {
-        $componentClass = $this->casts[$name];
+        if (is_array($value)) {
+            $result = [];
+            foreach ($value as $item) {
+                $result[] = $this->cast($name, $item);
+            }
+            return $result;
+        }
 
-        if (!is_scalar($value))
-            return $value;
+        $componentClass = rtrim($this->casts[$name], "[]");
+
+        if ($value instanceof XMLInterface)
+            return $value->setTag($name);
 
         if (class_exists($componentClass)) {
-            return new $componentClass($value);
+            return new $componentClass($value, [], $name);
         }
 
         throw new XSDElementNotImplementedException($componentClass);
+    }
+
+    protected function initXML()
+    {
+        foreach ($this->minOccurs as $tag => $minOccur) {
+            if (!isset($this->$tag)) {
+                throw new XSDMinOccurException($tag, $minOccur);
+            }
+        }
+
+        $this->xml = new DOMDocument("1.0", "utf-8");
+        $this->xml->preserveWhiteSpace = false;
+        $this->xml->formatOutput = true;
+    }
+
+    /**
+     * @param DOMNode $rootElement
+     * @param XMLInterface|XMLInterface[] $nodes
+     * @return void
+     */
+    protected function appendElement(DOMNode $rootElement, $nodes)
+    {
+        if (!is_array($nodes)) {
+            $nodes = [$nodes];
+        }
+
+        foreach ($nodes as $node) {
+            $rootElement->setAttributeNS('http://www.w3.org/2000/xmlns/', 'xmlns' . (empty($node->getXMLNS()) ? "" : ":" . $node->getXMLNS()), $node->getXMLNS_URI());
+            $rootElement->appendChild($this->xml->importNode($node->toXML()->documentElement, TRUE));
+        }
     }
 }

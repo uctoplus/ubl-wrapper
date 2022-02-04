@@ -7,5 +7,4 @@ use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 class RequestedPublicationDateType extends BasicComponent
 {
 
-
 }

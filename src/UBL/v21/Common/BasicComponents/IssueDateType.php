@@ -6,6 +6,6 @@ use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
 class IssueDateType extends BasicComponent
 {
-
+    protected $type = "date";
 
 }

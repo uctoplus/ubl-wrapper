@@ -7,5 +7,4 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 class SupplierPartyType extends AggregateComponent
 {
 
-
 }
