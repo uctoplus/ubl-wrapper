@@ -9,8 +9,8 @@ class InvoiceGeneratorTest extends TestCase
         $invoice = new \Uctoplus\UblWrapper\UBL\v21\MainDoc\Invoice();
         $invoice->setID(1);
         $invoice->setIssueDate(\Carbon\Carbon::now());
-        $invoice->addNote("kokooooottt!!!");
-        $invoice->addNote(new \Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType("kokooooottt!!!", ["languageID" => "en"]));
+        $invoice->addNote("Note No. 1!!!");
+        $invoice->addNote(new \Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType("Note No. 2!!!", ["languageID" => "en"]));
 
         dump($invoice->toXML()->saveXML());
     }

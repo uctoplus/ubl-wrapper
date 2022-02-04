@@ -28,4 +28,9 @@ interface XMLInterface
      * @return \DOMDocument
      */
     public function toXML();
+
+    /**
+     * @return self
+     */
+    public function fromXML(\DOMNode $node);
 }

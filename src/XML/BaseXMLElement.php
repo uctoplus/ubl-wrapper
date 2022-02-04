@@ -105,7 +105,7 @@ abstract class BaseXMLElement
         if (isset($this->casts[$name])) {
             $is_array = false;
 
-            $cast = str_replace("[]", "", $this->casts[$name]);
+            $cast = rtrim($this->casts[$name], "[]");
             if ($cast != $this->casts[$name])
                 $is_array = true;
 

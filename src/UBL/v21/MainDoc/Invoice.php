@@ -240,10 +240,10 @@ class Invoice extends MainDoc
     protected $minOccurs = [
         "cbc:ID" => 1,
         "cbc:IssueDate" => 1,
-        "cac:AccountingSupplierParty" => 1,
-        "cac:AccountingCustomerParty" => 1,
-        "cac:LegalMonetaryTotal" => 1,
-        "cac:InvoiceLine" => 1,
+//        "cac:AccountingSupplierParty" => 1,
+//        "cac:AccountingCustomerParty" => 1,
+//        "cac:LegalMonetaryTotal" => 1,
+//        "cac:InvoiceLine" => 1,
     ];
 
 

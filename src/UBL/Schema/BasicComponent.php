@@ -2,7 +2,9 @@
 
 namespace Uctoplus\UblWrapper\UBL\Schema;
 
+use DOMAttr;
 use DOMDocument;
+use DOMNode;
 use Uctoplus\UblWrapper\XML\XMLInterface;
 
 /**
@@ -100,6 +102,18 @@ abstract class BasicComponent implements XMLInterface
             default:
                 return $this->value;
         }
+    }
+
+    public function fromXML(DOMNode $node)
+    {
+        $this->value = $node->nodeValue;
+
+        /** @var DOMAttr $attribute */
+        foreach ($node->attributes as $attribute) {
+            $this->attributes[$attribute->name] = $attribute->value;
+        }
+
+        return $this;
     }
 
 }
