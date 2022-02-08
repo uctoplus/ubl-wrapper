@@ -28,7 +28,7 @@ class InvoiceGeneratorTest extends TestCase
     /**
      * @return void
      */
-    public function generateClasses()
+    public function generateCacClasses()
     {
         $file = file_get_contents('resources/scheme/ubl_cac_21.xsd');
 
@@ -103,7 +103,14 @@ class InvoiceGeneratorTest extends TestCase
         ];
     }
 
-    private function _generateClassFile($name, $complexType)
+    /**
+     * @param $name
+     * @param $complexType
+     * @param $forCbcType
+     * @return void
+     * @throws Exception
+     */
+    private function _generateClassFile($name, $complexType, $forCbcType = false)
     {
         $type = $name;
         $classData = $this->_getClass($type);
@@ -126,10 +133,15 @@ class InvoiceGeneratorTest extends TestCase
 
         //process
         foreach ($complexType as $castData) {
-            //..casts
-            $_cxcVal = $castData['name'];
+            if ($forCbcType) {
+                //type
+                $_cxcVal = $castData['type'];
+            } else {
+                //..casts
+                $_cxcVal = $castData['name'];
+            }
 
-            $_subElementName = str_replace(['cbc:', 'cac:'], '', $_cxcVal);
+            $_subElementName = str_replace(['cbc:', 'cac:', 'udt:'], '', $_cxcVal);
             $_type = $this->getTypeFromName($_subElementName);
             $_classData = $this->_getClass($_type);
 
@@ -138,21 +150,30 @@ class InvoiceGeneratorTest extends TestCase
             $casts[$_cxcVal] .= '::class';
 
             //..uses
-            if (!in_array($_classData['class'], $uses) && $_classData['class'] != $class)
-                $uses[] = $_classData['class'];
-
-            //methods
-            $methods[] = 'mixed get' . $_subElementName . '()';
-            $methods[] = 'self set' . $_subElementName . '($value)';
-
-            //..array?
-            if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] == 'unbounded') {
-                $casts[$_cxcVal] .= ' . "[]"';
+            if (!$forCbcType) {
+                if (!in_array($_classData['class'], $uses) && $_classData['class'] != $class)
+                    $uses[] = $_classData['class'];
             }
 
-            //..minOccurs
-            if ($castData['minOccurs'] >= 1) {
-                $minOccurs[$_cxcVal] = $castData['minOccurs'];
+            //methods
+            if ($forCbcType) {
+                $methods[] = 'mixed get' . $_subElementName . '()';
+                $methods[] = 'self set' . $_subElementName . '(string $value)';
+            } else {
+                $methods[] = 'mixed get' . $_subElementName . '()'; //TODO >>
+                $methods[] = 'self set' . $_subElementName . '($value)';
+            }
+
+            if (!$forCbcType) {
+                //..array?
+                if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] == 'unbounded') {
+                    $casts[$_cxcVal] .= ' . "[]"';
+                }
+
+                //..minOccurs
+                if ($castData['minOccurs'] >= 1) {
+                    $minOccurs[$_cxcVal] = $castData['minOccurs'];
+                }
             }
         }
 
@@ -185,21 +206,26 @@ class InvoiceGeneratorTest extends TestCase
         $content .= 'class ' . $type . ' extends ' . $componentType . PHP_EOL;
         $content .= '{' . PHP_EOL;
 
-        //casts
-        $content .= 'protected $casts = [' . PHP_EOL;
-        foreach ($casts as $cxcVal => $cast) {
-            $content .= '"' . $cxcVal . '" => ' . $cast . ',' . PHP_EOL;
-        }
-        $content .= '];' . PHP_EOL;
+        if ($forCbcType) {
+            //type
+            $content .= 'protected $type = "' . array_key_first($casts) . '";' . PHP_EOL;
+        } else {
+            //casts
+            $content .= 'protected $casts = [' . PHP_EOL;
+            foreach ($casts as $cxcVal => $cast) {
+                $content .= '"' . $cxcVal . '" => ' . $cast . ',' . PHP_EOL;
+            }
+            $content .= '];' . PHP_EOL;
 
-        $content .= PHP_EOL;
+            $content .= PHP_EOL;
 
-        //minOccurs
-        $content .= 'protected $minOccurs = [' . PHP_EOL;
-        foreach ($minOccurs as $cxcVal => $minOccur) {
-            $content .= '"' . $cxcVal . '" => ' . $minOccur . ',' . PHP_EOL;
+            //minOccurs
+            $content .= 'protected $minOccurs = [' . PHP_EOL;
+            foreach ($minOccurs as $cxcVal => $minOccur) {
+                $content .= '"' . $cxcVal . '" => ' . $minOccur . ',' . PHP_EOL;
+            }
+            $content .= '];' . PHP_EOL;
         }
-        $content .= '];' . PHP_EOL;
 
         $content .= '}';
 
@@ -215,5 +241,54 @@ class InvoiceGeneratorTest extends TestCase
     private function getTypeFromName($name)
     {
         return $this->nameToType[$name] ?? $name . 'Type';
+    }
+
+    /**
+     * @return void
+     * @test
+     */
+    public function generateCbcClasses()
+    {
+        $file = file_get_contents('resources/scheme/ubl_cbc_21.xsd');
+
+        $xml = simplexml_load_string($file);
+
+        $nameToType = [];
+
+        /** @var DOMNode $element */
+        //elements -> name => type
+        foreach ($xml->xpath('//xsd:element') as $element) {
+            $attributes = $element->attributes();
+
+            if (empty($attributes['ref'])) {
+                $nameToType[(string)$attributes['name']] = (string)$attributes['type'];
+            } else {
+                break;
+            }
+        }
+
+        $this->nameToType = $nameToType;
+
+        $domDoc = new DOMDocument();
+        $domDoc->load('resources/scheme/ubl_cbc_21.xsd');
+
+        $xpathvar = new DOMXPath($domDoc);
+
+        /** @var DOMElement $complexType */
+        foreach ($xpathvar->query('//xsd:complexType') as $complexType) {
+            $name = $complexType->getAttribute('name');
+
+            /** @var DOMElement $xsdElement */
+            foreach ($xpathvar->query('.//xsd:extension', $complexType) as $xsdElement) {
+                $complexTypes[$name][] = [
+                    'type' => $xsdElement->getAttribute('base')
+                ];
+            }
+        }
+
+        //generates
+        foreach ($complexTypes as $name => $complexType) {
+            $this->_generateClassFile($name, $complexType, true);
+        }
     }
 }
