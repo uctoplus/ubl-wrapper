@@ -77,8 +77,6 @@ class InvoiceGeneratorTest extends TestCase
         //generates
         foreach ($complexTypes as $name => $complexType) {
             $this->_generateClassFile($name, $complexType);
-
-            break;
         }
     }
 
@@ -87,16 +85,16 @@ class InvoiceGeneratorTest extends TestCase
         $class = null;
         $_type = null;
 
-        $_testClass = 'Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\\' . $type;
-        if (class_exists($_testClass)) {
-            $class = $_testClass;
-            $_type = 'AggregateComponent';
-        }
-
         $_testClass = 'Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\\' . $type;
         if (class_exists($_testClass)) {
             $class = $_testClass;
             $_type = 'BasicComponent';
+        }
+
+        $_testClass = 'Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\\' . $type;
+        if (class_exists($_testClass)) {
+            $class = $_testClass;
+            $_type = 'AggregateComponent';
         }
 
         return [
@@ -111,7 +109,7 @@ class InvoiceGeneratorTest extends TestCase
         $classData = $this->_getClass($type);
 
         if (empty($classData['class']))
-            throw new Exception('Empy class data');
+            throw new Exception('Empty class data');
 
         $class = $classData['class'];
         $componentType = $classData['type'];
@@ -135,20 +133,20 @@ class InvoiceGeneratorTest extends TestCase
             $_type = $this->getTypeFromName($_subElementName);
             $_classData = $this->_getClass($_type);
 
-            //..uses
-            if (!in_array($_classData['class'], $uses))
-                $uses[] = $_classData['class'];
-
             $_className = substr($_classData['class'], strrpos($_classData['class'], '\\') + 1);
             $casts[$_cxcVal] = $_className;
             $casts[$_cxcVal] .= '::class';
+
+            //..uses
+            if (!in_array($_classData['class'], $uses) && $_classData['class'] != $class)
+                $uses[] = $_classData['class'];
 
             //methods
             $methods[] = 'mixed get' . $_subElementName . '()';
             $methods[] = 'self set' . $_subElementName . '($value)';
 
             //..array?
-            if ($castData['maxOccurs'] > 1) {
+            if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] == 'unbounded') {
                 $casts[$_cxcVal] .= ' . "[]"';
             }
 
