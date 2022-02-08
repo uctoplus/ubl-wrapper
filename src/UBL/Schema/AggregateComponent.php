@@ -2,6 +2,7 @@
 
 namespace Uctoplus\UblWrapper\UBL\Schema;
 
+use DOMNode;
 use Uctoplus\UblWrapper\XML\BaseXMLElement;
 use Uctoplus\UblWrapper\XML\XMLInterface;
 
@@ -61,4 +62,46 @@ abstract class AggregateComponent extends BaseXMLElement implements XMLInterface
 
         return $this->xml;
     }
+
+    public function fromXML(DOMNode $node)
+    {
+        /** @var DOMNode $childNode */
+        foreach ($node->childNodes as $childNode) {
+            if ($childNode->nodeType != XML_ELEMENT_NODE)
+                continue;
+
+            $tag = $childNode->nodeName;
+
+            if (!isset($this->casts[$tag])) {
+                continue;
+            }
+
+            $this->$tag = $this->parseNode($tag, $childNode);
+        }
+
+        return $this;
+    }
+
+    private function parseNode($tag, DOMNode $childNode)
+    {
+        $nodeClass = rtrim($this->casts[$tag], "[]");
+        $nodeModel = new $nodeClass;
+
+        $isArray = false;
+        if ($nodeClass != $this->casts[$tag])
+            $isArray = true;
+
+        $nodeModel->fromXml($childNode);
+
+        if ($isArray) {
+            if (!isset($this->$tag)) {
+                $this->$tag = [];
+            }
+
+            return array_merge($this->$tag, [$nodeModel]);
+        }
+
+        return $nodeModel;
+    }
+
 }

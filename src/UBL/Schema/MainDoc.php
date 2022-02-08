@@ -99,6 +99,8 @@ abstract class MainDoc extends BaseXMLElement implements XMLInterface
 
             $this->$tag = $this->parseNode($tag, $childNode);
         }
+
+        return $this;
     }
 
     private function parseNode($tag, DOMNode $childNode)
