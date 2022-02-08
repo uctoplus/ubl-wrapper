@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class FamilyNameType extends BasicComponent
+/**
+ *
+ * @method mixed getNameType()
+ * @method self setNameType(string $value)
+ */
+class FamilyNameType extends NameType
 {
-
-
 }

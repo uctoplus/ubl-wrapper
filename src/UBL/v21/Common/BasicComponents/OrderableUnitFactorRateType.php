@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class OrderableUnitFactorRateType extends BasicComponent
+/**
+ *
+ * @method mixed getRateType()
+ * @method self setRateType(string $value)
+ */
+class OrderableUnitFactorRateType extends RateType
 {
-
-
 }

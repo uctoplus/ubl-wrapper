@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class RoamingPartnerNameType extends BasicComponent
+/**
+ *
+ * @method mixed getNameType()
+ * @method self setNameType(string $value)
+ */
+class RoamingPartnerNameType extends NameType
 {
-
-
 }

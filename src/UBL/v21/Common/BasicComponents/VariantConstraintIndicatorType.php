@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class VariantConstraintIndicatorType extends BasicComponent
+/**
+ *
+ * @method mixed getIndicatorType()
+ * @method self setIndicatorType(string $value)
+ */
+class VariantConstraintIndicatorType extends IndicatorType
 {
-
-
 }

@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class TimeAmountType extends BasicComponent
+/**
+ *
+ * @method mixed getTextType()
+ * @method self setTextType(string $value)
+ */
+class TimeAmountType extends TextType
 {
-
-
 }

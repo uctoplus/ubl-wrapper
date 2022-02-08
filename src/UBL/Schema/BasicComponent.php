@@ -21,7 +21,7 @@ abstract class BasicComponent implements XMLInterface
 
     protected $attributeCasts = [];
 
-    private $attributes = [];
+    protected $attributes = [];
 
     protected $tag = null;
     protected $value = null;

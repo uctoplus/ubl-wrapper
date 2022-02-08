@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class TaxEnergyBalanceAmountType extends BasicComponent
+/**
+ *
+ * @method mixed getAmountType()
+ * @method self setAmountType(string $value)
+ */
+class TaxEnergyBalanceAmountType extends AmountType
 {
-
-
 }

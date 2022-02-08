@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class RequiredCurriculaIndicatorType extends BasicComponent
+/**
+ *
+ * @method mixed getIndicatorType()
+ * @method self setIndicatorType(string $value)
+ */
+class RequiredCurriculaIndicatorType extends IndicatorType
 {
-
-
 }

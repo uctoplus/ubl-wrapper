@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class PostEventNotificationDurationMeasureType extends BasicComponent
+/**
+ *
+ * @method mixed getMeasureType()
+ * @method self setMeasureType(string $value)
+ */
+class PostEventNotificationDurationMeasureType extends MeasureType
 {
-
-
 }

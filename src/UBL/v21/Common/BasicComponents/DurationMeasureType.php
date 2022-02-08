@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class DurationMeasureType extends BasicComponent
+/**
+ *
+ * @method mixed getMeasureType()
+ * @method self setMeasureType(string $value)
+ */
+class DurationMeasureType extends MeasureType
 {
-
-
 }

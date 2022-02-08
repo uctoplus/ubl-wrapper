@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class ReturnabilityIndicatorType extends BasicComponent
+/**
+ *
+ * @method mixed getIndicatorType()
+ * @method self setIndicatorType(string $value)
+ */
+class ReturnabilityIndicatorType extends IndicatorType
 {
-
-
 }

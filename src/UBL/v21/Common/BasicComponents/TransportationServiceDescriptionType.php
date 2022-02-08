@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class TransportationServiceDescriptionType extends BasicComponent
+/**
+ *
+ * @method mixed getTextType()
+ * @method self setTextType(string $value)
+ */
+class TransportationServiceDescriptionType extends TextType
 {
-
-
 }

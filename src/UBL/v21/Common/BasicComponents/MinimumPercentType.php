@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class MinimumPercentType extends BasicComponent
+/**
+ *
+ * @method mixed getPercentType()
+ * @method self setPercentType(string $value)
+ */
+class MinimumPercentType extends PercentType
 {
-
-
 }

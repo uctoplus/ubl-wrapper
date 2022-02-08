@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class SourceCurrencyBaseRateType extends BasicComponent
+/**
+ *
+ * @method mixed getRateType()
+ * @method self setRateType(string $value)
+ */
+class SourceCurrencyBaseRateType extends RateType
 {
-
-
 }

@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class MathematicOperatorCodeType extends BasicComponent
+/**
+ *
+ * @method mixed getCodeType()
+ * @method self setCodeType(string $value)
+ */
+class MathematicOperatorCodeType extends CodeType
 {
-
-
 }

@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class EstimatedOverallContractQuantityType extends BasicComponent
+/**
+ *
+ * @method mixed getQuantityType()
+ * @method self setQuantityType(string $value)
+ */
+class EstimatedOverallContractQuantityType extends QuantityType
 {
-
-
 }

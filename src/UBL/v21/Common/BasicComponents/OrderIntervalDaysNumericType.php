@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class OrderIntervalDaysNumericType extends BasicComponent
+/**
+ *
+ * @method mixed getNumericType()
+ * @method self setNumericType(string $value)
+ */
+class OrderIntervalDaysNumericType extends NumericType
 {
-
-
 }

@@ -2,10 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
-class AccountFormatCodeType extends BasicComponent
+/**
+ *
+ * @method mixed getCodeType()
+ * @method self setCodeType(string $value)
+ */
+class AccountFormatCodeType extends CodeType
 {
-
-
+    //
 }

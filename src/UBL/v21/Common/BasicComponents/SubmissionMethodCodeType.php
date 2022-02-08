@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class SubmissionMethodCodeType extends BasicComponent
+/**
+ *
+ * @method mixed getCodeType()
+ * @method self setCodeType(string $value)
+ */
+class SubmissionMethodCodeType extends CodeType
 {
-
-
 }

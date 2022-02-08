@@ -4,8 +4,11 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class PenaltySurchargePercentType extends BasicComponent
+/**
+ *
+ * @method mixed getPercentType()
+ * @method self setPercentType(string $value)
+ */
+class PenaltySurchargePercentType extends PercentType
 {
-
-
 }

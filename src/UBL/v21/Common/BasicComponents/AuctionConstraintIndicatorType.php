@@ -4,8 +4,7 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 
-class AuctionConstraintIndicatorType extends BasicComponent
+
+class AuctionConstraintIndicatorType extends IndicatorType
 {
-
-
 }
