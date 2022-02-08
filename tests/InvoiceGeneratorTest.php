@@ -30,7 +30,7 @@ class InvoiceGeneratorTest extends TestCase
      */
     public function generateClasses()
     {
-        $file = file_get_contents('ubl_cac_21.xsd');
+        $file = file_get_contents('resources/scheme/ubl_cac_21.xsd');
 
         $xml = simplexml_load_string($file);
 
@@ -51,7 +51,7 @@ class InvoiceGeneratorTest extends TestCase
         $this->nameToType = $nameToType;
 
         $domDoc = new DOMDocument();
-        $domDoc->load('ubl_cac_21.xsd');
+        $domDoc->load('resources/scheme/ubl_cac_21.xsd');
 
         $xpathvar = new DOMXPath($domDoc);
 
