@@ -245,7 +245,6 @@ class InvoiceGeneratorTest extends TestCase
 
     /**
      * @return void
-     * @test
      */
     public function generateCbcClasses()
     {
