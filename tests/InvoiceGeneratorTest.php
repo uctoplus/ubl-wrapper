@@ -111,7 +111,7 @@ class InvoiceGeneratorTest extends TestCase
         $classData = $this->_getClass($type);
 
         if (empty($classData['class']))
-            dd('Toto še nemauo stac...');
+            throw new Exception('Empy class data');
 
         $class = $classData['class'];
         $componentType = $classData['type'];
@@ -119,6 +119,7 @@ class InvoiceGeneratorTest extends TestCase
         $uses = [];
         $casts = [];
         $minOccurs = [];
+        $methods = [];
 
         $_schema = $componentType == 'AggregateComponent'
             ? 'Uctoplus\UblWrapper\UBL\Schema\AggregateComponent'
@@ -130,15 +131,21 @@ class InvoiceGeneratorTest extends TestCase
             //..casts
             $_cxcVal = $castData['name'];
 
-            $_type = $this->getTypeFromName(str_replace(['cbc:', 'cac:'], '', $_cxcVal));
+            $_subElementName = str_replace(['cbc:', 'cac:'], '', $_cxcVal);
+            $_type = $this->getTypeFromName($_subElementName);
             $_classData = $this->_getClass($_type);
 
             //..uses
             if (!in_array($_classData['class'], $uses))
                 $uses[] = $_classData['class'];
 
-            $casts[$_cxcVal] = substr($_classData['class'], strrpos($_classData['class'], '\\') + 1);
+            $_className = substr($_classData['class'], strrpos($_classData['class'], '\\') + 1);
+            $casts[$_cxcVal] = $_className;
             $casts[$_cxcVal] .= '::class';
+
+            //methods
+            $methods[] = 'mixed get' . $_subElementName . '()';
+            $methods[] = 'self set' . $_subElementName . '($value)';
 
             //..array?
             if ($castData['maxOccurs'] > 1) {
@@ -162,6 +169,18 @@ class InvoiceGeneratorTest extends TestCase
         //uses
         foreach ($uses as $use) {
             $content .= 'use ' . $use . ';' . PHP_EOL;
+        }
+
+        //methods
+        if (count($methods)) {
+            $content .= PHP_EOL . '/**' . PHP_EOL;
+            $content .= '*' . PHP_EOL;
+
+            foreach ($methods as $method) {
+                $content .= '* @method ' . $method . PHP_EOL;
+            }
+
+            $content .= '*/' . PHP_EOL;
         }
 
         //class
