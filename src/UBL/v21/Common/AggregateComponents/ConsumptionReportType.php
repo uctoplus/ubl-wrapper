@@ -3,25 +3,25 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionTypeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalConsumedQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BasicConsumedQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResidentOccupantsNumericType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumersEnergyLevelCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumersEnergyLevelType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResidenceTypeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResidenceTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HeatingTypeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionTypeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HeatingTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConsumptionReportReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConsumptionHistoryType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HeatingTypeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResidenceTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResidenceTypeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResidentOccupantsNumericType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalConsumedQuantityType;
 
 /**
+ * Class ConsumptionReportType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -30,6 +30,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConsumptionHistoryTyp
  * @method mixed getConsumptionTypeCode()
  * @method self setConsumptionTypeCode($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getTotalConsumedQuantity()
  * @method self setTotalConsumedQuantity($value)
@@ -56,8 +57,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConsumptionHistoryTyp
  * @method mixed getDocumentReference()
  * @method self setDocumentReference($value)
  * @method mixed getConsumptionReportReference()
+ * @method self addConsumptionReportReference($value)
  * @method self setConsumptionReportReference($value)
  * @method mixed getConsumptionHistory()
+ * @method self addConsumptionHistory($value)
  * @method self setConsumptionHistory($value)
  */
 class ConsumptionReportType extends AggregateComponent

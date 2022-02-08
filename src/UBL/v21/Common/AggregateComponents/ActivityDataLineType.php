@@ -5,13 +5,12 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplyChainActivityTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CustomerPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SupplierPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SalesItemType;
 
 /**
+ * Class ActivityDataLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -28,6 +27,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SalesItemType;
  * @method mixed getActivityFinalLocation()
  * @method self setActivityFinalLocation($value)
  * @method mixed getSalesItem()
+ * @method self addSalesItem($value)
  * @method self setSalesItem($value)
  */
 class ActivityDataLineType extends AggregateComponent

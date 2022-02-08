@@ -3,13 +3,17 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConditionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SealIssuerTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConditionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SealStatusCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SealingPartyTypeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SealIssuerTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SealStatusCodeType;
 
 /**
+ * Class TransportEquipmentSealType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)

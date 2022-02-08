@@ -3,31 +3,31 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EstimatedOverallContractQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FeeDescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProcurementTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProcurementSubTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QualityControlCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequiredFeeAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FeeDescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequestedDeliveryDateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EstimatedOverallContractQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\RequestedTenderTotalType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CommodityClassificationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ContractExtensionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\RequestForTenderLineType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProcurementSubTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProcurementTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QualityControlCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequestedDeliveryDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequiredFeeAmountType;
 
 /**
+ * Class ProcurementProjectType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getName()
+ * @method self addName($value)
  * @method self setName($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getProcurementTypeCode()
  * @method self setProcurementTypeCode($value)
@@ -38,26 +38,31 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\RequestForTenderLineT
  * @method mixed getRequiredFeeAmount()
  * @method self setRequiredFeeAmount($value)
  * @method mixed getFeeDescription()
+ * @method self addFeeDescription($value)
  * @method self setFeeDescription($value)
  * @method mixed getRequestedDeliveryDate()
  * @method self setRequestedDeliveryDate($value)
  * @method mixed getEstimatedOverallContractQuantity()
  * @method self setEstimatedOverallContractQuantity($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getRequestedTenderTotal()
  * @method self setRequestedTenderTotal($value)
  * @method mixed getMainCommodityClassification()
  * @method self setMainCommodityClassification($value)
  * @method mixed getAdditionalCommodityClassification()
+ * @method self addAdditionalCommodityClassification($value)
  * @method self setAdditionalCommodityClassification($value)
  * @method mixed getRealizedLocation()
+ * @method self addRealizedLocation($value)
  * @method self setRealizedLocation($value)
  * @method mixed getPlannedPeriod()
  * @method self setPlannedPeriod($value)
  * @method mixed getContractExtension()
  * @method self setContractExtension($value)
  * @method mixed getRequestForTenderLine()
+ * @method self addRequestForTenderLine($value)
  * @method self setRequestForTenderLine($value)
  */
 class ProcurementProjectType extends AggregateComponent

@@ -5,10 +5,12 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CommentType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EventTacticEnumerationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
 
 /**
+ * Class EventTacticType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getComment()
  * @method self setComment($value)

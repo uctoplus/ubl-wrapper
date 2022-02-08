@@ -4,33 +4,33 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OversupplyQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityDiscrepancyCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShortQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShortageActionCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RejectActionCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RejectedQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RejectReasonCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RejectReasonType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RejectActionCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityDiscrepancyCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OversupplyQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShortageActionCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShortQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimingComplaintCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimingComplaintType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\OrderLineReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 
 /**
+ * Class ReceiptLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getUUID()
  * @method self setUUID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getReceivedQuantity()
  * @method self setReceivedQuantity($value)
@@ -43,6 +43,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentType;
  * @method mixed getRejectReasonCode()
  * @method self setRejectReasonCode($value)
  * @method mixed getRejectReason()
+ * @method self addRejectReason($value)
  * @method self setRejectReason($value)
  * @method mixed getRejectActionCode()
  * @method self setRejectActionCode($value)
@@ -59,12 +60,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentType;
  * @method mixed getOrderLineReference()
  * @method self setOrderLineReference($value)
  * @method mixed getDespatchLineReference()
+ * @method self addDespatchLineReference($value)
  * @method self setDespatchLineReference($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getItem()
+ * @method self addItem($value)
  * @method self setItem($value)
  * @method mixed getShipment()
+ * @method self addShipment($value)
  * @method self setShipment($value)
  */
 class ReceiptLineType extends AggregateComponent

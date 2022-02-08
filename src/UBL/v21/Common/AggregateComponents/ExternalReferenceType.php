@@ -3,19 +3,23 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\URIType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CharacterSetCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DocumentHashType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HashAlgorithmMethodType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EncodingCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExpiryDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExpiryTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MimeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FormatCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EncodingCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CharacterSetCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FileNameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FormatCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HashAlgorithmMethodType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MimeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\URIType;
 
 /**
+ * Class ExternalReferenceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getURI()
  * @method self setURI($value)
@@ -38,6 +42,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
  * @method mixed getFileName()
  * @method self setFileName($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  */
 class ExternalReferenceType extends AggregateComponent

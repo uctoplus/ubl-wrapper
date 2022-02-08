@@ -3,18 +3,21 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BaseUnitMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CalculationSequenceNumericType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PercentType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerUnitAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxableAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CalculationSequenceNumericType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransactionCurrencyTaxAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PercentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BaseUnitMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerUnitAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TierRangeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TierRatePercentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxCategoryType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransactionCurrencyTaxAmountType;
 
 /**
+ * Class TaxSubtotalType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getTaxableAmount()
  * @method self setTaxableAmount($value)

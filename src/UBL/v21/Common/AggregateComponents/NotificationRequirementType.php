@@ -6,11 +6,12 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NotificationTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PostEventNotificationDurationMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreEventNotificationDurationMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
 
 /**
+ * Class NotificationRequirementType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getNotificationTypeCode()
  * @method self setNotificationTypeCode($value)
@@ -19,10 +20,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getPreEventNotificationDurationMeasure()
  * @method self setPreEventNotificationDurationMeasure($value)
  * @method mixed getNotifyParty()
+ * @method self addNotifyParty($value)
  * @method self setNotifyParty($value)
  * @method mixed getNotificationPeriod()
+ * @method self addNotificationPeriod($value)
  * @method self setNotificationPeriod($value)
  * @method mixed getNotificationLocation()
+ * @method self addNotificationLocation($value)
  * @method self setNotificationLocation($value)
  */
 class NotificationRequirementType extends AggregateComponent

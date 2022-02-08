@@ -8,6 +8,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
 
 /**
+ * Class EventCommentType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getComment()
  * @method self setComment($value)

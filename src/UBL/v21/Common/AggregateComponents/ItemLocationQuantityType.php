@@ -3,20 +3,17 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LeadTimeMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRiskIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LeadTimeMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TradingRestrictionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryUnitType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxCategoryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PackageType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DependentPriceReferenceType;
 
 /**
+ * Class ItemLocationQuantityType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getLeadTimeMeasure()
  * @method self setLeadTimeMeasure($value)
@@ -27,18 +24,23 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DependentPriceReferen
  * @method mixed getHazardousRiskIndicator()
  * @method self setHazardousRiskIndicator($value)
  * @method mixed getTradingRestrictions()
+ * @method self addTradingRestrictions($value)
  * @method self setTradingRestrictions($value)
  * @method mixed getApplicableTerritoryAddress()
+ * @method self addApplicableTerritoryAddress($value)
  * @method self setApplicableTerritoryAddress($value)
  * @method mixed getPrice()
  * @method self setPrice($value)
  * @method mixed getDeliveryUnit()
+ * @method self addDeliveryUnit($value)
  * @method self setDeliveryUnit($value)
  * @method mixed getApplicableTaxCategory()
+ * @method self addApplicableTaxCategory($value)
  * @method self setApplicableTaxCategory($value)
  * @method mixed getPackage()
  * @method self setPackage($value)
  * @method mixed getAllowanceCharge()
+ * @method self addAllowanceCharge($value)
  * @method self setAllowanceCharge($value)
  * @method mixed getDependentPriceReference()
  * @method self setDependentPriceReference($value)

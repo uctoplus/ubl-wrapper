@@ -3,23 +3,27 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialTermsType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LossRiskResponsibilityCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LossRiskType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialTermsType;
 
 /**
+ * Class DeliveryTermsType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getSpecialTerms()
+ * @method self addSpecialTerms($value)
  * @method self setSpecialTerms($value)
  * @method mixed getLossRiskResponsibilityCode()
  * @method self setLossRiskResponsibilityCode($value)
  * @method mixed getLossRisk()
+ * @method self addLossRisk($value)
  * @method self setLossRisk($value)
  * @method mixed getAmount()
  * @method self setAmount($value)

@@ -3,13 +3,16 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RoundingAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxEvidenceIndicatorType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxIncludedIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxSubtotalType;
 
 /**
+ * Class TaxTotalType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getTaxAmount()
  * @method self setTaxAmount($value)
@@ -20,6 +23,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxSubtotalType;
  * @method mixed getTaxIncludedIndicator()
  * @method self setTaxIncludedIndicator($value)
  * @method mixed getTaxSubtotal()
+ * @method self addTaxSubtotal($value)
  * @method self setTaxSubtotal($value)
  */
 class TaxTotalType extends AggregateComponent

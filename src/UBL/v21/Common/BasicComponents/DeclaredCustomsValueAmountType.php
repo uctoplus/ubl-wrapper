@@ -2,13 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class DeclaredCustomsValueAmountType
  *
- * @method mixed getAmountType()
- * @method self setAmountType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class DeclaredCustomsValueAmountType extends AmountType
+class DeclaredCustomsValueAmountType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\AmountType
 {
 }

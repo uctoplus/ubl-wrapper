@@ -3,33 +3,25 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AdditionalInformationType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BrandNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CatalogueIndicatorType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRiskIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\KeywordType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ModelNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PackQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PackSizeNumericType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CatalogueIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRiskIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AdditionalInformationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\KeywordType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BrandNameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ModelNameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemIdentificationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CountryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CommodityClassificationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransactionConditionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\HazardousItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxCategoryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemPropertyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemInstanceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CertificateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DimensionType;
 
 /**
+ * Class ItemType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getPackQuantity()
  * @method self setPackQuantity($value)
@@ -42,52 +34,69 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DimensionType;
  * @method mixed getHazardousRiskIndicator()
  * @method self setHazardousRiskIndicator($value)
  * @method mixed getAdditionalInformation()
+ * @method self addAdditionalInformation($value)
  * @method self setAdditionalInformation($value)
  * @method mixed getKeyword()
+ * @method self addKeyword($value)
  * @method self setKeyword($value)
  * @method mixed getBrandName()
+ * @method self addBrandName($value)
  * @method self setBrandName($value)
  * @method mixed getModelName()
+ * @method self addModelName($value)
  * @method self setModelName($value)
  * @method mixed getBuyersItemIdentification()
  * @method self setBuyersItemIdentification($value)
  * @method mixed getSellersItemIdentification()
  * @method self setSellersItemIdentification($value)
  * @method mixed getManufacturersItemIdentification()
+ * @method self addManufacturersItemIdentification($value)
  * @method self setManufacturersItemIdentification($value)
  * @method mixed getStandardItemIdentification()
  * @method self setStandardItemIdentification($value)
  * @method mixed getCatalogueItemIdentification()
  * @method self setCatalogueItemIdentification($value)
  * @method mixed getAdditionalItemIdentification()
+ * @method self addAdditionalItemIdentification($value)
  * @method self setAdditionalItemIdentification($value)
  * @method mixed getCatalogueDocumentReference()
  * @method self setCatalogueDocumentReference($value)
  * @method mixed getItemSpecificationDocumentReference()
+ * @method self addItemSpecificationDocumentReference($value)
  * @method self setItemSpecificationDocumentReference($value)
  * @method mixed getOriginCountry()
  * @method self setOriginCountry($value)
  * @method mixed getCommodityClassification()
+ * @method self addCommodityClassification($value)
  * @method self setCommodityClassification($value)
  * @method mixed getTransactionConditions()
+ * @method self addTransactionConditions($value)
  * @method self setTransactionConditions($value)
  * @method mixed getHazardousItem()
+ * @method self addHazardousItem($value)
  * @method self setHazardousItem($value)
  * @method mixed getClassifiedTaxCategory()
+ * @method self addClassifiedTaxCategory($value)
  * @method self setClassifiedTaxCategory($value)
  * @method mixed getAdditionalItemProperty()
+ * @method self addAdditionalItemProperty($value)
  * @method self setAdditionalItemProperty($value)
  * @method mixed getManufacturerParty()
+ * @method self addManufacturerParty($value)
  * @method self setManufacturerParty($value)
  * @method mixed getInformationContentProviderParty()
  * @method self setInformationContentProviderParty($value)
  * @method mixed getOriginAddress()
+ * @method self addOriginAddress($value)
  * @method self setOriginAddress($value)
  * @method mixed getItemInstance()
+ * @method self addItemInstance($value)
  * @method self setItemInstance($value)
  * @method mixed getCertificate()
+ * @method self addCertificate($value)
  * @method self setCertificate($value)
  * @method mixed getDimension()
+ * @method self addDimension($value)
  * @method self setDimension($value)
  */
 class ItemType extends AggregateComponent

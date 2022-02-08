@@ -4,17 +4,20 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BuyerProfileURIType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ContractingPartyTypeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ContractingActivityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
 
 /**
+ * Class ContractingPartyType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getBuyerProfileURI()
  * @method self setBuyerProfileURI($value)
  * @method mixed getContractingPartyType()
+ * @method self addContractingPartyType($value)
  * @method self setContractingPartyType($value)
  * @method mixed getContractingActivity()
+ * @method self addContractingActivity($value)
  * @method self setContractingActivity($value)
  * @method mixed getParty()
  * @method self setParty($value)

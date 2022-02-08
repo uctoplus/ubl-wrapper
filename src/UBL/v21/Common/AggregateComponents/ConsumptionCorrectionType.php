@@ -3,20 +3,24 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CorrectionTypeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CorrectionTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterNumberType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GasPressureQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ActualTemperatureReductionQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NormalTemperatureReductionQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DifferenceTemperatureReductionQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CorrectionUnitAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionEnergyQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionWaterQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CorrectionAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CorrectionTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CorrectionTypeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CorrectionUnitAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DifferenceTemperatureReductionQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GasPressureQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterNumberType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NormalTemperatureReductionQuantityType;
 
 /**
+ * Class ConsumptionCorrectionType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getCorrectionType()
  * @method self setCorrectionType($value)
@@ -33,6 +37,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CorrectionAmountType;
  * @method mixed getDifferenceTemperatureReductionQuantity()
  * @method self setDifferenceTemperatureReductionQuantity($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getCorrectionUnitAmount()
  * @method self setCorrectionUnitAmount($value)

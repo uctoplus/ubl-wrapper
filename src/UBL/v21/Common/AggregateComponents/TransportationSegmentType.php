@@ -5,12 +5,12 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportExecutionPlanReferenceIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportationServiceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConsignmentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentStageType;
 
 /**
+ * Class TransportationSegmentType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getSequenceNumeric()
  * @method self setSequenceNumeric($value)
@@ -23,6 +23,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentStageType;
  * @method mixed getReferencedConsignment()
  * @method self setReferencedConsignment($value)
  * @method mixed getShipmentStage()
+ * @method self addShipmentStage($value)
  * @method self setShipmentStage($value)
  */
 class TransportationSegmentType extends AggregateComponent

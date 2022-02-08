@@ -3,26 +3,18 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MarkCareIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MarkAttentionIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WebsiteURIType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LogoReferenceIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EndpointIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IndustryClassificationCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyIdentificationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyNameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LanguageType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyTaxSchemeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyLegalEntityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ContactType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PersonType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ServiceProviderPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PowerOfAttorneyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\FinancialAccountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LogoReferenceIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MarkAttentionIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MarkCareIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WebsiteURIType;
 
 /**
+ * Class PartyType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getMarkCareIndicator()
  * @method self setMarkCareIndicator($value)
@@ -37,8 +29,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\FinancialAccountType;
  * @method mixed getIndustryClassificationCode()
  * @method self setIndustryClassificationCode($value)
  * @method mixed getPartyIdentification()
+ * @method self addPartyIdentification($value)
  * @method self setPartyIdentification($value)
  * @method mixed getPartyName()
+ * @method self addPartyName($value)
  * @method self setPartyName($value)
  * @method mixed getLanguage()
  * @method self setLanguage($value)
@@ -47,18 +41,23 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\FinancialAccountType;
  * @method mixed getPhysicalLocation()
  * @method self setPhysicalLocation($value)
  * @method mixed getPartyTaxScheme()
+ * @method self addPartyTaxScheme($value)
  * @method self setPartyTaxScheme($value)
  * @method mixed getPartyLegalEntity()
+ * @method self addPartyLegalEntity($value)
  * @method self setPartyLegalEntity($value)
  * @method mixed getContact()
  * @method self setContact($value)
  * @method mixed getPerson()
+ * @method self addPerson($value)
  * @method self setPerson($value)
  * @method mixed getAgentParty()
  * @method self setAgentParty($value)
  * @method mixed getServiceProviderParty()
+ * @method self addServiceProviderParty($value)
  * @method self setServiceProviderParty($value)
  * @method mixed getPowerOfAttorney()
+ * @method self addPowerOfAttorney($value)
  * @method self setPowerOfAttorney($value)
  * @method mixed getFinancialAccount()
  * @method self setFinancialAccount($value)

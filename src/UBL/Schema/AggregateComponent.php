@@ -15,9 +15,13 @@ use Uctoplus\UblWrapper\XML\XMLInterface;
  */
 abstract class AggregateComponent extends BaseXMLElement implements XMLInterface
 {
+    const XMLNS_URI = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2";
+
     protected $namespace = "cac";
 
-    protected $xmlns = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2";
+    protected $xmlns_uri = null;
+
+    protected $tag = null;
 
     /**
      * @return string
@@ -45,14 +49,17 @@ abstract class AggregateComponent extends BaseXMLElement implements XMLInterface
 
     public function getXMLNS_URI()
     {
-        return $this->xmlns;
+        if (!empty($this->xmlns_uri))
+            return $this->xmlns_uri;
+
+        return static::XMLNS_URI;
     }
 
     public function toXML()
     {
         $this->initXML();
 
-        $rootElement = $this->xml->createElement($this->getTag());
+        $rootElement = $this->xml->createElement($this->getXMLNS() . ":" . $this->getTag());
         $this->xml->appendChild($rootElement);
 
         /** @var XMLInterface $node */
@@ -71,6 +78,13 @@ abstract class AggregateComponent extends BaseXMLElement implements XMLInterface
                 continue;
 
             $tag = $childNode->nodeName;
+
+            if (strpos($childNode->nodeName, ":") === false) {
+                $namespace = $this->guessNamespace($childNode->namespaceURI);
+                if ($namespace != null) {
+                    $tag = $namespace . ":" . $tag;
+                }
+            }
 
             if (!isset($this->casts[$tag])) {
                 continue;

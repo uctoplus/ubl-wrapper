@@ -3,31 +3,28 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportModeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportMeansTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransitDirectionCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreCarriageIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OnCarriageIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CrewQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DemurrageInstructionsType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EstimatedDeliveryDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EstimatedDeliveryTimeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InstructionsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LoadingSequenceIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OnCarriageIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PassengerQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreCarriageIndicatorType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequiredDeliveryDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequiredDeliveryTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LoadingSequenceIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SuccessiveSequenceIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InstructionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DemurrageInstructionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CrewQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PassengerQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportMeansType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportEventType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PersonType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransitDirectionCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportMeansTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportModeCodeType;
 
 /**
+ * Class ShipmentStageType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -54,8 +51,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PersonType;
  * @method mixed getSuccessiveSequenceID()
  * @method self setSuccessiveSequenceID($value)
  * @method mixed getInstructions()
+ * @method self addInstructions($value)
  * @method self setInstructions($value)
  * @method mixed getDemurrageInstructions()
+ * @method self addDemurrageInstructions($value)
  * @method self setDemurrageInstructions($value)
  * @method mixed getCrewQuantity()
  * @method self setCrewQuantity($value)
@@ -64,6 +63,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PersonType;
  * @method mixed getTransitPeriod()
  * @method self setTransitPeriod($value)
  * @method mixed getCarrierParty()
+ * @method self addCarrierParty($value)
  * @method self setCarrierParty($value)
  * @method mixed getTransportMeans()
  * @method self setTransportMeans($value)
@@ -108,22 +108,26 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PersonType;
  * @method mixed getEstimatedTransitPeriod()
  * @method self setEstimatedTransitPeriod($value)
  * @method mixed getFreightAllowanceCharge()
+ * @method self addFreightAllowanceCharge($value)
  * @method self setFreightAllowanceCharge($value)
  * @method mixed getFreightChargeLocation()
  * @method self setFreightChargeLocation($value)
  * @method mixed getDetentionTransportEvent()
+ * @method self addDetentionTransportEvent($value)
  * @method self setDetentionTransportEvent($value)
  * @method mixed getRequestedDepartureTransportEvent()
  * @method self setRequestedDepartureTransportEvent($value)
  * @method mixed getRequestedArrivalTransportEvent()
  * @method self setRequestedArrivalTransportEvent($value)
  * @method mixed getRequestedWaypointTransportEvent()
+ * @method self addRequestedWaypointTransportEvent($value)
  * @method self setRequestedWaypointTransportEvent($value)
  * @method mixed getPlannedDepartureTransportEvent()
  * @method self setPlannedDepartureTransportEvent($value)
  * @method mixed getPlannedArrivalTransportEvent()
  * @method self setPlannedArrivalTransportEvent($value)
  * @method mixed getPlannedWaypointTransportEvent()
+ * @method self addPlannedWaypointTransportEvent($value)
  * @method self setPlannedWaypointTransportEvent($value)
  * @method mixed getActualDepartureTransportEvent()
  * @method self setActualDepartureTransportEvent($value)
@@ -132,18 +136,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PersonType;
  * @method mixed getActualArrivalTransportEvent()
  * @method self setActualArrivalTransportEvent($value)
  * @method mixed getTransportEvent()
+ * @method self addTransportEvent($value)
  * @method self setTransportEvent($value)
  * @method mixed getEstimatedDepartureTransportEvent()
  * @method self setEstimatedDepartureTransportEvent($value)
  * @method mixed getEstimatedArrivalTransportEvent()
  * @method self setEstimatedArrivalTransportEvent($value)
  * @method mixed getPassengerPerson()
+ * @method self addPassengerPerson($value)
  * @method self setPassengerPerson($value)
  * @method mixed getDriverPerson()
+ * @method self addDriverPerson($value)
  * @method self setDriverPerson($value)
  * @method mixed getReportingPerson()
  * @method self setReportingPerson($value)
  * @method mixed getCrewMemberPerson()
+ * @method self addCrewMemberPerson($value)
  * @method self setCrewMemberPerson($value)
  * @method mixed getSecurityOfficerPerson()
  * @method self setSecurityOfficerPerson($value)

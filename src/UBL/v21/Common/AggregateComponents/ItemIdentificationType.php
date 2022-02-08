@@ -3,14 +3,15 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExtendedIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BarcodeSymbologyIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PhysicalAttributeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DimensionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExtendedIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 
 /**
+ * Class ItemIdentificationType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -19,8 +20,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
  * @method mixed getBarcodeSymbologyID()
  * @method self setBarcodeSymbologyID($value)
  * @method mixed getPhysicalAttribute()
+ * @method self addPhysicalAttribute($value)
  * @method self setPhysicalAttribute($value)
  * @method mixed getMeasurementDimension()
+ * @method self addMeasurementDimension($value)
  * @method self setMeasurementDimension($value)
  * @method mixed getIssuerParty()
  * @method self setIssuerParty($value)

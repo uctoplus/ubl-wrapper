@@ -4,25 +4,30 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExpectedOperatorQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumOperatorQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\JustificationType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FrequencyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TenderRequirementType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\JustificationType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumOperatorQuantityType;
 
 /**
+ * Class FrameworkAgreementType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getExpectedOperatorQuantity()
  * @method self setExpectedOperatorQuantity($value)
  * @method mixed getMaximumOperatorQuantity()
  * @method self setMaximumOperatorQuantity($value)
  * @method mixed getJustification()
+ * @method self addJustification($value)
  * @method self setJustification($value)
  * @method mixed getFrequency()
+ * @method self addFrequency($value)
  * @method self setFrequency($value)
  * @method mixed getDurationPeriod()
  * @method self setDurationPeriod($value)
  * @method mixed getSubsequentProcessTenderRequirement()
+ * @method self addSubsequentProcessTenderRequirement($value)
  * @method self setSubsequentProcessTenderRequirement($value)
  */
 class FrameworkAgreementType extends AggregateComponent

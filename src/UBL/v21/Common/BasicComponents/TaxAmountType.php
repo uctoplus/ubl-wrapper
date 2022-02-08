@@ -2,13 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class TaxAmountType
  *
- * @method mixed getAmountType()
- * @method self setAmountType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class TaxAmountType extends AmountType
+class TaxAmountType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\AmountType
 {
 }

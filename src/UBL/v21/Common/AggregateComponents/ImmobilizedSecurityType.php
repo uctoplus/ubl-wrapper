@@ -3,15 +3,18 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ImmobilizationCertificateIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SecurityIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FaceValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ImmobilizationCertificateIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MarketValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SecurityIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SharesNumberQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
 
 /**
+ * Class ImmobilizedSecurityType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getImmobilizationCertificateID()
  * @method self setImmobilizationCertificateID($value)

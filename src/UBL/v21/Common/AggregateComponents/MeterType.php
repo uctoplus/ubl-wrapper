@@ -3,15 +3,17 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterNumberType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterNameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterConstantType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterConstantCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterConstantType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterNumberType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalDeliveredQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\MeterReadingType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\MeterPropertyType;
 
 /**
+ * Class MeterType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getMeterNumber()
  * @method self setMeterNumber($value)
@@ -24,8 +26,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\MeterPropertyType;
  * @method mixed getTotalDeliveredQuantity()
  * @method self setTotalDeliveredQuantity($value)
  * @method mixed getMeterReading()
+ * @method self addMeterReading($value)
  * @method self setMeterReading($value)
  * @method mixed getMeterProperty()
+ * @method self addMeterProperty($value)
  * @method self setMeterProperty($value)
  */
 class MeterType extends AggregateComponent

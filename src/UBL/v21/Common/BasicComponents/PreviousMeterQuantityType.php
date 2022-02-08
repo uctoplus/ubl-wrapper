@@ -2,13 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class PreviousMeterQuantityType
  *
- * @method mixed getQuantityType()
- * @method self setQuantityType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class PreviousMeterQuantityType extends QuantityType
+class PreviousMeterQuantityType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\QuantityType
 {
 }

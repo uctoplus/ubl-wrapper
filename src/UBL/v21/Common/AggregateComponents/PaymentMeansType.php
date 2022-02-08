@@ -4,19 +4,18 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentMeansCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentDueDateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentChannelCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InstructionIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InstructionNoteType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentChannelCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentDueDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CardAccountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\FinancialAccountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CreditAccountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentMandateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TradeFinancingType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentMeansCodeType;
 
 /**
+ * Class PaymentMeansType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -29,8 +28,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TradeFinancingType;
  * @method mixed getInstructionID()
  * @method self setInstructionID($value)
  * @method mixed getInstructionNote()
+ * @method self addInstructionNote($value)
  * @method self setInstructionNote($value)
  * @method mixed getPaymentID()
+ * @method self addPaymentID($value)
  * @method self setPaymentID($value)
  * @method mixed getCardAccount()
  * @method self setCardAccount($value)

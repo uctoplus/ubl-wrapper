@@ -2,13 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class ValueAmountType
  *
- * @method mixed getAmountType()
- * @method self setAmountType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class ValueAmountType extends AmountType
+class ValueAmountType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\AmountType
 {
 }

@@ -3,18 +3,21 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ForecastTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FrozenDocumentIndicatorType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FrozenDocumentIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ForecastTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SalesItemType;
 
 /**
+ * Class ForecastLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getFrozenDocumentIndicator()
  * @method self setFrozenDocumentIndicator($value)

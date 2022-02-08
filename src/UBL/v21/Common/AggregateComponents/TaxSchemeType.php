@@ -3,13 +3,16 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CurrencyCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CurrencyCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
 
 /**
+ * Class TaxSchemeType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -20,6 +23,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
  * @method mixed getCurrencyCode()
  * @method self setCurrencyCode($value)
  * @method mixed getJurisdictionRegionAddress()
+ * @method self addJurisdictionRegionAddress($value)
  * @method self setJurisdictionRegionAddress($value)
  */
 class TaxSchemeType extends AggregateComponent

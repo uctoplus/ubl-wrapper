@@ -3,28 +3,26 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CallBaseAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CallDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CallExtensionAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CallTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ServiceNumberCalledType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelecommunicationsServiceCategoryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelecommunicationsServiceCategoryCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MovieTitleType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RoamingPartnerNameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PayPerViewType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelecommunicationsServiceCallType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RoamingPartnerNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ServiceNumberCalledType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelecommunicationsServiceCallCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CallBaseAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CallExtensionAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CountryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ExchangeRateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxTotalType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DutyType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelecommunicationsServiceCallType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelecommunicationsServiceCategoryCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelecommunicationsServiceCategoryType;
 
 /**
+ * Class TelecommunicationsServiceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -59,14 +57,19 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DutyType;
  * @method mixed getCountry()
  * @method self setCountry($value)
  * @method mixed getExchangeRate()
+ * @method self addExchangeRate($value)
  * @method self setExchangeRate($value)
  * @method mixed getAllowanceCharge()
+ * @method self addAllowanceCharge($value)
  * @method self setAllowanceCharge($value)
  * @method mixed getTaxTotal()
+ * @method self addTaxTotal($value)
  * @method self setTaxTotal($value)
  * @method mixed getCallDuty()
+ * @method self addCallDuty($value)
  * @method self setCallDuty($value)
  * @method mixed getTimeDuty()
+ * @method self addTimeDuty($value)
  * @method self setTimeDuty($value)
  */
 class TelecommunicationsServiceType extends AggregateComponent

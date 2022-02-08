@@ -8,7 +8,6 @@
   Copyright (c) OASIS Open 2013. All Rights Reserved.
 -->
 <xsd:schema xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-            xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
             xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
             targetNamespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"

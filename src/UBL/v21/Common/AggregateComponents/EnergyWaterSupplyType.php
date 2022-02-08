@@ -3,20 +3,24 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConsumptionReportType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EnergyTaxReportType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConsumptionAverageType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConsumptionCorrectionType;
 
 /**
+ * Class EnergyWaterSupplyType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getConsumptionReport()
+ * @method self addConsumptionReport($value)
  * @method self setConsumptionReport($value)
  * @method mixed getEnergyTaxReport()
+ * @method self addEnergyTaxReport($value)
  * @method self setEnergyTaxReport($value)
  * @method mixed getConsumptionAverage()
+ * @method self addConsumptionAverage($value)
  * @method self setConsumptionAverage($value)
  * @method mixed getEnergyWaterConsumptionCorrection()
+ * @method self addEnergyWaterConsumptionCorrection($value)
  * @method self setEnergyWaterConsumptionCorrection($value)
  */
 class EnergyWaterSupplyType extends AggregateComponent

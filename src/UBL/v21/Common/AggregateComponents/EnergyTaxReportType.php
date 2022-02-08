@@ -4,11 +4,14 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxEnergyAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxEnergyOnAccountAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxEnergyBalanceAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxSchemeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxEnergyOnAccountAmountType;
 
 /**
+ * Class EnergyTaxReportType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getTaxEnergyAmount()
  * @method self setTaxEnergyAmount($value)

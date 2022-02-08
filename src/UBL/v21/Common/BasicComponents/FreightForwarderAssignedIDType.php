@@ -2,14 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class FreightForwarderAssignedIDType
  *
- * @method mixed getIdentifierType()
- * @method self setIdentifierType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class FreightForwarderAssignedIDType extends BasicComponent
+class FreightForwarderAssignedIDType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\IdentifierType
 {
-    protected $type = "udt:IdentifierType";
 }

@@ -9,6 +9,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FeatureTacticTypeCodeType
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TradeItemPackingLabelingTypeCodeType;
 
 /**
+ * Class EventTacticEnumerationType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getConsumerIncentiveTacticTypeCode()
  * @method self setConsumerIncentiveTacticTypeCode($value)

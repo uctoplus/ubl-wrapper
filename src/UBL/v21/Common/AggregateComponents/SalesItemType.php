@@ -4,19 +4,23 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ActivityPropertyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
 
 /**
+ * Class SalesItemType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getQuantity()
  * @method self setQuantity($value)
  * @method mixed getActivityProperty()
+ * @method self addActivityProperty($value)
  * @method self setActivityProperty($value)
  * @method mixed getTaxExclusivePrice()
+ * @method self addTaxExclusivePrice($value)
  * @method self setTaxExclusivePrice($value)
  * @method mixed getTaxInclusivePrice()
+ * @method self addTaxInclusivePrice($value)
  * @method self setTaxInclusivePrice($value)
  * @method mixed getItem()
  * @method self setItem($value)

@@ -3,25 +3,28 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConditionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CountrySubentityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CountrySubentityCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LocationTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CountrySubentityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InformationURIType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LocationTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationCoordinateType;
 
 /**
+ * Class LocationType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getConditions()
+ * @method self addConditions($value)
  * @method self setConditions($value)
  * @method mixed getCountrySubentity()
  * @method self setCountrySubentity($value)
@@ -34,12 +37,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationCoordinateTyp
  * @method mixed getName()
  * @method self setName($value)
  * @method mixed getValidityPeriod()
+ * @method self addValidityPeriod($value)
  * @method self setValidityPeriod($value)
  * @method mixed getAddress()
  * @method self setAddress($value)
  * @method mixed getSubsidiaryLocation()
+ * @method self addSubsidiaryLocation($value)
  * @method self setSubsidiaryLocation($value)
  * @method mixed getLocationCoordinate()
+ * @method self addLocationCoordinate($value)
  * @method self setLocationCoordinate($value)
  */
 class LocationType extends AggregateComponent

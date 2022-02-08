@@ -3,21 +3,18 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReferenceIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CertificateTypeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ApplicationStatusCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CertificateTypeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OriginalJobIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousJobIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReferenceIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EndorserPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CountryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentDistributionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SignatureType;
 
 /**
+ * Class CertificateOfOriginApplicationType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getReferenceID()
  * @method self setReferenceID($value)
@@ -30,10 +27,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SignatureType;
  * @method mixed getPreviousJobID()
  * @method self setPreviousJobID($value)
  * @method mixed getRemarks()
+ * @method self addRemarks($value)
  * @method self setRemarks($value)
  * @method mixed getShipment()
  * @method self setShipment($value)
  * @method mixed getEndorserParty()
+ * @method self addEndorserParty($value)
  * @method self setEndorserParty($value)
  * @method mixed getPreparationParty()
  * @method self setPreparationParty($value)
@@ -46,10 +45,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SignatureType;
  * @method mixed getIssuingCountry()
  * @method self setIssuingCountry($value)
  * @method mixed getDocumentDistribution()
+ * @method self addDocumentDistribution($value)
  * @method self setDocumentDistribution($value)
  * @method mixed getSupportingDocumentReference()
+ * @method self addSupportingDocumentReference($value)
  * @method self setSupportingDocumentReference($value)
  * @method mixed getSignature()
+ * @method self addSignature($value)
  * @method self setSignature($value)
  */
 class CertificateOfOriginApplicationType extends AggregateComponent

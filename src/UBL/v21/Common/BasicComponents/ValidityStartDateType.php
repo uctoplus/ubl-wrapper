@@ -2,14 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class ValidityStartDateType
  *
- * @method mixed getDateType()
- * @method self setDateType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class ValidityStartDateType extends BasicComponent
+class ValidityStartDateType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\DateType
 {
-    protected $type = "udt:DateType";
 }

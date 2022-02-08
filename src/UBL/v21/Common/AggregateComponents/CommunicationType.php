@@ -8,6 +8,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChannelType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
 
 /**
+ * Class CommunicationType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getChannelCode()
  * @method self setChannelCode($value)

@@ -2,13 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class CategoryNameType
  *
- * @method mixed getNameType()
- * @method self setNameType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class CategoryNameType extends NameType
+class CategoryNameType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\NameType
 {
 }

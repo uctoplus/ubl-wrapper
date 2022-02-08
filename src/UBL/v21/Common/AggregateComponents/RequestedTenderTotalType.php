@@ -3,16 +3,19 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EstimatedOverallContractAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxIncludedIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MonetaryScopeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AverageSubsequentContractAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxCategoryType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EstimatedOverallContractAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MonetaryScopeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxIncludedIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalAmountType;
 
 /**
+ * Class RequestedTenderTotalType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getEstimatedOverallContractAmount()
  * @method self setEstimatedOverallContractAmount($value)
@@ -25,10 +28,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxCategoryType;
  * @method mixed getMaximumAmount()
  * @method self setMaximumAmount($value)
  * @method mixed getMonetaryScope()
+ * @method self addMonetaryScope($value)
  * @method self setMonetaryScope($value)
  * @method mixed getAverageSubsequentContractAmount()
  * @method self setAverageSubsequentContractAmount($value)
  * @method mixed getApplicableTaxCategory()
+ * @method self addApplicableTaxCategory($value)
  * @method self setApplicableTaxCategory($value)
  */
 class RequestedTenderTotalType extends AggregateComponent

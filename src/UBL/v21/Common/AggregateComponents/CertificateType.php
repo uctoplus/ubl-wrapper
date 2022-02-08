@@ -3,15 +3,16 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CertificateTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CertificateTypeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SignatureType;
 
 /**
+ * Class CertificateType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -20,12 +21,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SignatureType;
  * @method mixed getCertificateType()
  * @method self setCertificateType($value)
  * @method mixed getRemarks()
+ * @method self addRemarks($value)
  * @method self setRemarks($value)
  * @method mixed getIssuerParty()
  * @method self setIssuerParty($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getSignature()
+ * @method self addSignature($value)
  * @method self setSignature($value)
  */
 class CertificateType extends AggregateComponent

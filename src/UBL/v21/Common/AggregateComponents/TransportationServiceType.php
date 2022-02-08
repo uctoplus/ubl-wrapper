@@ -3,27 +3,22 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportServiceCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TariffClassCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PriorityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FreightRateClassCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportationServiceDescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportationServiceDetailsURIType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NominationDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NominationTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PriorityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportEquipmentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CommodityClassificationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DimensionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentStageType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportEventType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EnvironmentalEmissionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ServiceFrequencyType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TariffClassCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportationServiceDescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportationServiceDetailsURIType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportServiceCodeType;
 
 /**
+ * Class TransportationServiceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getTransportServiceCode()
  * @method self setTransportServiceCode($value)
@@ -34,6 +29,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ServiceFrequencyType;
  * @method mixed getFreightRateClassCode()
  * @method self setFreightRateClassCode($value)
  * @method mixed getTransportationServiceDescription()
+ * @method self addTransportationServiceDescription($value)
  * @method self setTransportationServiceDescription($value)
  * @method mixed getTransportationServiceDetailsURI()
  * @method self setTransportationServiceDetailsURI($value)
@@ -46,30 +42,40 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ServiceFrequencyType;
  * @method mixed getSequenceNumeric()
  * @method self setSequenceNumeric($value)
  * @method mixed getTransportEquipment()
+ * @method self addTransportEquipment($value)
  * @method self setTransportEquipment($value)
  * @method mixed getSupportedTransportEquipment()
+ * @method self addSupportedTransportEquipment($value)
  * @method self setSupportedTransportEquipment($value)
  * @method mixed getUnsupportedTransportEquipment()
+ * @method self addUnsupportedTransportEquipment($value)
  * @method self setUnsupportedTransportEquipment($value)
  * @method mixed getCommodityClassification()
+ * @method self addCommodityClassification($value)
  * @method self setCommodityClassification($value)
  * @method mixed getSupportedCommodityClassification()
+ * @method self addSupportedCommodityClassification($value)
  * @method self setSupportedCommodityClassification($value)
  * @method mixed getUnsupportedCommodityClassification()
+ * @method self addUnsupportedCommodityClassification($value)
  * @method self setUnsupportedCommodityClassification($value)
  * @method mixed getTotalCapacityDimension()
  * @method self setTotalCapacityDimension($value)
  * @method mixed getShipmentStage()
+ * @method self addShipmentStage($value)
  * @method self setShipmentStage($value)
  * @method mixed getTransportEvent()
+ * @method self addTransportEvent($value)
  * @method self setTransportEvent($value)
  * @method mixed getResponsibleTransportServiceProviderParty()
  * @method self setResponsibleTransportServiceProviderParty($value)
  * @method mixed getEnvironmentalEmission()
+ * @method self addEnvironmentalEmission($value)
  * @method self setEnvironmentalEmission($value)
  * @method mixed getEstimatedDurationPeriod()
  * @method self setEstimatedDurationPeriod($value)
  * @method mixed getScheduledServiceFrequency()
+ * @method self addScheduledServiceFrequency($value)
  * @method self setScheduledServiceFrequency($value)
  */
 class TransportationServiceType extends AggregateComponent

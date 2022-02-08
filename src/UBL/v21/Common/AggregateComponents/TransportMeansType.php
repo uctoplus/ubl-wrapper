@@ -3,27 +3,25 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DirectionCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\JourneyIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationNationalityIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationNationalityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DirectionCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportMeansTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TradeServiceCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\StowageType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AirTransportType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\RoadTransportType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\RailTransportType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\MaritimeTransportType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DimensionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportMeansTypeCodeType;
 
 /**
+ * Class TransportMeansType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getJourneyID()
  * @method self setJourneyID($value)
  * @method mixed getRegistrationNationalityID()
  * @method self setRegistrationNationalityID($value)
  * @method mixed getRegistrationNationality()
+ * @method self addRegistrationNationality($value)
  * @method self setRegistrationNationality($value)
  * @method mixed getDirectionCode()
  * @method self setDirectionCode($value)
@@ -44,6 +42,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DimensionType;
  * @method mixed getOwnerParty()
  * @method self setOwnerParty($value)
  * @method mixed getMeasurementDimension()
+ * @method self addMeasurementDimension($value)
  * @method self setMeasurementDimension($value)
  */
 class TransportMeansType extends AggregateComponent

@@ -4,13 +4,17 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InstructionIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaidAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaidDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaidTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InstructionIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedDateType;
 
 /**
+ * Class PaymentType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)

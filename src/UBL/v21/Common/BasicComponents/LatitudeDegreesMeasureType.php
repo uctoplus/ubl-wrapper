@@ -2,13 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class LatitudeDegreesMeasureType
  *
- * @method mixed getMeasureType()
- * @method self setMeasureType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class LatitudeDegreesMeasureType extends MeasureType
+class LatitudeDegreesMeasureType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\MeasureType
 {
 }

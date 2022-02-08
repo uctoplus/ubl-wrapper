@@ -2,14 +2,14 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\TimeType;
 
 /**
+ * Class EstimatedDeliveryTimeType
  *
- * @method mixed getTimeType()
- * @method self setTimeType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class EstimatedDeliveryTimeType extends BasicComponent
+class EstimatedDeliveryTimeType extends TimeType
 {
-    protected $type = "udt:TimeType";
 }

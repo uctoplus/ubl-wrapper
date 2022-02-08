@@ -4,9 +4,12 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EmbeddedDocumentBinaryObjectType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ExternalReferenceType;
 
 /**
+ * Class AttachmentType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getEmbeddedDocumentBinaryObject()
  * @method self setEmbeddedDocumentBinaryObject($value)

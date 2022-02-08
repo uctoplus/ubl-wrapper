@@ -7,10 +7,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RoleCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RoleDescriptionType;
 
 /**
+ * Class EconomicOperatorRoleType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getRoleCode()
  * @method self setRoleCode($value)
  * @method mixed getRoleDescription()
+ * @method self addRoleDescription($value)
  * @method self setRoleDescription($value)
  */
 class EconomicOperatorRoleType extends AggregateComponent

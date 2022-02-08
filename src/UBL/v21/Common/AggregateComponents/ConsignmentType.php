@@ -3,77 +3,67 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CarrierAssignedIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsigneeAssignedIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsignorAssignedIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FreightForwarderAssignedIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BrokerAssignedIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ContractedCarrierAssignedIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerformingCarrierAssignedIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SummaryDescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalInvoiceAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredCustomsValueAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TariffDescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TariffCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InsurancePremiumAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetNetWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChargeableWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossVolumeMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetVolumeMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LoadingLengthMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRiskIndicatorType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AnimalFoodIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HumanFoodIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LivestockIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BrokerAssignedIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BulkCargoIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ContainerizedIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GeneralCargoIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialSecurityIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThirdPartyPayerIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CarrierAssignedIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CarrierServiceInstructionsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChargeableWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChildConsignmentQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsigneeAssignedIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsignmentQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsignorAssignedIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsolidatableIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ContainerizedIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ContractedCarrierAssignedIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomsClearanceServiceInstructionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ForwarderServiceInstructionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialServiceInstructionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShippingPriorityLevelCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HandlingCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HandlingInstructionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InformationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalGoodsItemQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTransportHandlingUnitQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InsuranceValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredCustomsValueAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredForCarriageValueAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredStatisticsValueAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FreeOnBoardValueAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialInstructionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SplitConsignmentIndicatorType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeliveryInstructionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsignmentQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsolidatableIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ForwarderServiceInstructionsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FreeOnBoardValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FreightForwarderAssignedIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GeneralCargoIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossVolumeMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HandlingCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HandlingInstructionsType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HaulageInstructionsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRiskIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HumanFoodIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InformationType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InsurancePremiumAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InsuranceValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LivestockIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LoadingLengthMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LoadingSequenceIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChildConsignmentQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetNetWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetVolumeMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerformingCarrierAssignedIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShippingPriorityLevelCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialInstructionsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialSecurityIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialServiceInstructionsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SplitConsignmentIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SummaryDescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TariffCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TariffDescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThirdPartyPayerIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalGoodsItemQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalInvoiceAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalPackagesQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CustomsDeclarationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportEventType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\StatusType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CountryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ContractType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportationServiceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryTermsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentTermsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentStageType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportHandlingUnitType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTransportHandlingUnitQuantityType;
 
 /**
+ * Class ConsignmentType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -92,12 +82,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getPerformingCarrierAssignedID()
  * @method self setPerformingCarrierAssignedID($value)
  * @method mixed getSummaryDescription()
+ * @method self addSummaryDescription($value)
  * @method self setSummaryDescription($value)
  * @method mixed getTotalInvoiceAmount()
  * @method self setTotalInvoiceAmount($value)
  * @method mixed getDeclaredCustomsValueAmount()
  * @method self setDeclaredCustomsValueAmount($value)
  * @method mixed getTariffDescription()
+ * @method self addTariffDescription($value)
  * @method self setTariffDescription($value)
  * @method mixed getTariffCode()
  * @method self setTariffCode($value)
@@ -118,6 +110,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getLoadingLengthMeasure()
  * @method self setLoadingLengthMeasure($value)
  * @method mixed getRemarks()
+ * @method self addRemarks($value)
  * @method self setRemarks($value)
  * @method mixed getHazardousRiskIndicator()
  * @method self setHazardousRiskIndicator($value)
@@ -138,12 +131,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getThirdPartyPayerIndicator()
  * @method self setThirdPartyPayerIndicator($value)
  * @method mixed getCarrierServiceInstructions()
+ * @method self addCarrierServiceInstructions($value)
  * @method self setCarrierServiceInstructions($value)
  * @method mixed getCustomsClearanceServiceInstructions()
+ * @method self addCustomsClearanceServiceInstructions($value)
  * @method self setCustomsClearanceServiceInstructions($value)
  * @method mixed getForwarderServiceInstructions()
+ * @method self addForwarderServiceInstructions($value)
  * @method self setForwarderServiceInstructions($value)
  * @method mixed getSpecialServiceInstructions()
+ * @method self addSpecialServiceInstructions($value)
  * @method self setSpecialServiceInstructions($value)
  * @method mixed getSequenceID()
  * @method self setSequenceID($value)
@@ -152,8 +149,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getHandlingCode()
  * @method self setHandlingCode($value)
  * @method mixed getHandlingInstructions()
+ * @method self addHandlingInstructions($value)
  * @method self setHandlingInstructions($value)
  * @method mixed getInformation()
+ * @method self addInformation($value)
  * @method self setInformation($value)
  * @method mixed getTotalGoodsItemQuantity()
  * @method self setTotalGoodsItemQuantity($value)
@@ -168,16 +167,19 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getFreeOnBoardValueAmount()
  * @method self setFreeOnBoardValueAmount($value)
  * @method mixed getSpecialInstructions()
+ * @method self addSpecialInstructions($value)
  * @method self setSpecialInstructions($value)
  * @method mixed getSplitConsignmentIndicator()
  * @method self setSplitConsignmentIndicator($value)
  * @method mixed getDeliveryInstructions()
+ * @method self addDeliveryInstructions($value)
  * @method self setDeliveryInstructions($value)
  * @method mixed getConsignmentQuantity()
  * @method self setConsignmentQuantity($value)
  * @method mixed getConsolidatableIndicator()
  * @method self setConsolidatableIndicator($value)
  * @method mixed getHaulageInstructions()
+ * @method self addHaulageInstructions($value)
  * @method self setHaulageInstructions($value)
  * @method mixed getLoadingSequenceID()
  * @method self setLoadingSequenceID($value)
@@ -186,8 +188,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getTotalPackagesQuantity()
  * @method self setTotalPackagesQuantity($value)
  * @method mixed getConsolidatedShipment()
+ * @method self addConsolidatedShipment($value)
  * @method self setConsolidatedShipment($value)
  * @method mixed getCustomsDeclaration()
+ * @method self addCustomsDeclaration($value)
  * @method self setCustomsDeclaration($value)
  * @method mixed getRequestedPickupTransportEvent()
  * @method self setRequestedPickupTransportEvent($value)
@@ -198,8 +202,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getPlannedDeliveryTransportEvent()
  * @method self setPlannedDeliveryTransportEvent($value)
  * @method mixed getStatus()
+ * @method self addStatus($value)
  * @method self setStatus($value)
  * @method mixed getChildConsignment()
+ * @method self addChildConsignment($value)
  * @method self setChildConsignment($value)
  * @method mixed getConsigneeParty()
  * @method self setConsigneeParty($value)
@@ -240,10 +246,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getFinalDestinationCountry()
  * @method self setFinalDestinationCountry($value)
  * @method mixed getTransitCountry()
+ * @method self addTransitCountry($value)
  * @method self setTransitCountry($value)
  * @method mixed getTransportContract()
  * @method self setTransportContract($value)
  * @method mixed getTransportEvent()
+ * @method self addTransportEvent($value)
  * @method self setTransportEvent($value)
  * @method mixed getOriginalDespatchTransportationService()
  * @method self setOriginalDespatchTransportationService($value)
@@ -260,16 +268,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getPrepaidPaymentTerms()
  * @method self setPrepaidPaymentTerms($value)
  * @method mixed getFreightAllowanceCharge()
+ * @method self addFreightAllowanceCharge($value)
  * @method self setFreightAllowanceCharge($value)
  * @method mixed getExtraAllowanceCharge()
+ * @method self addExtraAllowanceCharge($value)
  * @method self setExtraAllowanceCharge($value)
  * @method mixed getMainCarriageShipmentStage()
+ * @method self addMainCarriageShipmentStage($value)
  * @method self setMainCarriageShipmentStage($value)
  * @method mixed getPreCarriageShipmentStage()
+ * @method self addPreCarriageShipmentStage($value)
  * @method self setPreCarriageShipmentStage($value)
  * @method mixed getOnCarriageShipmentStage()
+ * @method self addOnCarriageShipmentStage($value)
  * @method self setOnCarriageShipmentStage($value)
  * @method mixed getTransportHandlingUnit()
+ * @method self addTransportHandlingUnit($value)
  * @method self setTransportHandlingUnit($value)
  * @method mixed getFirstArrivalPortLocation()
  * @method self setFirstArrivalPortLocation($value)

@@ -3,39 +3,29 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InvoicedQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxPointDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AccountingCostCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AccountingCostType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentPurposeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FreeOfChargeIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\OrderLineReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\BillingReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PricingReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentTermsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxTotalType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryTermsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceExtensionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InvoicedQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentPurposeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxPointDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 
 /**
+ * Class InvoiceLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getUUID()
  * @method self setUUID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getInvoicedQuantity()
  * @method self setInvoicedQuantity($value)
@@ -52,30 +42,41 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceExtensionType;
  * @method mixed getFreeOfChargeIndicator()
  * @method self setFreeOfChargeIndicator($value)
  * @method mixed getInvoicePeriod()
+ * @method self addInvoicePeriod($value)
  * @method self setInvoicePeriod($value)
  * @method mixed getOrderLineReference()
+ * @method self addOrderLineReference($value)
  * @method self setOrderLineReference($value)
  * @method mixed getDespatchLineReference()
+ * @method self addDespatchLineReference($value)
  * @method self setDespatchLineReference($value)
  * @method mixed getReceiptLineReference()
+ * @method self addReceiptLineReference($value)
  * @method self setReceiptLineReference($value)
  * @method mixed getBillingReference()
+ * @method self addBillingReference($value)
  * @method self setBillingReference($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getPricingReference()
  * @method self setPricingReference($value)
  * @method mixed getOriginatorParty()
  * @method self setOriginatorParty($value)
  * @method mixed getDelivery()
+ * @method self addDelivery($value)
  * @method self setDelivery($value)
  * @method mixed getPaymentTerms()
+ * @method self addPaymentTerms($value)
  * @method self setPaymentTerms($value)
  * @method mixed getAllowanceCharge()
+ * @method self addAllowanceCharge($value)
  * @method self setAllowanceCharge($value)
  * @method mixed getTaxTotal()
+ * @method self addTaxTotal($value)
  * @method self setTaxTotal($value)
  * @method mixed getWithholdingTaxTotal()
+ * @method self addWithholdingTaxTotal($value)
  * @method self setWithholdingTaxTotal($value)
  * @method mixed getItem()
  * @method self setItem($value)
@@ -84,6 +85,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceExtensionType;
  * @method mixed getDeliveryTerms()
  * @method self setDeliveryTerms($value)
  * @method mixed getSubInvoiceLine()
+ * @method self addSubInvoiceLine($value)
  * @method self setSubInvoiceLine($value)
  * @method mixed getItemPriceExtension()
  * @method self setItemPriceExtension($value)

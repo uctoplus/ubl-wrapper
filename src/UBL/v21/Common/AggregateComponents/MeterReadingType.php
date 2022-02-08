@@ -3,21 +3,25 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterReadingTypeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterReadingTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterReadingDateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestMeterReadingDateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestMeterQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterReadingMethodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterReadingMethodCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestMeterReadingMethodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestMeterReadingMethodCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterReadingCommentsType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeliveredQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestMeterQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestMeterReadingDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestMeterReadingMethodCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestMeterReadingMethodType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterReadingCommentsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterReadingTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeterReadingTypeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterReadingDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterReadingMethodCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterReadingMethodType;
 
 /**
+ * Class MeterReadingType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -42,6 +46,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeliveredQuantityType;
  * @method mixed getLatestMeterReadingMethodCode()
  * @method self setLatestMeterReadingMethodCode($value)
  * @method mixed getMeterReadingComments()
+ * @method self addMeterReadingComments($value)
  * @method self setMeterReadingComments($value)
  * @method mixed getDeliveredQuantity()
  * @method self setDeliveredQuantity($value)

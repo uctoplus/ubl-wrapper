@@ -3,14 +3,17 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemLocationQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceType;
 
 /**
+ * Class PricingReferenceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getOriginalItemLocationQuantity()
  * @method self setOriginalItemLocationQuantity($value)
  * @method mixed getAlternativeConditionPrice()
+ * @method self addAlternativeConditionPrice($value)
  * @method self setAlternativeConditionPrice($value)
  */
 class PricingReferenceType extends AggregateComponent

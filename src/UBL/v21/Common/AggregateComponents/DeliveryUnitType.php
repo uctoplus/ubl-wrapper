@@ -8,6 +8,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumerUnitQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRiskIndicatorType;
 
 /**
+ * Class DeliveryUnitType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getBatchQuantity()
  * @method self setBatchQuantity($value)

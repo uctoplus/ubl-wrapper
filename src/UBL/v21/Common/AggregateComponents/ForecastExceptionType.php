@@ -3,16 +3,20 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ComparisonDataCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ComparisonForecastIssueDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ComparisonForecastIssueTimeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DataSourceCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ForecastPurposeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ForecastTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DataSourceCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ComparisonDataCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ComparisonForecastIssueTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ComparisonForecastIssueDateType;
 
 /**
+ * Class ForecastExceptionType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getForecastPurposeCode()
  * @method self setForecastPurposeCode($value)

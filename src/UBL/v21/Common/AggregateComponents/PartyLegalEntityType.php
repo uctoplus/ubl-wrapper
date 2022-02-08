@@ -3,22 +3,22 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationNameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CompanyIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationDateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationExpirationDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CompanyLegalFormCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CompanyLegalFormType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SoleProprietorshipIndicatorType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CompanyLiquidationStatusCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CorporateStockAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FullyPaidSharesIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CorporateRegistrationSchemeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShareholderPartyType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationExpirationDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SoleProprietorshipIndicatorType;
 
 /**
+ * Class PartyLegalEntityType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getRegistrationName()
  * @method self setRegistrationName($value)
@@ -47,6 +47,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShareholderPartyType;
  * @method mixed getHeadOfficeParty()
  * @method self setHeadOfficeParty($value)
  * @method mixed getShareholderParty()
+ * @method self addShareholderParty($value)
  * @method self setShareholderParty($value)
  */
 class PartyLegalEntityType extends AggregateComponent

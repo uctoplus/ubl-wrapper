@@ -4,18 +4,15 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ParentDocumentLineReferenceIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InvoicedQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxTotalType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\UtilityItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\UnstructuredPriceType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ParentDocumentLineReferenceIDType;
 
 /**
+ * Class ConsumptionLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -28,10 +25,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\UnstructuredPriceType
  * @method mixed getPeriod()
  * @method self setPeriod($value)
  * @method mixed getDelivery()
+ * @method self addDelivery($value)
  * @method self setDelivery($value)
  * @method mixed getAllowanceCharge()
+ * @method self addAllowanceCharge($value)
  * @method self setAllowanceCharge($value)
  * @method mixed getTaxTotal()
+ * @method self addTaxTotal($value)
  * @method self setTaxTotal($value)
  * @method mixed getUtilityItem()
  * @method self setUtilityItem($value)

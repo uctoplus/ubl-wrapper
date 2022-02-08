@@ -3,26 +3,28 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BalanceBroughtForwardIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DebitLineAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CreditLineAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AccountingCostCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AccountingCostType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PenaltySurchargePercentType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BalanceBroughtForwardIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CreditLineAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DebitLineAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentPurposeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\BillingReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ExchangeRateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PenaltySurchargePercentType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 
 /**
+ * Class ReminderLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getUUID()
  * @method self setUUID($value)
@@ -43,8 +45,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ExchangeRateType;
  * @method mixed getPaymentPurposeCode()
  * @method self setPaymentPurposeCode($value)
  * @method mixed getReminderPeriod()
+ * @method self addReminderPeriod($value)
  * @method self setReminderPeriod($value)
  * @method mixed getBillingReference()
+ * @method self addBillingReference($value)
  * @method self setBillingReference($value)
  * @method mixed getExchangeRate()
  * @method self setExchangeRate($value)

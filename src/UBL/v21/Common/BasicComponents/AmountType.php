@@ -2,19 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class AmountType
  *
- * @method mixed getAmountType()
- * @method self setAmountType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class AmountType extends BasicComponent
+class AmountType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\AmountType
 {
-    protected $type = "udt:AmountType";
-
-    protected $attributes = [
-        'currencyID' => true,
-        'currencyCodeListVersionID' => false,
-    ];
 }

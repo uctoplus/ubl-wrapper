@@ -3,10 +3,14 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TrainIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RailCarIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TrainIDType;
 
 /**
+ * Class RailTransportType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getTrainID()
  * @method self setTrainID($value)

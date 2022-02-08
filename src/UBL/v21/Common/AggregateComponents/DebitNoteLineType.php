@@ -3,33 +3,28 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DebitedQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxPointDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AccountingCostCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AccountingCostType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DebitedQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentPurposeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ResponseType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\BillingReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PricingReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxTotalType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxPointDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 
 /**
+ * Class DebitNoteLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getUUID()
  * @method self setUUID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getDebitedQuantity()
  * @method self setDebitedQuantity($value)
@@ -44,28 +39,37 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PriceType;
  * @method mixed getPaymentPurposeCode()
  * @method self setPaymentPurposeCode($value)
  * @method mixed getDiscrepancyResponse()
+ * @method self addDiscrepancyResponse($value)
  * @method self setDiscrepancyResponse($value)
  * @method mixed getDespatchLineReference()
+ * @method self addDespatchLineReference($value)
  * @method self setDespatchLineReference($value)
  * @method mixed getReceiptLineReference()
+ * @method self addReceiptLineReference($value)
  * @method self setReceiptLineReference($value)
  * @method mixed getBillingReference()
+ * @method self addBillingReference($value)
  * @method self setBillingReference($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getPricingReference()
  * @method self setPricingReference($value)
  * @method mixed getDelivery()
+ * @method self addDelivery($value)
  * @method self setDelivery($value)
  * @method mixed getTaxTotal()
+ * @method self addTaxTotal($value)
  * @method self setTaxTotal($value)
  * @method mixed getAllowanceCharge()
+ * @method self addAllowanceCharge($value)
  * @method self setAllowanceCharge($value)
  * @method mixed getItem()
  * @method self setItem($value)
  * @method mixed getPrice()
  * @method self setPrice($value)
  * @method mixed getSubDebitNoteLine()
+ * @method self addSubDebitNoteLine($value)
  * @method self setSubDebitNoteLine($value)
  */
 class DebitNoteLineType extends AggregateComponent

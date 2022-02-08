@@ -3,23 +3,26 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EvidenceTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CandidateStatementType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LanguageType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EvidenceTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 
 /**
+ * Class EvidenceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getEvidenceTypeCode()
  * @method self setEvidenceTypeCode($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getCandidateStatement()
+ * @method self addCandidateStatement($value)
  * @method self setCandidateStatement($value)
  * @method mixed getEvidenceIssuingParty()
  * @method self setEvidenceIssuingParty($value)

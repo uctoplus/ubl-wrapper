@@ -3,31 +3,25 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BalanceAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BalanceBroughtForwardIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CreditLineAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DebitLineAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BalanceBroughtForwardIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DebitLineAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CreditLineAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BalanceAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentPurposeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentMeansType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentTermsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CustomerPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SupplierPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\BillingReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ExchangeRateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 
 /**
+ * Class StatementLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getUUID()
  * @method self setUUID($value)
@@ -44,6 +38,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentType;
  * @method mixed getPaymentMeans()
  * @method self setPaymentMeans($value)
  * @method mixed getPaymentTerms()
+ * @method self addPaymentTerms($value)
  * @method self setPaymentTerms($value)
  * @method mixed getBuyerCustomerParty()
  * @method self setBuyerCustomerParty($value)
@@ -58,16 +53,21 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentType;
  * @method mixed getPayeeParty()
  * @method self setPayeeParty($value)
  * @method mixed getInvoicePeriod()
+ * @method self addInvoicePeriod($value)
  * @method self setInvoicePeriod($value)
  * @method mixed getBillingReference()
+ * @method self addBillingReference($value)
  * @method self setBillingReference($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getExchangeRate()
  * @method self setExchangeRate($value)
  * @method mixed getAllowanceCharge()
+ * @method self addAllowanceCharge($value)
  * @method self setAllowanceCharge($value)
  * @method mixed getCollectedPayment()
+ * @method self addCollectedPayment($value)
  * @method self setCollectedPayment($value)
  */
 class StatementLineType extends AggregateComponent

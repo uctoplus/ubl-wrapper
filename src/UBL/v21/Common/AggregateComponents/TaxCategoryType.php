@@ -3,18 +3,21 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BaseUnitMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PercentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BaseUnitMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerUnitAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxExemptionReasonCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxExemptionReasonType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TierRangeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TierRatePercentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxSchemeType;
 
 /**
+ * Class TaxCategoryType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -29,6 +32,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxSchemeType;
  * @method mixed getTaxExemptionReasonCode()
  * @method self setTaxExemptionReasonCode($value)
  * @method mixed getTaxExemptionReason()
+ * @method self addTaxExemptionReason($value)
  * @method self setTaxExemptionReason($value)
  * @method mixed getTierRange()
  * @method self setTierRange($value)

@@ -4,9 +4,12 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RankType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
 
 /**
+ * Class WinningPartyType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getRank()
  * @method self setRank($value)

@@ -3,25 +3,24 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ParticipationPercentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PersonalSituationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OperatingYearsQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EmployeeQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BusinessClassificationEvidenceIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BusinessIdentityEvidenceIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EmployeeQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OperatingYearsQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ParticipationPercentType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PersonalSituationType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TendererRoleCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ClassificationSchemeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CapabilityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CompletedTaskType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeclarationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EconomicOperatorRoleType;
 
 /**
+ * Class QualifyingPartyType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getParticipationPercent()
  * @method self setParticipationPercent($value)
  * @method mixed getPersonalSituation()
+ * @method self addPersonalSituation($value)
  * @method self setPersonalSituation($value)
  * @method mixed getOperatingYearsQuantity()
  * @method self setOperatingYearsQuantity($value)
@@ -36,12 +35,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EconomicOperatorRoleT
  * @method mixed getBusinessClassificationScheme()
  * @method self setBusinessClassificationScheme($value)
  * @method mixed getTechnicalCapability()
+ * @method self addTechnicalCapability($value)
  * @method self setTechnicalCapability($value)
  * @method mixed getFinancialCapability()
+ * @method self addFinancialCapability($value)
  * @method self setFinancialCapability($value)
  * @method mixed getCompletedTask()
+ * @method self addCompletedTask($value)
  * @method self setCompletedTask($value)
  * @method mixed getDeclaration()
+ * @method self addDeclaration($value)
  * @method self setDeclaration($value)
  * @method mixed getParty()
  * @method self setParty($value)

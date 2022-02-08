@@ -3,11 +3,15 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\URIType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PasswordType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LoginType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PasswordType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\URIType;
 
 /**
+ * Class WebSiteAccessType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getURI()
  * @method self setURI($value)

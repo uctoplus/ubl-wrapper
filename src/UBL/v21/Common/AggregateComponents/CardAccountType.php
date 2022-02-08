@@ -3,19 +3,23 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrimaryAccountNumberIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetworkIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CardTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValidityStartDateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExpiryDateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssuerIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueNumberIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CV2IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CardChipCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CardTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChipApplicationIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CV2IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExpiryDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HolderNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueNumberIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssuerIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetworkIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrimaryAccountNumberIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValidityStartDateType;
 
 /**
+ * Class CardAccountType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getPrimaryAccountNumberID()
  * @method self setPrimaryAccountNumberID($value)

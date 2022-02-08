@@ -3,26 +3,31 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TenderEnvelopeIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TenderEnvelopeTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OpenTenderIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ProcurementProjectLotType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TenderRequirementType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TenderEnvelopeIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TenderEnvelopeTypeCodeType;
 
 /**
+ * Class TenderPreparationType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getTenderEnvelopeID()
  * @method self setTenderEnvelopeID($value)
  * @method mixed getTenderEnvelopeTypeCode()
  * @method self setTenderEnvelopeTypeCode($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getOpenTenderID()
  * @method self setOpenTenderID($value)
  * @method mixed getProcurementProjectLot()
+ * @method self addProcurementProjectLot($value)
  * @method self setProcurementProjectLot($value)
  * @method mixed getDocumentTenderRequirement()
+ * @method self addDocumentTenderRequirement($value)
  * @method self setDocumentTenderRequirement($value)
  */
 class TenderPreparationType extends AggregateComponent

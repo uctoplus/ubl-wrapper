@@ -3,20 +3,23 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EvaluationCriterionTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EvaluationCriterionTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExpressionCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExpressionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EvidenceType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdQuantityType;
 
 /**
+ * Class EvaluationCriterionType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getEvaluationCriterionTypeCode()
  * @method self setEvaluationCriterionTypeCode($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getThresholdAmount()
  * @method self setThresholdAmount($value)
@@ -25,10 +28,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EvidenceType;
  * @method mixed getExpressionCode()
  * @method self setExpressionCode($value)
  * @method mixed getExpression()
+ * @method self addExpression($value)
  * @method self setExpression($value)
  * @method mixed getDurationPeriod()
  * @method self setDurationPeriod($value)
  * @method mixed getSuggestedEvidence()
+ * @method self addSuggestedEvidence($value)
  * @method self setSuggestedEvidence($value)
  */
 class EvaluationCriterionType extends AggregateComponent

@@ -3,16 +3,18 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VesselIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VesselNameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RadioCallSignIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShipsRequirementsType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossTonnageMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetTonnageMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RadioCallSignIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShipsRequirementsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VesselIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VesselNameType;
 
 /**
+ * Class MaritimeTransportType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getVesselID()
  * @method self setVesselID($value)
@@ -21,6 +23,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
  * @method mixed getRadioCallSignID()
  * @method self setRadioCallSignID($value)
  * @method mixed getShipsRequirements()
+ * @method self addShipsRequirements($value)
  * @method self setShipsRequirements($value)
  * @method mixed getGrossTonnageMeasure()
  * @method self setGrossTonnageMeasure($value)

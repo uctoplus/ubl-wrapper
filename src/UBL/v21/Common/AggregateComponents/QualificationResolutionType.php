@@ -5,18 +5,23 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AdmissionCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExclusionReasonType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResolutionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResolutionDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResolutionTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ProcurementProjectLotType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResolutionType;
 
 /**
+ * Class QualificationResolutionType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getAdmissionCode()
  * @method self setAdmissionCode($value)
  * @method mixed getExclusionReason()
+ * @method self addExclusionReason($value)
  * @method self setExclusionReason($value)
  * @method mixed getResolution()
+ * @method self addResolution($value)
  * @method self setResolution($value)
  * @method mixed getResolutionDate()
  * @method self setResolutionDate($value)

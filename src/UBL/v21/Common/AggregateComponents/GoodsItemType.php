@@ -3,51 +3,44 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumberIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRiskIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChargeableQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChargeableWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomsImportClassifiedIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomsStatusCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomsTariffQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredCustomsValueAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredForCarriageValueAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredStatisticsValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FreeOnBoardValueAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InsuranceValueAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetNetWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChargeableWeightMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossVolumeMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRiskIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InsuranceValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetNetWeightMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetVolumeMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetWeightMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreferenceCriterionCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequiredCustomsIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomsStatusCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomsTariffQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomsImportClassifiedIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChargeableQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReturnableQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumberIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TraceIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\GoodsItemContainerType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\InvoiceLineType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TemperatureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PickupType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DespatchType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DimensionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PackageType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueAmountType;
 
 /**
+ * Class GoodsItemType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getSequenceNumberID()
  * @method self setSequenceNumberID($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getHazardousRiskIndicator()
  * @method self setHazardousRiskIndicator($value)
@@ -94,16 +87,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType
  * @method mixed getTraceID()
  * @method self setTraceID($value)
  * @method mixed getItem()
+ * @method self addItem($value)
  * @method self setItem($value)
  * @method mixed getGoodsItemContainer()
+ * @method self addGoodsItemContainer($value)
  * @method self setGoodsItemContainer($value)
  * @method mixed getFreightAllowanceCharge()
+ * @method self addFreightAllowanceCharge($value)
  * @method self setFreightAllowanceCharge($value)
  * @method mixed getInvoiceLine()
+ * @method self addInvoiceLine($value)
  * @method self setInvoiceLine($value)
  * @method mixed getTemperature()
+ * @method self addTemperature($value)
  * @method self setTemperature($value)
  * @method mixed getContainedGoodsItem()
+ * @method self addContainedGoodsItem($value)
  * @method self setContainedGoodsItem($value)
  * @method mixed getOriginAddress()
  * @method self setOriginAddress($value)
@@ -114,8 +113,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType
  * @method mixed getDespatch()
  * @method self setDespatch($value)
  * @method mixed getMeasurementDimension()
+ * @method self addMeasurementDimension($value)
  * @method self setMeasurementDimension($value)
  * @method mixed getContainingPackage()
+ * @method self addContainingPackage($value)
  * @method self setContainingPackage($value)
  * @method mixed getShipmentDocumentReference()
  * @method self setShipmentDocumentReference($value)

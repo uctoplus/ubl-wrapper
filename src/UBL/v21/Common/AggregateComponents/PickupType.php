@@ -3,17 +3,19 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ActualPickupDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ActualPickupTimeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EarliestPickupDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EarliestPickupTimeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestPickupDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestPickupTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
 
 /**
+ * Class PickupType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)

@@ -3,29 +3,29 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PlacardNotationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PlacardEndorsementType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AdditionalInformationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UNDGCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EmergencyProceduresCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MedicalFirstAidGuideCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TechnicalNameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CategoryNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EmergencyProceduresCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardClassIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousCategoryCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UpperOrangeHazardPlacardIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LowerOrangeHazardPlacardIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MarkingIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardClassIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MedicalFirstAidGuideCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetVolumeMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PlacardEndorsementType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PlacardNotationType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SecondaryHazardType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\HazardousGoodsTransitType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TemperatureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TechnicalNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UNDGCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UpperOrangeHazardPlacardIDType;
 
 /**
+ * Class HazardousItemType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -34,6 +34,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TemperatureType;
  * @method mixed getPlacardEndorsement()
  * @method self setPlacardEndorsement($value)
  * @method mixed getAdditionalInformation()
+ * @method self addAdditionalInformation($value)
  * @method self setAdditionalInformation($value)
  * @method mixed getUNDGCode()
  * @method self setUNDGCode($value)
@@ -64,14 +65,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TemperatureType;
  * @method mixed getContactParty()
  * @method self setContactParty($value)
  * @method mixed getSecondaryHazard()
+ * @method self addSecondaryHazard($value)
  * @method self setSecondaryHazard($value)
  * @method mixed getHazardousGoodsTransit()
+ * @method self addHazardousGoodsTransit($value)
  * @method self setHazardousGoodsTransit($value)
  * @method mixed getEmergencyTemperature()
  * @method self setEmergencyTemperature($value)
  * @method mixed getFlashpointTemperature()
  * @method self setFlashpointTemperature($value)
  * @method mixed getAdditionalTemperature()
+ * @method self addAdditionalTemperature($value)
  * @method self setAdditionalTemperature($value)
  */
 class HazardousItemType extends AggregateComponent

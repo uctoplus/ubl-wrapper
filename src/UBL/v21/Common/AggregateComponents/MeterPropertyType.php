@@ -3,13 +3,17 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueQualifierType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
 
 /**
+ * Class MeterPropertyType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getName()
  * @method self setName($value)
@@ -20,6 +24,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueQualifierType;
  * @method mixed getValueQuantity()
  * @method self setValueQuantity($value)
  * @method mixed getValueQualifier()
+ * @method self addValueQualifier($value)
  * @method self setValueQualifier($value)
  */
 class MeterPropertyType extends AggregateComponent

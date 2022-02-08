@@ -3,23 +3,27 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AdjustmentReasonCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RevisedForecastLineIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SourceForecastIssueDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SourceForecastIssueTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AdjustmentReasonCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SalesItemType;
 
 /**
+ * Class ForecastRevisionLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getRevisedForecastLineID()
  * @method self setRevisedForecastLineID($value)

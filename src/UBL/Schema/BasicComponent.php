@@ -16,8 +16,11 @@ use Uctoplus\UblWrapper\XML\XMLInterface;
  */
 abstract class BasicComponent implements XMLInterface
 {
+    const XMLNS_URI = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2";
+
     protected $namespace = "cbc";
-    protected $xmlns = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2";
+
+    protected $xmlns_uri = null;
 
     protected $attributeCasts = [];
 
@@ -35,7 +38,7 @@ abstract class BasicComponent implements XMLInterface
             $this->tag = array_pop($tag);
         }
 
-        $this->value = $value;
+        $this->value = trim($value);
         $this->attributes = $attributes;
     }
 
@@ -59,7 +62,10 @@ abstract class BasicComponent implements XMLInterface
 
     public function getXMLNS_URI()
     {
-        return $this->xmlns;
+        if (!empty($this->xmlns_uri))
+            return $this->xmlns_uri;
+
+        return static::XMLNS_URI;
     }
 
     public function getValue()
@@ -75,13 +81,18 @@ abstract class BasicComponent implements XMLInterface
         return null;
     }
 
+    public function __toString()
+    {
+        return (string)$this->value;
+    }
+
     public function toXML()
     {
         $this->xml = new DOMDocument("1.0", "utf-8");
         $this->xml->preserveWhiteSpace = false;
         $this->xml->formatOutput = true;
 
-        $value = $this->castValue();
+        $value = $this->__toString();
 
         $rootElement = $this->xml->createElement($this->getXMLNS() . ":" . $this->getTag(), $value);
         foreach ($this->attributes as $key => $value) {
@@ -92,25 +103,13 @@ abstract class BasicComponent implements XMLInterface
         return $this->xml;
     }
 
-    private function castValue()
-    {
-        switch ($this->type) {
-            case "date":
-                return $this->value->format('Y-m-d');
-            case "datetime":
-                return $this->value->toISOString();
-            default:
-                return $this->value;
-        }
-    }
-
     public function fromXML(DOMNode $node)
     {
         $this->value = $node->nodeValue;
 
         /** @var DOMAttr $attribute */
         foreach ($node->attributes as $attribute) {
-            $this->attributes[$attribute->name] = $attribute->value;
+            $this->attributes[$attribute->name] = trim($attribute->value);
         }
 
         return $this;

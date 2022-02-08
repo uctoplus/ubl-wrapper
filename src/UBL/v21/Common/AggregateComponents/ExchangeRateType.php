@@ -3,17 +3,20 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SourceCurrencyCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SourceCurrencyBaseRateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetCurrencyCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetCurrencyBaseRateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExchangeMarketIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CalculationRateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MathematicOperatorCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ContractType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExchangeMarketIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MathematicOperatorCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SourceCurrencyBaseRateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SourceCurrencyCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetCurrencyBaseRateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetCurrencyCodeType;
 
 /**
+ * Class ExchangeRateType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getSourceCurrencyCode()
  * @method self setSourceCurrencyCode($value)

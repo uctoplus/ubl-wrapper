@@ -5,9 +5,12 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CalculationMethodCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FullnessIndicationCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
 
 /**
+ * Class EmissionCalculationMethodType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getCalculationMethodCode()
  * @method self setCalculationMethodCode($value)

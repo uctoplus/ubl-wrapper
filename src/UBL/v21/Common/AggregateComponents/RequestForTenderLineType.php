@@ -3,28 +3,29 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EstimatedAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxIncludedIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EstimatedAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemLocationQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 
 /**
+ * Class RequestForTenderLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getUUID()
  * @method self setUUID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getQuantity()
  * @method self setQuantity($value)
@@ -41,16 +42,20 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
  * @method mixed getEstimatedAmount()
  * @method self setEstimatedAmount($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getDeliveryPeriod()
+ * @method self addDeliveryPeriod($value)
  * @method self setDeliveryPeriod($value)
  * @method mixed getRequiredItemLocationQuantity()
+ * @method self addRequiredItemLocationQuantity($value)
  * @method self setRequiredItemLocationQuantity($value)
  * @method mixed getWarrantyValidityPeriod()
  * @method self setWarrantyValidityPeriod($value)
  * @method mixed getItem()
  * @method self setItem($value)
  * @method mixed getSubRequestForTenderLine()
+ * @method self addSubRequestForTenderLine($value)
  * @method self setSubRequestForTenderLine($value)
  */
 class RequestForTenderLineType extends AggregateComponent

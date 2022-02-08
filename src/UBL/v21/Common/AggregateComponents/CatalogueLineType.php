@@ -3,32 +3,25 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ActionCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LifeCycleStatusCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ContentUnitQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ContractSubdivisionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LifeCycleStatusCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumOrderQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumOrderQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OrderableIndicatorType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OrderableUnitType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ContentUnitQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OrderQuantityIncrementNumericType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumOrderQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumOrderQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WarrantyInformationType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PackLevelCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CustomerPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SupplierPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemComparisonType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\RelatedItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemLocationQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemPropertyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineReferenceType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WarrantyInformationType;
 
 /**
+ * Class CatalogueLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -39,6 +32,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineReferenceType;
  * @method mixed getContractSubdivision()
  * @method self setContractSubdivision($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getOrderableIndicator()
  * @method self setOrderableIndicator($value)
@@ -53,6 +47,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineReferenceType;
  * @method mixed getMaximumOrderQuantity()
  * @method self setMaximumOrderQuantity($value)
  * @method mixed getWarrantyInformation()
+ * @method self addWarrantyInformation($value)
  * @method self setWarrantyInformation($value)
  * @method mixed getPackLevelCode()
  * @method self setPackLevelCode($value)
@@ -67,26 +62,36 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineReferenceType;
  * @method mixed getLineValidityPeriod()
  * @method self setLineValidityPeriod($value)
  * @method mixed getItemComparison()
+ * @method self addItemComparison($value)
  * @method self setItemComparison($value)
  * @method mixed getComponentRelatedItem()
+ * @method self addComponentRelatedItem($value)
  * @method self setComponentRelatedItem($value)
  * @method mixed getAccessoryRelatedItem()
+ * @method self addAccessoryRelatedItem($value)
  * @method self setAccessoryRelatedItem($value)
  * @method mixed getRequiredRelatedItem()
+ * @method self addRequiredRelatedItem($value)
  * @method self setRequiredRelatedItem($value)
  * @method mixed getReplacementRelatedItem()
+ * @method self addReplacementRelatedItem($value)
  * @method self setReplacementRelatedItem($value)
  * @method mixed getComplementaryRelatedItem()
+ * @method self addComplementaryRelatedItem($value)
  * @method self setComplementaryRelatedItem($value)
  * @method mixed getReplacedRelatedItem()
+ * @method self addReplacedRelatedItem($value)
  * @method self setReplacedRelatedItem($value)
  * @method mixed getRequiredItemLocationQuantity()
+ * @method self addRequiredItemLocationQuantity($value)
  * @method self setRequiredItemLocationQuantity($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getItem()
  * @method self setItem($value)
  * @method mixed getKeywordItemProperty()
+ * @method self addKeywordItemProperty($value)
  * @method self setKeywordItemProperty($value)
  * @method mixed getCallForTendersLineReference()
  * @method self setCallForTendersLineReference($value)

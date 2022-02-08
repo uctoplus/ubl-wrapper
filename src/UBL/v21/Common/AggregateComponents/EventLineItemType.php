@@ -4,17 +4,19 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineNumberNumericType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\RetailPlannedImpactType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
 
 /**
+ * Class EventLineItemType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getLineNumberNumeric()
  * @method self setLineNumberNumeric($value)
  * @method mixed getParticipatingLocationsLocation()
  * @method self setParticipatingLocationsLocation($value)
  * @method mixed getRetailPlannedImpact()
+ * @method self addRetailPlannedImpact($value)
  * @method self setRetailPlannedImpact($value)
  * @method mixed getSupplyItem()
  * @method self setSupplyItem($value)

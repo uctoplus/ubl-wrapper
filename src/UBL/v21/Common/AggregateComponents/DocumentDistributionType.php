@@ -3,11 +3,14 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrintQualifierType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumCopiesNumericType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrintQualifierType;
 
 /**
+ * Class DocumentDistributionType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getPrintQualifier()
  * @method self setPrintQualifier($value)

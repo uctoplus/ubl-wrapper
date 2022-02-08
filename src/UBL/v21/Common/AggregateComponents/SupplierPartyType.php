@@ -3,17 +3,20 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomerAssignedAccountIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AdditionalAccountIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomerAssignedAccountIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DataSendingCapabilityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ContactType;
 
 /**
+ * Class SupplierPartyType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getCustomerAssignedAccountID()
  * @method self setCustomerAssignedAccountID($value)
  * @method mixed getAdditionalAccountID()
+ * @method self addAdditionalAccountID($value)
  * @method self setAdditionalAccountID($value)
  * @method mixed getDataSendingCapability()
  * @method self setDataSendingCapability($value)

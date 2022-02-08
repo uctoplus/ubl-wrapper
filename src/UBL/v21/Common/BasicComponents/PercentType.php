@@ -2,18 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class PercentType
  *
- * @method mixed getPercentType()
- * @method self setPercentType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class PercentType extends BasicComponent
+class PercentType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\PercentType
 {
-    protected $type = "udt:PercentType";
-
-    protected $attributes = [
-        'format' => false,
-    ];
 }

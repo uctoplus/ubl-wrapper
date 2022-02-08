@@ -3,28 +3,28 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TenderResultCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AdvertisementAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AwardDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AwardTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedTenderQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LowerTenderAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HigherTenderAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\StartDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LowerTenderAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedElectronicTenderQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedForeignTenderQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ContractType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TenderedProjectType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SubcontractTermsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\WinningPartyType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedTenderQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\StartDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TenderResultCodeType;
 
 /**
+ * Class TenderResultType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getTenderResultCode()
  * @method self setTenderResultCode($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getAdvertisementAmount()
  * @method self setAdvertisementAmount($value)
@@ -51,8 +51,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\WinningPartyType;
  * @method mixed getContractFormalizationPeriod()
  * @method self setContractFormalizationPeriod($value)
  * @method mixed getSubcontractTerms()
+ * @method self addSubcontractTerms($value)
  * @method self setSubcontractTerms($value)
  * @method mixed getWinningParty()
+ * @method self addWinningParty($value)
  * @method self setWinningParty($value)
  */
 class TenderResultType extends AggregateComponent

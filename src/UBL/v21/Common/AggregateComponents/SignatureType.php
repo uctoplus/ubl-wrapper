@@ -3,22 +3,24 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CanonicalizationMethodType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SignatureMethodType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValidationDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValidationTimeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValidatorIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CanonicalizationMethodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SignatureMethodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AttachmentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
 
 /**
+ * Class SignatureType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getValidationDate()
  * @method self setValidationDate($value)

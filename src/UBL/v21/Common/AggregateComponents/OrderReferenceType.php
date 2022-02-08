@@ -3,17 +3,20 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SalesOrderIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CopyIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomerReferenceType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CustomerReferenceType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OrderTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SalesOrderIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 
 /**
+ * Class OrderReferenceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)

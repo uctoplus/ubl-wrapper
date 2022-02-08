@@ -2,18 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class RateType
  *
- * @method mixed getRateType()
- * @method self setRateType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class RateType extends BasicComponent
+class RateType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\RateType
 {
-    protected $type = "udt:RateType";
-
-    protected $attributes = [
-        'format' => false,
-    ];
 }

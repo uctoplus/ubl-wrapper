@@ -2,23 +2,14 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\BinaryObjectType;
 
 /**
+ * Class EmbeddedDocumentBinaryObjectType
  *
- * @method mixed getBinaryObjectType()
- * @method self setBinaryObjectType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class EmbeddedDocumentBinaryObjectType extends BasicComponent
+class EmbeddedDocumentBinaryObjectType extends BinaryObjectType
 {
-    protected $type = "udt:BinaryObjectType";
-
-    protected $attributes = [
-        'format' => false,
-        'mimeCode' => true,
-        'encodingCode' => false,
-        'characterSetCode' => false,
-        'uri' => false,
-        'filename' => false,
-    ];
 }

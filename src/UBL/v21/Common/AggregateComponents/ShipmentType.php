@@ -3,38 +3,33 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShippingPriorityLevelCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HandlingCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HandlingInstructionsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InformationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetNetWeightMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossVolumeMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetVolumeMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalGoodsItemQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTransportHandlingUnitQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InsuranceValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsignmentQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredCustomsValueAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredForCarriageValueAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeclaredStatisticsValueAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FreeOnBoardValueAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialInstructionsType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeliveryInstructionsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FreeOnBoardValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossVolumeMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GrossWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HandlingCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HandlingInstructionsType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InformationType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InsuranceValueAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetNetWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetVolumeMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NetWeightMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ShippingPriorityLevelCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialInstructionsType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SplitConsignmentIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsignmentQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ConsignmentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\GoodsItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentStageType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportHandlingUnitType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CountryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalGoodsItemQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTransportHandlingUnitQuantityType;
 
 /**
+ * Class ShipmentType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -43,8 +38,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
  * @method mixed getHandlingCode()
  * @method self setHandlingCode($value)
  * @method mixed getHandlingInstructions()
+ * @method self addHandlingInstructions($value)
  * @method self setHandlingInstructions($value)
  * @method mixed getInformation()
+ * @method self addInformation($value)
  * @method self setInformation($value)
  * @method mixed getGrossWeightMeasure()
  * @method self setGrossWeightMeasure($value)
@@ -71,22 +68,28 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
  * @method mixed getFreeOnBoardValueAmount()
  * @method self setFreeOnBoardValueAmount($value)
  * @method mixed getSpecialInstructions()
+ * @method self addSpecialInstructions($value)
  * @method self setSpecialInstructions($value)
  * @method mixed getDeliveryInstructions()
+ * @method self addDeliveryInstructions($value)
  * @method self setDeliveryInstructions($value)
  * @method mixed getSplitConsignmentIndicator()
  * @method self setSplitConsignmentIndicator($value)
  * @method mixed getConsignmentQuantity()
  * @method self setConsignmentQuantity($value)
  * @method mixed getConsignment()
+ * @method self addConsignment($value)
  * @method self setConsignment($value)
  * @method mixed getGoodsItem()
+ * @method self addGoodsItem($value)
  * @method self setGoodsItem($value)
  * @method mixed getShipmentStage()
+ * @method self addShipmentStage($value)
  * @method self setShipmentStage($value)
  * @method mixed getDelivery()
  * @method self setDelivery($value)
  * @method mixed getTransportHandlingUnit()
+ * @method self addTransportHandlingUnit($value)
  * @method self setTransportHandlingUnit($value)
  * @method mixed getReturnAddress()
  * @method self setReturnAddress($value)
@@ -99,6 +102,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
  * @method mixed getExportCountry()
  * @method self setExportCountry($value)
  * @method mixed getFreightAllowanceCharge()
+ * @method self addFreightAllowanceCharge($value)
  * @method self setFreightAllowanceCharge($value)
  */
 class ShipmentType extends AggregateComponent

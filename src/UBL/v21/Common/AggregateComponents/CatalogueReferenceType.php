@@ -3,18 +3,22 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousVersionIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RevisionDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RevisionTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousVersionIDType;
 
 /**
+ * Class CatalogueReferenceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -29,8 +33,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousVersionIDType;
  * @method mixed getRevisionTime()
  * @method self setRevisionTime($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getVersionID()
  * @method self setVersionID($value)

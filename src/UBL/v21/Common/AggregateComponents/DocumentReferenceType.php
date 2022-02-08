@@ -3,25 +3,25 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CopyIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueDateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DocumentDescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DocumentStatusCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DocumentTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DocumentTypeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\XPathType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LanguageIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LocaleCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DocumentStatusCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DocumentDescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AttachmentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ResultOfVerificationType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\XPathType;
 
 /**
+ * Class DocumentReferenceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -38,6 +38,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ResultOfVerificationT
  * @method mixed getDocumentType()
  * @method self setDocumentType($value)
  * @method mixed getXPath()
+ * @method self addXPath($value)
  * @method self setXPath($value)
  * @method mixed getLanguageID()
  * @method self setLanguageID($value)
@@ -48,6 +49,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ResultOfVerificationT
  * @method mixed getDocumentStatusCode()
  * @method self setDocumentStatusCode($value)
  * @method mixed getDocumentDescription()
+ * @method self addDocumentDescription($value)
  * @method self setDocumentDescription($value)
  * @method mixed getAttachment()
  * @method self setAttachment($value)

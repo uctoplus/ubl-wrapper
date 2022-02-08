@@ -5,6 +5,7 @@ namespace Uctoplus\UblWrapper\XML;
 use BadMethodCallException;
 use DOMDocument;
 use DOMNode;
+use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
 use Uctoplus\UblWrapper\XML\Exceptions\XSDElementNotImplementedException;
 use Uctoplus\UblWrapper\XML\Exceptions\XSDMinOccurException;
@@ -205,6 +206,18 @@ abstract class BaseXMLElement
         foreach ($nodes as $node) {
             $rootElement->setAttributeNS('http://www.w3.org/2000/xmlns/', 'xmlns' . (empty($node->getXMLNS()) ? "" : ":" . $node->getXMLNS()), $node->getXMLNS_URI());
             $rootElement->appendChild($this->xml->importNode($node->toXML()->documentElement, TRUE));
+        }
+    }
+
+    protected function guessNamespace($namespaceURI)
+    {
+        switch ($namespaceURI) {
+            case BasicComponent::XMLNS_URI:
+                return "cbc";
+            case AggregateComponent::XMLNS_URI:
+                return "cac";
+            default:
+                return null;
         }
     }
 }

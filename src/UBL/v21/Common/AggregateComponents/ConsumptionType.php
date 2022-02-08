@@ -4,22 +4,22 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UtilityStatementTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AllowanceChargeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxTotalType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EnergyWaterSupplyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TelecommunicationsSupplyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\MonetaryTotalType;
 
 /**
+ * Class ConsumptionType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getUtilityStatementTypeCode()
  * @method self setUtilityStatementTypeCode($value)
  * @method mixed getMainPeriod()
  * @method self setMainPeriod($value)
  * @method mixed getAllowanceCharge()
+ * @method self addAllowanceCharge($value)
  * @method self setAllowanceCharge($value)
  * @method mixed getTaxTotal()
+ * @method self addTaxTotal($value)
  * @method self setTaxTotal($value)
  * @method mixed getEnergyWaterSupply()
  * @method self setEnergyWaterSupply($value)

@@ -7,6 +7,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PartyTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PartyTypeType;
 
 /**
+ * Class ContractingPartyTypeType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getPartyTypeCode()
  * @method self setPartyTypeCode($value)

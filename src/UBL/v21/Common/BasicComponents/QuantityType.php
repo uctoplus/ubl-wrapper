@@ -2,21 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class QuantityType
  *
- * @method mixed getQuantityType()
- * @method self setQuantityType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class QuantityType extends BasicComponent
+class QuantityType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\QuantityType
 {
-    protected $type = "udt:QuantityType";
-
-    protected $attributes = [
-        'unitCode' => false,
-        'unitCodeListID' => false,
-        'unitCodeListAgencyID' => false,
-        'unitCodeListAgencyName' => false,
-    ];
 }

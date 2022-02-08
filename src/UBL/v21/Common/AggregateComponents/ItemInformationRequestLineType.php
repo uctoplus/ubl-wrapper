@@ -3,14 +3,16 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimeFrequencyCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplyChainActivityTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ForecastTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerformanceMetricTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SalesItemType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplyChainActivityTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimeFrequencyCodeType;
 
 /**
+ * Class ItemInformationRequestLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getTimeFrequencyCode()
  * @method self setTimeFrequencyCode($value)
@@ -21,8 +23,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SalesItemType;
  * @method mixed getPerformanceMetricTypeCode()
  * @method self setPerformanceMetricTypeCode($value)
  * @method mixed getPeriod()
+ * @method self addPeriod($value)
  * @method self setPeriod($value)
  * @method mixed getSalesItem()
+ * @method self addSalesItem($value)
  * @method self setSalesItem($value)
  */
 class ItemInformationRequestLineType extends AggregateComponent

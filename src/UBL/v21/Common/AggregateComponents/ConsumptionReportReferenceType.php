@@ -4,12 +4,15 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionReportIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionTypeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ConsumptionTypeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalConsumedQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
 
 /**
+ * Class ConsumptionReportReferenceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getConsumptionReportID()
  * @method self setConsumptionReportID($value)

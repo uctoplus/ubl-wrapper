@@ -3,22 +3,25 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LastRevisionDateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LastRevisionTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AgencyIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AgencyNameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\URIType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SchemeURIType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LanguageIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ClassificationCategoryType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LastRevisionDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LastRevisionTimeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SchemeURIType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\URIType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
 
 /**
+ * Class ClassificationSchemeType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -29,10 +32,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ClassificationCategor
  * @method mixed getLastRevisionTime()
  * @method self setLastRevisionTime($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getName()
  * @method self setName($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getAgencyID()
  * @method self setAgencyID($value)
@@ -47,6 +52,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ClassificationCategor
  * @method mixed getLanguageID()
  * @method self setLanguageID($value)
  * @method mixed getClassificationCategory()
+ * @method self addClassificationCategory($value)
  * @method self setClassificationCategory($value)
  */
 class ClassificationSchemeType extends AggregateComponent

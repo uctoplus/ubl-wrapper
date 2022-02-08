@@ -3,35 +3,36 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AddressTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AddressFormatCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PostboxType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FloorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RoomType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\StreetNameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AdditionalStreetNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AddressFormatCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AddressTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BlockNameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BuildingNameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BuildingNumberType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InhouseMailType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CityNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CitySubdivisionNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CountrySubentityCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CountrySubentityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DepartmentType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DistrictType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FloorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InhouseMailType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MarkAttentionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MarkCareType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PlotIdentificationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CitySubdivisionNameType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CityNameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PostalZoneType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CountrySubentityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CountrySubentityCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PostboxType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DistrictType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RoomType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\StreetNameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimezoneOffsetType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressLineType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CountryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationCoordinateType;
 
 /**
+ * Class AddressType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -82,10 +83,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationCoordinateTyp
  * @method mixed getTimezoneOffset()
  * @method self setTimezoneOffset($value)
  * @method mixed getAddressLine()
+ * @method self addAddressLine($value)
  * @method self setAddressLine($value)
  * @method mixed getCountry()
  * @method self setCountry($value)
  * @method mixed getLocationCoordinate()
+ * @method self addLocationCoordinate($value)
  * @method self setLocationCoordinate($value)
  */
 class AddressType extends AggregateComponent

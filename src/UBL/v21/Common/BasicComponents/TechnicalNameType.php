@@ -2,13 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class TechnicalNameType
  *
- * @method mixed getNameType()
- * @method self setNameType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class TechnicalNameType extends NameType
+class TechnicalNameType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\NameType
 {
 }

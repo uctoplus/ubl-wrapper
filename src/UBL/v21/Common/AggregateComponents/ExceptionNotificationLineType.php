@@ -3,29 +3,31 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CollaborationPriorityCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ComparedValueMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExceptionStatusCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CollaborationPriorityCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResolutionCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ComparedValueMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SourceValueMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VarianceQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplyChainActivityTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerformanceMetricTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ForecastExceptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResolutionCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SourceValueMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplyChainActivityTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VarianceQuantityType;
 
 /**
+ * Class ExceptionNotificationLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getExceptionStatusCode()
  * @method self setExceptionStatusCode($value)
@@ -46,6 +48,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
  * @method mixed getExceptionObservationPeriod()
  * @method self setExceptionObservationPeriod($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getForecastException()
  * @method self setForecastException($value)

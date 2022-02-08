@@ -2,14 +2,14 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\TimeType;
 
 /**
+ * Class NominationTimeType
  *
- * @method mixed getTimeType()
- * @method self setTimeType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class NominationTimeType extends BasicComponent
+class NominationTimeType extends TimeType
 {
-    protected $type = "udt:TimeType";
 }

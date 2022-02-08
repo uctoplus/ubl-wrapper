@@ -3,16 +3,20 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AltitudeMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CoordinateSystemCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatitudeDegreesMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatitudeMinutesMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatitudeDirectionCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatitudeMinutesMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LongitudeDegreesMeasureType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LongitudeMinutesMeasureType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LongitudeDirectionCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AltitudeMeasureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LongitudeMinutesMeasureType;
 
 /**
+ * Class LocationCoordinateType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getCoordinateSystemCode()
  * @method self setCoordinateSystemCode($value)

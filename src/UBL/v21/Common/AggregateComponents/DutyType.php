@@ -5,9 +5,12 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DutyCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxCategoryType;
 
 /**
+ * Class DutyType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getAmount()
  * @method self setAmount($value)

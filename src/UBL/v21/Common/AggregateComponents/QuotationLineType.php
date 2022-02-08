@@ -4,20 +4,22 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTaxAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequestForQuotationLineIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineReferenceType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTaxAmountType;
 
 /**
+ * Class QuotationLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getQuantity()
  * @method self setQuantity($value)
@@ -28,12 +30,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LineReferenceType;
  * @method mixed getRequestForQuotationLineID()
  * @method self setRequestForQuotationLineID($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getLineItem()
  * @method self setLineItem($value)
  * @method mixed getSellerProposedSubstituteLineItem()
+ * @method self addSellerProposedSubstituteLineItem($value)
  * @method self setSellerProposedSubstituteLineItem($value)
  * @method mixed getAlternativeLineItem()
+ * @method self addAlternativeLineItem($value)
  * @method self setAlternativeLineItem($value)
  * @method mixed getRequestLineReference()
  * @method self setRequestLineReference($value)

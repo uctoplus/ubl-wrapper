@@ -3,17 +3,21 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxExclusiveAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxInclusiveAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AllowanceTotalAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChargeTotalAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrepaidAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PayableRoundingAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PayableAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PayableAlternativeAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PayableAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PayableRoundingAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrepaidAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxExclusiveAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxInclusiveAmountType;
 
 /**
+ * Class MonetaryTotalType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getLineExtensionAmount()
  * @method self setLineExtensionAmount($value)

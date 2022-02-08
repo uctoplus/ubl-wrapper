@@ -3,28 +3,29 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineStatusCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeliveredQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BackorderQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BackorderReasonType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DeliveredQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineStatusCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OutstandingQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OutstandingReasonType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OversupplyQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\OrderLineReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 
 /**
+ * Class DespatchLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getUUID()
  * @method self setUUID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getLineStatusCode()
  * @method self setLineStatusCode($value)
@@ -33,20 +34,25 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentType;
  * @method mixed getBackorderQuantity()
  * @method self setBackorderQuantity($value)
  * @method mixed getBackorderReason()
+ * @method self addBackorderReason($value)
  * @method self setBackorderReason($value)
  * @method mixed getOutstandingQuantity()
  * @method self setOutstandingQuantity($value)
  * @method mixed getOutstandingReason()
+ * @method self addOutstandingReason($value)
  * @method self setOutstandingReason($value)
  * @method mixed getOversupplyQuantity()
  * @method self setOversupplyQuantity($value)
  * @method mixed getOrderLineReference()
+ * @method self addOrderLineReference($value)
  * @method self setOrderLineReference($value)
  * @method mixed getDocumentReference()
+ * @method self addDocumentReference($value)
  * @method self setDocumentReference($value)
  * @method mixed getItem()
  * @method self setItem($value)
  * @method mixed getShipment()
+ * @method self addShipment($value)
  * @method self setShipment($value)
  */
 class DespatchLineType extends AggregateComponent

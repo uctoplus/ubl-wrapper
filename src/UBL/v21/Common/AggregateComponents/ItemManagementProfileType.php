@@ -8,13 +8,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumInventoryQuantityT
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MultipleOrderQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OrderIntervalDaysNumericType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReplenishmentOwnerDescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetServicePercentType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetInventoryQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemLocationQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetServicePercentType;
 
 /**
+ * Class ItemManagementProfileType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getFrozenPeriodDaysNumeric()
  * @method self setFrozenPeriodDaysNumeric($value)
@@ -25,6 +26,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemLocationQuantityT
  * @method mixed getOrderIntervalDaysNumeric()
  * @method self setOrderIntervalDaysNumeric($value)
  * @method mixed getReplenishmentOwnerDescription()
+ * @method self addReplenishmentOwnerDescription($value)
  * @method self setReplenishmentOwnerDescription($value)
  * @method mixed getTargetServicePercent()
  * @method self setTargetServicePercent($value)

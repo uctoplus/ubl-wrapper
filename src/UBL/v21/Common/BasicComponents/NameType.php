@@ -2,19 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class NameType
  *
- * @method mixed getNameType()
- * @method self setNameType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class NameType extends BasicComponent
+class NameType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\NameType
 {
-    protected $type = "udt:NameType";
-
-    protected $attributes = [
-        'languageID' => false,
-        'languageLocaleID' => false,
-    ];
 }

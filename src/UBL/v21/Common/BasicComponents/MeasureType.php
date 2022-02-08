@@ -2,19 +2,12 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-
 /**
+ * Class MeasureType
  *
- * @method mixed getMeasureType()
- * @method self setMeasureType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class MeasureType extends BasicComponent
+class MeasureType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\MeasureType
 {
-    protected $type = "udt:MeasureType";
-
-    protected $attributes = [
-        'unitCode' => true,
-        'unitCodeListVersionID' => false,
-    ];
 }

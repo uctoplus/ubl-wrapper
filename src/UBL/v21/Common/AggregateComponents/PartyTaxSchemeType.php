@@ -3,15 +3,17 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationNameType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CompanyIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxLevelCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExemptionReasonCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExemptionReasonType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxSchemeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationNameType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxLevelCodeType;
 
 /**
+ * Class PartyTaxSchemeType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getRegistrationName()
  * @method self setRegistrationName($value)
@@ -22,6 +24,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxSchemeType;
  * @method mixed getExemptionReasonCode()
  * @method self setExemptionReasonCode($value)
  * @method mixed getExemptionReason()
+ * @method self addExemptionReason($value)
  * @method self setExemptionReason($value)
  * @method mixed getRegistrationAddress()
  * @method self setRegistrationAddress($value)

@@ -3,16 +3,20 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ProcurementProjectLotType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\QualifyingPartyType;
 
 /**
+ * Class TendererPartyQualificationType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getInterestedProcurementProjectLot()
+ * @method self addInterestedProcurementProjectLot($value)
  * @method self setInterestedProcurementProjectLot($value)
  * @method mixed getMainQualifyingParty()
  * @method self setMainQualifyingParty($value)
  * @method mixed getAdditionalQualifyingParty()
+ * @method self addAdditionalQualifyingParty($value)
  * @method self setAdditionalQualifyingParty($value)
  */
 class TendererPartyQualificationType extends AggregateComponent

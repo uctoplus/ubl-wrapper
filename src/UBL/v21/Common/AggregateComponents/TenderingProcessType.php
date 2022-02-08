@@ -3,35 +3,34 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OriginalContractingSystemIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NegotiationDescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProcedureCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UrgencyCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExpenseCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PartPresentationCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ContractingSystemCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubmissionMethodCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CandidateReductionConstraintIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ContractingSystemCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExpenseCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GovernmentAgreementConstraintIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ProcessJustificationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EconomicOperatorShortListType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EventType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AuctionTermsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\FrameworkAgreementType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NegotiationDescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OriginalContractingSystemIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PartPresentationCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProcedureCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubmissionMethodCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UrgencyCodeType;
 
 /**
+ * Class TenderingProcessType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getOriginalContractingSystemID()
  * @method self setOriginalContractingSystemID($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getNegotiationDescription()
+ * @method self addNegotiationDescription($value)
  * @method self setNegotiationDescription($value)
  * @method mixed getProcedureCode()
  * @method self setProcedureCode($value)
@@ -58,14 +57,18 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\FrameworkAgreementTyp
  * @method mixed getParticipationRequestReceptionPeriod()
  * @method self setParticipationRequestReceptionPeriod($value)
  * @method mixed getNoticeDocumentReference()
+ * @method self addNoticeDocumentReference($value)
  * @method self setNoticeDocumentReference($value)
  * @method mixed getAdditionalDocumentReference()
+ * @method self addAdditionalDocumentReference($value)
  * @method self setAdditionalDocumentReference($value)
  * @method mixed getProcessJustification()
+ * @method self addProcessJustification($value)
  * @method self setProcessJustification($value)
  * @method mixed getEconomicOperatorShortList()
  * @method self setEconomicOperatorShortList($value)
  * @method mixed getOpenTenderEvent()
+ * @method self addOpenTenderEvent($value)
  * @method self setOpenTenderEvent($value)
  * @method mixed getAuctionTerms()
  * @method self setAuctionTerms($value)

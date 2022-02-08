@@ -3,33 +3,37 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentMeansIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrepaidPaymentReferenceIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReferenceEventCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SettlementDiscountPercentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PenaltySurchargePercentType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentPercentType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SettlementDiscountAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PenaltyAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentTermsDetailsURIType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentDueDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InstallmentDueDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InvoicingPartyReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ExchangeRateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentDueDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentMeansIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentPercentType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentTermsDetailsURIType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PenaltyAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PenaltySurchargePercentType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrepaidPaymentReferenceIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReferenceEventCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SettlementDiscountAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SettlementDiscountPercentType;
 
 /**
+ * Class PaymentTermsType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getPaymentMeansID()
+ * @method self addPaymentMeansID($value)
  * @method self setPaymentMeansID($value)
  * @method mixed getPrepaidPaymentReferenceID()
  * @method self setPrepaidPaymentReferenceID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getReferenceEventCode()
  * @method self setReferenceEventCode($value)

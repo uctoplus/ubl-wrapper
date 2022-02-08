@@ -3,32 +3,39 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AwardingCriterionTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WeightNumericType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WeightType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CalculationExpressionType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CalculationExpressionCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CalculationExpressionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumImprovementBidType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WeightNumericType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WeightType;
 
 /**
+ * Class AwardingCriterionType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getAwardingCriterionTypeCode()
  * @method self setAwardingCriterionTypeCode($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getWeightNumeric()
  * @method self setWeightNumeric($value)
  * @method mixed getWeight()
+ * @method self addWeight($value)
  * @method self setWeight($value)
  * @method mixed getCalculationExpression()
+ * @method self addCalculationExpression($value)
  * @method self setCalculationExpression($value)
  * @method mixed getCalculationExpressionCode()
  * @method self setCalculationExpressionCode($value)
@@ -41,8 +48,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumImprovementBidType
  * @method mixed getMaximumAmount()
  * @method self setMaximumAmount($value)
  * @method mixed getMinimumImprovementBid()
+ * @method self addMinimumImprovementBid($value)
  * @method self setMinimumImprovementBid($value)
  * @method mixed getSubordinateAwardingCriterion()
+ * @method self addSubordinateAwardingCriterion($value)
  * @method self setSubordinateAwardingCriterion($value)
  */
 class AwardingCriterionType extends AggregateComponent

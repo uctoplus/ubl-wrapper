@@ -3,15 +3,17 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReferenceDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReferenceTimeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReliabilityPercentType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportEventType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
 
 /**
+ * Class TransportScheduleType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getSequenceNumeric()
  * @method self setSequenceNumeric($value)
@@ -22,6 +24,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportEventType;
  * @method mixed getReliabilityPercent()
  * @method self setReliabilityPercent($value)
  * @method mixed getRemarks()
+ * @method self addRemarks($value)
  * @method self setRemarks($value)
  * @method mixed getStatusLocation()
  * @method self setStatusLocation($value)

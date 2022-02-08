@@ -2,14 +2,14 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
-use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
+use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\TimeType;
 
 /**
+ * Class OccurrenceTimeType
  *
- * @method mixed getTimeType()
- * @method self setTimeType(string $value)
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class OccurrenceTimeType extends BasicComponent
+class OccurrenceTimeType extends TimeType
 {
-    protected $type = "udt:TimeType";
 }

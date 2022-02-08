@@ -3,17 +3,21 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GuaranteeTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LiabilityAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountRateType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\GuaranteeTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LiabilityAmountType;
 
 /**
+ * Class FinancialGuaranteeType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getGuaranteeTypeCode()
  * @method self setGuaranteeTypeCode($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getLiabilityAmount()
  * @method self setLiabilityAmount($value)

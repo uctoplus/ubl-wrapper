@@ -4,14 +4,15 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AnnualAverageAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTaskAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PartyCapacityAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\EvidenceSuppliedType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CustomerPartyType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PartyCapacityAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTaskAmountType;
 
 /**
+ * Class CompletedTaskType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getAnnualAverageAmount()
  * @method self setAnnualAverageAmount($value)
@@ -20,8 +21,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CustomerPartyType;
  * @method mixed getPartyCapacityAmount()
  * @method self setPartyCapacityAmount($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getEvidenceSupplied()
+ * @method self addEvidenceSupplied($value)
  * @method self setEvidenceSupplied($value)
  * @method mixed getPeriod()
  * @method self setPeriod($value)

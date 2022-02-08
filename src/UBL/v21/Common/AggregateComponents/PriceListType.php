@@ -5,15 +5,19 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\StatusCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
 
 /**
+ * Class PriceListType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getStatusCode()
  * @method self setStatusCode($value)
  * @method mixed getValidityPeriod()
+ * @method self addValidityPeriod($value)
  * @method self setValidityPeriod($value)
  * @method mixed getPreviousPriceList()
  * @method self setPreviousPriceList($value)

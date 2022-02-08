@@ -3,21 +3,23 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubscriberIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubscriberTypeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubscriberTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubscriberTypeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalDeliveredQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\WebSiteAccessType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\MeterType;
 
 /**
+ * Class ConsumptionPointType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getDescription()
+ * @method self addDescription($value)
  * @method self setDescription($value)
  * @method mixed getSubscriberID()
  * @method self setSubscriberID($value)
@@ -32,6 +34,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\MeterType;
  * @method mixed getWebSiteAccess()
  * @method self setWebSiteAccess($value)
  * @method mixed getUtilityMeter()
+ * @method self addUtilityMeter($value)
  * @method self setUtilityMeter($value)
  */
 class ConsumptionPointType extends AggregateComponent

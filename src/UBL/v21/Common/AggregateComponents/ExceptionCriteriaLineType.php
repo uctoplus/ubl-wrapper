@@ -3,24 +3,26 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdValueComparisonCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExceptionStatusCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\CollaborationPriorityCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExceptionResolutionCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplyChainActivityTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ExceptionStatusCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerformanceMetricTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ForecastExceptionCriterionLineType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplyChainActivityTypeCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdValueComparisonCodeType;
 
 /**
+ * Class ExceptionCriteriaLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getThresholdValueComparisonCode()
  * @method self setThresholdValueComparisonCode($value)
@@ -39,6 +41,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ForecastExceptionCrit
  * @method mixed getEffectivePeriod()
  * @method self setEffectivePeriod($value)
  * @method mixed getSupplyItem()
+ * @method self addSupplyItem($value)
  * @method self setSupplyItem($value)
  * @method mixed getForecastExceptionCriterionLine()
  * @method self setForecastExceptionCriterionLine($value)

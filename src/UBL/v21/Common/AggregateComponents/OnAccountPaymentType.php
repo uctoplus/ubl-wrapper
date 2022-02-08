@@ -5,15 +5,20 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EstimatedConsumedQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentTermsType;
 
 /**
+ * Class OnAccountPaymentType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getEstimatedConsumedQuantity()
  * @method self setEstimatedConsumedQuantity($value)
  * @method mixed getNote()
+ * @method self addNote($value)
  * @method self setNote($value)
  * @method mixed getPaymentTerms()
+ * @method self addPaymentTerms($value)
  * @method self setPaymentTerms($value)
  */
 class OnAccountPaymentType extends AggregateComponent

@@ -3,23 +3,24 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChargeIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AllowanceChargeReasonCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AllowanceChargeReasonType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MultiplierFactorNumericType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrepaidIndicatorType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BaseAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AccountingCostCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AccountingCostType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AllowanceChargeReasonCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AllowanceChargeReasonType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BaseAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ChargeIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MultiplierFactorNumericType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerUnitAmountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxCategoryType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TaxTotalType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentMeansType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrepaidIndicatorType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
 
 /**
+ * Class AllowanceChargeType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -28,6 +29,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentMeansType;
  * @method mixed getAllowanceChargeReasonCode()
  * @method self setAllowanceChargeReasonCode($value)
  * @method mixed getAllowanceChargeReason()
+ * @method self addAllowanceChargeReason($value)
  * @method self setAllowanceChargeReason($value)
  * @method mixed getMultiplierFactorNumeric()
  * @method self setMultiplierFactorNumeric($value)
@@ -46,10 +48,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PaymentMeansType;
  * @method mixed getPerUnitAmount()
  * @method self setPerUnitAmount($value)
  * @method mixed getTaxCategory()
+ * @method self addTaxCategory($value)
  * @method self setTaxCategory($value)
  * @method mixed getTaxTotal()
  * @method self setTaxTotal($value)
  * @method mixed getPaymentMeans()
+ * @method self addPaymentMeans($value)
  * @method self setPaymentMeans($value)
  */
 class AllowanceChargeType extends AggregateComponent

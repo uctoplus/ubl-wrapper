@@ -5,11 +5,15 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InformationType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
 
 /**
+ * Class TradingTermsType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getInformation()
+ * @method self addInformation($value)
  * @method self setInformation($value)
  * @method mixed getReference()
  * @method self setReference($value)

@@ -4,11 +4,12 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CustomerPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\SupplierPartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemLocationQuantityType;
 
 /**
+ * Class CataloguePricingUpdateLineType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -17,6 +18,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemLocationQuantityT
  * @method mixed getSellerSupplierParty()
  * @method self setSellerSupplierParty($value)
  * @method mixed getRequiredItemLocationQuantity()
+ * @method self addRequiredItemLocationQuantity($value)
  * @method self setRequiredItemLocationQuantity($value)
  */
 class CataloguePricingUpdateLineType extends AggregateComponent

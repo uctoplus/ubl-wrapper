@@ -7,6 +7,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ActivityTypeCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ActivityTypeType;
 
 /**
+ * Class ContractingActivityType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getActivityTypeCode()
  * @method self setActivityTypeCode($value)

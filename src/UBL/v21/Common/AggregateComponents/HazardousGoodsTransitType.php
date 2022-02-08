@@ -3,14 +3,17 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportEmergencyCardCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PackingCriteriaCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRegulationCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\InhalationToxicityZoneCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PackingCriteriaCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportAuthorizationCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TemperatureType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportEmergencyCardCodeType;
 
 /**
+ * Class HazardousGoodsTransitType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getTransportEmergencyCardCode()
  * @method self setTransportEmergencyCardCode($value)

@@ -3,26 +3,22 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumQuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ActualDeliveryDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ActualDeliveryTimeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestDeliveryDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LatestDeliveryTimeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReleaseIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TrackingIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\AddressType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LocationType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DespatchType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryTermsType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DeliveryUnitType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentType;
 
 /**
+ * Class DeliveryType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -61,10 +57,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ShipmentType;
  * @method mixed getDeliveryParty()
  * @method self setDeliveryParty($value)
  * @method mixed getNotifyParty()
+ * @method self addNotifyParty($value)
  * @method self setNotifyParty($value)
  * @method mixed getDespatch()
  * @method self setDespatch($value)
  * @method mixed getDeliveryTerms()
+ * @method self addDeliveryTerms($value)
  * @method self setDeliveryTerms($value)
  * @method mixed getMinimumDeliveryUnit()
  * @method self setMinimumDeliveryUnit($value)

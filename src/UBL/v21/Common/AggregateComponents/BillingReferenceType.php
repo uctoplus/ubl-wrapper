@@ -3,10 +3,12 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\DocumentReferenceType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\BillingReferenceLineType;
 
 /**
+ * Class BillingReferenceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getInvoiceDocumentReference()
  * @method self setInvoiceDocumentReference($value)
@@ -23,6 +25,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\BillingReferenceLineT
  * @method mixed getAdditionalDocumentReference()
  * @method self setAdditionalDocumentReference($value)
  * @method mixed getBillingReferenceLine()
+ * @method self addBillingReferenceLine($value)
  * @method self setBillingReferenceLine($value)
  */
 class BillingReferenceType extends AggregateComponent

@@ -5,15 +5,15 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MandateTypeCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumPaymentInstructionsNumericType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumPaidAmountType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumPaymentInstructionsNumericType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SignatureIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PartyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\FinancialAccountType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\PeriodType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ClauseType;
 
 /**
+ * Class PaymentMandateType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
@@ -34,6 +34,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ClauseType;
  * @method mixed getPaymentReversalPeriod()
  * @method self setPaymentReversalPeriod($value)
  * @method mixed getClause()
+ * @method self addClause($value)
  * @method self setClause($value)
  */
 class PaymentMandateType extends AggregateComponent

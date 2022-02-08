@@ -5,15 +5,19 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\TransportEquipmentType;
 
 /**
+ * Class GoodsItemContainerType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getID()
  * @method self setID($value)
  * @method mixed getQuantity()
  * @method self setQuantity($value)
  * @method mixed getTransportEquipment()
+ * @method self addTransportEquipment($value)
  * @method self setTransportEquipment($value)
  */
 class GoodsItemContainerType extends AggregateComponent

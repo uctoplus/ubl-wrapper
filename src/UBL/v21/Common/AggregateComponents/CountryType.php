@@ -7,6 +7,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IdentificationCodeType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 
 /**
+ * Class CountryType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getIdentificationCode()
  * @method self setIdentificationCode($value)

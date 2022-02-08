@@ -3,16 +3,18 @@
 namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProductTraceIDType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BestBeforeDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ManufactureDateType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ManufactureTimeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BestBeforeDateType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProductTraceIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RegistrationIDType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SerialIDType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemPropertyType;
-use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LotIdentificationType;
 
 /**
+ * Class ItemInstanceType
+ *
+ * @copyright uctoplus.sk, s.r.o.
+ * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method mixed getProductTraceID()
  * @method self setProductTraceID($value)
@@ -27,6 +29,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\LotIdentificationType
  * @method mixed getSerialID()
  * @method self setSerialID($value)
  * @method mixed getAdditionalItemProperty()
+ * @method self addAdditionalItemProperty($value)
  * @method self setAdditionalItemProperty($value)
  * @method mixed getLotIdentification()
  * @method self setLotIdentification($value)
