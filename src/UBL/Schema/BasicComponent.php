@@ -51,7 +51,9 @@ abstract class BasicComponent implements XMLInterface
             $this->tag = array_pop($tag);
         }
 
-        $this->value = trim($value);
+        if (!empty($value)) {
+            $this->value = trim($value);
+        }
 
         foreach ($attributes as $attribute => $_value) {
             $this->$attribute = $_value;
