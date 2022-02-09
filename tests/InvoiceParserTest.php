@@ -19,6 +19,7 @@ class InvoiceParserTest extends TestCase
 
 //        dump($parser->getDocuments()[0]);
         file_put_contents("generated.xml", $parser->getDocuments()[0]->toXML()->saveXML());
+        $this->assertFileExists("generated.xml");
     }
 
     /**
