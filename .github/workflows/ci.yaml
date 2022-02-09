@@ -20,7 +20,7 @@ jobs:
       - uses: php-actions/composer@v6
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v3
+        uses: php-actions/phpunit@v2
         env:
           XDEBUG_MODE: coverage
           TEST_NAME: Scarlett
