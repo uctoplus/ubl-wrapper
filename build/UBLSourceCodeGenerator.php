@@ -6,6 +6,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
+use Uctoplus\UblWrapper\UBL\Schema\MainDoc;
 
 class UBLSourceCodeGenerator extends Command
 {
@@ -79,6 +80,9 @@ class UBLSourceCodeGenerator extends Command
             $this->generateCacClasses($domDoc, $xpathvar);
         elseif ($this->xsd_Type === BasicComponent::XMLNS_URI)
             $this->generateCbcClasses($domDoc, $xpathvar);
+        else {
+            $this->generateMainDocClasses($domDoc, $xpathvar);
+        }
 
         return Command::SUCCESS;
     }
@@ -135,10 +139,10 @@ class UBLSourceCodeGenerator extends Command
         $forCbcType = false;
 
         switch ($this->xsd_Type) {
-            case "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2":
+            case AggregateComponent::XMLNS_URI:
                 $_schema = Uctoplus\UblWrapper\UBL\Schema\AggregateComponent::class;
                 break;
-            case "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2":
+            case BasicComponent::XMLNS_URI:
                 $forCbcType = true;
                 $_schema = Uctoplus\UblWrapper\UBL\Schema\BasicComponent::class;
                 break;
@@ -176,10 +180,10 @@ class UBLSourceCodeGenerator extends Command
             if (!$forCbcType) {
                 $methods[] = $_type . ' get' . $_subElementName . '()';
                 if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] === 'unbounded') {
-                    $methods[] = 'self add' . $_subElementName . '( ' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
-                    $methods[] = 'self set' . $_subElementName . '( ' . $_type . ' ...$values)';
+                    $methods[] = 'self add' . $_subElementName . '(' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
+                    $methods[] = 'self set' . $_subElementName . '(' . $_type . ' ...$values)';
                 } else {
-                    $methods[] = 'self set' . $_subElementName . '( ' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
+                    $methods[] = 'self set' . $_subElementName . '(' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
                 }
 
                 //..array?
@@ -293,6 +297,13 @@ class UBLSourceCodeGenerator extends Command
             }
         }
 
+        $nameToType = [];
+        /** @var DOMElement $xsdElement */
+        foreach ($xpathvar->query('./xsd:element') as $xsdElement) {
+            $nameToType[$xsdElement->getAttribute('type')][] = $xsdElement->getAttribute('name');
+        }
+        file_put_contents("build/aggregatedComponents.map", json_encode($nameToType));
+
         //generates
         foreach ($complexTypes as $name => $complexType) {
             $this->output->writeln($name, OutputInterface::VERBOSITY_DEBUG);
@@ -306,6 +317,8 @@ class UBLSourceCodeGenerator extends Command
      */
     public function generateCbcClasses(DOMDocument $domDoc, DOMXPath $xpathvar)
     {
+        $complexTypes = [];
+
         /** @var DOMElement $complexType */
         foreach ($xpathvar->query('//xsd:complexType') as $complexType) {
             $name = $complexType->getAttribute('name');
@@ -322,6 +335,163 @@ class UBLSourceCodeGenerator extends Command
         foreach ($complexTypes as $name => $complexType) {
             $this->output->writeln($name, OutputInterface::VERBOSITY_DEBUG);
             $this->_generateClassFile($name, $complexType);
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function generateMainDocClasses(DOMDocument $domDoc, DOMXPath $xpathvar)
+    {
+        $complexTypes = [];
+
+        /** @var DOMElement $complexType */
+        foreach ($xpathvar->query('./xsd:element') as $complexType) {
+            $name = $complexType->getAttribute('name');
+
+            $this->_generateMainDocFile($name, $domDoc, $xpathvar);
+        }
+    }
+
+    private function _generateMainDocFile(string $name, DOMDocument $domDoc, DOMXPath $xpathvar)
+    {
+        $class = 'Uctoplus\UblWrapper\UBL\\' . $this->xsd_Version . '\MainDoc\\' . $name;
+        $_schema = MainDoc::class;
+        $aggregatedMap = json_decode(file_get_contents("build/aggregatedComponents.map"), true);
+
+        $complexType = $xpathvar->query('//xsd:complexType')->item(0);
+
+        $complexTypes = [];
+
+        /** @var DOMElement $xsdElement */
+        foreach ($xpathvar->query('.//xsd:element', $complexType) as $xsdElement) {
+            if ($xsdElement->getAttribute('ref') === "ext:UBLExtensions")
+                continue;
+
+            if ($xsdElement->getAttribute('ref') === "cbc:UBLVersionID")
+                continue;
+
+            $xsdElementData = [
+                'name' => $xsdElement->getAttribute('ref'),
+                'minOccurs' => $xsdElement->getAttribute('minOccurs'),
+                'maxOccurs' => $xsdElement->getAttribute('maxOccurs'),
+            ];
+
+            $complexTypes[] = $xsdElementData;
+        }
+
+        $uses[] = $_schema;
+
+        //process
+        foreach ($complexTypes as $castData) {
+            $_cxcVal = $castData['name'];
+
+            list($_subElementNamespace, $_subElementName) = explode(":", $_cxcVal);
+            $_type = $this->getTypeFromName($_subElementName);
+            $_classData = $this->_getClass($_type, $_subElementNamespace);
+
+            if (!class_exists($_classData)) {
+                foreach ($aggregatedMap as $classFromMap => $alternatives) {
+                    if (in_array($_subElementName, $alternatives)) {
+                        $_type = $classFromMap;
+                        $_classData = $this->_getClass($_type, $_subElementNamespace);
+                    }
+                }
+            }
+
+            $_className = substr($_classData, strrpos($_classData, '\\') + 1);
+
+            $casts[$_cxcVal] = $_className;
+            $casts[$_cxcVal] .= '::class';
+
+
+            //..uses
+            if (!in_array($_classData, $uses) && $_classData != $class)
+                $uses[] = $_classData;
+
+            //methods
+            $methods[] = $_type . ' get' . $_subElementName . '()';
+            if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] === 'unbounded') {
+                $methods[] = 'self add' . $_subElementName . '(' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
+                $methods[] = 'self set' . $_subElementName . '(' . $_type . ' ...$values)';
+            } else {
+                $methods[] = 'self set' . $_subElementName . '(' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
+            }
+
+            //..array?
+            if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] === 'unbounded') {
+                $casts[$_cxcVal] .= ' . "[]"';
+            }
+
+            //..minOccurs
+            if ($castData['minOccurs'] >= 1) {
+                $minOccurs[$_cxcVal] = $castData['minOccurs'];
+            }
+        }
+
+//        dd($uses, $casts, $minOccurs);
+
+        //file generation
+        $content = '<?php' . PHP_EOL . PHP_EOL;
+
+        $_namespace = substr($class, 0, strrpos($class, '\\'));
+        $content .= 'namespace ' . $_namespace . ';' . PHP_EOL . PHP_EOL;
+
+        $content .= 'use Uctoplus\UblWrapper\UBL\\' . $this->xsd_Version . '\Version;' . PHP_EOL;
+
+        //uses
+        foreach ($uses as $use) {
+            $content .= 'use ' . $use . ';' . PHP_EOL;
+        }
+
+        $content .= PHP_EOL . '/**' . PHP_EOL;
+        $content .= ' * Class ' . $name . PHP_EOL;
+        $content .= ' *' . PHP_EOL;
+        $content .= ' * @copyright uctoplus.sk, s.r.o.' . PHP_EOL;
+        $content .= ' * @package ' . $_namespace . PHP_EOL;
+        //methods
+        if (count($methods)) {
+            $content .= ' *' . PHP_EOL;
+
+            foreach ($methods as $method) {
+                $content .= ' * @method ' . $method . PHP_EOL;
+            }
+        }
+        $content .= ' */' . PHP_EOL;
+
+        //class
+        $content .= 'class ' . $name . ' extends \\' . $_schema . PHP_EOL;
+        $content .= '{' . PHP_EOL;
+
+        $content .= '    protected $UBLVersionID = Version::VERSION_CODE;' . PHP_EOL;
+        $content .= '    protected $xmlns = "' . $this->xsd_Type . '";' . PHP_EOL . PHP_EOL;
+
+
+        //casts
+        $content .= '    protected $casts = [' . PHP_EOL;
+        foreach ($casts as $cxcVal => $cast) {
+            $content .= '        "' . $cxcVal . '" => ' . $cast . ',' . PHP_EOL;
+        }
+        $content .= '    ];' . PHP_EOL;
+
+        $content .= PHP_EOL;
+
+        //minOccurs
+        $content .= '    protected $minOccurs = [' . PHP_EOL;
+        foreach ($minOccurs as $cxcVal => $minOccur) {
+            $content .= '        "' . $cxcVal . '" => ' . $minOccur . ',' . PHP_EOL;
+        }
+        $content .= '    ];' . PHP_EOL;
+
+        $content .= '}';
+
+        try {
+            $file_path = str_replace(array('Uctoplus\UblWrapper', '\\'), array('', DIRECTORY_SEPARATOR), $class);
+            $file_path = ltrim($file_path, DIRECTORY_SEPARATOR);
+
+            file_put_contents("src/" . $file_path . ".php", $content);
+        } catch (Throwable $throwable) {
+            dd($throwable);
         }
     }
 }

@@ -34,6 +34,8 @@
     "nesbot/carbon": "^2.0"
   },
   "require-dev": {
+    "ext-simplexml": "*",
+    "ext-json": "*",
     "phpunit/phpunit": "^5",
     "symfony/var-dumper": "^5.4",
     "symfony/console": "^5.4"
