@@ -12,10 +12,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TrainIDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getTrainID()
- * @method self setTrainID($value)
- * @method mixed getRailCarID()
- * @method self setRailCarID($value)
+ * @method TrainIDType getTrainID()
+ * @method self setTrainID(TrainIDType|string $value)
+ * @method RailCarIDType getRailCarID()
+ * @method self setRailCarID(RailCarIDType|string $value)
  */
 class RailTransportType extends AggregateComponent
 {

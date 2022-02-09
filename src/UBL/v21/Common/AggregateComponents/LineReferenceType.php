@@ -13,14 +13,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getLineID()
- * @method self setLineID($value)
- * @method mixed getUUID()
- * @method self setUUID($value)
- * @method mixed getLineStatusCode()
- * @method self setLineStatusCode($value)
- * @method mixed getDocumentReference()
- * @method self setDocumentReference($value)
+ * @method LineIDType getLineID()
+ * @method self setLineID(LineIDType|string $value)
+ * @method UUIDType getUUID()
+ * @method self setUUID(UUIDType|string $value)
+ * @method LineStatusCodeType getLineStatusCode()
+ * @method self setLineStatusCode(LineStatusCodeType|string $value)
+ * @method DocumentReferenceType getDocumentReference()
+ * @method self setDocumentReference(DocumentReferenceType $value)
  */
 class LineReferenceType extends AggregateComponent
 {

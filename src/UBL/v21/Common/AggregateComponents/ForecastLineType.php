@@ -14,19 +14,19 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getNote()
- * @method self addNote($value)
- * @method self setNote($value)
- * @method mixed getFrozenDocumentIndicator()
- * @method self setFrozenDocumentIndicator($value)
- * @method mixed getForecastTypeCode()
- * @method self setForecastTypeCode($value)
- * @method mixed getForecastPeriod()
- * @method self setForecastPeriod($value)
- * @method mixed getSalesItem()
- * @method self setSalesItem($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NoteType getNote()
+ * @method self addNote(NoteType|string $value)
+ * @method self setNote(NoteType ...$values)
+ * @method FrozenDocumentIndicatorType getFrozenDocumentIndicator()
+ * @method self setFrozenDocumentIndicator(FrozenDocumentIndicatorType|string $value)
+ * @method ForecastTypeCodeType getForecastTypeCode()
+ * @method self setForecastTypeCode(ForecastTypeCodeType|string $value)
+ * @method PeriodType getForecastPeriod()
+ * @method self setForecastPeriod(PeriodType $value)
+ * @method SalesItemType getSalesItem()
+ * @method self setSalesItem(SalesItemType $value)
  */
 class ForecastLineType extends AggregateComponent
 {

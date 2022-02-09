@@ -12,12 +12,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getBudgetYearNumeric()
- * @method self setBudgetYearNumeric($value)
- * @method mixed getRequiredClassificationScheme()
- * @method self setRequiredClassificationScheme($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method BudgetYearNumericType getBudgetYearNumeric()
+ * @method self setBudgetYearNumeric(BudgetYearNumericType|string $value)
+ * @method ClassificationSchemeType getRequiredClassificationScheme()
+ * @method self setRequiredClassificationScheme(ClassificationSchemeType $value)
  */
 class BudgetAccountType extends AggregateComponent
 {

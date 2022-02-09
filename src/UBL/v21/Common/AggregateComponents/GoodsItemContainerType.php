@@ -12,13 +12,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getQuantity()
- * @method self setQuantity($value)
- * @method mixed getTransportEquipment()
- * @method self addTransportEquipment($value)
- * @method self setTransportEquipment($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method QuantityType getQuantity()
+ * @method self setQuantity(QuantityType|string $value)
+ * @method TransportEquipmentType getTransportEquipment()
+ * @method self addTransportEquipment(TransportEquipmentType $value)
+ * @method self setTransportEquipment(TransportEquipmentType ...$values)
  */
 class GoodsItemContainerType extends AggregateComponent
 {

@@ -15,16 +15,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SealStatusCodeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getSealIssuerTypeCode()
- * @method self setSealIssuerTypeCode($value)
- * @method mixed getCondition()
- * @method self setCondition($value)
- * @method mixed getSealStatusCode()
- * @method self setSealStatusCode($value)
- * @method mixed getSealingPartyType()
- * @method self setSealingPartyType($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method SealIssuerTypeCodeType getSealIssuerTypeCode()
+ * @method self setSealIssuerTypeCode(SealIssuerTypeCodeType|string $value)
+ * @method ConditionType getCondition()
+ * @method self setCondition(ConditionType|string $value)
+ * @method SealStatusCodeType getSealStatusCode()
+ * @method self setSealStatusCode(SealStatusCodeType|string $value)
+ * @method SealingPartyTypeType getSealingPartyType()
+ * @method self setSealingPartyType(SealingPartyTypeType|string $value)
  */
 class TransportEquipmentSealType extends AggregateComponent
 {

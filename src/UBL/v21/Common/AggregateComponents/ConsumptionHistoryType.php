@@ -16,21 +16,21 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getMeterNumber()
- * @method self setMeterNumber($value)
- * @method mixed getQuantity()
- * @method self setQuantity($value)
- * @method mixed getAmount()
- * @method self setAmount($value)
- * @method mixed getConsumptionLevelCode()
- * @method self setConsumptionLevelCode($value)
- * @method mixed getConsumptionLevel()
- * @method self setConsumptionLevel($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getPeriod()
- * @method self setPeriod($value)
+ * @method MeterNumberType getMeterNumber()
+ * @method self setMeterNumber(MeterNumberType|string $value)
+ * @method QuantityType getQuantity()
+ * @method self setQuantity(QuantityType|string $value)
+ * @method AmountType getAmount()
+ * @method self setAmount(AmountType|string $value)
+ * @method ConsumptionLevelCodeType getConsumptionLevelCode()
+ * @method self setConsumptionLevelCode(ConsumptionLevelCodeType|string $value)
+ * @method ConsumptionLevelType getConsumptionLevel()
+ * @method self setConsumptionLevel(ConsumptionLevelType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method PeriodType getPeriod()
+ * @method self setPeriod(PeriodType $value)
  */
 class ConsumptionHistoryType extends AggregateComponent
 {

@@ -15,17 +15,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getNameCode()
- * @method self setNameCode($value)
- * @method mixed getValue()
- * @method self setValue($value)
- * @method mixed getValueQuantity()
- * @method self setValueQuantity($value)
- * @method mixed getValueQualifier()
- * @method self addValueQualifier($value)
- * @method self setValueQualifier($value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method NameCodeType getNameCode()
+ * @method self setNameCode(NameCodeType|string $value)
+ * @method ValueType getValue()
+ * @method self setValue(ValueType|string $value)
+ * @method ValueQuantityType getValueQuantity()
+ * @method self setValueQuantity(ValueQuantityType|string $value)
+ * @method ValueQualifierType getValueQualifier()
+ * @method self addValueQualifier(ValueQualifierType|string $value)
+ * @method self setValueQualifier(ValueQualifierType ...$values)
  */
 class MeterPropertyType extends AggregateComponent
 {

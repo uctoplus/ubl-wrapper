@@ -11,17 +11,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getPresentationPeriod()
- * @method self setPresentationPeriod($value)
- * @method mixed getAppealInformationParty()
- * @method self setAppealInformationParty($value)
- * @method mixed getAppealReceiverParty()
- * @method self setAppealReceiverParty($value)
- * @method mixed getMediationParty()
- * @method self setMediationParty($value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method PeriodType getPresentationPeriod()
+ * @method self setPresentationPeriod(PeriodType $value)
+ * @method PartyType getAppealInformationParty()
+ * @method self setAppealInformationParty(PartyType $value)
+ * @method PartyType getAppealReceiverParty()
+ * @method self setAppealReceiverParty(PartyType $value)
+ * @method PartyType getMediationParty()
+ * @method self setMediationParty(PartyType $value)
  */
 class AppealTermsType extends AggregateComponent
 {

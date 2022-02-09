@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getImportanceCode()
- * @method self setImportanceCode($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method ImportanceCodeType getImportanceCode()
+ * @method self setImportanceCode(ImportanceCodeType|string $value)
  */
 class ItemPropertyGroupType extends AggregateComponent
 {

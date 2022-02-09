@@ -14,22 +14,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTaskAmountType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAnnualAverageAmount()
- * @method self setAnnualAverageAmount($value)
- * @method mixed getTotalTaskAmount()
- * @method self setTotalTaskAmount($value)
- * @method mixed getPartyCapacityAmount()
- * @method self setPartyCapacityAmount($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getEvidenceSupplied()
- * @method self addEvidenceSupplied($value)
- * @method self setEvidenceSupplied($value)
- * @method mixed getPeriod()
- * @method self setPeriod($value)
- * @method mixed getRecipientCustomerParty()
- * @method self setRecipientCustomerParty($value)
+ * @method AnnualAverageAmountType getAnnualAverageAmount()
+ * @method self setAnnualAverageAmount(AnnualAverageAmountType|string $value)
+ * @method TotalTaskAmountType getTotalTaskAmount()
+ * @method self setTotalTaskAmount(TotalTaskAmountType|string $value)
+ * @method PartyCapacityAmountType getPartyCapacityAmount()
+ * @method self setPartyCapacityAmount(PartyCapacityAmountType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method EvidenceSuppliedType getEvidenceSupplied()
+ * @method self addEvidenceSupplied(EvidenceSuppliedType $value)
+ * @method self setEvidenceSupplied(EvidenceSuppliedType ...$values)
+ * @method PeriodType getPeriod()
+ * @method self setPeriod(PeriodType $value)
+ * @method CustomerPartyType getRecipientCustomerParty()
+ * @method self setRecipientCustomerParty(CustomerPartyType $value)
  */
 class CompletedTaskType extends AggregateComponent
 {

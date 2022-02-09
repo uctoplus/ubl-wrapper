@@ -15,20 +15,20 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportEmergencyCardCod
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getTransportEmergencyCardCode()
- * @method self setTransportEmergencyCardCode($value)
- * @method mixed getPackingCriteriaCode()
- * @method self setPackingCriteriaCode($value)
- * @method mixed getHazardousRegulationCode()
- * @method self setHazardousRegulationCode($value)
- * @method mixed getInhalationToxicityZoneCode()
- * @method self setInhalationToxicityZoneCode($value)
- * @method mixed getTransportAuthorizationCode()
- * @method self setTransportAuthorizationCode($value)
- * @method mixed getMaximumTemperature()
- * @method self setMaximumTemperature($value)
- * @method mixed getMinimumTemperature()
- * @method self setMinimumTemperature($value)
+ * @method TransportEmergencyCardCodeType getTransportEmergencyCardCode()
+ * @method self setTransportEmergencyCardCode(TransportEmergencyCardCodeType|string $value)
+ * @method PackingCriteriaCodeType getPackingCriteriaCode()
+ * @method self setPackingCriteriaCode(PackingCriteriaCodeType|string $value)
+ * @method HazardousRegulationCodeType getHazardousRegulationCode()
+ * @method self setHazardousRegulationCode(HazardousRegulationCodeType|string $value)
+ * @method InhalationToxicityZoneCodeType getInhalationToxicityZoneCode()
+ * @method self setInhalationToxicityZoneCode(InhalationToxicityZoneCodeType|string $value)
+ * @method TransportAuthorizationCodeType getTransportAuthorizationCode()
+ * @method self setTransportAuthorizationCode(TransportAuthorizationCodeType|string $value)
+ * @method TemperatureType getMaximumTemperature()
+ * @method self setMaximumTemperature(TemperatureType $value)
+ * @method TemperatureType getMinimumTemperature()
+ * @method self setMinimumTemperature(TemperatureType $value)
  */
 class HazardousGoodsTransitType extends AggregateComponent
 {

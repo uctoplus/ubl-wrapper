@@ -12,13 +12,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getTemplateDocumentReference()
- * @method self setTemplateDocumentReference($value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method DocumentReferenceType getTemplateDocumentReference()
+ * @method self setTemplateDocumentReference(DocumentReferenceType $value)
  */
 class TenderRequirementType extends AggregateComponent
 {

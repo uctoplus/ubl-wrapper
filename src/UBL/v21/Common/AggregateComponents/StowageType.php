@@ -12,14 +12,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LocationType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getLocationID()
- * @method self setLocationID($value)
- * @method mixed getLocation()
- * @method self addLocation($value)
- * @method self setLocation($value)
- * @method mixed getMeasurementDimension()
- * @method self addMeasurementDimension($value)
- * @method self setMeasurementDimension($value)
+ * @method LocationIDType getLocationID()
+ * @method self setLocationID(LocationIDType|string $value)
+ * @method LocationType getLocation()
+ * @method self addLocation(LocationType|string $value)
+ * @method self setLocation(LocationType ...$values)
+ * @method DimensionType getMeasurementDimension()
+ * @method self addMeasurementDimension(DimensionType $value)
+ * @method self setMeasurementDimension(DimensionType ...$values)
  */
 class StowageType extends AggregateComponent
 {

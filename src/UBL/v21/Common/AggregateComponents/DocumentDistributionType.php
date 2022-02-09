@@ -12,12 +12,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PrintQualifierType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getPrintQualifier()
- * @method self setPrintQualifier($value)
- * @method mixed getMaximumCopiesNumeric()
- * @method self setMaximumCopiesNumeric($value)
- * @method mixed getParty()
- * @method self setParty($value)
+ * @method PrintQualifierType getPrintQualifier()
+ * @method self setPrintQualifier(PrintQualifierType|string $value)
+ * @method MaximumCopiesNumericType getMaximumCopiesNumeric()
+ * @method self setMaximumCopiesNumeric(MaximumCopiesNumericType|string $value)
+ * @method PartyType getParty()
+ * @method self setParty(PartyType $value)
  */
 class DocumentDistributionType extends AggregateComponent
 {

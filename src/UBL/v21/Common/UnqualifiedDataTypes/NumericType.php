@@ -18,7 +18,7 @@ class NumericType extends BasicComponent
 {
     protected $type = "udt:NumericType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'format' => false,
     ];
 }

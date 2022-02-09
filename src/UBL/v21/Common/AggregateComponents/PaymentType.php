@@ -16,18 +16,18 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReceivedDateType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getPaidAmount()
- * @method self setPaidAmount($value)
- * @method mixed getReceivedDate()
- * @method self setReceivedDate($value)
- * @method mixed getPaidDate()
- * @method self setPaidDate($value)
- * @method mixed getPaidTime()
- * @method self setPaidTime($value)
- * @method mixed getInstructionID()
- * @method self setInstructionID($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method PaidAmountType getPaidAmount()
+ * @method self setPaidAmount(PaidAmountType|string $value)
+ * @method ReceivedDateType getReceivedDate()
+ * @method self setReceivedDate(ReceivedDateType|string $value)
+ * @method PaidDateType getPaidDate()
+ * @method self setPaidDate(PaidDateType|string $value)
+ * @method PaidTimeType getPaidTime()
+ * @method self setPaidTime(PaidTimeType|string $value)
+ * @method InstructionIDType getInstructionID()
+ * @method self setInstructionID(InstructionIDType|string $value)
  */
 class PaymentType extends AggregateComponent
 {

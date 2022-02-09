@@ -14,19 +14,19 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PerformanceValueQuantityT
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getNote()
- * @method self addNote($value)
- * @method self setNote($value)
- * @method mixed getPerformanceValueQuantity()
- * @method self setPerformanceValueQuantity($value)
- * @method mixed getPerformanceMetricTypeCode()
- * @method self setPerformanceMetricTypeCode($value)
- * @method mixed getPeriod()
- * @method self setPeriod($value)
- * @method mixed getItem()
- * @method self setItem($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NoteType getNote()
+ * @method self addNote(NoteType|string $value)
+ * @method self setNote(NoteType ...$values)
+ * @method PerformanceValueQuantityType getPerformanceValueQuantity()
+ * @method self setPerformanceValueQuantity(PerformanceValueQuantityType|string $value)
+ * @method PerformanceMetricTypeCodeType getPerformanceMetricTypeCode()
+ * @method self setPerformanceMetricTypeCode(PerformanceMetricTypeCodeType|string $value)
+ * @method PeriodType getPeriod()
+ * @method self setPeriod(PeriodType $value)
+ * @method ItemType getItem()
+ * @method self setItem(ItemType $value)
  */
 class PerformanceDataLineType extends AggregateComponent
 {

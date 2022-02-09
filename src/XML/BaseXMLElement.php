@@ -5,11 +5,12 @@ namespace Uctoplus\UblWrapper\XML;
 use BadMethodCallException;
 use DOMDocument;
 use DOMNode;
+use Uctoplus\UblWrapper\Exceptions\XML\XSDCastNotExistsException;
+use Uctoplus\UblWrapper\Exceptions\XML\XSDElementNotImplementedException;
+use Uctoplus\UblWrapper\Exceptions\XML\XSDMinOccurException;
+use Uctoplus\UblWrapper\Exceptions\XML\XSDValidationException;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
-use Uctoplus\UblWrapper\XML\Exceptions\XSDElementNotImplementedException;
-use Uctoplus\UblWrapper\XML\Exceptions\XSDMinOccurException;
-use Uctoplus\UblWrapper\XML\Exceptions\XSDValidationException;
 
 /**
  * Class BaseXMLElement
@@ -60,11 +61,6 @@ abstract class BaseXMLElement
         }
     }
 
-    public function _magicMethods()
-    {
-        dump(array_keys(static::$magicMethods));
-    }
-
     /**
      * @param $method
      * @param $arguments
@@ -86,7 +82,11 @@ abstract class BaseXMLElement
 
                 $this->$key = array_merge($this->$key, $this->cast($key, $arguments));
             } elseif ($methodType === "set") {
-                $this->$key = $arguments[0];
+                if ($this->isCastArray($key)) {
+                    $this->$key = $arguments;
+                } else {
+                    $this->$key = $arguments[0];
+                }
             }
             return $this;
         }
@@ -103,27 +103,29 @@ abstract class BaseXMLElement
 
     public function __set($name, $value)
     {
-        if (isset($this->casts[$name])) {
-            $is_array = false;
+        if (!isset($this->casts[$name])) {
+            throw new XSDCastNotExistsException($name);
+        }
 
-            $cast = rtrim($this->casts[$name], "[]");
-            if ($cast != $this->casts[$name])
-                $is_array = true;
+        $is_array = false;
 
-            $value = $this->cast($name, $value);
+        $cast = rtrim($this->casts[$name], "[]");
+        if ($cast != $this->casts[$name])
+            $is_array = true;
 
-            if ($is_array) {
-                if (!is_array($value))
-                    throw new XSDValidationException($name, $this->casts[$name]);
+        $value = $this->cast($name, $value);
 
-                foreach ($value as $key => $item) {
-                    if (!$this->validateCast($item, $cast))
-                        throw new XSDValidationException($name . "." . $key, $this->casts[$name]);
-                }
-            } else {
-                if (!$this->validateCast($value, $this->casts[$name])) {
-                    throw new XSDValidationException($name, $this->casts[$name]);
-                }
+        if ($is_array) {
+            if (!is_array($value))
+                throw new XSDValidationException($name, $this->casts[$name]);
+
+            foreach ($value as $key => $item) {
+                if (!$this->validateCast($item, $cast))
+                    throw new XSDValidationException($name . "." . $key, $this->casts[$name]);
+            }
+        } else {
+            if (!$this->validateCast($value, $this->casts[$name])) {
+                throw new XSDValidationException($name, $this->casts[$name]);
             }
         }
 
@@ -181,6 +183,7 @@ abstract class BaseXMLElement
 
     protected function initXML()
     {
+        // Validate required nodes
         foreach ($this->minOccurs as $tag => $minOccur) {
             if (!isset($this->$tag)) {
                 throw new XSDMinOccurException($tag, $minOccur);
@@ -219,5 +222,10 @@ abstract class BaseXMLElement
             default:
                 return null;
         }
+    }
+
+    private function isCastArray($key)
+    {
+        return rtrim($this->casts[$key], "[]") !== $this->casts[$key];
     }
 }

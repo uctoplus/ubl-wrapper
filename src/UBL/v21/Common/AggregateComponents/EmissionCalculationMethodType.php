@@ -12,14 +12,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\FullnessIndicationCodeTyp
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getCalculationMethodCode()
- * @method self setCalculationMethodCode($value)
- * @method mixed getFullnessIndicationCode()
- * @method self setFullnessIndicationCode($value)
- * @method mixed getMeasurementFromLocation()
- * @method self setMeasurementFromLocation($value)
- * @method mixed getMeasurementToLocation()
- * @method self setMeasurementToLocation($value)
+ * @method CalculationMethodCodeType getCalculationMethodCode()
+ * @method self setCalculationMethodCode(CalculationMethodCodeType|string $value)
+ * @method FullnessIndicationCodeType getFullnessIndicationCode()
+ * @method self setFullnessIndicationCode(FullnessIndicationCodeType|string $value)
+ * @method LocationType getMeasurementFromLocation()
+ * @method self setMeasurementFromLocation(LocationType $value)
+ * @method LocationType getMeasurementToLocation()
+ * @method self setMeasurementToLocation(LocationType $value)
  */
 class EmissionCalculationMethodType extends AggregateComponent
 {

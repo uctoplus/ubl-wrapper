@@ -12,10 +12,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumValueType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getMinimumValue()
- * @method self setMinimumValue($value)
- * @method mixed getMaximumValue()
- * @method self setMaximumValue($value)
+ * @method MinimumValueType getMinimumValue()
+ * @method self setMinimumValue(MinimumValueType|string $value)
+ * @method MaximumValueType getMaximumValue()
+ * @method self setMaximumValue(MaximumValueType|string $value)
  */
 class ItemPropertyRangeType extends AggregateComponent
 {

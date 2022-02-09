@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getChannelCode()
- * @method self setChannelCode($value)
- * @method mixed getChannel()
- * @method self setChannel($value)
- * @method mixed getValue()
- * @method self setValue($value)
+ * @method ChannelCodeType getChannelCode()
+ * @method self setChannelCode(ChannelCodeType|string $value)
+ * @method ChannelType getChannel()
+ * @method self setChannel(ChannelType|string $value)
+ * @method ValueType getValue()
+ * @method self setValue(ValueType|string $value)
  */
 class CommunicationType extends AggregateComponent
 {

@@ -11,8 +11,8 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
  */
 class PartyIdentificationType extends AggregateComponent
 {

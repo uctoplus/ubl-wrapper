@@ -11,10 +11,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RankType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getRank()
- * @method self setRank($value)
- * @method mixed getParty()
- * @method self setParty($value)
+ * @method RankType getRank()
+ * @method self setRank(RankType|string $value)
+ * @method PartyType getParty()
+ * @method self setParty(PartyType $value)
  */
 class WinningPartyType extends AggregateComponent
 {

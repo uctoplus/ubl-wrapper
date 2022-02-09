@@ -12,10 +12,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ActivityTypeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getActivityTypeCode()
- * @method self setActivityTypeCode($value)
- * @method mixed getActivityType()
- * @method self setActivityType($value)
+ * @method ActivityTypeCodeType getActivityTypeCode()
+ * @method self setActivityTypeCode(ActivityTypeCodeType|string $value)
+ * @method ActivityTypeType getActivityType()
+ * @method self setActivityType(ActivityTypeType|string $value)
  */
 class ContractingActivityType extends AggregateComponent
 {

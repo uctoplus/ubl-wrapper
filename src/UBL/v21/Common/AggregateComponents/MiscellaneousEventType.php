@@ -11,11 +11,11 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MiscellaneousEventTypeCod
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getMiscellaneousEventTypeCode()
- * @method self setMiscellaneousEventTypeCode($value)
- * @method mixed getEventLineItem()
- * @method self addEventLineItem($value)
- * @method self setEventLineItem($value)
+ * @method MiscellaneousEventTypeCodeType getMiscellaneousEventTypeCode()
+ * @method self setMiscellaneousEventTypeCode(MiscellaneousEventTypeCodeType|string $value)
+ * @method EventLineItemType getEventLineItem()
+ * @method self addEventLineItem(EventLineItemType $value)
+ * @method self setEventLineItem(EventLineItemType ...$values)
  */
 class MiscellaneousEventType extends AggregateComponent
 {

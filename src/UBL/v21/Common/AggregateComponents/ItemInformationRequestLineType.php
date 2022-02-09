@@ -14,20 +14,20 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimeFrequencyCodeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getTimeFrequencyCode()
- * @method self setTimeFrequencyCode($value)
- * @method mixed getSupplyChainActivityTypeCode()
- * @method self setSupplyChainActivityTypeCode($value)
- * @method mixed getForecastTypeCode()
- * @method self setForecastTypeCode($value)
- * @method mixed getPerformanceMetricTypeCode()
- * @method self setPerformanceMetricTypeCode($value)
- * @method mixed getPeriod()
- * @method self addPeriod($value)
- * @method self setPeriod($value)
- * @method mixed getSalesItem()
- * @method self addSalesItem($value)
- * @method self setSalesItem($value)
+ * @method TimeFrequencyCodeType getTimeFrequencyCode()
+ * @method self setTimeFrequencyCode(TimeFrequencyCodeType|string $value)
+ * @method SupplyChainActivityTypeCodeType getSupplyChainActivityTypeCode()
+ * @method self setSupplyChainActivityTypeCode(SupplyChainActivityTypeCodeType|string $value)
+ * @method ForecastTypeCodeType getForecastTypeCode()
+ * @method self setForecastTypeCode(ForecastTypeCodeType|string $value)
+ * @method PerformanceMetricTypeCodeType getPerformanceMetricTypeCode()
+ * @method self setPerformanceMetricTypeCode(PerformanceMetricTypeCodeType|string $value)
+ * @method PeriodType getPeriod()
+ * @method self addPeriod(PeriodType $value)
+ * @method self setPeriod(PeriodType ...$values)
+ * @method SalesItemType getSalesItem()
+ * @method self addSalesItem(SalesItemType $value)
+ * @method self setSalesItem(SalesItemType ...$values)
  */
 class ItemInformationRequestLineType extends AggregateComponent
 {

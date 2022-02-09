@@ -13,13 +13,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getQuantity()
- * @method self setQuantity($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method QuantityType getQuantity()
+ * @method self setQuantity(QuantityType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
  */
 class RelatedItemType extends AggregateComponent
 {

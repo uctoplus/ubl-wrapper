@@ -1,6 +1,6 @@
 <?php
 
-namespace Uctoplus\UblWrapper\XML\Exceptions;
+namespace Uctoplus\UblWrapper\Exceptions\XML;
 
 use Exception;
 

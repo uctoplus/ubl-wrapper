@@ -14,17 +14,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubmissionDateType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getPromotionalEventTypeCode()
- * @method self setPromotionalEventTypeCode($value)
- * @method mixed getSubmissionDate()
- * @method self setSubmissionDate($value)
- * @method mixed getFirstShipmentAvailibilityDate()
- * @method self setFirstShipmentAvailibilityDate($value)
- * @method mixed getLatestProposalAcceptanceDate()
- * @method self setLatestProposalAcceptanceDate($value)
- * @method mixed getPromotionalSpecification()
- * @method self addPromotionalSpecification($value)
- * @method self setPromotionalSpecification($value)
+ * @method PromotionalEventTypeCodeType getPromotionalEventTypeCode()
+ * @method self setPromotionalEventTypeCode(PromotionalEventTypeCodeType|string $value)
+ * @method SubmissionDateType getSubmissionDate()
+ * @method self setSubmissionDate(SubmissionDateType|string $value)
+ * @method FirstShipmentAvailibilityDateType getFirstShipmentAvailibilityDate()
+ * @method self setFirstShipmentAvailibilityDate(FirstShipmentAvailibilityDateType|string $value)
+ * @method LatestProposalAcceptanceDateType getLatestProposalAcceptanceDate()
+ * @method self setLatestProposalAcceptanceDate(LatestProposalAcceptanceDateType|string $value)
+ * @method PromotionalSpecificationType getPromotionalSpecification()
+ * @method self addPromotionalSpecification(PromotionalSpecificationType $value)
+ * @method self setPromotionalSpecification(PromotionalSpecificationType ...$values)
  */
 class PromotionalEventType extends AggregateComponent
 {

@@ -11,11 +11,11 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAmount()
- * @method self setAmount($value)
- * @method mixed getTaxTotal()
- * @method self addTaxTotal($value)
- * @method self setTaxTotal($value)
+ * @method AmountType getAmount()
+ * @method self setAmount(AmountType|string $value)
+ * @method TaxTotalType getTaxTotal()
+ * @method self addTaxTotal(TaxTotalType $value)
+ * @method self setTaxTotal(TaxTotalType ...$values)
  */
 class PriceExtensionType extends AggregateComponent
 {

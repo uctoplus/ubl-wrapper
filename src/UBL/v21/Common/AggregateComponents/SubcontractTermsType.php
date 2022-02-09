@@ -17,21 +17,21 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UnknownPriceIndicatorType
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getRate()
- * @method self setRate($value)
- * @method mixed getUnknownPriceIndicator()
- * @method self setUnknownPriceIndicator($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getAmount()
- * @method self setAmount($value)
- * @method mixed getSubcontractingConditionsCode()
- * @method self setSubcontractingConditionsCode($value)
- * @method mixed getMaximumPercent()
- * @method self setMaximumPercent($value)
- * @method mixed getMinimumPercent()
- * @method self setMinimumPercent($value)
+ * @method RateType getRate()
+ * @method self setRate(RateType|string $value)
+ * @method UnknownPriceIndicatorType getUnknownPriceIndicator()
+ * @method self setUnknownPriceIndicator(UnknownPriceIndicatorType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method AmountType getAmount()
+ * @method self setAmount(AmountType|string $value)
+ * @method SubcontractingConditionsCodeType getSubcontractingConditionsCode()
+ * @method self setSubcontractingConditionsCode(SubcontractingConditionsCodeType|string $value)
+ * @method MaximumPercentType getMaximumPercent()
+ * @method self setMaximumPercent(MaximumPercentType|string $value)
+ * @method MinimumPercentType getMinimumPercent()
+ * @method self setMinimumPercent(MinimumPercentType|string $value)
  */
 class SubcontractTermsType extends AggregateComponent
 {

@@ -12,14 +12,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getEstimatedConsumedQuantity()
- * @method self setEstimatedConsumedQuantity($value)
- * @method mixed getNote()
- * @method self addNote($value)
- * @method self setNote($value)
- * @method mixed getPaymentTerms()
- * @method self addPaymentTerms($value)
- * @method self setPaymentTerms($value)
+ * @method EstimatedConsumedQuantityType getEstimatedConsumedQuantity()
+ * @method self setEstimatedConsumedQuantity(EstimatedConsumedQuantityType|string $value)
+ * @method NoteType getNote()
+ * @method self addNote(NoteType|string $value)
+ * @method self setNote(NoteType ...$values)
+ * @method PaymentTermsType getPaymentTerms()
+ * @method self addPaymentTerms(PaymentTermsType $value)
+ * @method self setPaymentTerms(PaymentTermsType ...$values)
  */
 class OnAccountPaymentType extends AggregateComponent
 {

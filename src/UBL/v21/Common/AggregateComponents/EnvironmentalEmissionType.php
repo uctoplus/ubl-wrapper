@@ -13,16 +13,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueMeasureType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getEnvironmentalEmissionTypeCode()
- * @method self setEnvironmentalEmissionTypeCode($value)
- * @method mixed getValueMeasure()
- * @method self setValueMeasure($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getEmissionCalculationMethod()
- * @method self addEmissionCalculationMethod($value)
- * @method self setEmissionCalculationMethod($value)
+ * @method EnvironmentalEmissionTypeCodeType getEnvironmentalEmissionTypeCode()
+ * @method self setEnvironmentalEmissionTypeCode(EnvironmentalEmissionTypeCodeType|string $value)
+ * @method ValueMeasureType getValueMeasure()
+ * @method self setValueMeasure(ValueMeasureType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method EmissionCalculationMethodType getEmissionCalculationMethod()
+ * @method self addEmissionCalculationMethod(EmissionCalculationMethodType $value)
+ * @method self setEmissionCalculationMethod(EmissionCalculationMethodType ...$values)
  */
 class EnvironmentalEmissionType extends AggregateComponent
 {

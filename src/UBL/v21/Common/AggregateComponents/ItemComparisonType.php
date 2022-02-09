@@ -12,10 +12,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getPriceAmount()
- * @method self setPriceAmount($value)
- * @method mixed getQuantity()
- * @method self setQuantity($value)
+ * @method PriceAmountType getPriceAmount()
+ * @method self setPriceAmount(PriceAmountType|string $value)
+ * @method QuantityType getQuantity()
+ * @method self setQuantity(QuantityType|string $value)
  */
 class ItemComparisonType extends AggregateComponent
 {

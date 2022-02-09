@@ -10,11 +10,11 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getLineReference()
- * @method self setLineReference($value)
- * @method mixed getResponse()
- * @method self addResponse($value)
- * @method self setResponse($value)
+ * @method LineReferenceType getLineReference()
+ * @method self setLineReference(LineReferenceType $value)
+ * @method ResponseType getResponse()
+ * @method self addResponse(ResponseType $value)
+ * @method self setResponse(ResponseType ...$values)
  */
 class LineResponseType extends AggregateComponent
 {

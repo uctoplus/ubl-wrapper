@@ -17,22 +17,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValidatorIDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getValidatorID()
- * @method self setValidatorID($value)
- * @method mixed getValidationResultCode()
- * @method self setValidationResultCode($value)
- * @method mixed getValidationDate()
- * @method self setValidationDate($value)
- * @method mixed getValidationTime()
- * @method self setValidationTime($value)
- * @method mixed getValidateProcess()
- * @method self setValidateProcess($value)
- * @method mixed getValidateTool()
- * @method self setValidateTool($value)
- * @method mixed getValidateToolVersion()
- * @method self setValidateToolVersion($value)
- * @method mixed getSignatoryParty()
- * @method self setSignatoryParty($value)
+ * @method ValidatorIDType getValidatorID()
+ * @method self setValidatorID(ValidatorIDType|string $value)
+ * @method ValidationResultCodeType getValidationResultCode()
+ * @method self setValidationResultCode(ValidationResultCodeType|string $value)
+ * @method ValidationDateType getValidationDate()
+ * @method self setValidationDate(ValidationDateType|string $value)
+ * @method ValidationTimeType getValidationTime()
+ * @method self setValidationTime(ValidationTimeType|string $value)
+ * @method ValidateProcessType getValidateProcess()
+ * @method self setValidateProcess(ValidateProcessType|string $value)
+ * @method ValidateToolType getValidateTool()
+ * @method self setValidateTool(ValidateToolType|string $value)
+ * @method ValidateToolVersionType getValidateToolVersion()
+ * @method self setValidateToolVersion(ValidateToolVersionType|string $value)
+ * @method PartyType getSignatoryParty()
+ * @method self setSignatoryParty(PartyType $value)
  */
 class ResultOfVerificationType extends AggregateComponent
 {

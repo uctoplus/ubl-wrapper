@@ -13,17 +13,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ServiceTypeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getServiceTypeCode()
- * @method self setServiceTypeCode($value)
- * @method mixed getServiceType()
- * @method self addServiceType($value)
- * @method self setServiceType($value)
- * @method mixed getParty()
- * @method self setParty($value)
- * @method mixed getSellerContact()
- * @method self setSellerContact($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method ServiceTypeCodeType getServiceTypeCode()
+ * @method self setServiceTypeCode(ServiceTypeCodeType|string $value)
+ * @method ServiceTypeType getServiceType()
+ * @method self addServiceType(ServiceTypeType|string $value)
+ * @method self setServiceType(ServiceTypeType ...$values)
+ * @method PartyType getParty()
+ * @method self setParty(PartyType $value)
+ * @method ContactType getSellerContact()
+ * @method self setSellerContact(ContactType $value)
  */
 class ServiceProviderPartyType extends AggregateComponent
 {

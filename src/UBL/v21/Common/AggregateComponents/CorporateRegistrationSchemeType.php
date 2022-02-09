@@ -13,15 +13,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getCorporateRegistrationTypeCode()
- * @method self setCorporateRegistrationTypeCode($value)
- * @method mixed getJurisdictionRegionAddress()
- * @method self addJurisdictionRegionAddress($value)
- * @method self setJurisdictionRegionAddress($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method CorporateRegistrationTypeCodeType getCorporateRegistrationTypeCode()
+ * @method self setCorporateRegistrationTypeCode(CorporateRegistrationTypeCodeType|string $value)
+ * @method AddressType getJurisdictionRegionAddress()
+ * @method self addJurisdictionRegionAddress(AddressType $value)
+ * @method self setJurisdictionRegionAddress(AddressType ...$values)
  */
 class CorporateRegistrationSchemeType extends AggregateComponent
 {

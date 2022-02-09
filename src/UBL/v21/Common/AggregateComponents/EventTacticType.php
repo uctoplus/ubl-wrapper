@@ -12,14 +12,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getComment()
- * @method self setComment($value)
- * @method mixed getQuantity()
- * @method self setQuantity($value)
- * @method mixed getEventTacticEnumeration()
- * @method self setEventTacticEnumeration($value)
- * @method mixed getPeriod()
- * @method self setPeriod($value)
+ * @method CommentType getComment()
+ * @method self setComment(CommentType|string $value)
+ * @method QuantityType getQuantity()
+ * @method self setQuantity(QuantityType|string $value)
+ * @method EventTacticEnumerationType getEventTacticEnumeration()
+ * @method self setEventTacticEnumeration(EventTacticEnumerationType $value)
+ * @method PeriodType getPeriod()
+ * @method self setPeriod(PeriodType $value)
  */
 class EventTacticType extends AggregateComponent
 {

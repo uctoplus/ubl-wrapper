@@ -14,14 +14,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NatureCodeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getNatureCode()
- * @method self setNatureCode($value)
- * @method mixed getCargoTypeCode()
- * @method self setCargoTypeCode($value)
- * @method mixed getCommodityCode()
- * @method self setCommodityCode($value)
- * @method mixed getItemClassificationCode()
- * @method self setItemClassificationCode($value)
+ * @method NatureCodeType getNatureCode()
+ * @method self setNatureCode(NatureCodeType|string $value)
+ * @method CargoTypeCodeType getCargoTypeCode()
+ * @method self setCargoTypeCode(CargoTypeCodeType|string $value)
+ * @method CommodityCodeType getCommodityCode()
+ * @method self setCommodityCode(CommodityCodeType|string $value)
+ * @method ItemClassificationCodeType getItemClassificationCode()
+ * @method self setItemClassificationCode(ItemClassificationCodeType|string $value)
  */
 class CommodityClassificationType extends AggregateComponent
 {

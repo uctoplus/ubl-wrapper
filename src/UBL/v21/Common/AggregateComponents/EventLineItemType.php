@@ -11,15 +11,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineNumberNumericType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getLineNumberNumeric()
- * @method self setLineNumberNumeric($value)
- * @method mixed getParticipatingLocationsLocation()
- * @method self setParticipatingLocationsLocation($value)
- * @method mixed getRetailPlannedImpact()
- * @method self addRetailPlannedImpact($value)
- * @method self setRetailPlannedImpact($value)
- * @method mixed getSupplyItem()
- * @method self setSupplyItem($value)
+ * @method LineNumberNumericType getLineNumberNumeric()
+ * @method self setLineNumberNumeric(LineNumberNumericType|string $value)
+ * @method LocationType getParticipatingLocationsLocation()
+ * @method self setParticipatingLocationsLocation(LocationType $value)
+ * @method RetailPlannedImpactType getRetailPlannedImpact()
+ * @method self addRetailPlannedImpact(RetailPlannedImpactType $value)
+ * @method self setRetailPlannedImpact(RetailPlannedImpactType ...$values)
+ * @method ItemType getSupplyItem()
+ * @method self setSupplyItem(ItemType $value)
  */
 class EventLineItemType extends AggregateComponent
 {

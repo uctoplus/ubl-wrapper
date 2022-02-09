@@ -20,7 +20,7 @@ class AmountType extends BasicComponent
 {
     protected $type = "udt:AmountType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'currencyID' => true,
         'currencyCodeListVersionID' => false,
     ];

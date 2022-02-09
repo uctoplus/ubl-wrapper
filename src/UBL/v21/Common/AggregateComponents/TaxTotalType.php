@@ -14,17 +14,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxIncludedIndicatorType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getTaxAmount()
- * @method self setTaxAmount($value)
- * @method mixed getRoundingAmount()
- * @method self setRoundingAmount($value)
- * @method mixed getTaxEvidenceIndicator()
- * @method self setTaxEvidenceIndicator($value)
- * @method mixed getTaxIncludedIndicator()
- * @method self setTaxIncludedIndicator($value)
- * @method mixed getTaxSubtotal()
- * @method self addTaxSubtotal($value)
- * @method self setTaxSubtotal($value)
+ * @method TaxAmountType getTaxAmount()
+ * @method self setTaxAmount(TaxAmountType|string $value)
+ * @method RoundingAmountType getRoundingAmount()
+ * @method self setRoundingAmount(RoundingAmountType|string $value)
+ * @method TaxEvidenceIndicatorType getTaxEvidenceIndicator()
+ * @method self setTaxEvidenceIndicator(TaxEvidenceIndicatorType|string $value)
+ * @method TaxIncludedIndicatorType getTaxIncludedIndicator()
+ * @method self setTaxIncludedIndicator(TaxIncludedIndicatorType|string $value)
+ * @method TaxSubtotalType getTaxSubtotal()
+ * @method self addTaxSubtotal(TaxSubtotalType $value)
+ * @method self setTaxSubtotal(TaxSubtotalType ...$values)
  */
 class TaxTotalType extends AggregateComponent
 {

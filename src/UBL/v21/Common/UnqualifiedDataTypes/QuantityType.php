@@ -24,7 +24,7 @@ class QuantityType extends BasicComponent
 {
     protected $type = "udt:QuantityType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'unitCode' => false,
         'unitCodeListID' => false,
         'unitCodeListAgencyID' => false,

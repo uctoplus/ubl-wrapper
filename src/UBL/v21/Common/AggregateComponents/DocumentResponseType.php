@@ -10,18 +10,18 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getResponse()
- * @method self setResponse($value)
- * @method mixed getDocumentReference()
- * @method self addDocumentReference($value)
- * @method self setDocumentReference($value)
- * @method mixed getIssuerParty()
- * @method self setIssuerParty($value)
- * @method mixed getRecipientParty()
- * @method self setRecipientParty($value)
- * @method mixed getLineResponse()
- * @method self addLineResponse($value)
- * @method self setLineResponse($value)
+ * @method ResponseType getResponse()
+ * @method self setResponse(ResponseType $value)
+ * @method DocumentReferenceType getDocumentReference()
+ * @method self addDocumentReference(DocumentReferenceType $value)
+ * @method self setDocumentReference(DocumentReferenceType ...$values)
+ * @method PartyType getIssuerParty()
+ * @method self setIssuerParty(PartyType $value)
+ * @method PartyType getRecipientParty()
+ * @method self setRecipientParty(PartyType $value)
+ * @method LineResponseType getLineResponse()
+ * @method self addLineResponse(LineResponseType $value)
+ * @method self setLineResponse(LineResponseType ...$values)
  */
 class DocumentResponseType extends AggregateComponent
 {

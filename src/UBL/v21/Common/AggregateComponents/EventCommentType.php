@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getComment()
- * @method self setComment($value)
- * @method mixed getIssueDate()
- * @method self setIssueDate($value)
- * @method mixed getIssueTime()
- * @method self setIssueTime($value)
+ * @method CommentType getComment()
+ * @method self setComment(CommentType|string $value)
+ * @method IssueDateType getIssueDate()
+ * @method self setIssueDate(IssueDateType|string $value)
+ * @method IssueTimeType getIssueTime()
+ * @method self setIssueTime(IssueTimeType|string $value)
  */
 class EventCommentType extends AggregateComponent
 {

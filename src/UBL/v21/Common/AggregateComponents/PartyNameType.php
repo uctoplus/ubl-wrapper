@@ -11,8 +11,8 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getName()
- * @method self setName($value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
  */
 class PartyNameType extends AggregateComponent
 {

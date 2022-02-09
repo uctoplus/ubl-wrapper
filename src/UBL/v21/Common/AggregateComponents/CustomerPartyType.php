@@ -13,21 +13,21 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplierAssignedAccountID
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getCustomerAssignedAccountID()
- * @method self setCustomerAssignedAccountID($value)
- * @method mixed getSupplierAssignedAccountID()
- * @method self setSupplierAssignedAccountID($value)
- * @method mixed getAdditionalAccountID()
- * @method self addAdditionalAccountID($value)
- * @method self setAdditionalAccountID($value)
- * @method mixed getParty()
- * @method self setParty($value)
- * @method mixed getDeliveryContact()
- * @method self setDeliveryContact($value)
- * @method mixed getAccountingContact()
- * @method self setAccountingContact($value)
- * @method mixed getBuyerContact()
- * @method self setBuyerContact($value)
+ * @method CustomerAssignedAccountIDType getCustomerAssignedAccountID()
+ * @method self setCustomerAssignedAccountID(CustomerAssignedAccountIDType|string $value)
+ * @method SupplierAssignedAccountIDType getSupplierAssignedAccountID()
+ * @method self setSupplierAssignedAccountID(SupplierAssignedAccountIDType|string $value)
+ * @method AdditionalAccountIDType getAdditionalAccountID()
+ * @method self addAdditionalAccountID(AdditionalAccountIDType|string $value)
+ * @method self setAdditionalAccountID(AdditionalAccountIDType ...$values)
+ * @method PartyType getParty()
+ * @method self setParty(PartyType $value)
+ * @method ContactType getDeliveryContact()
+ * @method self setDeliveryContact(ContactType $value)
+ * @method ContactType getAccountingContact()
+ * @method self setAccountingContact(ContactType $value)
+ * @method ContactType getBuyerContact()
+ * @method self setBuyerContact(ContactType $value)
  */
 class CustomerPartyType extends AggregateComponent
 {

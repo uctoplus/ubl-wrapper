@@ -13,17 +13,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getNote()
- * @method self addNote($value)
- * @method self setNote($value)
- * @method mixed getQuantity()
- * @method self setQuantity($value)
- * @method mixed getManufacturerParty()
- * @method self setManufacturerParty($value)
- * @method mixed getItem()
- * @method self setItem($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NoteType getNote()
+ * @method self addNote(NoteType|string $value)
+ * @method self setNote(NoteType ...$values)
+ * @method QuantityType getQuantity()
+ * @method self setQuantity(QuantityType|string $value)
+ * @method PartyType getManufacturerParty()
+ * @method self setManufacturerParty(PartyType $value)
+ * @method ItemType getItem()
+ * @method self setItem(ItemType $value)
  */
 class InstructionForReturnsLineType extends AggregateComponent
 {

@@ -16,22 +16,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelephoneType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getTelephone()
- * @method self setTelephone($value)
- * @method mixed getTelefax()
- * @method self setTelefax($value)
- * @method mixed getElectronicMail()
- * @method self setElectronicMail($value)
- * @method mixed getNote()
- * @method self addNote($value)
- * @method self setNote($value)
- * @method mixed getOtherCommunication()
- * @method self addOtherCommunication($value)
- * @method self setOtherCommunication($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method TelephoneType getTelephone()
+ * @method self setTelephone(TelephoneType|string $value)
+ * @method TelefaxType getTelefax()
+ * @method self setTelefax(TelefaxType|string $value)
+ * @method ElectronicMailType getElectronicMail()
+ * @method self setElectronicMail(ElectronicMailType|string $value)
+ * @method NoteType getNote()
+ * @method self addNote(NoteType|string $value)
+ * @method self setNote(NoteType ...$values)
+ * @method CommunicationType getOtherCommunication()
+ * @method self addOtherCommunication(CommunicationType $value)
+ * @method self setOtherCommunication(CommunicationType ...$values)
  */
 class ContactType extends AggregateComponent
 {

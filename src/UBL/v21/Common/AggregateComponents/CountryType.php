@@ -12,10 +12,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getIdentificationCode()
- * @method self setIdentificationCode($value)
- * @method mixed getName()
- * @method self setName($value)
+ * @method IdentificationCodeType getIdentificationCode()
+ * @method self setIdentificationCode(IdentificationCodeType|string $value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
  */
 class CountryType extends AggregateComponent
 {

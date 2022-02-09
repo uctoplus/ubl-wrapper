@@ -33,7 +33,7 @@ class CodeType extends BasicComponent
 {
     protected $type = "udt:CodeType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'listID' => false,
         'listAgencyID' => false,
         'listAgencyName' => false,

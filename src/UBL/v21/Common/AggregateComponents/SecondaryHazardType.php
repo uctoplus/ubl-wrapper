@@ -15,17 +15,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PlacardNotationType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getPlacardNotation()
- * @method self setPlacardNotation($value)
- * @method mixed getPlacardEndorsement()
- * @method self setPlacardEndorsement($value)
- * @method mixed getEmergencyProceduresCode()
- * @method self setEmergencyProceduresCode($value)
- * @method mixed getExtension()
- * @method self addExtension($value)
- * @method self setExtension($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method PlacardNotationType getPlacardNotation()
+ * @method self setPlacardNotation(PlacardNotationType|string $value)
+ * @method PlacardEndorsementType getPlacardEndorsement()
+ * @method self setPlacardEndorsement(PlacardEndorsementType|string $value)
+ * @method EmergencyProceduresCodeType getEmergencyProceduresCode()
+ * @method self setEmergencyProceduresCode(EmergencyProceduresCodeType|string $value)
+ * @method ExtensionType getExtension()
+ * @method self addExtension(ExtensionType|string $value)
+ * @method self setExtension(ExtensionType ...$values)
  */
 class SecondaryHazardType extends AggregateComponent
 {

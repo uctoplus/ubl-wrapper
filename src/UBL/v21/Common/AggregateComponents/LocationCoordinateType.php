@@ -18,22 +18,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LongitudeMinutesMeasureTy
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getCoordinateSystemCode()
- * @method self setCoordinateSystemCode($value)
- * @method mixed getLatitudeDegreesMeasure()
- * @method self setLatitudeDegreesMeasure($value)
- * @method mixed getLatitudeMinutesMeasure()
- * @method self setLatitudeMinutesMeasure($value)
- * @method mixed getLatitudeDirectionCode()
- * @method self setLatitudeDirectionCode($value)
- * @method mixed getLongitudeDegreesMeasure()
- * @method self setLongitudeDegreesMeasure($value)
- * @method mixed getLongitudeMinutesMeasure()
- * @method self setLongitudeMinutesMeasure($value)
- * @method mixed getLongitudeDirectionCode()
- * @method self setLongitudeDirectionCode($value)
- * @method mixed getAltitudeMeasure()
- * @method self setAltitudeMeasure($value)
+ * @method CoordinateSystemCodeType getCoordinateSystemCode()
+ * @method self setCoordinateSystemCode(CoordinateSystemCodeType|string $value)
+ * @method LatitudeDegreesMeasureType getLatitudeDegreesMeasure()
+ * @method self setLatitudeDegreesMeasure(LatitudeDegreesMeasureType|string $value)
+ * @method LatitudeMinutesMeasureType getLatitudeMinutesMeasure()
+ * @method self setLatitudeMinutesMeasure(LatitudeMinutesMeasureType|string $value)
+ * @method LatitudeDirectionCodeType getLatitudeDirectionCode()
+ * @method self setLatitudeDirectionCode(LatitudeDirectionCodeType|string $value)
+ * @method LongitudeDegreesMeasureType getLongitudeDegreesMeasure()
+ * @method self setLongitudeDegreesMeasure(LongitudeDegreesMeasureType|string $value)
+ * @method LongitudeMinutesMeasureType getLongitudeMinutesMeasure()
+ * @method self setLongitudeMinutesMeasure(LongitudeMinutesMeasureType|string $value)
+ * @method LongitudeDirectionCodeType getLongitudeDirectionCode()
+ * @method self setLongitudeDirectionCode(LongitudeDirectionCodeType|string $value)
+ * @method AltitudeMeasureType getAltitudeMeasure()
+ * @method self setAltitudeMeasure(AltitudeMeasureType|string $value)
  */
 class LocationCoordinateType extends AggregateComponent
 {

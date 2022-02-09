@@ -15,16 +15,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimeDeltaDaysQuantityType
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getForecastPurposeCode()
- * @method self setForecastPurposeCode($value)
- * @method mixed getForecastTypeCode()
- * @method self setForecastTypeCode($value)
- * @method mixed getComparisonDataSourceCode()
- * @method self setComparisonDataSourceCode($value)
- * @method mixed getDataSourceCode()
- * @method self setDataSourceCode($value)
- * @method mixed getTimeDeltaDaysQuantity()
- * @method self setTimeDeltaDaysQuantity($value)
+ * @method ForecastPurposeCodeType getForecastPurposeCode()
+ * @method self setForecastPurposeCode(ForecastPurposeCodeType|string $value)
+ * @method ForecastTypeCodeType getForecastTypeCode()
+ * @method self setForecastTypeCode(ForecastTypeCodeType|string $value)
+ * @method ComparisonDataSourceCodeType getComparisonDataSourceCode()
+ * @method self setComparisonDataSourceCode(ComparisonDataSourceCodeType|string $value)
+ * @method DataSourceCodeType getDataSourceCode()
+ * @method self setDataSourceCode(DataSourceCodeType|string $value)
+ * @method TimeDeltaDaysQuantityType getTimeDeltaDaysQuantity()
+ * @method self setTimeDeltaDaysQuantity(TimeDeltaDaysQuantityType|string $value)
  */
 class ForecastExceptionCriterionLineType extends AggregateComponent
 {

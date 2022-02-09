@@ -14,16 +14,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProcessReasonType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getPreviousCancellationReasonCode()
- * @method self setPreviousCancellationReasonCode($value)
- * @method mixed getProcessReasonCode()
- * @method self setProcessReasonCode($value)
- * @method mixed getProcessReason()
- * @method self addProcessReason($value)
- * @method self setProcessReason($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
+ * @method PreviousCancellationReasonCodeType getPreviousCancellationReasonCode()
+ * @method self setPreviousCancellationReasonCode(PreviousCancellationReasonCodeType|string $value)
+ * @method ProcessReasonCodeType getProcessReasonCode()
+ * @method self setProcessReasonCode(ProcessReasonCodeType|string $value)
+ * @method ProcessReasonType getProcessReason()
+ * @method self addProcessReason(ProcessReasonType|string $value)
+ * @method self setProcessReason(ProcessReasonType ...$values)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
  */
 class ProcessJustificationType extends AggregateComponent
 {

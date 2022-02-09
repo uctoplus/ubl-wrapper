@@ -10,11 +10,11 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getOriginalItemLocationQuantity()
- * @method self setOriginalItemLocationQuantity($value)
- * @method mixed getAlternativeConditionPrice()
- * @method self addAlternativeConditionPrice($value)
- * @method self setAlternativeConditionPrice($value)
+ * @method ItemLocationQuantityType getOriginalItemLocationQuantity()
+ * @method self setOriginalItemLocationQuantity(ItemLocationQuantityType $value)
+ * @method PriceType getAlternativeConditionPrice()
+ * @method self addAlternativeConditionPrice(PriceType $value)
+ * @method self setAlternativeConditionPrice(PriceType ...$values)
  */
 class PricingReferenceType extends AggregateComponent
 {

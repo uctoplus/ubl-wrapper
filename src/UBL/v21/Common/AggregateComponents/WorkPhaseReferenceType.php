@@ -16,22 +16,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WorkPhaseType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getWorkPhaseCode()
- * @method self setWorkPhaseCode($value)
- * @method mixed getWorkPhase()
- * @method self addWorkPhase($value)
- * @method self setWorkPhase($value)
- * @method mixed getProgressPercent()
- * @method self setProgressPercent($value)
- * @method mixed getStartDate()
- * @method self setStartDate($value)
- * @method mixed getEndDate()
- * @method self setEndDate($value)
- * @method mixed getWorkOrderDocumentReference()
- * @method self addWorkOrderDocumentReference($value)
- * @method self setWorkOrderDocumentReference($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method WorkPhaseCodeType getWorkPhaseCode()
+ * @method self setWorkPhaseCode(WorkPhaseCodeType|string $value)
+ * @method WorkPhaseType getWorkPhase()
+ * @method self addWorkPhase(WorkPhaseType|string $value)
+ * @method self setWorkPhase(WorkPhaseType ...$values)
+ * @method ProgressPercentType getProgressPercent()
+ * @method self setProgressPercent(ProgressPercentType|string $value)
+ * @method StartDateType getStartDate()
+ * @method self setStartDate(StartDateType|string $value)
+ * @method EndDateType getEndDate()
+ * @method self setEndDate(EndDateType|string $value)
+ * @method DocumentReferenceType getWorkOrderDocumentReference()
+ * @method self addWorkOrderDocumentReference(DocumentReferenceType $value)
+ * @method self setWorkOrderDocumentReference(DocumentReferenceType ...$values)
  */
 class WorkPhaseReferenceType extends AggregateComponent
 {

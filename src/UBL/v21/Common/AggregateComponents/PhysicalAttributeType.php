@@ -14,15 +14,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PositionCodeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAttributeID()
- * @method self setAttributeID($value)
- * @method mixed getPositionCode()
- * @method self setPositionCode($value)
- * @method mixed getDescriptionCode()
- * @method self setDescriptionCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
+ * @method AttributeIDType getAttributeID()
+ * @method self setAttributeID(AttributeIDType|string $value)
+ * @method PositionCodeType getPositionCode()
+ * @method self setPositionCode(PositionCodeType|string $value)
+ * @method DescriptionCodeType getDescriptionCode()
+ * @method self setDescriptionCode(DescriptionCodeType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
  */
 class PhysicalAttributeType extends AggregateComponent
 {

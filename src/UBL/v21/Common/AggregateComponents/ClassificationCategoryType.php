@@ -13,16 +13,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getCodeValue()
- * @method self setCodeValue($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getCategorizesClassificationCategory()
- * @method self addCategorizesClassificationCategory($value)
- * @method self setCategorizesClassificationCategory($value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method CodeValueType getCodeValue()
+ * @method self setCodeValue(CodeValueType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method ClassificationCategoryType getCategorizesClassificationCategory()
+ * @method self addCategorizesClassificationCategory(ClassificationCategoryType $value)
+ * @method self setCategorizesClassificationCategory(ClassificationCategoryType ...$values)
  */
 class ClassificationCategoryType extends AggregateComponent
 {

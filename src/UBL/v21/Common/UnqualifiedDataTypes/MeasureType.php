@@ -20,7 +20,7 @@ class MeasureType extends BasicComponent
 {
     protected $type = "udt:MeasureType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'unitCode' => true,
         'unitCodeListVersionID' => false,
     ];

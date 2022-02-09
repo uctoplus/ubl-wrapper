@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getLocaleCode()
- * @method self setLocaleCode($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method LocaleCodeType getLocaleCode()
+ * @method self setLocaleCode(LocaleCodeType|string $value)
  */
 class LanguageType extends AggregateComponent
 {

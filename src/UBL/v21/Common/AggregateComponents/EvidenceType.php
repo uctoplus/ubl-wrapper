@@ -14,22 +14,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getEvidenceTypeCode()
- * @method self setEvidenceTypeCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getCandidateStatement()
- * @method self addCandidateStatement($value)
- * @method self setCandidateStatement($value)
- * @method mixed getEvidenceIssuingParty()
- * @method self setEvidenceIssuingParty($value)
- * @method mixed getDocumentReference()
- * @method self setDocumentReference($value)
- * @method mixed getLanguage()
- * @method self setLanguage($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method EvidenceTypeCodeType getEvidenceTypeCode()
+ * @method self setEvidenceTypeCode(EvidenceTypeCodeType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method CandidateStatementType getCandidateStatement()
+ * @method self addCandidateStatement(CandidateStatementType|string $value)
+ * @method self setCandidateStatement(CandidateStatementType ...$values)
+ * @method PartyType getEvidenceIssuingParty()
+ * @method self setEvidenceIssuingParty(PartyType $value)
+ * @method DocumentReferenceType getDocumentReference()
+ * @method self setDocumentReference(DocumentReferenceType $value)
+ * @method LanguageType getLanguage()
+ * @method self setLanguage(LanguageType $value)
  */
 class EvidenceType extends AggregateComponent
 {

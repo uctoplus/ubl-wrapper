@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OntologyURIType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getLegalReference()
- * @method self setLegalReference($value)
- * @method mixed getOntologyURI()
- * @method self setOntologyURI($value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method LegalReferenceType getLegalReference()
+ * @method self setLegalReference(LegalReferenceType|string $value)
+ * @method OntologyURIType getOntologyURI()
+ * @method self setOntologyURI(OntologyURIType|string $value)
  */
 class RegulationType extends AggregateComponent
 {

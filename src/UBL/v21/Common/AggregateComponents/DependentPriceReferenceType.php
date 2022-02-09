@@ -11,12 +11,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PercentType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getPercent()
- * @method self setPercent($value)
- * @method mixed getLocationAddress()
- * @method self setLocationAddress($value)
- * @method mixed getDependentLineReference()
- * @method self setDependentLineReference($value)
+ * @method PercentType getPercent()
+ * @method self setPercent(PercentType|string $value)
+ * @method AddressType getLocationAddress()
+ * @method self setLocationAddress(AddressType $value)
+ * @method LineReferenceType getDependentLineReference()
+ * @method self setDependentLineReference(LineReferenceType $value)
  */
 class DependentPriceReferenceType extends AggregateComponent
 {

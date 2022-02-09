@@ -12,14 +12,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getFinancialInstitution()
- * @method self setFinancialInstitution($value)
- * @method mixed getAddress()
- * @method self setAddress($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method FinancialInstitutionType getFinancialInstitution()
+ * @method self setFinancialInstitution(FinancialInstitutionType $value)
+ * @method AddressType getAddress()
+ * @method self setAddress(AddressType $value)
  */
 class BranchType extends AggregateComponent
 {

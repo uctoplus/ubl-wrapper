@@ -18,22 +18,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getForecastPurposeCode()
- * @method self setForecastPurposeCode($value)
- * @method mixed getForecastTypeCode()
- * @method self setForecastTypeCode($value)
- * @method mixed getIssueDate()
- * @method self setIssueDate($value)
- * @method mixed getIssueTime()
- * @method self setIssueTime($value)
- * @method mixed getDataSourceCode()
- * @method self setDataSourceCode($value)
- * @method mixed getComparisonDataCode()
- * @method self setComparisonDataCode($value)
- * @method mixed getComparisonForecastIssueTime()
- * @method self setComparisonForecastIssueTime($value)
- * @method mixed getComparisonForecastIssueDate()
- * @method self setComparisonForecastIssueDate($value)
+ * @method ForecastPurposeCodeType getForecastPurposeCode()
+ * @method self setForecastPurposeCode(ForecastPurposeCodeType|string $value)
+ * @method ForecastTypeCodeType getForecastTypeCode()
+ * @method self setForecastTypeCode(ForecastTypeCodeType|string $value)
+ * @method IssueDateType getIssueDate()
+ * @method self setIssueDate(IssueDateType|string $value)
+ * @method IssueTimeType getIssueTime()
+ * @method self setIssueTime(IssueTimeType|string $value)
+ * @method DataSourceCodeType getDataSourceCode()
+ * @method self setDataSourceCode(DataSourceCodeType|string $value)
+ * @method ComparisonDataCodeType getComparisonDataCode()
+ * @method self setComparisonDataCode(ComparisonDataCodeType|string $value)
+ * @method ComparisonForecastIssueTimeType getComparisonForecastIssueTime()
+ * @method self setComparisonForecastIssueTime(ComparisonForecastIssueTimeType|string $value)
+ * @method ComparisonForecastIssueDateType getComparisonForecastIssueDate()
+ * @method self setComparisonForecastIssueDate(ComparisonForecastIssueDateType|string $value)
  */
 class ForecastExceptionType extends AggregateComponent
 {

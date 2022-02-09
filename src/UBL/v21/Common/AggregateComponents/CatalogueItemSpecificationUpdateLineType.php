@@ -11,14 +11,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getContractorCustomerParty()
- * @method self setContractorCustomerParty($value)
- * @method mixed getSellerSupplierParty()
- * @method self setSellerSupplierParty($value)
- * @method mixed getItem()
- * @method self setItem($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method CustomerPartyType getContractorCustomerParty()
+ * @method self setContractorCustomerParty(CustomerPartyType $value)
+ * @method SupplierPartyType getSellerSupplierParty()
+ * @method self setSellerSupplierParty(SupplierPartyType $value)
+ * @method ItemType getItem()
+ * @method self setItem(ItemType $value)
  */
 class CatalogueItemSpecificationUpdateLineType extends AggregateComponent
 {

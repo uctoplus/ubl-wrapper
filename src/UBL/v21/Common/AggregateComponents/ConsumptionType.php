@@ -11,22 +11,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UtilityStatementTypeCodeT
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getUtilityStatementTypeCode()
- * @method self setUtilityStatementTypeCode($value)
- * @method mixed getMainPeriod()
- * @method self setMainPeriod($value)
- * @method mixed getAllowanceCharge()
- * @method self addAllowanceCharge($value)
- * @method self setAllowanceCharge($value)
- * @method mixed getTaxTotal()
- * @method self addTaxTotal($value)
- * @method self setTaxTotal($value)
- * @method mixed getEnergyWaterSupply()
- * @method self setEnergyWaterSupply($value)
- * @method mixed getTelecommunicationsSupply()
- * @method self setTelecommunicationsSupply($value)
- * @method mixed getLegalMonetaryTotal()
- * @method self setLegalMonetaryTotal($value)
+ * @method UtilityStatementTypeCodeType getUtilityStatementTypeCode()
+ * @method self setUtilityStatementTypeCode(UtilityStatementTypeCodeType|string $value)
+ * @method PeriodType getMainPeriod()
+ * @method self setMainPeriod(PeriodType $value)
+ * @method AllowanceChargeType getAllowanceCharge()
+ * @method self addAllowanceCharge(AllowanceChargeType $value)
+ * @method self setAllowanceCharge(AllowanceChargeType ...$values)
+ * @method TaxTotalType getTaxTotal()
+ * @method self addTaxTotal(TaxTotalType $value)
+ * @method self setTaxTotal(TaxTotalType ...$values)
+ * @method EnergyWaterSupplyType getEnergyWaterSupply()
+ * @method self setEnergyWaterSupply(EnergyWaterSupplyType $value)
+ * @method TelecommunicationsSupplyType getTelecommunicationsSupply()
+ * @method self setTelecommunicationsSupply(TelecommunicationsSupplyType $value)
+ * @method MonetaryTotalType getLegalMonetaryTotal()
+ * @method self setLegalMonetaryTotal(MonetaryTotalType $value)
  */
 class ConsumptionType extends AggregateComponent
 {

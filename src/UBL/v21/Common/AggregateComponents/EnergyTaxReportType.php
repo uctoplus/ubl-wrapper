@@ -13,14 +13,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxEnergyOnAccountAmountT
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getTaxEnergyAmount()
- * @method self setTaxEnergyAmount($value)
- * @method mixed getTaxEnergyOnAccountAmount()
- * @method self setTaxEnergyOnAccountAmount($value)
- * @method mixed getTaxEnergyBalanceAmount()
- * @method self setTaxEnergyBalanceAmount($value)
- * @method mixed getTaxScheme()
- * @method self setTaxScheme($value)
+ * @method TaxEnergyAmountType getTaxEnergyAmount()
+ * @method self setTaxEnergyAmount(TaxEnergyAmountType|string $value)
+ * @method TaxEnergyOnAccountAmountType getTaxEnergyOnAccountAmount()
+ * @method self setTaxEnergyOnAccountAmount(TaxEnergyOnAccountAmountType|string $value)
+ * @method TaxEnergyBalanceAmountType getTaxEnergyBalanceAmount()
+ * @method self setTaxEnergyBalanceAmount(TaxEnergyBalanceAmountType|string $value)
+ * @method TaxSchemeType getTaxScheme()
+ * @method self setTaxScheme(TaxSchemeType $value)
  */
 class EnergyTaxReportType extends AggregateComponent
 {

@@ -12,13 +12,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReferenceType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getInformation()
- * @method self addInformation($value)
- * @method self setInformation($value)
- * @method mixed getReference()
- * @method self setReference($value)
- * @method mixed getApplicableAddress()
- * @method self setApplicableAddress($value)
+ * @method InformationType getInformation()
+ * @method self addInformation(InformationType|string $value)
+ * @method self setInformation(InformationType ...$values)
+ * @method ReferenceType getReference()
+ * @method self setReference(ReferenceType|string $value)
+ * @method AddressType getApplicableAddress()
+ * @method self setApplicableAddress(AddressType $value)
  */
 class TradingTermsType extends AggregateComponent
 {

@@ -12,11 +12,11 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RoleDescriptionType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getRoleCode()
- * @method self setRoleCode($value)
- * @method mixed getRoleDescription()
- * @method self addRoleDescription($value)
- * @method self setRoleDescription($value)
+ * @method RoleCodeType getRoleCode()
+ * @method self setRoleCode(RoleCodeType|string $value)
+ * @method RoleDescriptionType getRoleDescription()
+ * @method self addRoleDescription(RoleDescriptionType|string $value)
+ * @method self setRoleDescription(RoleDescriptionType ...$values)
  */
 class EconomicOperatorRoleType extends AggregateComponent
 {

@@ -11,8 +11,8 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AircraftIDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAircraftID()
- * @method self setAircraftID($value)
+ * @method AircraftIDType getAircraftID()
+ * @method self setAircraftID(AircraftIDType|string $value)
  */
 class AirTransportType extends AggregateComponent
 {

@@ -11,10 +11,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAmount()
- * @method self setAmount($value)
- * @method mixed getEventLineItem()
- * @method self setEventLineItem($value)
+ * @method AmountType getAmount()
+ * @method self setAmount(AmountType|string $value)
+ * @method EventLineItemType getEventLineItem()
+ * @method self setEventLineItem(EventLineItemType $value)
  */
 class PromotionalEventLineItemType extends AggregateComponent
 {

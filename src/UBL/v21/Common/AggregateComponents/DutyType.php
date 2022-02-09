@@ -12,14 +12,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DutyCodeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAmount()
- * @method self setAmount($value)
- * @method mixed getDuty()
- * @method self setDuty($value)
- * @method mixed getDutyCode()
- * @method self setDutyCode($value)
- * @method mixed getTaxCategory()
- * @method self setTaxCategory($value)
+ * @method AmountType getAmount()
+ * @method self setAmount(AmountType|string $value)
+ * @method DutyType getDuty()
+ * @method self setDuty(DutyType|string $value)
+ * @method DutyCodeType getDutyCode()
+ * @method self setDutyCode(DutyCodeType|string $value)
+ * @method TaxCategoryType getTaxCategory()
+ * @method self setTaxCategory(TaxCategoryType $value)
  */
 class DutyType extends AggregateComponent
 {

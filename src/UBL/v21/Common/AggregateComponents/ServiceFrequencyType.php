@@ -11,8 +11,8 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WeekDayCodeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getWeekDayCode()
- * @method self setWeekDayCode($value)
+ * @method WeekDayCodeType getWeekDayCode()
+ * @method self setWeekDayCode(WeekDayCodeType|string $value)
  */
 class ServiceFrequencyType extends AggregateComponent
 {

@@ -15,20 +15,20 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResolutionType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAdmissionCode()
- * @method self setAdmissionCode($value)
- * @method mixed getExclusionReason()
- * @method self addExclusionReason($value)
- * @method self setExclusionReason($value)
- * @method mixed getResolution()
- * @method self addResolution($value)
- * @method self setResolution($value)
- * @method mixed getResolutionDate()
- * @method self setResolutionDate($value)
- * @method mixed getResolutionTime()
- * @method self setResolutionTime($value)
- * @method mixed getProcurementProjectLot()
- * @method self setProcurementProjectLot($value)
+ * @method AdmissionCodeType getAdmissionCode()
+ * @method self setAdmissionCode(AdmissionCodeType|string $value)
+ * @method ExclusionReasonType getExclusionReason()
+ * @method self addExclusionReason(ExclusionReasonType|string $value)
+ * @method self setExclusionReason(ExclusionReasonType ...$values)
+ * @method ResolutionType getResolution()
+ * @method self addResolution(ResolutionType|string $value)
+ * @method self setResolution(ResolutionType ...$values)
+ * @method ResolutionDateType getResolutionDate()
+ * @method self setResolutionDate(ResolutionDateType|string $value)
+ * @method ResolutionTimeType getResolutionTime()
+ * @method self setResolutionTime(ResolutionTimeType|string $value)
+ * @method ProcurementProjectLotType getProcurementProjectLot()
+ * @method self setProcurementProjectLot(ProcurementProjectLotType $value)
  */
 class QualificationResolutionType extends AggregateComponent
 {

@@ -13,18 +13,18 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getDocumentID()
- * @method self setDocumentID($value)
- * @method mixed getApprovalStatus()
- * @method self setApprovalStatus($value)
- * @method mixed getRemarks()
- * @method self addRemarks($value)
- * @method self setRemarks($value)
- * @method mixed getEndorserParty()
- * @method self setEndorserParty($value)
- * @method mixed getSignature()
- * @method self addSignature($value)
- * @method self setSignature($value)
+ * @method DocumentIDType getDocumentID()
+ * @method self setDocumentID(DocumentIDType|string $value)
+ * @method ApprovalStatusType getApprovalStatus()
+ * @method self setApprovalStatus(ApprovalStatusType|string $value)
+ * @method RemarksType getRemarks()
+ * @method self addRemarks(RemarksType|string $value)
+ * @method self setRemarks(RemarksType ...$values)
+ * @method EndorserPartyType getEndorserParty()
+ * @method self setEndorserParty(EndorserPartyType $value)
+ * @method SignatureType getSignature()
+ * @method self addSignature(SignatureType $value)
+ * @method self setSignature(SignatureType ...$values)
  */
 class EndorsementType extends AggregateComponent
 {

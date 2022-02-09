@@ -13,21 +13,21 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreEventNotificationDurat
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getNotificationTypeCode()
- * @method self setNotificationTypeCode($value)
- * @method mixed getPostEventNotificationDurationMeasure()
- * @method self setPostEventNotificationDurationMeasure($value)
- * @method mixed getPreEventNotificationDurationMeasure()
- * @method self setPreEventNotificationDurationMeasure($value)
- * @method mixed getNotifyParty()
- * @method self addNotifyParty($value)
- * @method self setNotifyParty($value)
- * @method mixed getNotificationPeriod()
- * @method self addNotificationPeriod($value)
- * @method self setNotificationPeriod($value)
- * @method mixed getNotificationLocation()
- * @method self addNotificationLocation($value)
- * @method self setNotificationLocation($value)
+ * @method NotificationTypeCodeType getNotificationTypeCode()
+ * @method self setNotificationTypeCode(NotificationTypeCodeType|string $value)
+ * @method PostEventNotificationDurationMeasureType getPostEventNotificationDurationMeasure()
+ * @method self setPostEventNotificationDurationMeasure(PostEventNotificationDurationMeasureType|string $value)
+ * @method PreEventNotificationDurationMeasureType getPreEventNotificationDurationMeasure()
+ * @method self setPreEventNotificationDurationMeasure(PreEventNotificationDurationMeasureType|string $value)
+ * @method PartyType getNotifyParty()
+ * @method self addNotifyParty(PartyType $value)
+ * @method self setNotifyParty(PartyType ...$values)
+ * @method PeriodType getNotificationPeriod()
+ * @method self addNotificationPeriod(PeriodType $value)
+ * @method self setNotificationPeriod(PeriodType ...$values)
+ * @method LocationType getNotificationLocation()
+ * @method self addNotificationLocation(LocationType $value)
+ * @method self setNotificationLocation(LocationType ...$values)
  */
 class NotificationRequirementType extends AggregateComponent
 {

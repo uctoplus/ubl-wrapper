@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\HazardousRiskIndicatorTyp
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getBatchQuantity()
- * @method self setBatchQuantity($value)
- * @method mixed getConsumerUnitQuantity()
- * @method self setConsumerUnitQuantity($value)
- * @method mixed getHazardousRiskIndicator()
- * @method self setHazardousRiskIndicator($value)
+ * @method BatchQuantityType getBatchQuantity()
+ * @method self setBatchQuantity(BatchQuantityType|string $value)
+ * @method ConsumerUnitQuantityType getConsumerUnitQuantity()
+ * @method self setConsumerUnitQuantity(ConsumerUnitQuantityType|string $value)
+ * @method HazardousRiskIndicatorType getHazardousRiskIndicator()
+ * @method self setHazardousRiskIndicator(HazardousRiskIndicatorType|string $value)
  */
 class DeliveryUnitType extends AggregateComponent
 {

@@ -14,14 +14,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TradeItemPackingLabelingT
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getConsumerIncentiveTacticTypeCode()
- * @method self setConsumerIncentiveTacticTypeCode($value)
- * @method mixed getDisplayTacticTypeCode()
- * @method self setDisplayTacticTypeCode($value)
- * @method mixed getFeatureTacticTypeCode()
- * @method self setFeatureTacticTypeCode($value)
- * @method mixed getTradeItemPackingLabelingTypeCode()
- * @method self setTradeItemPackingLabelingTypeCode($value)
+ * @method ConsumerIncentiveTacticTypeCodeType getConsumerIncentiveTacticTypeCode()
+ * @method self setConsumerIncentiveTacticTypeCode(ConsumerIncentiveTacticTypeCodeType|string $value)
+ * @method DisplayTacticTypeCodeType getDisplayTacticTypeCode()
+ * @method self setDisplayTacticTypeCode(DisplayTacticTypeCodeType|string $value)
+ * @method FeatureTacticTypeCodeType getFeatureTacticTypeCode()
+ * @method self setFeatureTacticTypeCode(FeatureTacticTypeCodeType|string $value)
+ * @method TradeItemPackingLabelingTypeCodeType getTradeItemPackingLabelingTypeCode()
+ * @method self setTradeItemPackingLabelingTypeCode(TradeItemPackingLabelingTypeCodeType|string $value)
  */
 class EventTacticEnumerationType extends AggregateComponent
 {

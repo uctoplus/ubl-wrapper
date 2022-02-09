@@ -10,11 +10,11 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getShipment()
- * @method self setShipment($value)
- * @method mixed getPackage()
- * @method self addPackage($value)
- * @method self setPackage($value)
+ * @method ShipmentType getShipment()
+ * @method self setShipment(ShipmentType $value)
+ * @method PackageType getPackage()
+ * @method self addPackage(PackageType $value)
+ * @method self setPackage(PackageType ...$values)
  */
 class OrderedShipmentType extends AggregateComponent
 {

@@ -18,7 +18,7 @@ class PercentType extends BasicComponent
 {
     protected $type = "udt:PercentType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'format' => false,
     ];
 }

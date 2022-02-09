@@ -12,14 +12,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getRoleCode()
- * @method self setRoleCode($value)
- * @method mixed getSequenceNumeric()
- * @method self setSequenceNumeric($value)
- * @method mixed getParty()
- * @method self setParty($value)
- * @method mixed getSignatoryContact()
- * @method self setSignatoryContact($value)
+ * @method RoleCodeType getRoleCode()
+ * @method self setRoleCode(RoleCodeType|string $value)
+ * @method SequenceNumericType getSequenceNumeric()
+ * @method self setSequenceNumeric(SequenceNumericType|string $value)
+ * @method PartyType getParty()
+ * @method self setParty(PartyType $value)
+ * @method ContactType getSignatoryContact()
+ * @method self setSignatoryContact(ContactType $value)
  */
 class EndorserPartyType extends AggregateComponent
 {

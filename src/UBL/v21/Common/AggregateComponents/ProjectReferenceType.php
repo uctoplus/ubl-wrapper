@@ -13,15 +13,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getUUID()
- * @method self setUUID($value)
- * @method mixed getIssueDate()
- * @method self setIssueDate($value)
- * @method mixed getWorkPhaseReference()
- * @method self addWorkPhaseReference($value)
- * @method self setWorkPhaseReference($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method UUIDType getUUID()
+ * @method self setUUID(UUIDType|string $value)
+ * @method IssueDateType getIssueDate()
+ * @method self setIssueDate(IssueDateType|string $value)
+ * @method WorkPhaseReferenceType getWorkPhaseReference()
+ * @method self addWorkPhaseReference(WorkPhaseReferenceType $value)
+ * @method self setWorkPhaseReference(WorkPhaseReferenceType ...$values)
  */
 class ProjectReferenceType extends AggregateComponent
 {

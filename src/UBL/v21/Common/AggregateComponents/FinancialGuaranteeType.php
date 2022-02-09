@@ -14,17 +14,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LiabilityAmountType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getGuaranteeTypeCode()
- * @method self setGuaranteeTypeCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getLiabilityAmount()
- * @method self setLiabilityAmount($value)
- * @method mixed getAmountRate()
- * @method self setAmountRate($value)
- * @method mixed getConstitutionPeriod()
- * @method self setConstitutionPeriod($value)
+ * @method GuaranteeTypeCodeType getGuaranteeTypeCode()
+ * @method self setGuaranteeTypeCode(GuaranteeTypeCodeType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method LiabilityAmountType getLiabilityAmount()
+ * @method self setLiabilityAmount(LiabilityAmountType|string $value)
+ * @method AmountRateType getAmountRate()
+ * @method self setAmountRate(AmountRateType|string $value)
+ * @method PeriodType getConstitutionPeriod()
+ * @method self setConstitutionPeriod(PeriodType $value)
  */
 class FinancialGuaranteeType extends AggregateComponent
 {

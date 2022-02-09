@@ -12,13 +12,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LotNumberIDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getLotNumberID()
- * @method self setLotNumberID($value)
- * @method mixed getExpiryDate()
- * @method self setExpiryDate($value)
- * @method mixed getAdditionalItemProperty()
- * @method self addAdditionalItemProperty($value)
- * @method self setAdditionalItemProperty($value)
+ * @method LotNumberIDType getLotNumberID()
+ * @method self setLotNumberID(LotNumberIDType|string $value)
+ * @method ExpiryDateType getExpiryDate()
+ * @method self setExpiryDate(ExpiryDateType|string $value)
+ * @method ItemPropertyType getAdditionalItemProperty()
+ * @method self addAdditionalItemProperty(ItemPropertyType $value)
+ * @method self setAdditionalItemProperty(ItemPropertyType ...$values)
  */
 class LotIdentificationType extends AggregateComponent
 {

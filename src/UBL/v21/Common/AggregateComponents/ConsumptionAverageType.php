@@ -12,11 +12,11 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAverageAmount()
- * @method self setAverageAmount($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
+ * @method AverageAmountType getAverageAmount()
+ * @method self setAverageAmount(AverageAmountType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
  */
 class ConsumptionAverageType extends AggregateComponent
 {

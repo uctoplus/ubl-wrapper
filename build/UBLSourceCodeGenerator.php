@@ -49,7 +49,7 @@ class UBLSourceCodeGenerator extends Command
         foreach ($xml->xpath('//xsd:element') as $element) {
             $attributes = $element->attributes();
 
-            if (empty($attributes['ref'])) {
+            if ($attributes != null && empty($attributes['ref'])) {
                 $nameToType[(string)$attributes['name']] = (string)$attributes['type'];
             } else {
                 break;
@@ -174,11 +174,13 @@ class UBLSourceCodeGenerator extends Command
 
             //methods
             if (!$forCbcType) {
-                $methods[] = 'mixed get' . $_subElementName . '()';
+                $methods[] = $_type . ' get' . $_subElementName . '()';
                 if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] === 'unbounded') {
-                    $methods[] = 'self add' . $_subElementName . '($value)';
+                    $methods[] = 'self add' . $_subElementName . '( ' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
+                    $methods[] = 'self set' . $_subElementName . '( ' . $_type . ' ...$values)';
+                } else {
+                    $methods[] = 'self set' . $_subElementName . '( ' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
                 }
-                $methods[] = 'self set' . $_subElementName . '($value)';
 
                 //..array?
                 if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] === 'unbounded') {
@@ -195,10 +197,10 @@ class UBLSourceCodeGenerator extends Command
 //        dd($uses, $casts, $minOccurs);
 
         //file generation
-        $content = '<?php' . PHP_EOL;
+        $content = '<?php' . PHP_EOL . PHP_EOL;
 
         $_namespace = substr($class, 0, strrpos($class, '\\'));
-        $content .= 'namespace ' . $_namespace . ';' . PHP_EOL;
+        $content .= 'namespace ' . $_namespace . ';' . PHP_EOL . PHP_EOL;
 
         //uses
         foreach ($uses as $use) {
@@ -234,20 +236,20 @@ class UBLSourceCodeGenerator extends Command
             $content .= 'class ' . $type . ' extends \\' . $_schema . PHP_EOL;
             $content .= '{' . PHP_EOL;
             //casts
-            $content .= 'protected $casts = [' . PHP_EOL;
+            $content .= '    protected $casts = [' . PHP_EOL;
             foreach ($casts as $cxcVal => $cast) {
-                $content .= '"' . $cxcVal . '" => ' . $cast . ',' . PHP_EOL;
+                $content .= '        "' . $cxcVal . '" => ' . $cast . ',' . PHP_EOL;
             }
-            $content .= '];' . PHP_EOL;
+            $content .= '    ];' . PHP_EOL;
 
             $content .= PHP_EOL;
 
             //minOccurs
-            $content .= 'protected $minOccurs = [' . PHP_EOL;
+            $content .= '    protected $minOccurs = [' . PHP_EOL;
             foreach ($minOccurs as $cxcVal => $minOccur) {
-                $content .= '"' . $cxcVal . '" => ' . $minOccur . ',' . PHP_EOL;
+                $content .= '        "' . $cxcVal . '" => ' . $minOccur . ',' . PHP_EOL;
             }
-            $content .= '];' . PHP_EOL;
+            $content .= '    ];' . PHP_EOL;
         }
 
         $content .= '}';

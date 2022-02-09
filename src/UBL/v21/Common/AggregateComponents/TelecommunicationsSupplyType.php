@@ -15,20 +15,20 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalAmountType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getTelecommunicationsSupplyType()
- * @method self setTelecommunicationsSupplyType($value)
- * @method mixed getTelecommunicationsSupplyTypeCode()
- * @method self setTelecommunicationsSupplyTypeCode($value)
- * @method mixed getPrivacyCode()
- * @method self setPrivacyCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getTotalAmount()
- * @method self setTotalAmount($value)
- * @method mixed getTelecommunicationsSupplyLine()
- * @method self addTelecommunicationsSupplyLine($value)
- * @method self setTelecommunicationsSupplyLine($value)
+ * @method TelecommunicationsSupplyTypeType getTelecommunicationsSupplyType()
+ * @method self setTelecommunicationsSupplyType(TelecommunicationsSupplyTypeType|string $value)
+ * @method TelecommunicationsSupplyTypeCodeType getTelecommunicationsSupplyTypeCode()
+ * @method self setTelecommunicationsSupplyTypeCode(TelecommunicationsSupplyTypeCodeType|string $value)
+ * @method PrivacyCodeType getPrivacyCode()
+ * @method self setPrivacyCode(PrivacyCodeType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method TotalAmountType getTotalAmount()
+ * @method self setTotalAmount(TotalAmountType|string $value)
+ * @method TelecommunicationsSupplyLineType getTelecommunicationsSupplyLine()
+ * @method self addTelecommunicationsSupplyLine(TelecommunicationsSupplyLineType $value)
+ * @method self setTelecommunicationsSupplyLine(TelecommunicationsSupplyLineType ...$values)
  */
 class TelecommunicationsSupplyType extends AggregateComponent
 {

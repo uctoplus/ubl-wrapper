@@ -13,16 +13,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getActionCode()
- * @method self setActionCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getDocumentReference()
- * @method self addDocumentReference($value)
- * @method self setDocumentReference($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method ActionCodeType getActionCode()
+ * @method self setActionCode(ActionCodeType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method DocumentReferenceType getDocumentReference()
+ * @method self addDocumentReference(DocumentReferenceType $value)
+ * @method self setDocumentReference(DocumentReferenceType ...$values)
  */
 class TransactionConditionsType extends AggregateComponent
 {

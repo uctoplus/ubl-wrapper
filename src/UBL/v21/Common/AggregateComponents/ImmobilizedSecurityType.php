@@ -16,20 +16,20 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SharesNumberQuantityType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getImmobilizationCertificateID()
- * @method self setImmobilizationCertificateID($value)
- * @method mixed getSecurityID()
- * @method self setSecurityID($value)
- * @method mixed getIssueDate()
- * @method self setIssueDate($value)
- * @method mixed getFaceValueAmount()
- * @method self setFaceValueAmount($value)
- * @method mixed getMarketValueAmount()
- * @method self setMarketValueAmount($value)
- * @method mixed getSharesNumberQuantity()
- * @method self setSharesNumberQuantity($value)
- * @method mixed getIssuerParty()
- * @method self setIssuerParty($value)
+ * @method ImmobilizationCertificateIDType getImmobilizationCertificateID()
+ * @method self setImmobilizationCertificateID(ImmobilizationCertificateIDType|string $value)
+ * @method SecurityIDType getSecurityID()
+ * @method self setSecurityID(SecurityIDType|string $value)
+ * @method IssueDateType getIssueDate()
+ * @method self setIssueDate(IssueDateType|string $value)
+ * @method FaceValueAmountType getFaceValueAmount()
+ * @method self setFaceValueAmount(FaceValueAmountType|string $value)
+ * @method MarketValueAmountType getMarketValueAmount()
+ * @method self setMarketValueAmount(MarketValueAmountType|string $value)
+ * @method SharesNumberQuantityType getSharesNumberQuantity()
+ * @method self setSharesNumberQuantity(SharesNumberQuantityType|string $value)
+ * @method PartyType getIssuerParty()
+ * @method self setIssuerParty(PartyType $value)
  */
 class ImmobilizedSecurityType extends AggregateComponent
 {

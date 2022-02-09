@@ -11,8 +11,8 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AccountIDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAccountID()
- * @method self setAccountID($value)
+ * @method AccountIDType getAccountID()
+ * @method self setAccountID(AccountIDType|string $value)
  */
 class CreditAccountType extends AggregateComponent
 {

@@ -14,17 +14,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxTypeCodeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getTaxTypeCode()
- * @method self setTaxTypeCode($value)
- * @method mixed getCurrencyCode()
- * @method self setCurrencyCode($value)
- * @method mixed getJurisdictionRegionAddress()
- * @method self addJurisdictionRegionAddress($value)
- * @method self setJurisdictionRegionAddress($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method TaxTypeCodeType getTaxTypeCode()
+ * @method self setTaxTypeCode(TaxTypeCodeType|string $value)
+ * @method CurrencyCodeType getCurrencyCode()
+ * @method self setCurrencyCode(CurrencyCodeType|string $value)
+ * @method AddressType getJurisdictionRegionAddress()
+ * @method self addJurisdictionRegionAddress(AddressType $value)
+ * @method self setJurisdictionRegionAddress(AddressType ...$values)
  */
 class TaxSchemeType extends AggregateComponent
 {

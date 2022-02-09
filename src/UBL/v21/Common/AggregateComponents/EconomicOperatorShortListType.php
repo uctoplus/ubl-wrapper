@@ -14,18 +14,18 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getLimitationDescription()
- * @method self addLimitationDescription($value)
- * @method self setLimitationDescription($value)
- * @method mixed getExpectedQuantity()
- * @method self setExpectedQuantity($value)
- * @method mixed getMaximumQuantity()
- * @method self setMaximumQuantity($value)
- * @method mixed getMinimumQuantity()
- * @method self setMinimumQuantity($value)
- * @method mixed getPreSelectedParty()
- * @method self addPreSelectedParty($value)
- * @method self setPreSelectedParty($value)
+ * @method LimitationDescriptionType getLimitationDescription()
+ * @method self addLimitationDescription(LimitationDescriptionType|string $value)
+ * @method self setLimitationDescription(LimitationDescriptionType ...$values)
+ * @method ExpectedQuantityType getExpectedQuantity()
+ * @method self setExpectedQuantity(ExpectedQuantityType|string $value)
+ * @method MaximumQuantityType getMaximumQuantity()
+ * @method self setMaximumQuantity(MaximumQuantityType|string $value)
+ * @method MinimumQuantityType getMinimumQuantity()
+ * @method self setMinimumQuantity(MinimumQuantityType|string $value)
+ * @method PartyType getPreSelectedParty()
+ * @method self addPreSelectedParty(PartyType $value)
+ * @method self setPreSelectedParty(PartyType ...$values)
  */
 class EconomicOperatorShortListType extends AggregateComponent
 {

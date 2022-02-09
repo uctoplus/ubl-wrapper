@@ -12,11 +12,11 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getContent()
- * @method self addContent($value)
- * @method self setContent($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method ContentType getContent()
+ * @method self addContent(ContentType|string $value)
+ * @method self setContent(ContentType ...$values)
  */
 class ClauseType extends AggregateComponent
 {

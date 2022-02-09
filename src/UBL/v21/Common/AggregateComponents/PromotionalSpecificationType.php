@@ -11,14 +11,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecificationIDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getSpecificationID()
- * @method self setSpecificationID($value)
- * @method mixed getPromotionalEventLineItem()
- * @method self addPromotionalEventLineItem($value)
- * @method self setPromotionalEventLineItem($value)
- * @method mixed getEventTactic()
- * @method self addEventTactic($value)
- * @method self setEventTactic($value)
+ * @method SpecificationIDType getSpecificationID()
+ * @method self setSpecificationID(SpecificationIDType|string $value)
+ * @method PromotionalEventLineItemType getPromotionalEventLineItem()
+ * @method self addPromotionalEventLineItem(PromotionalEventLineItemType $value)
+ * @method self setPromotionalEventLineItem(PromotionalEventLineItemType ...$values)
+ * @method EventTacticType getEventTactic()
+ * @method self addEventTactic(EventTacticType $value)
+ * @method self setEventTactic(EventTacticType ...$values)
  */
 class PromotionalSpecificationType extends AggregateComponent
 {

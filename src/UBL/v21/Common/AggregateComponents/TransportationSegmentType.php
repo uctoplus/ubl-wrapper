@@ -12,19 +12,19 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportExecutionPlanRef
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getSequenceNumeric()
- * @method self setSequenceNumeric($value)
- * @method mixed getTransportExecutionPlanReferenceID()
- * @method self setTransportExecutionPlanReferenceID($value)
- * @method mixed getTransportationService()
- * @method self setTransportationService($value)
- * @method mixed getTransportServiceProviderParty()
- * @method self setTransportServiceProviderParty($value)
- * @method mixed getReferencedConsignment()
- * @method self setReferencedConsignment($value)
- * @method mixed getShipmentStage()
- * @method self addShipmentStage($value)
- * @method self setShipmentStage($value)
+ * @method SequenceNumericType getSequenceNumeric()
+ * @method self setSequenceNumeric(SequenceNumericType|string $value)
+ * @method TransportExecutionPlanReferenceIDType getTransportExecutionPlanReferenceID()
+ * @method self setTransportExecutionPlanReferenceID(TransportExecutionPlanReferenceIDType|string $value)
+ * @method TransportationServiceType getTransportationService()
+ * @method self setTransportationService(TransportationServiceType $value)
+ * @method PartyType getTransportServiceProviderParty()
+ * @method self setTransportServiceProviderParty(PartyType $value)
+ * @method ConsignmentType getReferencedConsignment()
+ * @method self setReferencedConsignment(ConsignmentType $value)
+ * @method ShipmentStageType getShipmentStage()
+ * @method self addShipmentStage(ShipmentStageType $value)
+ * @method self setShipmentStage(ShipmentStageType ...$values)
  */
 class TransportationSegmentType extends AggregateComponent
 {

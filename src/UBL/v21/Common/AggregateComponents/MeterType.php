@@ -15,22 +15,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalDeliveredQuantityTyp
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getMeterNumber()
- * @method self setMeterNumber($value)
- * @method mixed getMeterName()
- * @method self setMeterName($value)
- * @method mixed getMeterConstant()
- * @method self setMeterConstant($value)
- * @method mixed getMeterConstantCode()
- * @method self setMeterConstantCode($value)
- * @method mixed getTotalDeliveredQuantity()
- * @method self setTotalDeliveredQuantity($value)
- * @method mixed getMeterReading()
- * @method self addMeterReading($value)
- * @method self setMeterReading($value)
- * @method mixed getMeterProperty()
- * @method self addMeterProperty($value)
- * @method self setMeterProperty($value)
+ * @method MeterNumberType getMeterNumber()
+ * @method self setMeterNumber(MeterNumberType|string $value)
+ * @method MeterNameType getMeterName()
+ * @method self setMeterName(MeterNameType|string $value)
+ * @method MeterConstantType getMeterConstant()
+ * @method self setMeterConstant(MeterConstantType|string $value)
+ * @method MeterConstantCodeType getMeterConstantCode()
+ * @method self setMeterConstantCode(MeterConstantCodeType|string $value)
+ * @method TotalDeliveredQuantityType getTotalDeliveredQuantity()
+ * @method self setTotalDeliveredQuantity(TotalDeliveredQuantityType|string $value)
+ * @method MeterReadingType getMeterReading()
+ * @method self addMeterReading(MeterReadingType $value)
+ * @method self setMeterReading(MeterReadingType ...$values)
+ * @method MeterPropertyType getMeterProperty()
+ * @method self addMeterProperty(MeterPropertyType $value)
+ * @method self setMeterProperty(MeterPropertyType ...$values)
  */
 class MeterType extends AggregateComponent
 {

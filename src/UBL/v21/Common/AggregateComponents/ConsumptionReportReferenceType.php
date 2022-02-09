@@ -14,16 +14,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalConsumedQuantityType
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getConsumptionReportID()
- * @method self setConsumptionReportID($value)
- * @method mixed getConsumptionType()
- * @method self setConsumptionType($value)
- * @method mixed getConsumptionTypeCode()
- * @method self setConsumptionTypeCode($value)
- * @method mixed getTotalConsumedQuantity()
- * @method self setTotalConsumedQuantity($value)
- * @method mixed getPeriod()
- * @method self setPeriod($value)
+ * @method ConsumptionReportIDType getConsumptionReportID()
+ * @method self setConsumptionReportID(ConsumptionReportIDType|string $value)
+ * @method ConsumptionTypeType getConsumptionType()
+ * @method self setConsumptionType(ConsumptionTypeType|string $value)
+ * @method ConsumptionTypeCodeType getConsumptionTypeCode()
+ * @method self setConsumptionTypeCode(ConsumptionTypeCodeType|string $value)
+ * @method TotalConsumedQuantityType getTotalConsumedQuantity()
+ * @method self setTotalConsumedQuantity(TotalConsumedQuantityType|string $value)
+ * @method PeriodType getPeriod()
+ * @method self setPeriod(PeriodType $value)
  */
 class ConsumptionReportReferenceType extends AggregateComponent
 {

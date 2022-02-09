@@ -12,10 +12,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimeAmountType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getPriceAmount()
- * @method self setPriceAmount($value)
- * @method mixed getTimeAmount()
- * @method self setTimeAmount($value)
+ * @method PriceAmountType getPriceAmount()
+ * @method self setPriceAmount(PriceAmountType|string $value)
+ * @method TimeAmountType getTimeAmount()
+ * @method self setTimeAmount(TimeAmountType|string $value)
  */
 class UnstructuredPriceType extends AggregateComponent
 {

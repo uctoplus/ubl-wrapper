@@ -13,17 +13,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getName()
- * @method self addName($value)
- * @method self setName($value)
- * @method mixed getDeclarationTypeCode()
- * @method self setDeclarationTypeCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getEvidenceSupplied()
- * @method self addEvidenceSupplied($value)
- * @method self setEvidenceSupplied($value)
+ * @method NameType getName()
+ * @method self addName(NameType|string $value)
+ * @method self setName(NameType ...$values)
+ * @method DeclarationTypeCodeType getDeclarationTypeCode()
+ * @method self setDeclarationTypeCode(DeclarationTypeCodeType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method EvidenceSuppliedType getEvidenceSupplied()
+ * @method self addEvidenceSupplied(EvidenceSuppliedType $value)
+ * @method self setEvidenceSupplied(EvidenceSuppliedType ...$values)
  */
 class DeclarationType extends AggregateComponent
 {

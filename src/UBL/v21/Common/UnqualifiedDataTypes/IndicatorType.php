@@ -18,7 +18,7 @@ class IndicatorType extends BasicComponent
 {
     protected $type = "udt:IndicatorType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'format' => false,
     ];
 }

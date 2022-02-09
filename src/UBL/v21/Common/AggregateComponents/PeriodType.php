@@ -17,22 +17,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\StartTimeType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getStartDate()
- * @method self setStartDate($value)
- * @method mixed getStartTime()
- * @method self setStartTime($value)
- * @method mixed getEndDate()
- * @method self setEndDate($value)
- * @method mixed getEndTime()
- * @method self setEndTime($value)
- * @method mixed getDurationMeasure()
- * @method self setDurationMeasure($value)
- * @method mixed getDescriptionCode()
- * @method self addDescriptionCode($value)
- * @method self setDescriptionCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
+ * @method StartDateType getStartDate()
+ * @method self setStartDate(StartDateType|string $value)
+ * @method StartTimeType getStartTime()
+ * @method self setStartTime(StartTimeType|string $value)
+ * @method EndDateType getEndDate()
+ * @method self setEndDate(EndDateType|string $value)
+ * @method EndTimeType getEndTime()
+ * @method self setEndTime(EndTimeType|string $value)
+ * @method DurationMeasureType getDurationMeasure()
+ * @method self setDurationMeasure(DurationMeasureType|string $value)
+ * @method DescriptionCodeType getDescriptionCode()
+ * @method self addDescriptionCode(DescriptionCodeType|string $value)
+ * @method self setDescriptionCode(DescriptionCodeType ...$values)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
  */
 class PeriodType extends AggregateComponent
 {

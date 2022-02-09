@@ -12,13 +12,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getAmount()
- * @method self setAmount($value)
- * @method mixed getAllowanceCharge()
- * @method self addAllowanceCharge($value)
- * @method self setAllowanceCharge($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method AmountType getAmount()
+ * @method self setAmount(AmountType|string $value)
+ * @method AllowanceChargeType getAllowanceCharge()
+ * @method self addAllowanceCharge(AllowanceChargeType $value)
+ * @method self setAllowanceCharge(AllowanceChargeType ...$values)
  */
 class BillingReferenceLineType extends AggregateComponent
 {

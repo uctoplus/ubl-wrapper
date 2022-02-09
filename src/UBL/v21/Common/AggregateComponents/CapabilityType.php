@@ -14,20 +14,20 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueQuantityType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getCapabilityTypeCode()
- * @method self setCapabilityTypeCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getValueAmount()
- * @method self setValueAmount($value)
- * @method mixed getValueQuantity()
- * @method self setValueQuantity($value)
- * @method mixed getEvidenceSupplied()
- * @method self addEvidenceSupplied($value)
- * @method self setEvidenceSupplied($value)
- * @method mixed getValidityPeriod()
- * @method self setValidityPeriod($value)
+ * @method CapabilityTypeCodeType getCapabilityTypeCode()
+ * @method self setCapabilityTypeCode(CapabilityTypeCodeType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method ValueAmountType getValueAmount()
+ * @method self setValueAmount(ValueAmountType|string $value)
+ * @method ValueQuantityType getValueQuantity()
+ * @method self setValueQuantity(ValueQuantityType|string $value)
+ * @method EvidenceSuppliedType getEvidenceSupplied()
+ * @method self addEvidenceSupplied(EvidenceSuppliedType $value)
+ * @method self setEvidenceSupplied(EvidenceSuppliedType ...$values)
+ * @method PeriodType getValidityPeriod()
+ * @method self setValidityPeriod(PeriodType $value)
  */
 class CapabilityType extends AggregateComponent
 {

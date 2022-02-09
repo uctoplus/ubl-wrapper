@@ -11,10 +11,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\EmbeddedDocumentBinaryObj
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getEmbeddedDocumentBinaryObject()
- * @method self setEmbeddedDocumentBinaryObject($value)
- * @method mixed getExternalReference()
- * @method self setExternalReference($value)
+ * @method EmbeddedDocumentBinaryObjectType getEmbeddedDocumentBinaryObject()
+ * @method self setEmbeddedDocumentBinaryObject(EmbeddedDocumentBinaryObjectType|string $value)
+ * @method ExternalReferenceType getExternalReference()
+ * @method self setExternalReference(ExternalReferenceType $value)
  */
 class AttachmentType extends AggregateComponent
 {

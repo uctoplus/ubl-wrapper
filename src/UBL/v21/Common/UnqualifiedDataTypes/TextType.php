@@ -20,7 +20,7 @@ class TextType extends BasicComponent
 {
     protected $type = "udt:TextType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'languageID' => false,
         'languageLocaleID' => false,
     ];

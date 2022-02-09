@@ -13,20 +13,20 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getContractSubdivision()
- * @method self setContractSubdivision($value)
- * @method mixed getNote()
- * @method self addNote($value)
- * @method self setNote($value)
- * @method mixed getLineValidityPeriod()
- * @method self setLineValidityPeriod($value)
- * @method mixed getRequiredItemLocationQuantity()
- * @method self addRequiredItemLocationQuantity($value)
- * @method self setRequiredItemLocationQuantity($value)
- * @method mixed getItem()
- * @method self setItem($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method ContractSubdivisionType getContractSubdivision()
+ * @method self setContractSubdivision(ContractSubdivisionType|string $value)
+ * @method NoteType getNote()
+ * @method self addNote(NoteType|string $value)
+ * @method self setNote(NoteType ...$values)
+ * @method PeriodType getLineValidityPeriod()
+ * @method self setLineValidityPeriod(PeriodType $value)
+ * @method ItemLocationQuantityType getRequiredItemLocationQuantity()
+ * @method self addRequiredItemLocationQuantity(ItemLocationQuantityType $value)
+ * @method self setRequiredItemLocationQuantity(ItemLocationQuantityType ...$values)
+ * @method ItemType getItem()
+ * @method self setItem(ItemType $value)
  */
 class CatalogueRequestLineType extends AggregateComponent
 {

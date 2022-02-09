@@ -14,19 +14,19 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TendererRequirementTypeCo
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getName()
- * @method self addName($value)
- * @method self setName($value)
- * @method mixed getTendererRequirementTypeCode()
- * @method self setTendererRequirementTypeCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getLegalReference()
- * @method self setLegalReference($value)
- * @method mixed getSuggestedEvidence()
- * @method self addSuggestedEvidence($value)
- * @method self setSuggestedEvidence($value)
+ * @method NameType getName()
+ * @method self addName(NameType|string $value)
+ * @method self setName(NameType ...$values)
+ * @method TendererRequirementTypeCodeType getTendererRequirementTypeCode()
+ * @method self setTendererRequirementTypeCode(TendererRequirementTypeCodeType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method LegalReferenceType getLegalReference()
+ * @method self setLegalReference(LegalReferenceType|string $value)
+ * @method EvidenceType getSuggestedEvidence()
+ * @method self addSuggestedEvidence(EvidenceType $value)
+ * @method self setSuggestedEvidence(EvidenceType ...$values)
  */
 class TendererRequirementType extends AggregateComponent
 {

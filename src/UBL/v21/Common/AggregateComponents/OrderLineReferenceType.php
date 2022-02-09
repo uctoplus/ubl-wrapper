@@ -14,16 +14,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getLineID()
- * @method self setLineID($value)
- * @method mixed getSalesOrderLineID()
- * @method self setSalesOrderLineID($value)
- * @method mixed getUUID()
- * @method self setUUID($value)
- * @method mixed getLineStatusCode()
- * @method self setLineStatusCode($value)
- * @method mixed getOrderReference()
- * @method self setOrderReference($value)
+ * @method LineIDType getLineID()
+ * @method self setLineID(LineIDType|string $value)
+ * @method SalesOrderLineIDType getSalesOrderLineID()
+ * @method self setSalesOrderLineID(SalesOrderLineIDType|string $value)
+ * @method UUIDType getUUID()
+ * @method self setUUID(UUIDType|string $value)
+ * @method LineStatusCodeType getLineStatusCode()
+ * @method self setLineStatusCode(LineStatusCodeType|string $value)
+ * @method OrderReferenceType getOrderReference()
+ * @method self setOrderReference(OrderReferenceType $value)
  */
 class OrderLineReferenceType extends AggregateComponent
 {

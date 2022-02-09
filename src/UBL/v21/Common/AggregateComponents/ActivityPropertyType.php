@@ -12,10 +12,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getName()
- * @method self setName($value)
- * @method mixed getValue()
- * @method self setValue($value)
+ * @method NameType getName()
+ * @method self setName(NameType|string $value)
+ * @method ValueType getValue()
+ * @method self setValue(ValueType|string $value)
  */
 class ActivityPropertyType extends AggregateComponent
 {

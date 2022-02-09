@@ -13,7 +13,7 @@ class IdentifierType extends BasicComponent
 {
     protected $type = "udt:IdentifierType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'schemeID' => false,
         'schemeName' => false,
         'schemeAgencyID' => false,

@@ -11,16 +11,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BuyerProfileURIType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getBuyerProfileURI()
- * @method self setBuyerProfileURI($value)
- * @method mixed getContractingPartyType()
- * @method self addContractingPartyType($value)
- * @method self setContractingPartyType($value)
- * @method mixed getContractingActivity()
- * @method self addContractingActivity($value)
- * @method self setContractingActivity($value)
- * @method mixed getParty()
- * @method self setParty($value)
+ * @method BuyerProfileURIType getBuyerProfileURI()
+ * @method self setBuyerProfileURI(BuyerProfileURIType|string $value)
+ * @method ContractingPartyTypeType getContractingPartyType()
+ * @method self addContractingPartyType(ContractingPartyTypeType $value)
+ * @method self setContractingPartyType(ContractingPartyTypeType ...$values)
+ * @method ContractingActivityType getContractingActivity()
+ * @method self addContractingActivity(ContractingActivityType $value)
+ * @method self setContractingActivity(ContractingActivityType ...$values)
+ * @method PartyType getParty()
+ * @method self setParty(PartyType $value)
  */
 class ContractingPartyType extends AggregateComponent
 {

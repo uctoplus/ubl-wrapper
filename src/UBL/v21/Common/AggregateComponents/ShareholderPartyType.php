@@ -11,10 +11,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PartecipationPercentType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getPartecipationPercent()
- * @method self setPartecipationPercent($value)
- * @method mixed getParty()
- * @method self setParty($value)
+ * @method PartecipationPercentType getPartecipationPercent()
+ * @method self setPartecipationPercent(PartecipationPercentType|string $value)
+ * @method PartyType getParty()
+ * @method self setParty(PartyType $value)
  */
 class ShareholderPartyType extends AggregateComponent
 {

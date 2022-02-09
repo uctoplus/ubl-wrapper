@@ -13,14 +13,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getName()
- * @method self addName($value)
- * @method self setName($value)
- * @method mixed getExecutionRequirementCode()
- * @method self setExecutionRequirementCode($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
+ * @method NameType getName()
+ * @method self addName(NameType|string $value)
+ * @method self setName(NameType ...$values)
+ * @method ExecutionRequirementCodeType getExecutionRequirementCode()
+ * @method self setExecutionRequirementCode(ExecutionRequirementCodeType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
  */
 class ContractExecutionRequirementType extends AggregateComponent
 {

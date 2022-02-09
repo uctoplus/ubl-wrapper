@@ -11,8 +11,8 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getLine()
- * @method self setLine($value)
+ * @method LineType getLine()
+ * @method self setLine(LineType|string $value)
  */
 class AddressLineType extends AggregateComponent
 {

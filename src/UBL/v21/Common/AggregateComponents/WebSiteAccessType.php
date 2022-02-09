@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\URIType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getURI()
- * @method self setURI($value)
- * @method mixed getPassword()
- * @method self setPassword($value)
- * @method mixed getLogin()
- * @method self setLogin($value)
+ * @method URIType getURI()
+ * @method self setURI(URIType|string $value)
+ * @method PasswordType getPassword()
+ * @method self setPassword(PasswordType|string $value)
+ * @method LoginType getLogin()
+ * @method self setLogin(LoginType|string $value)
  */
 class WebSiteAccessType extends AggregateComponent
 {

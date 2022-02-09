@@ -15,17 +15,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumMeasureType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getAttributeID()
- * @method self setAttributeID($value)
- * @method mixed getMeasure()
- * @method self setMeasure($value)
- * @method mixed getDescription()
- * @method self addDescription($value)
- * @method self setDescription($value)
- * @method mixed getMinimumMeasure()
- * @method self setMinimumMeasure($value)
- * @method mixed getMaximumMeasure()
- * @method self setMaximumMeasure($value)
+ * @method AttributeIDType getAttributeID()
+ * @method self setAttributeID(AttributeIDType|string $value)
+ * @method MeasureType getMeasure()
+ * @method self setMeasure(MeasureType|string $value)
+ * @method DescriptionType getDescription()
+ * @method self addDescription(DescriptionType|string $value)
+ * @method self setDescription(DescriptionType ...$values)
+ * @method MinimumMeasureType getMinimumMeasure()
+ * @method self setMinimumMeasure(MinimumMeasureType|string $value)
+ * @method MaximumMeasureType getMaximumMeasure()
+ * @method self setMaximumMeasure(MaximumMeasureType|string $value)
  */
 class DimensionType extends AggregateComponent
 {

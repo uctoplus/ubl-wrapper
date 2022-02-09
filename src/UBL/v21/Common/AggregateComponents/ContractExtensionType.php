@@ -13,18 +13,18 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OptionsDescriptionType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getOptionsDescription()
- * @method self addOptionsDescription($value)
- * @method self setOptionsDescription($value)
- * @method mixed getMinimumNumberNumeric()
- * @method self setMinimumNumberNumeric($value)
- * @method mixed getMaximumNumberNumeric()
- * @method self setMaximumNumberNumeric($value)
- * @method mixed getOptionValidityPeriod()
- * @method self setOptionValidityPeriod($value)
- * @method mixed getRenewal()
- * @method self addRenewal($value)
- * @method self setRenewal($value)
+ * @method OptionsDescriptionType getOptionsDescription()
+ * @method self addOptionsDescription(OptionsDescriptionType|string $value)
+ * @method self setOptionsDescription(OptionsDescriptionType ...$values)
+ * @method MinimumNumberNumericType getMinimumNumberNumeric()
+ * @method self setMinimumNumberNumeric(MinimumNumberNumericType|string $value)
+ * @method MaximumNumberNumericType getMaximumNumberNumeric()
+ * @method self setMaximumNumberNumeric(MaximumNumberNumericType|string $value)
+ * @method PeriodType getOptionValidityPeriod()
+ * @method self setOptionValidityPeriod(PeriodType $value)
+ * @method RenewalType getRenewal()
+ * @method self addRenewal(RenewalType $value)
+ * @method self setRenewal(RenewalType ...$values)
  */
 class ContractExtensionType extends AggregateComponent
 {

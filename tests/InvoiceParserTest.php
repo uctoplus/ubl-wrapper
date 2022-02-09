@@ -1,6 +1,8 @@
 <?php
 
+use Greenter\Ubl\UblValidator;
 use PHPUnit\Framework\TestCase;
+use Uctoplus\UblWrapper\Parser;
 
 /**
  * Class InvoiceParserTest
@@ -12,10 +14,22 @@ class InvoiceParserTest extends TestCase
 {
     public function test_parse_xml()
     {
-        $parser = new \Uctoplus\UblWrapper\Parser();
-        $parser->fromFile('resources/UBL-Invoice-2.1-Example.xml');
+        $parser = new Parser();
+        $parser->fromFile('tests/resources/UBL-Invoice-2.1-Example.xml');
 
 //        dump($parser->getDocuments()[0]);
         file_put_contents("generated.xml", $parser->getDocuments()[0]->toXML()->saveXML());
     }
+
+    /**
+     * @depends test_parse_xml
+     *
+     */
+    public function test_validate_final_xml()
+    {
+        $ubl = new UblValidator();
+        $xml = file_get_contents('generated.xml');
+        $this->assertTrue($ubl->isValid($xml));
+    }
+
 }

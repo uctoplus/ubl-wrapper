@@ -10,18 +10,18 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getConsumptionReport()
- * @method self addConsumptionReport($value)
- * @method self setConsumptionReport($value)
- * @method mixed getEnergyTaxReport()
- * @method self addEnergyTaxReport($value)
- * @method self setEnergyTaxReport($value)
- * @method mixed getConsumptionAverage()
- * @method self addConsumptionAverage($value)
- * @method self setConsumptionAverage($value)
- * @method mixed getEnergyWaterConsumptionCorrection()
- * @method self addEnergyWaterConsumptionCorrection($value)
- * @method self setEnergyWaterConsumptionCorrection($value)
+ * @method ConsumptionReportType getConsumptionReport()
+ * @method self addConsumptionReport(ConsumptionReportType $value)
+ * @method self setConsumptionReport(ConsumptionReportType ...$values)
+ * @method EnergyTaxReportType getEnergyTaxReport()
+ * @method self addEnergyTaxReport(EnergyTaxReportType $value)
+ * @method self setEnergyTaxReport(EnergyTaxReportType ...$values)
+ * @method ConsumptionAverageType getConsumptionAverage()
+ * @method self addConsumptionAverage(ConsumptionAverageType $value)
+ * @method self setConsumptionAverage(ConsumptionAverageType ...$values)
+ * @method ConsumptionCorrectionType getEnergyWaterConsumptionCorrection()
+ * @method self addEnergyWaterConsumptionCorrection(ConsumptionCorrectionType $value)
+ * @method self setEnergyWaterConsumptionCorrection(ConsumptionCorrectionType ...$values)
  */
 class EnergyWaterSupplyType extends AggregateComponent
 {

@@ -16,21 +16,21 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueAmountType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getNote()
- * @method self addNote($value)
- * @method self setNote($value)
- * @method mixed getQuantity()
- * @method self setQuantity($value)
- * @method mixed getValueAmount()
- * @method self setValueAmount($value)
- * @method mixed getAvailabilityDate()
- * @method self setAvailabilityDate($value)
- * @method mixed getAvailabilityStatusCode()
- * @method self setAvailabilityStatusCode($value)
- * @method mixed getItem()
- * @method self setItem($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method NoteType getNote()
+ * @method self addNote(NoteType|string $value)
+ * @method self setNote(NoteType ...$values)
+ * @method QuantityType getQuantity()
+ * @method self setQuantity(QuantityType|string $value)
+ * @method ValueAmountType getValueAmount()
+ * @method self setValueAmount(ValueAmountType|string $value)
+ * @method AvailabilityDateType getAvailabilityDate()
+ * @method self setAvailabilityDate(AvailabilityDateType|string $value)
+ * @method AvailabilityStatusCodeType getAvailabilityStatusCode()
+ * @method self setAvailabilityStatusCode(AvailabilityStatusCodeType|string $value)
+ * @method ItemType getItem()
+ * @method self setItem(ItemType $value)
  */
 class StockAvailabilityReportLineType extends AggregateComponent
 {

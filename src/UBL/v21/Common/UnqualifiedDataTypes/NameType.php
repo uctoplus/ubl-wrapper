@@ -20,7 +20,7 @@ class NameType extends BasicComponent
 {
     protected $type = "udt:NameType";
 
-    protected $attributes = [
+    protected $attributeCasts = [
         'languageID' => false,
         'languageLocaleID' => false,
     ];

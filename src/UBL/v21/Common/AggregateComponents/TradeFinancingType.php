@@ -12,22 +12,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method mixed getID()
- * @method self setID($value)
- * @method mixed getFinancingInstrumentCode()
- * @method self setFinancingInstrumentCode($value)
- * @method mixed getContractDocumentReference()
- * @method self setContractDocumentReference($value)
- * @method mixed getDocumentReference()
- * @method self addDocumentReference($value)
- * @method self setDocumentReference($value)
- * @method mixed getFinancingParty()
- * @method self setFinancingParty($value)
- * @method mixed getFinancingFinancialAccount()
- * @method self setFinancingFinancialAccount($value)
- * @method mixed getClause()
- * @method self addClause($value)
- * @method self setClause($value)
+ * @method IDType getID()
+ * @method self setID(IDType|string $value)
+ * @method FinancingInstrumentCodeType getFinancingInstrumentCode()
+ * @method self setFinancingInstrumentCode(FinancingInstrumentCodeType|string $value)
+ * @method DocumentReferenceType getContractDocumentReference()
+ * @method self setContractDocumentReference(DocumentReferenceType $value)
+ * @method DocumentReferenceType getDocumentReference()
+ * @method self addDocumentReference(DocumentReferenceType $value)
+ * @method self setDocumentReference(DocumentReferenceType ...$values)
+ * @method PartyType getFinancingParty()
+ * @method self setFinancingParty(PartyType $value)
+ * @method FinancialAccountType getFinancingFinancialAccount()
+ * @method self setFinancingFinancialAccount(FinancialAccountType $value)
+ * @method ClauseType getClause()
+ * @method self addClause(ClauseType $value)
+ * @method self setClause(ClauseType ...$values)
  */
 class TradeFinancingType extends AggregateComponent
 {
