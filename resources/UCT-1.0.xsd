@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:uct="https://moje.uctoplus.sk/xml/ubl-extension"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="https://moje.uctoplus.sk/xml/ubl-extension"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified"
+            version="2.1">
+
+    <!--import here all extension schemas-->
+    <xsd:import namespace="https://moje.uctoplus.sk/xml/ubl-extension"
+                schemaLocation="UCT-1.0.xsd"/>
+
+    <!-- ===== Element Declarations ===== -->
+    <xsd:element name="list" type="listType">
+        <xsd:annotation>
+            <xsd:documentation>This element MUST be conveyed as the root element in any instance document based on this
+                Schema expression
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="document" type="documentType"/>
+    <!-- ===== Type Definitions ===== -->
+    <!-- ===== Aggregate Business Information Entity Type Definitions ===== -->
+    <xsd:complexType name="listType">
+        <xsd:sequence>
+            <xsd:element ref="uct:document" minOccurs="1" maxOccurs="unbounded">
+                <xsd:annotation>
+                    <xsd:documentation>Container for UBL MainDoc</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="documentType">
+        <xsd:sequence>
+            <xsd:any namespace="##other" processContents="lax"
+                     minOccurs="1" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Any element is allowed here.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:any>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

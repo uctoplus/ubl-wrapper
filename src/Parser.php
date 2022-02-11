@@ -8,6 +8,7 @@ use Exception;
 use Uctoplus\UblWrapper\Exceptions\FileNotFoundException;
 use Uctoplus\UblWrapper\Exceptions\FileNotReadableException;
 use Uctoplus\UblWrapper\UBL\Schema\MainDoc;
+use Uctoplus\UblWrapper\UCT\UctList;
 
 /**
  * Class Parser
@@ -42,11 +43,35 @@ class Parser
 
         /** @var DOMNode $childNode */
         foreach ($xml->childNodes as $childNode) {
-            $class = $this->guessNodeClass($childNode);
-            $model = new $class();
+            if ($childNode->nodeType != XML_ELEMENT_NODE)
+                continue;
 
-            if ($model instanceof MainDoc) {
-                $this->documents[] = $model->fromXML($childNode);
+            $class = $this->guessNodeClass($childNode);
+
+            if (UctList::class == $class) {
+                /** @var DOMNode $uctDocument */
+                foreach ($childNode->childNodes as $uctDocument) {
+                    if ($uctDocument->nodeType != XML_ELEMENT_NODE)
+                        continue;
+
+                    foreach ($uctDocument->childNodes as $mainDoc) {
+                        if ($mainDoc->nodeType != XML_ELEMENT_NODE)
+                            continue;
+
+                        $class = $this->guessNodeClass($mainDoc);
+                        $model = new $class();
+
+                        if ($model instanceof MainDoc) {
+                            $this->documents[] = $model->fromXML($childNode);
+                        }
+                    }
+                }
+            } else {
+                $model = new $class();
+
+                if ($model instanceof MainDoc) {
+                    $this->documents[] = $model->fromXML($childNode);
+                }
             }
         }
 
@@ -66,7 +91,7 @@ class Parser
      * @return string
      * @throws Exception
      */
-    private function guessNodeClass(DOMNode $node)
+    protected function guessNodeClass(DOMNode $node)
     {
         $class = "\\Uctoplus\\UblWrapper\\UBL\\v21\\MainDoc\\" . $node->nodeName;
 
@@ -74,6 +99,10 @@ class Parser
             return $class;
         }
 
-        throw new Exception("Unable to guess model");
+        if ($node->nodeName === "uct:list") {
+            return UctList::class;
+        }
+
+        throw new Exception("Unable to guess model of " . $node->nodeName);
     }
 }

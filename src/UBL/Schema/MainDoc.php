@@ -4,6 +4,7 @@ namespace Uctoplus\UblWrapper\UBL\Schema;
 
 use DOMNode;
 use Uctoplus\UblWrapper\XML\BaseXMLElement;
+use Uctoplus\UblWrapper\XML\MainDocInterface;
 use Uctoplus\UblWrapper\XML\XMLInterface;
 
 /**
@@ -13,7 +14,7 @@ use Uctoplus\UblWrapper\XML\XMLInterface;
  * @copyright uctoplus.sk, s.r.o.
  * @package Uctoplus\UblWrapper\UBL\Schema
  */
-abstract class MainDoc extends BaseXMLElement implements XMLInterface
+abstract class MainDoc extends BaseXMLElement implements XMLInterface, MainDocInterface
 {
     protected $UBLVersionID = '2.1';
 

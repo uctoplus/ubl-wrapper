@@ -1,8 +1,8 @@
 <?php
 
 use Carbon\Carbon;
-use Greenter\Ubl\UblValidator;
 use PHPUnit\Framework\TestCase;
+use Uctoplus\UblWrapper\Parser;
 use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CustomerPartyType;
 use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\InvoiceLineType;
 use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\ItemType;
@@ -19,7 +19,7 @@ use Uctoplus\UblWrapper\UBL\v21\MainDoc\Invoice;
  * @author Mário <mario@uctoplus.sk>
  * @copyright uctoplus.sk, s.r.o.
  */
-class InvoiceGeneratorTest extends TestCase
+class AggregatedGeneratorTest extends TestCase
 {
     public function test_generate_xml()
     {
@@ -62,44 +62,33 @@ class InvoiceGeneratorTest extends TestCase
         $invoice->addInvoiceLine($invoiceLine);
 
         $generator->addDocument($invoice);
+        $generator->addDocument($invoice);
 
-        $this->assertTrue($generator->save("generated.xml"));
+        $this->assertTrue($generator->save("generated.xml", true));
     }
 
     /**
      * @depends test_generate_xml
      *
      */
-    public function test_validate_final_xml()
+    public function test_parse_aggregated_file_xml()
     {
-        $ubl = new UblValidator();
-        $xml = file_get_contents('generated.xml');
-        $this->assertTrue($ubl->isValid($xml));
+        $parser = new Parser();
+        $parser->fromFile('generated.xml');
+
+        $this->assertCount(2, $parser->getDocuments());
     }
 
-    public function test_validation_min_occurence_xml()
+    public function test_generate_zip()
     {
+        $generator = new \Uctoplus\UblWrapper\Generator();
+
         $invoice = new Invoice();
         $invoice->setID(1);
         $invoice->setIssueDate(Carbon::now());
         $invoice->addNote("Note No. 1!!!");
         $invoice->addNote(new NoteType("Note No. 2!!!", ["languageID" => "en"]));
 
-        try {
-            $invoice->toXML()->saveXML();
-            $this->assertTrue(false);
-        } catch (Exception $e) {
-            $this->assertTrue(true);
-        }
-    }
-
-    public function test_validation_req_attribute_xml()
-    {
-        $invoice = new Invoice();
-        $invoice->setID(1);
-        $invoice->setIssueDate(Carbon::now());
-        $invoice->addNote("Note No. 1!!!");
-        $invoice->addNote(new NoteType("Note No. 2!!!", ["languageID" => "en"]));
 
         // Create AccountingSupplierParty
         $accountingSupplierParty = new SupplierPartyType();
@@ -113,6 +102,7 @@ class InvoiceGeneratorTest extends TestCase
         $legalMonetaryTotal = new MonetaryTotalType();
 
         $payableAmount = new PayableAmountType();
+        $payableAmount->setCurrencyIDAttribute("EUR");
         $payableAmount->setValue(15.35);
         $legalMonetaryTotal->setPayableAmount($payableAmount);
         $invoice->setLegalMonetaryTotal($legalMonetaryTotal);
@@ -129,62 +119,9 @@ class InvoiceGeneratorTest extends TestCase
 
         $invoice->addInvoiceLine($invoiceLine);
 
-        try {
-            $invoice->toXML()->saveXML();
-            $this->assertTrue(false);
-        } catch (Exception $e) {
-            $this->assertTrue(true);
-        }
-    }
+        $generator->addDocument($invoice);
+        $generator->addDocument($invoice);
 
-    public function test_validate_wrong_attribute_xml()
-    {
-        try {
-            $invoice = new Invoice();
-            $invoice->setID(1);
-            $invoice->setIssueDate(Carbon::now());
-            $invoice->addNote("Note No. 1!!!");
-            $invoice->addNote(new NoteType("Note No. 2!!!", ["čamba-wamba" => "en"]));
-
-            $this->assertTrue(false);
-        } catch (Exception $e) {
-            $this->assertTrue(true);
-        }
-    }
-
-    public function test_validate_wrong_method_value_xml()
-    {
-        try {
-            $invoice = new Invoice();
-            $invoice->setID(new Invoice());
-
-            $this->assertTrue(false);
-        } catch (Exception $e) {
-            $this->assertTrue(true);
-        }
-    }
-
-    public function test_validate_wrong_method_xml()
-    {
-        try {
-            $invoice = new Invoice();
-            $invoice->setCAMBAWAMBA(new Invoice());
-
-            $this->assertTrue(false);
-        } catch (Exception $e) {
-            $this->assertTrue(true);
-        }
-    }
-
-    public function test_no_documents_in_generator_xml()
-    {
-        try {
-            $generator = new \Uctoplus\UblWrapper\Generator();
-            $generator->output();
-
-            $this->assertTrue(false);
-        } catch (Exception $e) {
-            $this->assertTrue(true);
-        }
+        $this->assertTrue($generator->save("generated.zip"));
     }
 }
