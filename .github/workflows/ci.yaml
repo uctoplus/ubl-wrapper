@@ -26,6 +26,7 @@ jobs:
           TEST_NAME: Scarlett
         with:
           php_extensions: xdebug
+          memory_limit: 256M
           bootstrap: vendor/autoload.php
           configuration: phpunit.xml
           args: --coverage-text
