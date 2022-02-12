@@ -18,6 +18,8 @@ jobs:
         run: composer validate --strict
 
       - uses: php-actions/composer@v6
+        with:
+          php_extensions: zip
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v2
