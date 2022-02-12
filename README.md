@@ -1,8 +1,7 @@
 # UBL Wrapper
 
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/uctoplus/ubl-wrapper/PHPUnit/main)
-![Packagist License](https://img.shields.io/packagist/l/uctoplus/php-wrapper)
-![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/uctoplus/ubl-wrapper)
+![Codecov](https://img.shields.io/codecov/c/github/uctoplus/ubl-wrapper?token=35cae89f-6885-4687-9eef-64eb219acd13)
 
 ## About The Project
 
