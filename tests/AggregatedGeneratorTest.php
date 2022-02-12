@@ -124,4 +124,16 @@ class AggregatedGeneratorTest extends TestCase
 
         $this->assertTrue($generator->save("generated.zip"));
     }
+
+    /**
+     * @depends test_generate_zip
+     *
+     */
+    public function test_parse_generated_zip()
+    {
+        $parser = new Parser();
+        $parser->fromFile('generated.zip');
+
+        $this->assertCount(2, $parser->getDocuments());
+    }
 }

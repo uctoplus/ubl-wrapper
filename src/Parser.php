@@ -29,6 +29,10 @@ class Parser
         if (!file_exists($file))
             throw new FileNotFoundException($file);
 
+        if ($this->isZip($file)) {
+            return $this->fromZip($file);
+        }
+
         $fileContent = file_get_contents($file);
         if (!$fileContent)
             throw new FileNotReadableException($file);
@@ -104,5 +108,33 @@ class Parser
         }
 
         throw new Exception("Unable to guess model of " . $node->nodeName);
+    }
+
+    private function isZip($file)
+    {
+        $basename = basename($file);
+        list($name, $extension) = explode('.', $basename, 2);
+
+        return $extension === "zip";
+    }
+
+    protected function fromZip($file)
+    {
+        $zip = new \ZipArchive();
+        if ($zip->open($file) === TRUE) {
+            $zip->extractTo(sys_get_temp_dir() . "/unzip");
+            $zip->close();
+
+            foreach (glob(sys_get_temp_dir() . "/unzip/*.xml") as $filename) {
+                $fileContent = file_get_contents($filename);
+                if (!$fileContent)
+                    throw new FileNotReadableException($file);
+
+                $this->fromString($fileContent);
+            }
+            return $this;
+        }
+
+        throw new FileNotReadableException($file);
     }
 }
