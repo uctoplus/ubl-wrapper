@@ -117,7 +117,7 @@ class Generator
      */
     private function guessResultFileType($aggregated)
     {
-        if (count($this->documents) > 0 && !$aggregated) {
+        if (count($this->documents) > 1 && !$aggregated) {
             return "zip";
         }
 
