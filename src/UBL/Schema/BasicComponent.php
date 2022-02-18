@@ -53,6 +53,8 @@ abstract class BasicComponent implements XMLInterface
 
         if (!empty($value)) {
             $this->value = trim($value);
+        } else if (is_numeric($value)) {
+            $this->value = $value;
         }
 
         foreach ($attributes as $attribute => $_value) {
@@ -126,8 +128,8 @@ abstract class BasicComponent implements XMLInterface
             }
         }
 
-        if ($this->value == null)
-            throw new ValueError("Value for BasicComponent[" . $this->getTag() . "] is empty!");
+        if ($this->value == null && !is_numeric($this->value))
+            throw new ValueError("Value for BasicComponent[" . get_class($this) . ' -> ' . $this->getTag() . "] is empty!");
 
         $this->xml = new DOMDocument("1.0", "utf-8");
         $this->xml->preserveWhiteSpace = false;

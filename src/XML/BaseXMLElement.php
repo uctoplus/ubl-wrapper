@@ -186,7 +186,7 @@ abstract class BaseXMLElement
         // Validate required nodes
         foreach ($this->minOccurs as $tag => $minOccur) {
             if (!isset($this->$tag)) {
-                throw new XSDMinOccurException($tag, $minOccur);
+                throw new XSDMinOccurException(get_class($this) . ' -> ' . $tag, $minOccur);
             }
         }
 
