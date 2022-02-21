@@ -3,6 +3,7 @@
 namespace Uctoplus\UblWrapper\UBL\Schema;
 
 use BadMethodCallException;
+use Carbon\Carbon;
 use DOMAttr;
 use DOMDocument;
 use DOMNode;
@@ -51,10 +52,8 @@ abstract class BasicComponent implements XMLInterface
             $this->tag = array_pop($tag);
         }
 
-        if (!empty($value)) {
-            $this->value = trim($value);
-        } else if (is_numeric($value)) {
-            $this->value = $value;
+        if ($value !== null) {
+            $this->setValue($value);
         }
 
         foreach ($attributes as $attribute => $_value) {
@@ -94,6 +93,10 @@ abstract class BasicComponent implements XMLInterface
      */
     public function setValue($value)
     {
+        if (!(is_scalar($value) || $value instanceof Carbon)) {
+            throw new ValueError("BasicComponent[" . get_class($this) . " -> " . $this->tag . "] value has to be type scalar!");
+        }
+
         $this->value = $value;
         return $this;
     }
@@ -128,7 +131,7 @@ abstract class BasicComponent implements XMLInterface
             }
         }
 
-        if ($this->value == null && !is_numeric($this->value))
+        if ($this->value === null)
             throw new ValueError("Value for BasicComponent[" . get_class($this) . ' -> ' . $this->getTag() . "] is empty!");
 
         $this->xml = new DOMDocument("1.0", "utf-8");
@@ -201,7 +204,7 @@ abstract class BasicComponent implements XMLInterface
     public function __set($name, $value)
     {
         if (!isset($this->attributeCasts[$name])) {
-            throw new XSDRequiredAttributeException($name, $this->attributeCasts[$name]);
+            throw new XSDRequiredAttributeException(get_class($this) . "–>" . $this->tag, $name);
         }
 
         if (!is_scalar($value)) {

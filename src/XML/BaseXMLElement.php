@@ -3,6 +3,7 @@
 namespace Uctoplus\UblWrapper\XML;
 
 use BadMethodCallException;
+use Carbon\Carbon;
 use DOMDocument;
 use DOMNode;
 use Uctoplus\UblWrapper\Exceptions\XML\XSDCastNotExistsException;
@@ -147,7 +148,7 @@ abstract class BaseXMLElement
     {
         if (class_exists($castClass)) {
             $castObj = new $castClass;
-            if ($castObj instanceof BasicComponent) {
+            if ((is_scalar($value) || $value instanceof Carbon) && $castObj instanceof BasicComponent) {
                 return true;
             }
 
