@@ -66,7 +66,7 @@ class Parser
                         $model = new $class();
 
                         if ($model instanceof MainDoc) {
-                            $this->documents[] = $model->fromXML($childNode);
+                            $this->documents[] = $model->fromXML($mainDoc);
                         }
                     }
                 }

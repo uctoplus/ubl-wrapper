@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uct:list xmlns:uct="https://moje.uctoplus.sk/xml/ubl-extension">
+  <uct:document>
+    <Invoice xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+             xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+      <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+      <cbc:UUID>e19bc971-1928-49be-8766-dd0ca3af3c5e</cbc:UUID>
+      <cbc:ID>FA1-210026</cbc:ID>
+      <cbc:IssueDate>2021-08-01</cbc:IssueDate>
+      <cbc:TaxPointDate>2021-07-31</cbc:TaxPointDate>
+      <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+      <cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
+      <cbc:PaymentCurrencyCode>EUR</cbc:PaymentCurrencyCode>
+      <cac:AccountingSupplierParty>
+        <cac:Party>
+          <cac:PartyName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:Name>Epic Fail Studio s.r.o.</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:StreetName>Potočná 10/4</cbc:StreetName>
+            <cbc:CityName>Limbach</cbc:CityName>
+            <cbc:PostalZone>90091</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>SVK</cbc:IdentificationCode>
+              <cbc:Name>Slovensko</cbc:Name>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:Person xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:ID>13</cbc:ID>
+            <cbc:FirstName>Mário</cbc:FirstName>
+            <cbc:FamilyName>Čechovič</cbc:FamilyName>
+            <cac:Contact>
+              <cbc:ElectronicMail>mimographix@gmail.com</cbc:ElectronicMail>
+            </cac:Contact>
+          </cac:Person>
+        </cac:Party>
+      </cac:AccountingSupplierParty>
+      <cac:AccountingCustomerParty>
+        <cac:Party>
+          <cac:PartyName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:Name>Calculon, s.r.o.</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:StreetName>Lošonec 191</cbc:StreetName>
+            <cbc:CityName>Lošonec</cbc:CityName>
+            <cbc:PostalZone>91904</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>SVK</cbc:IdentificationCode>
+              <cbc:Name>Slovensko</cbc:Name>
+            </cac:Country>
+          </cac:PostalAddress>
+        </cac:Party>
+      </cac:AccountingCustomerParty>
+      <cbc:PricingCurrencyCode>EUR</cbc:PricingCurrencyCode>
+      <cac:LegalMonetaryTotal>
+        <cbc:PayableAmount currencyID="EUR">0</cbc:PayableAmount>
+        <cbc:PrepaidAmount currencyID="EUR">72</cbc:PrepaidAmount>
+      </cac:LegalMonetaryTotal>
+    </Invoice>
+  </uct:document>
+  <uct:document>
+    <Invoice xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+             xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+      <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+      <cbc:UUID>c4f6c729-f9d0-406f-940e-33b5e0024015</cbc:UUID>
+      <cbc:ID>FA1-210025</cbc:ID>
+      <cbc:IssueDate>2021-08-01</cbc:IssueDate>
+      <cbc:TaxPointDate>2021-07-31</cbc:TaxPointDate>
+      <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+      <cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
+      <cbc:PaymentCurrencyCode>EUR</cbc:PaymentCurrencyCode>
+      <cac:AccountingSupplierParty>
+        <cac:Party>
+          <cac:PartyName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:Name>Epic Fail Studio s.r.o.</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:StreetName>Potočná 10/4</cbc:StreetName>
+            <cbc:CityName>Limbach</cbc:CityName>
+            <cbc:PostalZone>90091</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>SVK</cbc:IdentificationCode>
+              <cbc:Name>Slovensko</cbc:Name>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:Person xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:ID>13</cbc:ID>
+            <cbc:FirstName>Mário</cbc:FirstName>
+            <cbc:FamilyName>Čechovič</cbc:FamilyName>
+            <cac:Contact>
+              <cbc:ElectronicMail>mimographix@gmail.com</cbc:ElectronicMail>
+            </cac:Contact>
+          </cac:Person>
+        </cac:Party>
+      </cac:AccountingSupplierParty>
+      <cac:AccountingCustomerParty>
+        <cac:Party>
+          <cac:PartyName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:Name>BMM Partners a.s.</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cbc:StreetName>Šustekova 6</cbc:StreetName>
+            <cbc:CityName>Bratislava - mestská časť Petržalka</cbc:CityName>
+            <cbc:PostalZone>85104</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>SVK</cbc:IdentificationCode>
+              <cbc:Name>Slovensko</cbc:Name>
+            </cac:Country>
+          </cac:PostalAddress>
+        </cac:Party>
+      </cac:AccountingCustomerParty>
+      <cbc:PricingCurrencyCode>EUR</cbc:PricingCurrencyCode>
+      <cac:LegalMonetaryTotal>
+        <cbc:PayableAmount currencyID="EUR">3500.41</cbc:PayableAmount>
+        <cbc:PrepaidAmount currencyID="EUR">2.39</cbc:PrepaidAmount>
+      </cac:LegalMonetaryTotal>
+    </Invoice>
+  </uct:document>
+</uct:list>

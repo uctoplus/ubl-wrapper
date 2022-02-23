@@ -77,6 +77,15 @@ class AggregatedGeneratorTest extends TestCase
         $parser->fromFile('generated.xml');
 
         $this->assertCount(2, $parser->getDocuments());
+
+        try {
+            $invoice = $parser->getDocuments()[0];
+            $invoice->toXML()->saveXML();
+
+            $this->assertTrue(true);
+        } catch (Exception $e) {
+            $this->assertTrue(false);
+        }
     }
 
     public function test_generate_zip()
