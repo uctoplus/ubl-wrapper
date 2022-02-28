@@ -182,6 +182,11 @@ abstract class BaseXMLElement
         throw new XSDElementNotImplementedException($componentClass);
     }
 
+    public function getNodes()
+    {
+        return $this->nodes;
+    }
+
     protected function initXML()
     {
         // Validate required nodes
