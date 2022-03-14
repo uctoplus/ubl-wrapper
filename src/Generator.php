@@ -40,6 +40,14 @@ class Generator
         return $this;
     }
 
+    /**
+     * @return int
+     */
+    public function getDocumentsCount()
+    {
+        return count($this->documents);
+    }
+
     public function setFormattedOutput($value = true)
     {
         $this->formatOutput = $value;
