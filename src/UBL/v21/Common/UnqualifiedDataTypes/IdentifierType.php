@@ -15,4 +15,13 @@ class IdentifierType extends BasicComponent
 {
     protected $type = "udt:IdentifierType";
 
+    protected $attributeCasts = [
+        'schemeID' => false,
+        'schemeName' => false,
+        'schemeAgencyID' => false, // Defaults to the UN/EDIFACT data element 3055 code list.
+        'schemeAgencyName' => false,
+        'schemeVersionID' => false,
+        'schemeDataURI' => false,
+        'schemeURI' => false,
+    ];
 }

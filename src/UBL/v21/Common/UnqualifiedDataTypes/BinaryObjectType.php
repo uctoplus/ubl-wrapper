@@ -15,4 +15,12 @@ class BinaryObjectType extends BasicComponent
 {
     protected $type = "udt:BinaryObjectType";
 
+    protected $attributeCasts = [
+        'format' => false,
+        'mimeCode' => false,
+        'encodingCode' => false,
+        'characterSetCode' => false,
+        'uri' => false,
+        'filename' => false,
+    ];
 }
