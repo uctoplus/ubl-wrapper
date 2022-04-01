@@ -12,4 +12,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\BinaryObjectType;
  */
 class EmbeddedDocumentBinaryObjectType extends BinaryObjectType
 {
+    protected $attributeCasts = [
+        'format' => false,
+        'encodingCode' => false,
+        'characterSetCode' => false,
+        'uri' => false,
+        'filename' => false,
+        'mimeCode' => true,
+    ];
 }
