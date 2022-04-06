@@ -38,6 +38,8 @@ abstract class BasicComponent implements XMLInterface
 
     protected $type = "";
 
+    protected $predeclaredCharacters = array('&', '<', '>', '"', "'");
+
     /**
      * @var DOMDocument
      */
@@ -145,13 +147,25 @@ abstract class BasicComponent implements XMLInterface
 
         $value = $this->__toString();
 
-        $rootElement = $this->xml->createElement($this->getXMLNS() . ":" . $this->getTag(), $value);
+        $rootElement = $this->xml->createElement($this->getXMLNS() . ":" . $this->getTag());
+        $rootElement->appendChild($this->createCDATASection($value));
         foreach ($this->attributes as $key => $value) {
             $rootElement->setAttribute($key, $value);
         }
         $this->xml->appendChild($rootElement);
 
         return $this->xml;
+    }
+
+    public function createCDATASection($value)
+    {
+        foreach ($this->predeclaredCharacters as $c) {
+            if (stripos($value, $c) !== false) {
+                return $this->xml->createCDATASection($value);
+            }
+        }
+
+        return $this->xml->createTextNode($value);
     }
 
     public function fromXML(DOMNode $node)

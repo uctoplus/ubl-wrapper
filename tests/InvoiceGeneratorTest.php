@@ -33,6 +33,8 @@ class InvoiceGeneratorTest extends TestCase
         $invoice->setIssueDate(Carbon::now());
         $invoice->addNote("Note No. 1!!!");
         $invoice->addNote(new NoteType("Note No. 2!!!", ["languageID" => "en"]));
+        $invoice->addNote("Note & Note No. 3!!!");
+        $invoice->addNote("Note <is not> No.4!!!");
 
 
         // Create AccountingSupplierParty
