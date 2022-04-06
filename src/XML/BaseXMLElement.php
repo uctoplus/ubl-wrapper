@@ -213,8 +213,12 @@ abstract class BaseXMLElement
         }
 
         foreach ($nodes as $node) {
-            $rootElement->setAttributeNS('http://www.w3.org/2000/xmlns/', 'xmlns' . (empty($node->getXMLNS()) ? "" : ":" . $node->getXMLNS()), $node->getXMLNS_URI());
-            $rootElement->appendChild($this->xml->importNode($node->toXML()->documentElement, TRUE));
+            try {
+                $rootElement->setAttributeNS('http://www.w3.org/2000/xmlns/', 'xmlns' . (empty($node->getXMLNS()) ? "" : ":" . $node->getXMLNS()), $node->getXMLNS_URI());
+                $rootElement->appendChild($this->xml->importNode($node->toXML()->documentElement, TRUE));
+            } catch (\ValueError $e) {
+                throw new \ValueError((!empty($this->tag) ? $this->tag . " -> " : "") . $e->getMessage());
+            }
         }
     }
 
