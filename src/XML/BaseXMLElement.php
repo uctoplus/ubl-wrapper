@@ -36,7 +36,7 @@ abstract class BaseXMLElement
      */
     protected $minOccurs = [];
 
-    private static $magicMethods = [];
+    protected static $magicMethods = [];
 
     /**
      * @var DOMDocument
