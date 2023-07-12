@@ -1,5 +1,7 @@
 <?php
 
+namespace Tests\Uctoplus\UblWrapper;
+
 use Greenter\Ubl\UblValidator;
 use PHPUnit\Framework\TestCase;
 use Uctoplus\UblWrapper\Parser;

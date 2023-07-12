@@ -12,6 +12,7 @@ use Uctoplus\UblWrapper\Exceptions\XML\XSDMinOccurException;
 use Uctoplus\UblWrapper\Exceptions\XML\XSDValidationException;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
+use ValueError;
 
 /**
  * Class BaseXMLElement
@@ -99,7 +100,7 @@ abstract class BaseXMLElement
 
     public function __get($name)
     {
-        return $this->nodes[$name];
+        return $this->nodes[$name] ?? null;
     }
 
     public function __set($name, $value)
@@ -216,8 +217,8 @@ abstract class BaseXMLElement
             try {
                 $rootElement->setAttributeNS('http://www.w3.org/2000/xmlns/', 'xmlns' . (empty($node->getXMLNS()) ? "" : ":" . $node->getXMLNS()), $node->getXMLNS_URI());
                 $rootElement->appendChild($this->xml->importNode($node->toXML()->documentElement, TRUE));
-            } catch (\ValueError $e) {
-                throw new \ValueError((!empty($this->tag) ? $this->tag . " -> " : "") . $e->getMessage());
+            } catch (ValueError $e) {
+                throw new ValueError((!empty($this->tag) ? $this->tag . " -> " : "") . $e->getMessage());
             }
         }
     }

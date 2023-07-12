@@ -1,6 +1,10 @@
 <?php
 
+namespace Tests\Uctoplus\UblWrapper;
+
+use BadMethodCallException;
 use Carbon\Carbon;
+use Exception;
 use Greenter\Ubl\UblValidator;
 use PHPUnit\Framework\TestCase;
 use Uctoplus\UblWrapper\Exceptions\XML\XSDMinOccurException;
@@ -15,6 +19,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineExtensionAmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PayableAmountType;
 use Uctoplus\UblWrapper\UBL\v21\MainDoc\Invoice;
+use ValueError;
 
 /**
  * Class InvoiceGeneratorTest

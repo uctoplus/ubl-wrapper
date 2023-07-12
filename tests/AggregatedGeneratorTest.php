@@ -1,5 +1,7 @@
 <?php
 
+namespace Tests\Uctoplus\UblWrapper;
+
 use Carbon\Carbon;
 use PHPUnit\Framework\TestCase;
 use Uctoplus\UblWrapper\Parser;
