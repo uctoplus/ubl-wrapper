@@ -20,7 +20,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TitleType;
 /**
  * Class PersonType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -53,7 +53,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TitleType;
  * @method self setContact(ContactType $value)
  * @method FinancialAccountType getFinancialAccount()
  * @method self setFinancialAccount(FinancialAccountType $value)
- * @method DocumentReferenceType getIdentityDocumentReference()
+ * @method DocumentReferenceType[] getIdentityDocumentReference()
  * @method self addIdentityDocumentReference(DocumentReferenceType $value)
  * @method self setIdentityDocumentReference(DocumentReferenceType ...$values)
  * @method AddressType getResidenceAddress()

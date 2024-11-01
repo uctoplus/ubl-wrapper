@@ -7,19 +7,19 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 /**
  * Class DocumentResponseType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method ResponseType getResponse()
  * @method self setResponse(ResponseType $value)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
  * @method PartyType getIssuerParty()
  * @method self setIssuerParty(PartyType $value)
  * @method PartyType getRecipientParty()
  * @method self setRecipientParty(PartyType $value)
- * @method LineResponseType getLineResponse()
+ * @method LineResponseType[] getLineResponse()
  * @method self addLineResponse(LineResponseType $value)
  * @method self setLineResponse(LineResponseType ...$values)
  */

@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\XML\XMLInterface;
  * Class MainDoc
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\Schema
  */
 abstract class MainDoc extends BaseXMLElement implements XMLInterface, MainDocInterface

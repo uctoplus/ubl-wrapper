@@ -8,10 +8,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 /**
  * Class AppealTermsType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method PeriodType getPresentationPeriod()

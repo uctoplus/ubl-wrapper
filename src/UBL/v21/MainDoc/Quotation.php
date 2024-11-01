@@ -34,7 +34,7 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
 /**
  * Class Quotation
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\MainDoc
  *
  * @method CustomizationIDType getCustomizationID()
@@ -53,7 +53,7 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
  * @method self setIssueDate(IssueDateType|string $value)
  * @method IssueTimeType getIssueTime()
  * @method self setIssueTime(IssueTimeType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method PricingCurrencyCodeType getPricingCurrencyCode()
@@ -64,13 +64,13 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
  * @method self setValidityPeriod(PeriodType $value)
  * @method DocumentReferenceType getRequestForQuotationDocumentReference()
  * @method self setRequestForQuotationDocumentReference(DocumentReferenceType $value)
- * @method DocumentReferenceType getAdditionalDocumentReference()
+ * @method DocumentReferenceType[] getAdditionalDocumentReference()
  * @method self addAdditionalDocumentReference(DocumentReferenceType $value)
  * @method self setAdditionalDocumentReference(DocumentReferenceType ...$values)
- * @method ContractType getContract()
+ * @method ContractType[] getContract()
  * @method self addContract(ContractType $value)
  * @method self setContract(ContractType ...$values)
- * @method SignatureType getSignature()
+ * @method SignatureType[] getSignature()
  * @method self addSignature(SignatureType $value)
  * @method self setSignature(SignatureType ...$values)
  * @method SupplierPartyType getSellerSupplierParty()
@@ -79,7 +79,7 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
  * @method self setBuyerCustomerParty(CustomerPartyType $value)
  * @method CustomerPartyType getOriginatorCustomerParty()
  * @method self setOriginatorCustomerParty(CustomerPartyType $value)
- * @method DeliveryType getDelivery()
+ * @method DeliveryType[] getDelivery()
  * @method self addDelivery(DeliveryType $value)
  * @method self setDelivery(DeliveryType ...$values)
  * @method DeliveryTermsType getDeliveryTerms()
@@ -88,17 +88,17 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
  * @method self setPaymentMeans(PaymentMeansType $value)
  * @method TransactionConditionsType getTransactionConditions()
  * @method self setTransactionConditions(TransactionConditionsType $value)
- * @method AllowanceChargeType getAllowanceCharge()
+ * @method AllowanceChargeType[] getAllowanceCharge()
  * @method self addAllowanceCharge(AllowanceChargeType $value)
  * @method self setAllowanceCharge(AllowanceChargeType ...$values)
  * @method CountryType getDestinationCountry()
  * @method self setDestinationCountry(CountryType $value)
- * @method TaxTotalType getTaxTotal()
+ * @method TaxTotalType[] getTaxTotal()
  * @method self addTaxTotal(TaxTotalType $value)
  * @method self setTaxTotal(TaxTotalType ...$values)
  * @method MonetaryTotalType getQuotedMonetaryTotal()
  * @method self setQuotedMonetaryTotal(MonetaryTotalType $value)
- * @method QuotationLineType getQuotationLine()
+ * @method QuotationLineType[] getQuotationLine()
  * @method self addQuotationLine(QuotationLineType $value)
  * @method self setQuotationLine(QuotationLineType ...$values)
  */

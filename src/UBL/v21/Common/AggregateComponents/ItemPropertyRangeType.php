@@ -9,7 +9,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumValueType;
 /**
  * Class ItemPropertyRangeType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method MinimumValueType getMinimumValue()

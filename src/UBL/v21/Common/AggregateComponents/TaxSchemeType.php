@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxTypeCodeType;
 /**
  * Class TaxSchemeType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -22,7 +22,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxTypeCodeType;
  * @method self setTaxTypeCode(TaxTypeCodeType|string $value)
  * @method CurrencyCodeType getCurrencyCode()
  * @method self setCurrencyCode(CurrencyCodeType|string $value)
- * @method AddressType getJurisdictionRegionAddress()
+ * @method AddressType[] getJurisdictionRegionAddress()
  * @method self addJurisdictionRegionAddress(AddressType $value)
  * @method self setJurisdictionRegionAddress(AddressType ...$values)
  */

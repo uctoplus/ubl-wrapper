@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTaxAmountType;
 /**
  * Class QuotationLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method QuantityType getQuantity()
@@ -29,15 +29,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTaxAmountType;
  * @method self setTotalTaxAmount(TotalTaxAmountType|string $value)
  * @method RequestForQuotationLineIDType getRequestForQuotationLineID()
  * @method self setRequestForQuotationLineID(RequestForQuotationLineIDType|string $value)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
  * @method LineItemType getLineItem()
  * @method self setLineItem(LineItemType $value)
- * @method LineItemType getSellerProposedSubstituteLineItem()
+ * @method LineItemType[] getSellerProposedSubstituteLineItem()
  * @method self addSellerProposedSubstituteLineItem(LineItemType $value)
  * @method self setSellerProposedSubstituteLineItem(LineItemType ...$values)
- * @method LineItemType getAlternativeLineItem()
+ * @method LineItemType[] getAlternativeLineItem()
  * @method self addAlternativeLineItem(LineItemType $value)
  * @method self setAlternativeLineItem(LineItemType ...$values)
  * @method LineReferenceType getRequestLineReference()

@@ -17,7 +17,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TrackingIDType;
 /**
  * Class DeliveryType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -56,12 +56,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TrackingIDType;
  * @method self setCarrierParty(PartyType $value)
  * @method PartyType getDeliveryParty()
  * @method self setDeliveryParty(PartyType $value)
- * @method PartyType getNotifyParty()
+ * @method PartyType[] getNotifyParty()
  * @method self addNotifyParty(PartyType $value)
  * @method self setNotifyParty(PartyType ...$values)
  * @method DespatchType getDespatch()
  * @method self setDespatch(DespatchType $value)
- * @method DeliveryTermsType getDeliveryTerms()
+ * @method DeliveryTermsType[] getDeliveryTerms()
  * @method self addDeliveryTerms(DeliveryTermsType $value)
  * @method self setDeliveryTerms(DeliveryTermsType ...$values)
  * @method DeliveryUnitType getMinimumDeliveryUnit()

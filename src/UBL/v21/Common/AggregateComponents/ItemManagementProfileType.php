@@ -14,7 +14,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetServicePercentType;
 /**
  * Class ItemManagementProfileType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method FrozenPeriodDaysNumericType getFrozenPeriodDaysNumeric()
@@ -25,7 +25,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetServicePercentType;
  * @method self setMultipleOrderQuantity(MultipleOrderQuantityType|string $value)
  * @method OrderIntervalDaysNumericType getOrderIntervalDaysNumeric()
  * @method self setOrderIntervalDaysNumeric(OrderIntervalDaysNumericType|string $value)
- * @method ReplenishmentOwnerDescriptionType getReplenishmentOwnerDescription()
+ * @method ReplenishmentOwnerDescriptionType[] getReplenishmentOwnerDescription()
  * @method self addReplenishmentOwnerDescription(ReplenishmentOwnerDescriptionType|string $value)
  * @method self setReplenishmentOwnerDescription(ReplenishmentOwnerDescriptionType ...$values)
  * @method TargetServicePercentType getTargetServicePercent()

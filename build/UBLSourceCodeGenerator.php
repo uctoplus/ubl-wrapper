@@ -178,11 +178,12 @@ class UBLSourceCodeGenerator extends Command
 
             //methods
             if (!$forCbcType) {
-                $methods[] = $_type . ' get' . $_subElementName . '()';
                 if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] === 'unbounded') {
+                    $methods[] = $_type . '[] get' . $_subElementName . '()';
                     $methods[] = 'self add' . $_subElementName . '(' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
                     $methods[] = 'self set' . $_subElementName . '(' . $_type . ' ...$values)';
                 } else {
+                    $methods[] = $_type . ' get' . $_subElementName . '()';
                     $methods[] = 'self set' . $_subElementName . '(' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
                 }
 
@@ -214,7 +215,7 @@ class UBLSourceCodeGenerator extends Command
         $content .= PHP_EOL . '/**' . PHP_EOL;
         $content .= ' * Class ' . $type . PHP_EOL;
         $content .= ' *' . PHP_EOL;
-        $content .= ' * @copyright uctoplus.sk, s.r.o.' . PHP_EOL;
+        $content .= ' * @copyright uctoplus.sk, a.s.' . PHP_EOL;
         $content .= ' * @package ' . $_namespace . PHP_EOL;
         //methods
         if (count($methods)) {
@@ -410,11 +411,12 @@ class UBLSourceCodeGenerator extends Command
                 $uses[] = $_classData;
 
             //methods
-            $methods[] = $_type . ' get' . $_subElementName . '()';
             if ($castData['maxOccurs'] > 1 || $castData['maxOccurs'] === 'unbounded') {
+                $methods[] = $_type . '[] get' . $_subElementName . '()';
                 $methods[] = 'self add' . $_subElementName . '(' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
                 $methods[] = 'self set' . $_subElementName . '(' . $_type . ' ...$values)';
             } else {
+                $methods[] = $_type . ' get' . $_subElementName . '()';
                 $methods[] = 'self set' . $_subElementName . '(' . $_type . ($_subElementNamespace === "cbc" ? "|string" : "") . ' $value)';
             }
 
@@ -447,7 +449,7 @@ class UBLSourceCodeGenerator extends Command
         $content .= PHP_EOL . '/**' . PHP_EOL;
         $content .= ' * Class ' . $name . PHP_EOL;
         $content .= ' *' . PHP_EOL;
-        $content .= ' * @copyright uctoplus.sk, s.r.o.' . PHP_EOL;
+        $content .= ' * @copyright uctoplus.sk, a.s.' . PHP_EOL;
         $content .= ' * @package ' . $_namespace . PHP_EOL;
         //methods
         if (count($methods)) {

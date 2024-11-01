@@ -9,15 +9,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LocationType;
 /**
  * Class StowageType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method LocationIDType getLocationID()
  * @method self setLocationID(LocationIDType|string $value)
- * @method LocationType getLocation()
+ * @method LocationType[] getLocation()
  * @method self addLocation(LocationType|string $value)
  * @method self setLocation(LocationType ...$values)
- * @method DimensionType getMeasurementDimension()
+ * @method DimensionType[] getMeasurementDimension()
  * @method self addMeasurementDimension(DimensionType $value)
  * @method self setMeasurementDimension(DimensionType ...$values)
  */

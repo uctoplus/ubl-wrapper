@@ -10,7 +10,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 /**
  * Class ItemIdentificationType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -19,10 +19,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @method self setExtendedID(ExtendedIDType|string $value)
  * @method BarcodeSymbologyIDType getBarcodeSymbologyID()
  * @method self setBarcodeSymbologyID(BarcodeSymbologyIDType|string $value)
- * @method PhysicalAttributeType getPhysicalAttribute()
+ * @method PhysicalAttributeType[] getPhysicalAttribute()
  * @method self addPhysicalAttribute(PhysicalAttributeType $value)
  * @method self setPhysicalAttribute(PhysicalAttributeType ...$values)
- * @method DimensionType getMeasurementDimension()
+ * @method DimensionType[] getMeasurementDimension()
  * @method self addMeasurementDimension(DimensionType $value)
  * @method self setMeasurementDimension(DimensionType ...$values)
  * @method PartyType getIssuerParty()

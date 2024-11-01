@@ -8,15 +8,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\BuyerProfileURIType;
 /**
  * Class ContractingPartyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method BuyerProfileURIType getBuyerProfileURI()
  * @method self setBuyerProfileURI(BuyerProfileURIType|string $value)
- * @method ContractingPartyTypeType getContractingPartyType()
+ * @method ContractingPartyTypeType[] getContractingPartyType()
  * @method self addContractingPartyType(ContractingPartyTypeType $value)
  * @method self setContractingPartyType(ContractingPartyTypeType ...$values)
- * @method ContractingActivityType getContractingActivity()
+ * @method ContractingActivityType[] getContractingActivity()
  * @method self addContractingActivity(ContractingActivityType $value)
  * @method self setContractingActivity(ContractingActivityType ...$values)
  * @method PartyType getParty()

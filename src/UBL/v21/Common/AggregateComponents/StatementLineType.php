@@ -15,12 +15,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 /**
  * Class StatementLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method UUIDType getUUID()
@@ -37,7 +37,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @method self setPaymentPurposeCode(PaymentPurposeCodeType|string $value)
  * @method PaymentMeansType getPaymentMeans()
  * @method self setPaymentMeans(PaymentMeansType $value)
- * @method PaymentTermsType getPaymentTerms()
+ * @method PaymentTermsType[] getPaymentTerms()
  * @method self addPaymentTerms(PaymentTermsType $value)
  * @method self setPaymentTerms(PaymentTermsType ...$values)
  * @method CustomerPartyType getBuyerCustomerParty()
@@ -52,21 +52,21 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @method self setAccountingSupplierParty(SupplierPartyType $value)
  * @method PartyType getPayeeParty()
  * @method self setPayeeParty(PartyType $value)
- * @method PeriodType getInvoicePeriod()
+ * @method PeriodType[] getInvoicePeriod()
  * @method self addInvoicePeriod(PeriodType $value)
  * @method self setInvoicePeriod(PeriodType ...$values)
- * @method BillingReferenceType getBillingReference()
+ * @method BillingReferenceType[] getBillingReference()
  * @method self addBillingReference(BillingReferenceType $value)
  * @method self setBillingReference(BillingReferenceType ...$values)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
  * @method ExchangeRateType getExchangeRate()
  * @method self setExchangeRate(ExchangeRateType $value)
- * @method AllowanceChargeType getAllowanceCharge()
+ * @method AllowanceChargeType[] getAllowanceCharge()
  * @method self addAllowanceCharge(AllowanceChargeType $value)
  * @method self setAllowanceCharge(AllowanceChargeType ...$values)
- * @method PaymentType getCollectedPayment()
+ * @method PaymentType[] getCollectedPayment()
  * @method self addCollectedPayment(PaymentType $value)
  * @method self setCollectedPayment(PaymentType ...$values)
  */

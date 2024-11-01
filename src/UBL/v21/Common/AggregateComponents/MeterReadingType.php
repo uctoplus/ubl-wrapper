@@ -20,7 +20,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterReadingMetho
 /**
  * Class MeterReadingType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -45,7 +45,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreviousMeterReadingMetho
  * @method self setLatestMeterReadingMethod(LatestMeterReadingMethodType|string $value)
  * @method LatestMeterReadingMethodCodeType getLatestMeterReadingMethodCode()
  * @method self setLatestMeterReadingMethodCode(LatestMeterReadingMethodCodeType|string $value)
- * @method MeterReadingCommentsType getMeterReadingComments()
+ * @method MeterReadingCommentsType[] getMeterReadingComments()
  * @method self addMeterReadingComments(MeterReadingCommentsType|string $value)
  * @method self setMeterReadingComments(MeterReadingCommentsType ...$values)
  * @method DeliveredQuantityType getDeliveredQuantity()

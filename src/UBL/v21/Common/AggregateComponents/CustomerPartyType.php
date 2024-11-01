@@ -10,14 +10,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplierAssignedAccountID
 /**
  * Class CustomerPartyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method CustomerAssignedAccountIDType getCustomerAssignedAccountID()
  * @method self setCustomerAssignedAccountID(CustomerAssignedAccountIDType|string $value)
  * @method SupplierAssignedAccountIDType getSupplierAssignedAccountID()
  * @method self setSupplierAssignedAccountID(SupplierAssignedAccountIDType|string $value)
- * @method AdditionalAccountIDType getAdditionalAccountID()
+ * @method AdditionalAccountIDType[] getAdditionalAccountID()
  * @method self addAdditionalAccountID(AdditionalAccountIDType|string $value)
  * @method self setAdditionalAccountID(AdditionalAccountIDType ...$values)
  * @method PartyType getParty()

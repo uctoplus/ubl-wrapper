@@ -14,12 +14,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValidatorIDType;
 /**
  * Class SignatureType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method ValidationDateType getValidationDate()

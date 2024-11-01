@@ -17,7 +17,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
 /**
  * Class CatalogueReferenceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -32,10 +32,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
  * @method self setRevisionDate(RevisionDateType|string $value)
  * @method RevisionTimeType getRevisionTime()
  * @method self setRevisionTime(RevisionTimeType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method VersionIDType getVersionID()

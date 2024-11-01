@@ -11,10 +11,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
 /**
  * Class EconomicOperatorShortListType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method LimitationDescriptionType getLimitationDescription()
+ * @method LimitationDescriptionType[] getLimitationDescription()
  * @method self addLimitationDescription(LimitationDescriptionType|string $value)
  * @method self setLimitationDescription(LimitationDescriptionType ...$values)
  * @method ExpectedQuantityType getExpectedQuantity()
@@ -23,7 +23,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MinimumQuantityType;
  * @method self setMaximumQuantity(MaximumQuantityType|string $value)
  * @method MinimumQuantityType getMinimumQuantity()
  * @method self setMinimumQuantity(MinimumQuantityType|string $value)
- * @method PartyType getPreSelectedParty()
+ * @method PartyType[] getPreSelectedParty()
  * @method self addPreSelectedParty(PartyType $value)
  * @method self setPreSelectedParty(PartyType ...$values)
  */

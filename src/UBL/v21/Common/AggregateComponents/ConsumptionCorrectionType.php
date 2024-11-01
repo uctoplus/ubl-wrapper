@@ -19,7 +19,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NormalTemperatureReductio
 /**
  * Class ConsumptionCorrectionType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method CorrectionTypeType getCorrectionType()
@@ -36,7 +36,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NormalTemperatureReductio
  * @method self setNormalTemperatureReductionQuantity(NormalTemperatureReductionQuantityType|string $value)
  * @method DifferenceTemperatureReductionQuantityType getDifferenceTemperatureReductionQuantity()
  * @method self setDifferenceTemperatureReductionQuantity(DifferenceTemperatureReductionQuantityType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method CorrectionUnitAmountType getCorrectionUnitAmount()

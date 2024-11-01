@@ -18,7 +18,7 @@ use ValueError;
  * Class BaseXMLElement
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\XML
  */
 abstract class BaseXMLElement

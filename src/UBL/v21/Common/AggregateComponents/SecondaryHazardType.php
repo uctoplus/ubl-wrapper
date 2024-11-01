@@ -12,7 +12,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PlacardNotationType;
 /**
  * Class SecondaryHazardType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -23,7 +23,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PlacardNotationType;
  * @method self setPlacardEndorsement(PlacardEndorsementType|string $value)
  * @method EmergencyProceduresCodeType getEmergencyProceduresCode()
  * @method self setEmergencyProceduresCode(EmergencyProceduresCodeType|string $value)
- * @method ExtensionType getExtension()
+ * @method ExtensionType[] getExtension()
  * @method self addExtension(ExtensionType|string $value)
  * @method self setExtension(ExtensionType ...$values)
  */

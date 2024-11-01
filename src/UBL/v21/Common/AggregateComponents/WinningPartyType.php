@@ -8,7 +8,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RankType;
 /**
  * Class WinningPartyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method RankType getRank()

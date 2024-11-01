@@ -14,7 +14,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentNoteType;
 /**
  * Class FinancialAccountType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -29,7 +29,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentNoteType;
  * @method self setAccountFormatCode(AccountFormatCodeType|string $value)
  * @method CurrencyCodeType getCurrencyCode()
  * @method self setCurrencyCode(CurrencyCodeType|string $value)
- * @method PaymentNoteType getPaymentNote()
+ * @method PaymentNoteType[] getPaymentNote()
  * @method self addPaymentNote(PaymentNoteType|string $value)
  * @method self setPaymentNote(PaymentNoteType ...$values)
  * @method BranchType getFinancialInstitutionBranch()

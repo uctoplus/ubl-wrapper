@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTaskAmountType;
 /**
  * Class CompletedTaskType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method AnnualAverageAmountType getAnnualAverageAmount()
@@ -20,10 +20,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalTaskAmountType;
  * @method self setTotalTaskAmount(TotalTaskAmountType|string $value)
  * @method PartyCapacityAmountType getPartyCapacityAmount()
  * @method self setPartyCapacityAmount(PartyCapacityAmountType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
- * @method EvidenceSuppliedType getEvidenceSupplied()
+ * @method EvidenceSuppliedType[] getEvidenceSupplied()
  * @method self addEvidenceSupplied(EvidenceSuppliedType $value)
  * @method self setEvidenceSupplied(EvidenceSuppliedType ...$values)
  * @method PeriodType getPeriod()

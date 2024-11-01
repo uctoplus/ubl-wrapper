@@ -9,7 +9,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportExecutionPlanRef
 /**
  * Class TransportationSegmentType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method SequenceNumericType getSequenceNumeric()
@@ -22,7 +22,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportExecutionPlanRef
  * @method self setTransportServiceProviderParty(PartyType $value)
  * @method ConsignmentType getReferencedConsignment()
  * @method self setReferencedConsignment(ConsignmentType $value)
- * @method ShipmentStageType getShipmentStage()
+ * @method ShipmentStageType[] getShipmentStage()
  * @method self addShipmentStage(ShipmentStageType $value)
  * @method self setShipmentStage(ShipmentStageType ...$values)
  */

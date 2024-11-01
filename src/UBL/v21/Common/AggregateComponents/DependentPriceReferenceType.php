@@ -8,7 +8,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PercentType;
 /**
  * Class DependentPriceReferenceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method PercentType getPercent()

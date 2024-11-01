@@ -20,7 +20,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubscriberTypeType;
 /**
  * Class UtilityItemType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -31,7 +31,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubscriberTypeType;
  * @method self setSubscriberType(SubscriberTypeType|string $value)
  * @method SubscriberTypeCodeType getSubscriberTypeCode()
  * @method self setSubscriberTypeCode(SubscriberTypeCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method PackQuantityType getPackQuantity()

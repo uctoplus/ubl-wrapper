@@ -25,7 +25,7 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
 /**
  * Class PackingList
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\MainDoc
  *
  * @method CustomizationIDType getCustomizationID()
@@ -44,10 +44,10 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
  * @method self setIssueTime(IssueTimeType|string $value)
  * @method NameType getName()
  * @method self setName(NameType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method VersionIDType getVersionID()
@@ -62,13 +62,13 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
  * @method self setFreightForwarderParty(PartyType $value)
  * @method ShipmentType getShipment()
  * @method self setShipment(ShipmentType $value)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
- * @method DocumentDistributionType getDocumentDistribution()
+ * @method DocumentDistributionType[] getDocumentDistribution()
  * @method self addDocumentDistribution(DocumentDistributionType $value)
  * @method self setDocumentDistribution(DocumentDistributionType ...$values)
- * @method SignatureType getSignature()
+ * @method SignatureType[] getSignature()
  * @method self addSignature(SignatureType $value)
  * @method self setSignature(SignatureType ...$values)
  */

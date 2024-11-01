@@ -10,7 +10,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 /**
  * Class ProjectReferenceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -19,7 +19,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @method self setUUID(UUIDType|string $value)
  * @method IssueDateType getIssueDate()
  * @method self setIssueDate(IssueDateType|string $value)
- * @method WorkPhaseReferenceType getWorkPhaseReference()
+ * @method WorkPhaseReferenceType[] getWorkPhaseReference()
  * @method self addWorkPhaseReference(WorkPhaseReferenceType $value)
  * @method self setWorkPhaseReference(WorkPhaseReferenceType ...$values)
  */

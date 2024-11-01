@@ -11,22 +11,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TenderEnvelopeTypeCodeTyp
 /**
  * Class TenderPreparationType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method TenderEnvelopeIDType getTenderEnvelopeID()
  * @method self setTenderEnvelopeID(TenderEnvelopeIDType|string $value)
  * @method TenderEnvelopeTypeCodeType getTenderEnvelopeTypeCode()
  * @method self setTenderEnvelopeTypeCode(TenderEnvelopeTypeCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method OpenTenderIDType getOpenTenderID()
  * @method self setOpenTenderID(OpenTenderIDType|string $value)
- * @method ProcurementProjectLotType getProcurementProjectLot()
+ * @method ProcurementProjectLotType[] getProcurementProjectLot()
  * @method self addProcurementProjectLot(ProcurementProjectLotType $value)
  * @method self setProcurementProjectLot(ProcurementProjectLotType ...$values)
- * @method TenderRequirementType getDocumentTenderRequirement()
+ * @method TenderRequirementType[] getDocumentTenderRequirement()
  * @method self addDocumentTenderRequirement(TenderRequirementType $value)
  * @method self setDocumentTenderRequirement(TenderRequirementType ...$values)
  */

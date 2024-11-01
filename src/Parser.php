@@ -9,12 +9,13 @@ use Uctoplus\UblWrapper\Exceptions\FileNotFoundException;
 use Uctoplus\UblWrapper\Exceptions\FileNotReadableException;
 use Uctoplus\UblWrapper\UBL\Schema\MainDoc;
 use Uctoplus\UblWrapper\UCT\UctList;
+use ZipArchive;
 
 /**
  * Class Parser
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper
  */
 class Parser
@@ -120,7 +121,7 @@ class Parser
 
     protected function fromZip($file)
     {
-        $zip = new \ZipArchive();
+        $zip = new ZipArchive();
         if ($zip->open($file) === TRUE) {
             $zip->extractTo(sys_get_temp_dir() . "/unzip");
             $zip->close();

@@ -11,17 +11,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 /**
  * Class EvidenceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method EvidenceTypeCodeType getEvidenceTypeCode()
  * @method self setEvidenceTypeCode(EvidenceTypeCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
- * @method CandidateStatementType getCandidateStatement()
+ * @method CandidateStatementType[] getCandidateStatement()
  * @method self addCandidateStatement(CandidateStatementType|string $value)
  * @method self setCandidateStatement(CandidateStatementType ...$values)
  * @method PartyType getEvidenceIssuingParty()

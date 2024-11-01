@@ -12,7 +12,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SignatureIDType;
 /**
  * Class PaymentMandateType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -33,7 +33,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SignatureIDType;
  * @method self setValidityPeriod(PeriodType $value)
  * @method PeriodType getPaymentReversalPeriod()
  * @method self setPaymentReversalPeriod(PeriodType $value)
- * @method ClauseType getClause()
+ * @method ClauseType[] getClause()
  * @method self addClause(ClauseType $value)
  * @method self setClause(ClauseType ...$values)
  */

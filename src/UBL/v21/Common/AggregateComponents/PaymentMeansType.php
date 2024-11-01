@@ -14,7 +14,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentMeansCodeType;
 /**
  * Class PaymentMeansType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -27,10 +27,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PaymentMeansCodeType;
  * @method self setPaymentChannelCode(PaymentChannelCodeType|string $value)
  * @method InstructionIDType getInstructionID()
  * @method self setInstructionID(InstructionIDType|string $value)
- * @method InstructionNoteType getInstructionNote()
+ * @method InstructionNoteType[] getInstructionNote()
  * @method self addInstructionNote(InstructionNoteType|string $value)
  * @method self setInstructionNote(InstructionNoteType ...$values)
- * @method PaymentIDType getPaymentID()
+ * @method PaymentIDType[] getPaymentID()
  * @method self addPaymentID(PaymentIDType|string $value)
  * @method self setPaymentID(PaymentIDType ...$values)
  * @method CardAccountType getCardAccount()

@@ -17,14 +17,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 /**
  * Class DespatchLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method UUIDType getUUID()
  * @method self setUUID(UUIDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method LineStatusCodeType getLineStatusCode()
@@ -33,25 +33,25 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @method self setDeliveredQuantity(DeliveredQuantityType|string $value)
  * @method BackorderQuantityType getBackorderQuantity()
  * @method self setBackorderQuantity(BackorderQuantityType|string $value)
- * @method BackorderReasonType getBackorderReason()
+ * @method BackorderReasonType[] getBackorderReason()
  * @method self addBackorderReason(BackorderReasonType|string $value)
  * @method self setBackorderReason(BackorderReasonType ...$values)
  * @method OutstandingQuantityType getOutstandingQuantity()
  * @method self setOutstandingQuantity(OutstandingQuantityType|string $value)
- * @method OutstandingReasonType getOutstandingReason()
+ * @method OutstandingReasonType[] getOutstandingReason()
  * @method self addOutstandingReason(OutstandingReasonType|string $value)
  * @method self setOutstandingReason(OutstandingReasonType ...$values)
  * @method OversupplyQuantityType getOversupplyQuantity()
  * @method self setOversupplyQuantity(OversupplyQuantityType|string $value)
- * @method OrderLineReferenceType getOrderLineReference()
+ * @method OrderLineReferenceType[] getOrderLineReference()
  * @method self addOrderLineReference(OrderLineReferenceType $value)
  * @method self setOrderLineReference(OrderLineReferenceType ...$values)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
  * @method ItemType getItem()
  * @method self setItem(ItemType $value)
- * @method ShipmentType getShipment()
+ * @method ShipmentType[] getShipment()
  * @method self addShipment(ShipmentType $value)
  * @method self setShipment(ShipmentType ...$values)
  */

@@ -12,17 +12,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecialTermsType;
 /**
  * Class DeliveryTermsType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method SpecialTermsType getSpecialTerms()
+ * @method SpecialTermsType[] getSpecialTerms()
  * @method self addSpecialTerms(SpecialTermsType|string $value)
  * @method self setSpecialTerms(SpecialTermsType ...$values)
  * @method LossRiskResponsibilityCodeType getLossRiskResponsibilityCode()
  * @method self setLossRiskResponsibilityCode(LossRiskResponsibilityCodeType|string $value)
- * @method LossRiskType getLossRisk()
+ * @method LossRiskType[] getLossRisk()
  * @method self addLossRisk(LossRiskType|string $value)
  * @method self setLossRisk(LossRiskType ...$values)
  * @method AmountType getAmount()

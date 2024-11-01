@@ -20,7 +20,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
 /**
  * Class ClassificationSchemeType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -31,12 +31,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
  * @method self setLastRevisionDate(LastRevisionDateType|string $value)
  * @method LastRevisionTimeType getLastRevisionTime()
  * @method self setLastRevisionTime(LastRevisionTimeType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method NameType getName()
  * @method self setName(NameType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method AgencyIDType getAgencyID()
@@ -51,7 +51,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
  * @method self setSchemeURI(SchemeURIType|string $value)
  * @method LanguageIDType getLanguageID()
  * @method self setLanguageID(LanguageIDType|string $value)
- * @method ClassificationCategoryType getClassificationCategory()
+ * @method ClassificationCategoryType[] getClassificationCategory()
  * @method self addClassificationCategory(ClassificationCategoryType $value)
  * @method self setClassificationCategory(ClassificationCategoryType ...$values)
  */

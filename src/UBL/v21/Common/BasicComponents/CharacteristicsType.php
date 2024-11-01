@@ -2,12 +2,14 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
+use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\TextType;
+
 /**
  * Class CharacteristicsType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class CharacteristicsType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\TextType
+class CharacteristicsType extends TextType
 {
 }

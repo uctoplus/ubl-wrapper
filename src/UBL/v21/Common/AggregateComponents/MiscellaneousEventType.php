@@ -8,12 +8,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MiscellaneousEventTypeCod
 /**
  * Class MiscellaneousEventType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method MiscellaneousEventTypeCodeType getMiscellaneousEventTypeCode()
  * @method self setMiscellaneousEventTypeCode(MiscellaneousEventTypeCodeType|string $value)
- * @method EventLineItemType getEventLineItem()
+ * @method EventLineItemType[] getEventLineItem()
  * @method self addEventLineItem(EventLineItemType $value)
  * @method self setEventLineItem(EventLineItemType ...$values)
  */

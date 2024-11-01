@@ -21,7 +21,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelecommunicationsService
 /**
  * Class TelecommunicationsServiceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -56,19 +56,19 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelecommunicationsService
  * @method self setPrice(PriceType $value)
  * @method CountryType getCountry()
  * @method self setCountry(CountryType $value)
- * @method ExchangeRateType getExchangeRate()
+ * @method ExchangeRateType[] getExchangeRate()
  * @method self addExchangeRate(ExchangeRateType $value)
  * @method self setExchangeRate(ExchangeRateType ...$values)
- * @method AllowanceChargeType getAllowanceCharge()
+ * @method AllowanceChargeType[] getAllowanceCharge()
  * @method self addAllowanceCharge(AllowanceChargeType $value)
  * @method self setAllowanceCharge(AllowanceChargeType ...$values)
- * @method TaxTotalType getTaxTotal()
+ * @method TaxTotalType[] getTaxTotal()
  * @method self addTaxTotal(TaxTotalType $value)
  * @method self setTaxTotal(TaxTotalType ...$values)
- * @method DutyType getCallDuty()
+ * @method DutyType[] getCallDuty()
  * @method self addCallDuty(DutyType $value)
  * @method self setCallDuty(DutyType ...$values)
- * @method DutyType getTimeDuty()
+ * @method DutyType[] getTimeDuty()
  * @method self addTimeDuty(DutyType $value)
  * @method self setTimeDuty(DutyType ...$values)
  */

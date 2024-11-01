@@ -9,7 +9,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TrainIDType;
 /**
  * Class RailTransportType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method TrainIDType getTrainID()

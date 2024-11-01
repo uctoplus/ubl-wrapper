@@ -10,7 +10,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 /**
  * Class CorporateRegistrationSchemeType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -19,7 +19,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @method self setName(NameType|string $value)
  * @method CorporateRegistrationTypeCodeType getCorporateRegistrationTypeCode()
  * @method self setCorporateRegistrationTypeCode(CorporateRegistrationTypeCodeType|string $value)
- * @method AddressType getJurisdictionRegionAddress()
+ * @method AddressType[] getJurisdictionRegionAddress()
  * @method self addJurisdictionRegionAddress(AddressType $value)
  * @method self setJurisdictionRegionAddress(AddressType ...$values)
  */

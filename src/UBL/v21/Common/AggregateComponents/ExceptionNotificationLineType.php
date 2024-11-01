@@ -18,15 +18,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VarianceQuantityType;
 /**
  * Class ExceptionNotificationLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method ExceptionStatusCodeType getExceptionStatusCode()
@@ -47,7 +47,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VarianceQuantityType;
  * @method self setPerformanceMetricTypeCode(PerformanceMetricTypeCodeType|string $value)
  * @method PeriodType getExceptionObservationPeriod()
  * @method self setExceptionObservationPeriod(PeriodType $value)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
  * @method ForecastExceptionType getForecastException()

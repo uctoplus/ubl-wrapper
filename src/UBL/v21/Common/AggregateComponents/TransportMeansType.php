@@ -13,14 +13,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportMeansTypeCodeTyp
 /**
  * Class TransportMeansType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method JourneyIDType getJourneyID()
  * @method self setJourneyID(JourneyIDType|string $value)
  * @method RegistrationNationalityIDType getRegistrationNationalityID()
  * @method self setRegistrationNationalityID(RegistrationNationalityIDType|string $value)
- * @method RegistrationNationalityType getRegistrationNationality()
+ * @method RegistrationNationalityType[] getRegistrationNationality()
  * @method self addRegistrationNationality(RegistrationNationalityType|string $value)
  * @method self setRegistrationNationality(RegistrationNationalityType ...$values)
  * @method DirectionCodeType getDirectionCode()
@@ -41,7 +41,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportMeansTypeCodeTyp
  * @method self setMaritimeTransport(MaritimeTransportType $value)
  * @method PartyType getOwnerParty()
  * @method self setOwnerParty(PartyType $value)
- * @method DimensionType getMeasurementDimension()
+ * @method DimensionType[] getMeasurementDimension()
  * @method self addMeasurementDimension(DimensionType $value)
  * @method self setMeasurementDimension(DimensionType ...$values)
  */

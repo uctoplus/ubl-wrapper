@@ -7,15 +7,15 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 /**
  * Class TendererPartyQualificationType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method ProcurementProjectLotType getInterestedProcurementProjectLot()
+ * @method ProcurementProjectLotType[] getInterestedProcurementProjectLot()
  * @method self addInterestedProcurementProjectLot(ProcurementProjectLotType $value)
  * @method self setInterestedProcurementProjectLot(ProcurementProjectLotType ...$values)
  * @method QualifyingPartyType getMainQualifyingParty()
  * @method self setMainQualifyingParty(QualifyingPartyType $value)
- * @method QualifyingPartyType getAdditionalQualifyingParty()
+ * @method QualifyingPartyType[] getAdditionalQualifyingParty()
  * @method self addAdditionalQualifyingParty(QualifyingPartyType $value)
  * @method self setAdditionalQualifyingParty(QualifyingPartyType ...$values)
  */

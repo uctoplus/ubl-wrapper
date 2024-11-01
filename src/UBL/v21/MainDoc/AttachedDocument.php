@@ -25,7 +25,7 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
 /**
  * Class AttachedDocument
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\MainDoc
  *
  * @method CustomizationIDType getCustomizationID()
@@ -42,7 +42,7 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
  * @method self setIssueDate(IssueDateType|string $value)
  * @method IssueTimeType getIssueTime()
  * @method self setIssueTime(IssueTimeType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method DocumentTypeCodeType getDocumentTypeCode()
@@ -55,7 +55,7 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
  * @method self setParentDocumentTypeCode(ParentDocumentTypeCodeType|string $value)
  * @method ParentDocumentVersionIDType getParentDocumentVersionID()
  * @method self setParentDocumentVersionID(ParentDocumentVersionIDType|string $value)
- * @method SignatureType getSignature()
+ * @method SignatureType[] getSignature()
  * @method self addSignature(SignatureType $value)
  * @method self setSignature(SignatureType ...$values)
  * @method PartyType getSenderParty()
@@ -64,7 +64,7 @@ use Uctoplus\UblWrapper\UBL\v21\Version;
  * @method self setReceiverParty(PartyType $value)
  * @method AttachmentType getAttachment()
  * @method self setAttachment(AttachmentType $value)
- * @method LineReferenceType getParentDocumentLineReference()
+ * @method LineReferenceType[] getParentDocumentLineReference()
  * @method self addParentDocumentLineReference(LineReferenceType $value)
  * @method self setParentDocumentLineReference(LineReferenceType ...$values)
  */

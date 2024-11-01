@@ -10,14 +10,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MeasureType;
 /**
  * Class TemperatureType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method AttributeIDType getAttributeID()
  * @method self setAttributeID(AttributeIDType|string $value)
  * @method MeasureType getMeasure()
  * @method self setMeasure(MeasureType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  */

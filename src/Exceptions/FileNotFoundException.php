@@ -2,9 +2,10 @@
 
 namespace Uctoplus\UblWrapper\Exceptions;
 
+use Exception;
 use Throwable;
 
-class FileNotFoundException extends \Exception
+class FileNotFoundException extends Exception
 {
     public function __construct($message = "", $code = 0, Throwable $previous = null)
     {

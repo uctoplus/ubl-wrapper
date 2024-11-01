@@ -8,7 +8,7 @@ use Uctoplus\UblWrapper\UBL\Schema\BasicComponent;
  * Class RateType
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes
  */
 class RateType extends BasicComponent

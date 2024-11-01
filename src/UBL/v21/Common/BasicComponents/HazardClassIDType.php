@@ -2,12 +2,14 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
+use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\IdentifierType;
+
 /**
  * Class HazardClassIDType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class HazardClassIDType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\IdentifierType
+class HazardClassIDType extends IdentifierType
 {
 }

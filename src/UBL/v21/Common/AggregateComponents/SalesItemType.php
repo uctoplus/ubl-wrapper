@@ -8,18 +8,18 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
 /**
  * Class SalesItemType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method QuantityType getQuantity()
  * @method self setQuantity(QuantityType|string $value)
- * @method ActivityPropertyType getActivityProperty()
+ * @method ActivityPropertyType[] getActivityProperty()
  * @method self addActivityProperty(ActivityPropertyType $value)
  * @method self setActivityProperty(ActivityPropertyType ...$values)
- * @method PriceType getTaxExclusivePrice()
+ * @method PriceType[] getTaxExclusivePrice()
  * @method self addTaxExclusivePrice(PriceType $value)
  * @method self setTaxExclusivePrice(PriceType ...$values)
- * @method PriceType getTaxInclusivePrice()
+ * @method PriceType[] getTaxInclusivePrice()
  * @method self addTaxInclusivePrice(PriceType $value)
  * @method self setTaxInclusivePrice(PriceType ...$values)
  * @method ItemType getItem()

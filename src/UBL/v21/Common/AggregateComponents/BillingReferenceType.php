@@ -7,7 +7,7 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 /**
  * Class BillingReferenceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method DocumentReferenceType getInvoiceDocumentReference()
@@ -24,7 +24,7 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
  * @method self setReminderDocumentReference(DocumentReferenceType $value)
  * @method DocumentReferenceType getAdditionalDocumentReference()
  * @method self setAdditionalDocumentReference(DocumentReferenceType $value)
- * @method BillingReferenceLineType getBillingReferenceLine()
+ * @method BillingReferenceLineType[] getBillingReferenceLine()
  * @method self addBillingReferenceLine(BillingReferenceLineType $value)
  * @method self setBillingReferenceLine(BillingReferenceLineType ...$values)
  */

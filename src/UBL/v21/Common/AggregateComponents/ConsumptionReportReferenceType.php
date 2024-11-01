@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalConsumedQuantityType
 /**
  * Class ConsumptionReportReferenceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method ConsumptionReportIDType getConsumptionReportID()

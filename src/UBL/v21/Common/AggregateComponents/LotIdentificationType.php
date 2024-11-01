@@ -9,14 +9,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LotNumberIDType;
 /**
  * Class LotIdentificationType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method LotNumberIDType getLotNumberID()
  * @method self setLotNumberID(LotNumberIDType|string $value)
  * @method ExpiryDateType getExpiryDate()
  * @method self setExpiryDate(ExpiryDateType|string $value)
- * @method ItemPropertyType getAdditionalItemProperty()
+ * @method ItemPropertyType[] getAdditionalItemProperty()
  * @method self addAdditionalItemProperty(ItemPropertyType $value)
  * @method self setAdditionalItemProperty(ItemPropertyType ...$values)
  */

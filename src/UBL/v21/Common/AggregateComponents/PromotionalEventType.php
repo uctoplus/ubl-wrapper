@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubmissionDateType;
 /**
  * Class PromotionalEventType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method PromotionalEventTypeCodeType getPromotionalEventTypeCode()
@@ -22,7 +22,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubmissionDateType;
  * @method self setFirstShipmentAvailibilityDate(FirstShipmentAvailibilityDateType|string $value)
  * @method LatestProposalAcceptanceDateType getLatestProposalAcceptanceDate()
  * @method self setLatestProposalAcceptanceDate(LatestProposalAcceptanceDateType|string $value)
- * @method PromotionalSpecificationType getPromotionalSpecification()
+ * @method PromotionalSpecificationType[] getPromotionalSpecification()
  * @method self addPromotionalSpecification(PromotionalSpecificationType $value)
  * @method self setPromotionalSpecification(PromotionalSpecificationType ...$values)
  */

@@ -8,14 +8,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LineNumberNumericType;
 /**
  * Class EventLineItemType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method LineNumberNumericType getLineNumberNumeric()
  * @method self setLineNumberNumeric(LineNumberNumericType|string $value)
  * @method LocationType getParticipatingLocationsLocation()
  * @method self setParticipatingLocationsLocation(LocationType $value)
- * @method RetailPlannedImpactType getRetailPlannedImpact()
+ * @method RetailPlannedImpactType[] getRetailPlannedImpact()
  * @method self addRetailPlannedImpact(RetailPlannedImpactType $value)
  * @method self setRetailPlannedImpact(RetailPlannedImpactType ...$values)
  * @method ItemType getSupplyItem()

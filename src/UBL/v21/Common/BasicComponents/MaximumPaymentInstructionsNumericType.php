@@ -7,7 +7,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\NumericType;
 /**
  * Class MaximumPaymentInstructionsNumericType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
 class MaximumPaymentInstructionsNumericType extends NumericType

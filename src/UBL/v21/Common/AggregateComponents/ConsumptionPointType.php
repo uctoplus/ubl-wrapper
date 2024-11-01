@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalDeliveredQuantityTyp
 /**
  * Class ConsumptionPointType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method SubscriberIDType getSubscriberID()
@@ -33,7 +33,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalDeliveredQuantityTyp
  * @method self setAddress(AddressType $value)
  * @method WebSiteAccessType getWebSiteAccess()
  * @method self setWebSiteAccess(WebSiteAccessType $value)
- * @method MeterType getUtilityMeter()
+ * @method MeterType[] getUtilityMeter()
  * @method self addUtilityMeter(MeterType $value)
  * @method self setUtilityMeter(MeterType ...$values)
  */

@@ -14,7 +14,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TraceIDType;
 /**
  * Class PackageType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -27,23 +27,23 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TraceIDType;
  * @method self setPackageLevelCode(PackageLevelCodeType|string $value)
  * @method PackagingTypeCodeType getPackagingTypeCode()
  * @method self setPackagingTypeCode(PackagingTypeCodeType|string $value)
- * @method PackingMaterialType getPackingMaterial()
+ * @method PackingMaterialType[] getPackingMaterial()
  * @method self addPackingMaterial(PackingMaterialType|string $value)
  * @method self setPackingMaterial(PackingMaterialType ...$values)
  * @method TraceIDType getTraceID()
  * @method self setTraceID(TraceIDType|string $value)
- * @method PackageType getContainedPackage()
+ * @method PackageType[] getContainedPackage()
  * @method self addContainedPackage(PackageType $value)
  * @method self setContainedPackage(PackageType ...$values)
  * @method TransportEquipmentType getContainingTransportEquipment()
  * @method self setContainingTransportEquipment(TransportEquipmentType $value)
- * @method GoodsItemType getGoodsItem()
+ * @method GoodsItemType[] getGoodsItem()
  * @method self addGoodsItem(GoodsItemType $value)
  * @method self setGoodsItem(GoodsItemType ...$values)
- * @method DimensionType getMeasurementDimension()
+ * @method DimensionType[] getMeasurementDimension()
  * @method self addMeasurementDimension(DimensionType $value)
  * @method self setMeasurementDimension(DimensionType ...$values)
- * @method DeliveryUnitType getDeliveryUnit()
+ * @method DeliveryUnitType[] getDeliveryUnit()
  * @method self addDeliveryUnit(DeliveryUnitType $value)
  * @method self setDeliveryUnit(DeliveryUnitType ...$values)
  * @method DeliveryType getDelivery()

@@ -18,12 +18,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 /**
  * Class ReminderLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method UUIDType getUUID()
@@ -44,10 +44,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @method self setAmount(AmountType|string $value)
  * @method PaymentPurposeCodeType getPaymentPurposeCode()
  * @method self setPaymentPurposeCode(PaymentPurposeCodeType|string $value)
- * @method PeriodType getReminderPeriod()
+ * @method PeriodType[] getReminderPeriod()
  * @method self addReminderPeriod(PeriodType $value)
  * @method self setReminderPeriod(PeriodType ...$values)
- * @method BillingReferenceType getBillingReference()
+ * @method BillingReferenceType[] getBillingReference()
  * @method self addBillingReference(BillingReferenceType $value)
  * @method self setBillingReference(BillingReferenceType ...$values)
  * @method ExchangeRateType getExchangeRate()

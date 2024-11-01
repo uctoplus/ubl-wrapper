@@ -13,14 +13,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WorkPhaseType;
 /**
  * Class WorkPhaseReferenceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method WorkPhaseCodeType getWorkPhaseCode()
  * @method self setWorkPhaseCode(WorkPhaseCodeType|string $value)
- * @method WorkPhaseType getWorkPhase()
+ * @method WorkPhaseType[] getWorkPhase()
  * @method self addWorkPhase(WorkPhaseType|string $value)
  * @method self setWorkPhase(WorkPhaseType ...$values)
  * @method ProgressPercentType getProgressPercent()
@@ -29,7 +29,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WorkPhaseType;
  * @method self setStartDate(StartDateType|string $value)
  * @method EndDateType getEndDate()
  * @method self setEndDate(EndDateType|string $value)
- * @method DocumentReferenceType getWorkOrderDocumentReference()
+ * @method DocumentReferenceType[] getWorkOrderDocumentReference()
  * @method self addWorkOrderDocumentReference(DocumentReferenceType $value)
  * @method self setWorkOrderDocumentReference(DocumentReferenceType ...$values)
  */

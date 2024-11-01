@@ -14,7 +14,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\StartTimeType;
 /**
  * Class PeriodType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method StartDateType getStartDate()
@@ -27,10 +27,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\StartTimeType;
  * @method self setEndTime(EndTimeType|string $value)
  * @method DurationMeasureType getDurationMeasure()
  * @method self setDurationMeasure(DurationMeasureType|string $value)
- * @method DescriptionCodeType getDescriptionCode()
+ * @method DescriptionCodeType[] getDescriptionCode()
  * @method self addDescriptionCode(DescriptionCodeType|string $value)
  * @method self setDescriptionCode(DescriptionCodeType ...$values)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  */

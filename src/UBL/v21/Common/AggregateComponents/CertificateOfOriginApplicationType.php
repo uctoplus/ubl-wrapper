@@ -13,7 +13,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
 /**
  * Class CertificateOfOriginApplicationType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method ReferenceIDType getReferenceID()
@@ -26,12 +26,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
  * @method self setOriginalJobID(OriginalJobIDType|string $value)
  * @method PreviousJobIDType getPreviousJobID()
  * @method self setPreviousJobID(PreviousJobIDType|string $value)
- * @method RemarksType getRemarks()
+ * @method RemarksType[] getRemarks()
  * @method self addRemarks(RemarksType|string $value)
  * @method self setRemarks(RemarksType ...$values)
  * @method ShipmentType getShipment()
  * @method self setShipment(ShipmentType $value)
- * @method EndorserPartyType getEndorserParty()
+ * @method EndorserPartyType[] getEndorserParty()
  * @method self addEndorserParty(EndorserPartyType $value)
  * @method self setEndorserParty(EndorserPartyType ...$values)
  * @method PartyType getPreparationParty()
@@ -44,13 +44,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
  * @method self setImporterParty(PartyType $value)
  * @method CountryType getIssuingCountry()
  * @method self setIssuingCountry(CountryType $value)
- * @method DocumentDistributionType getDocumentDistribution()
+ * @method DocumentDistributionType[] getDocumentDistribution()
  * @method self addDocumentDistribution(DocumentDistributionType $value)
  * @method self setDocumentDistribution(DocumentDistributionType ...$values)
- * @method DocumentReferenceType getSupportingDocumentReference()
+ * @method DocumentReferenceType[] getSupportingDocumentReference()
  * @method self addSupportingDocumentReference(DocumentReferenceType $value)
  * @method self setSupportingDocumentReference(DocumentReferenceType ...$values)
- * @method SignatureType getSignature()
+ * @method SignatureType[] getSignature()
  * @method self addSignature(SignatureType $value)
  * @method self setSignature(SignatureType ...$values)
  */

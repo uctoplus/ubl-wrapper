@@ -17,14 +17,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 /**
  * Class RequestForTenderLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method UUIDType getUUID()
  * @method self setUUID(UUIDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method QuantityType getQuantity()
@@ -41,20 +41,20 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @method self setMaximumAmount(MaximumAmountType|string $value)
  * @method EstimatedAmountType getEstimatedAmount()
  * @method self setEstimatedAmount(EstimatedAmountType|string $value)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
- * @method PeriodType getDeliveryPeriod()
+ * @method PeriodType[] getDeliveryPeriod()
  * @method self addDeliveryPeriod(PeriodType $value)
  * @method self setDeliveryPeriod(PeriodType ...$values)
- * @method ItemLocationQuantityType getRequiredItemLocationQuantity()
+ * @method ItemLocationQuantityType[] getRequiredItemLocationQuantity()
  * @method self addRequiredItemLocationQuantity(ItemLocationQuantityType $value)
  * @method self setRequiredItemLocationQuantity(ItemLocationQuantityType ...$values)
  * @method PeriodType getWarrantyValidityPeriod()
  * @method self setWarrantyValidityPeriod(PeriodType $value)
  * @method ItemType getItem()
  * @method self setItem(ItemType $value)
- * @method RequestForTenderLineType getSubRequestForTenderLine()
+ * @method RequestForTenderLineType[] getSubRequestForTenderLine()
  * @method self addSubRequestForTenderLine(RequestForTenderLineType $value)
  * @method self setSubRequestForTenderLine(RequestForTenderLineType ...$values)
  */

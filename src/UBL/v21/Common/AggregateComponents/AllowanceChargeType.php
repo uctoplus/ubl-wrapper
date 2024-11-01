@@ -19,7 +19,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
 /**
  * Class AllowanceChargeType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -28,7 +28,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
  * @method self setChargeIndicator(ChargeIndicatorType|string $value)
  * @method AllowanceChargeReasonCodeType getAllowanceChargeReasonCode()
  * @method self setAllowanceChargeReasonCode(AllowanceChargeReasonCodeType|string $value)
- * @method AllowanceChargeReasonType getAllowanceChargeReason()
+ * @method AllowanceChargeReasonType[] getAllowanceChargeReason()
  * @method self addAllowanceChargeReason(AllowanceChargeReasonType|string $value)
  * @method self setAllowanceChargeReason(AllowanceChargeReasonType ...$values)
  * @method MultiplierFactorNumericType getMultiplierFactorNumeric()
@@ -47,12 +47,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
  * @method self setAccountingCost(AccountingCostType|string $value)
  * @method PerUnitAmountType getPerUnitAmount()
  * @method self setPerUnitAmount(PerUnitAmountType|string $value)
- * @method TaxCategoryType getTaxCategory()
+ * @method TaxCategoryType[] getTaxCategory()
  * @method self addTaxCategory(TaxCategoryType $value)
  * @method self setTaxCategory(TaxCategoryType ...$values)
  * @method TaxTotalType getTaxTotal()
  * @method self setTaxTotal(TaxTotalType $value)
- * @method PaymentMeansType getPaymentMeans()
+ * @method PaymentMeansType[] getPaymentMeans()
  * @method self addPaymentMeans(PaymentMeansType $value)
  * @method self setPaymentMeans(PaymentMeansType ...$values)
  */

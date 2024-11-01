@@ -12,7 +12,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportEmergencyCardCod
 /**
  * Class HazardousGoodsTransitType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method TransportEmergencyCardCodeType getTransportEmergencyCardCode()

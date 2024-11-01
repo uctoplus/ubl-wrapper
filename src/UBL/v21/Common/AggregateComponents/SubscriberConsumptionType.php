@@ -11,14 +11,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalMeteredQuantityType;
 /**
  * Class SubscriberConsumptionType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method ConsumptionIDType getConsumptionID()
  * @method self setConsumptionID(ConsumptionIDType|string $value)
  * @method SpecificationTypeCodeType getSpecificationTypeCode()
  * @method self setSpecificationTypeCode(SpecificationTypeCodeType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method TotalMeteredQuantityType getTotalMeteredQuantity()
@@ -27,12 +27,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalMeteredQuantityType;
  * @method self setSubscriberParty(PartyType $value)
  * @method ConsumptionPointType getUtilityConsumptionPoint()
  * @method self setUtilityConsumptionPoint(ConsumptionPointType $value)
- * @method OnAccountPaymentType getOnAccountPayment()
+ * @method OnAccountPaymentType[] getOnAccountPayment()
  * @method self addOnAccountPayment(OnAccountPaymentType $value)
  * @method self setOnAccountPayment(OnAccountPaymentType ...$values)
  * @method ConsumptionType getConsumption()
  * @method self setConsumption(ConsumptionType $value)
- * @method SupplierConsumptionType getSupplierConsumption()
+ * @method SupplierConsumptionType[] getSupplierConsumption()
  * @method self addSupplierConsumption(SupplierConsumptionType $value)
  * @method self setSupplierConsumption(SupplierConsumptionType ...$values)
  */

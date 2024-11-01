@@ -15,7 +15,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TargetCurrencyCodeType;
 /**
  * Class ExchangeRateType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method SourceCurrencyCodeType getSourceCurrencyCode()

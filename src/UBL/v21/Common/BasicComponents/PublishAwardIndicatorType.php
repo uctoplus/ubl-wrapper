@@ -7,7 +7,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\IndicatorType;
 /**
  * Class PublishAwardIndicatorType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
 class PublishAwardIndicatorType extends IndicatorType

@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ParentDocumentLineReferen
 /**
  * Class ConsumptionLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -24,13 +24,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ParentDocumentLineReferen
  * @method self setLineExtensionAmount(LineExtensionAmountType|string $value)
  * @method PeriodType getPeriod()
  * @method self setPeriod(PeriodType $value)
- * @method DeliveryType getDelivery()
+ * @method DeliveryType[] getDelivery()
  * @method self addDelivery(DeliveryType $value)
  * @method self setDelivery(DeliveryType ...$values)
- * @method AllowanceChargeType getAllowanceCharge()
+ * @method AllowanceChargeType[] getAllowanceCharge()
  * @method self addAllowanceCharge(AllowanceChargeType $value)
  * @method self setAllowanceCharge(AllowanceChargeType ...$values)
- * @method TaxTotalType getTaxTotal()
+ * @method TaxTotalType[] getTaxTotal()
  * @method self addTaxTotal(TaxTotalType $value)
  * @method self setTaxTotal(TaxTotalType ...$values)
  * @method UtilityItemType getUtilityItem()

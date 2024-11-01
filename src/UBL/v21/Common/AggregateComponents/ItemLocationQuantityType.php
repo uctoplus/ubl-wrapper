@@ -12,7 +12,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TradingRestrictionsType;
 /**
  * Class ItemLocationQuantityType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method LeadTimeMeasureType getLeadTimeMeasure()
@@ -23,23 +23,23 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TradingRestrictionsType;
  * @method self setMaximumQuantity(MaximumQuantityType|string $value)
  * @method HazardousRiskIndicatorType getHazardousRiskIndicator()
  * @method self setHazardousRiskIndicator(HazardousRiskIndicatorType|string $value)
- * @method TradingRestrictionsType getTradingRestrictions()
+ * @method TradingRestrictionsType[] getTradingRestrictions()
  * @method self addTradingRestrictions(TradingRestrictionsType|string $value)
  * @method self setTradingRestrictions(TradingRestrictionsType ...$values)
- * @method AddressType getApplicableTerritoryAddress()
+ * @method AddressType[] getApplicableTerritoryAddress()
  * @method self addApplicableTerritoryAddress(AddressType $value)
  * @method self setApplicableTerritoryAddress(AddressType ...$values)
  * @method PriceType getPrice()
  * @method self setPrice(PriceType $value)
- * @method DeliveryUnitType getDeliveryUnit()
+ * @method DeliveryUnitType[] getDeliveryUnit()
  * @method self addDeliveryUnit(DeliveryUnitType $value)
  * @method self setDeliveryUnit(DeliveryUnitType ...$values)
- * @method TaxCategoryType getApplicableTaxCategory()
+ * @method TaxCategoryType[] getApplicableTaxCategory()
  * @method self addApplicableTaxCategory(TaxCategoryType $value)
  * @method self setApplicableTaxCategory(TaxCategoryType ...$values)
  * @method PackageType getPackage()
  * @method self setPackage(PackageType $value)
- * @method AllowanceChargeType getAllowanceCharge()
+ * @method AllowanceChargeType[] getAllowanceCharge()
  * @method self addAllowanceCharge(AllowanceChargeType $value)
  * @method self setAllowanceCharge(AllowanceChargeType ...$values)
  * @method DependentPriceReferenceType getDependentPriceReference()

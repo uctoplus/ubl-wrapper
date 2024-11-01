@@ -20,7 +20,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalConsumedQuantityType
 /**
  * Class ConsumptionReportType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -29,7 +29,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalConsumedQuantityType
  * @method self setConsumptionType(ConsumptionTypeType|string $value)
  * @method ConsumptionTypeCodeType getConsumptionTypeCode()
  * @method self setConsumptionTypeCode(ConsumptionTypeCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method TotalConsumedQuantityType getTotalConsumedQuantity()
@@ -56,10 +56,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalConsumedQuantityType
  * @method self setGuidanceDocumentReference(DocumentReferenceType $value)
  * @method DocumentReferenceType getDocumentReference()
  * @method self setDocumentReference(DocumentReferenceType $value)
- * @method ConsumptionReportReferenceType getConsumptionReportReference()
+ * @method ConsumptionReportReferenceType[] getConsumptionReportReference()
  * @method self addConsumptionReportReference(ConsumptionReportReferenceType $value)
  * @method self setConsumptionReportReference(ConsumptionReportReferenceType ...$values)
- * @method ConsumptionHistoryType getConsumptionHistory()
+ * @method ConsumptionHistoryType[] getConsumptionHistory()
  * @method self addConsumptionHistory(ConsumptionHistoryType $value)
  * @method self setConsumptionHistory(ConsumptionHistoryType ...$values)
  */

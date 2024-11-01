@@ -10,10 +10,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OptionsDescriptionType;
 /**
  * Class ContractExtensionType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method OptionsDescriptionType getOptionsDescription()
+ * @method OptionsDescriptionType[] getOptionsDescription()
  * @method self addOptionsDescription(OptionsDescriptionType|string $value)
  * @method self setOptionsDescription(OptionsDescriptionType ...$values)
  * @method MinimumNumberNumericType getMinimumNumberNumeric()
@@ -22,7 +22,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OptionsDescriptionType;
  * @method self setMaximumNumberNumeric(MaximumNumberNumericType|string $value)
  * @method PeriodType getOptionValidityPeriod()
  * @method self setOptionValidityPeriod(PeriodType $value)
- * @method RenewalType getRenewal()
+ * @method RenewalType[] getRenewal()
  * @method self addRenewal(RenewalType $value)
  * @method self setRenewal(RenewalType ...$values)
  */

@@ -10,17 +10,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 /**
  * Class ClassificationCategoryType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method NameType getName()
  * @method self setName(NameType|string $value)
  * @method CodeValueType getCodeValue()
  * @method self setCodeValue(CodeValueType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
- * @method ClassificationCategoryType getCategorizesClassificationCategory()
+ * @method ClassificationCategoryType[] getCategorizesClassificationCategory()
  * @method self addCategorizesClassificationCategory(ClassificationCategoryType $value)
  * @method self setCategorizesClassificationCategory(ClassificationCategoryType ...$values)
  */

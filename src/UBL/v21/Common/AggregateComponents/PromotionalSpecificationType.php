@@ -8,15 +8,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SpecificationIDType;
 /**
  * Class PromotionalSpecificationType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method SpecificationIDType getSpecificationID()
  * @method self setSpecificationID(SpecificationIDType|string $value)
- * @method PromotionalEventLineItemType getPromotionalEventLineItem()
+ * @method PromotionalEventLineItemType[] getPromotionalEventLineItem()
  * @method self addPromotionalEventLineItem(PromotionalEventLineItemType $value)
  * @method self setPromotionalEventLineItem(PromotionalEventLineItemType ...$values)
- * @method EventTacticType getEventTactic()
+ * @method EventTacticType[] getEventTactic()
  * @method self addEventTactic(EventTacticType $value)
  * @method self setEventTactic(EventTacticType ...$values)
  */

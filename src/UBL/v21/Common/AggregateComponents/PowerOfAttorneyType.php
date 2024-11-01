@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
 /**
  * Class PowerOfAttorneyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -20,17 +20,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IssueTimeType;
  * @method self setIssueDate(IssueDateType|string $value)
  * @method IssueTimeType getIssueTime()
  * @method self setIssueTime(IssueTimeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method PartyType getNotaryParty()
  * @method self setNotaryParty(PartyType $value)
  * @method PartyType getAgentParty()
  * @method self setAgentParty(PartyType $value)
- * @method PartyType getWitnessParty()
+ * @method PartyType[] getWitnessParty()
  * @method self addWitnessParty(PartyType $value)
  * @method self setWitnessParty(PartyType ...$values)
- * @method DocumentReferenceType getMandateDocumentReference()
+ * @method DocumentReferenceType[] getMandateDocumentReference()
  * @method self addMandateDocumentReference(DocumentReferenceType $value)
  * @method self setMandateDocumentReference(DocumentReferenceType ...$values)
  */

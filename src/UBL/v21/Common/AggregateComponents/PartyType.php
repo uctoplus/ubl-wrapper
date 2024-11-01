@@ -13,7 +13,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WebsiteURIType;
 /**
  * Class PartyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method MarkCareIndicatorType getMarkCareIndicator()
@@ -28,10 +28,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WebsiteURIType;
  * @method self setEndpointID(EndpointIDType|string $value)
  * @method IndustryClassificationCodeType getIndustryClassificationCode()
  * @method self setIndustryClassificationCode(IndustryClassificationCodeType|string $value)
- * @method PartyIdentificationType getPartyIdentification()
+ * @method PartyIdentificationType[] getPartyIdentification()
  * @method self addPartyIdentification(PartyIdentificationType $value)
  * @method self setPartyIdentification(PartyIdentificationType ...$values)
- * @method PartyNameType getPartyName()
+ * @method PartyNameType[] getPartyName()
  * @method self addPartyName(PartyNameType $value)
  * @method self setPartyName(PartyNameType ...$values)
  * @method LanguageType getLanguage()
@@ -40,23 +40,23 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WebsiteURIType;
  * @method self setPostalAddress(AddressType $value)
  * @method LocationType getPhysicalLocation()
  * @method self setPhysicalLocation(LocationType $value)
- * @method PartyTaxSchemeType getPartyTaxScheme()
+ * @method PartyTaxSchemeType[] getPartyTaxScheme()
  * @method self addPartyTaxScheme(PartyTaxSchemeType $value)
  * @method self setPartyTaxScheme(PartyTaxSchemeType ...$values)
- * @method PartyLegalEntityType getPartyLegalEntity()
+ * @method PartyLegalEntityType[] getPartyLegalEntity()
  * @method self addPartyLegalEntity(PartyLegalEntityType $value)
  * @method self setPartyLegalEntity(PartyLegalEntityType ...$values)
  * @method ContactType getContact()
  * @method self setContact(ContactType $value)
- * @method PersonType getPerson()
+ * @method PersonType[] getPerson()
  * @method self addPerson(PersonType $value)
  * @method self setPerson(PersonType ...$values)
  * @method PartyType getAgentParty()
  * @method self setAgentParty(PartyType $value)
- * @method ServiceProviderPartyType getServiceProviderParty()
+ * @method ServiceProviderPartyType[] getServiceProviderParty()
  * @method self addServiceProviderParty(ServiceProviderPartyType $value)
  * @method self setServiceProviderParty(ServiceProviderPartyType ...$values)
- * @method PowerOfAttorneyType getPowerOfAttorney()
+ * @method PowerOfAttorneyType[] getPowerOfAttorney()
  * @method self addPowerOfAttorney(PowerOfAttorneyType $value)
  * @method self setPowerOfAttorney(PowerOfAttorneyType ...$values)
  * @method FinancialAccountType getFinancialAccount()

@@ -10,7 +10,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreEventNotificationDurat
 /**
  * Class NotificationRequirementType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method NotificationTypeCodeType getNotificationTypeCode()
@@ -19,13 +19,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PreEventNotificationDurat
  * @method self setPostEventNotificationDurationMeasure(PostEventNotificationDurationMeasureType|string $value)
  * @method PreEventNotificationDurationMeasureType getPreEventNotificationDurationMeasure()
  * @method self setPreEventNotificationDurationMeasure(PreEventNotificationDurationMeasureType|string $value)
- * @method PartyType getNotifyParty()
+ * @method PartyType[] getNotifyParty()
  * @method self addNotifyParty(PartyType $value)
  * @method self setNotifyParty(PartyType ...$values)
- * @method PeriodType getNotificationPeriod()
+ * @method PeriodType[] getNotificationPeriod()
  * @method self addNotificationPeriod(PeriodType $value)
  * @method self setNotificationPeriod(PeriodType ...$values)
- * @method LocationType getNotificationLocation()
+ * @method LocationType[] getNotificationLocation()
  * @method self addNotificationLocation(LocationType $value)
  * @method self setNotificationLocation(LocationType ...$values)
  */

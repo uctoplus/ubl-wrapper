@@ -8,17 +8,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UtilityStatementTypeCodeT
 /**
  * Class ConsumptionType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method UtilityStatementTypeCodeType getUtilityStatementTypeCode()
  * @method self setUtilityStatementTypeCode(UtilityStatementTypeCodeType|string $value)
  * @method PeriodType getMainPeriod()
  * @method self setMainPeriod(PeriodType $value)
- * @method AllowanceChargeType getAllowanceCharge()
+ * @method AllowanceChargeType[] getAllowanceCharge()
  * @method self addAllowanceCharge(AllowanceChargeType $value)
  * @method self setAllowanceCharge(AllowanceChargeType ...$values)
- * @method TaxTotalType getTaxTotal()
+ * @method TaxTotalType[] getTaxTotal()
  * @method self addTaxTotal(TaxTotalType $value)
  * @method self setTaxTotal(TaxTotalType ...$values)
  * @method EnergyWaterSupplyType getEnergyWaterSupply()

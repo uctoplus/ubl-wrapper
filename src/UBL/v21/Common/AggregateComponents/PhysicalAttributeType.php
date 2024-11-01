@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PositionCodeType;
 /**
  * Class PhysicalAttributeType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method AttributeIDType getAttributeID()
@@ -20,7 +20,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PositionCodeType;
  * @method self setPositionCode(PositionCodeType|string $value)
  * @method DescriptionCodeType getDescriptionCode()
  * @method self setDescriptionCode(DescriptionCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  */

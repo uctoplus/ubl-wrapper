@@ -17,7 +17,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SoleProprietorshipIndicat
 /**
  * Class PartyLegalEntityType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method RegistrationNameType getRegistrationName()
@@ -46,7 +46,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SoleProprietorshipIndicat
  * @method self setCorporateRegistrationScheme(CorporateRegistrationSchemeType $value)
  * @method PartyType getHeadOfficeParty()
  * @method self setHeadOfficeParty(PartyType $value)
- * @method ShareholderPartyType getShareholderParty()
+ * @method ShareholderPartyType[] getShareholderParty()
  * @method self addShareholderParty(ShareholderPartyType $value)
  * @method self setShareholderParty(ShareholderPartyType ...$values)
  */

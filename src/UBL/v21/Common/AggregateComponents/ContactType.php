@@ -13,7 +13,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelephoneType;
 /**
  * Class ContactType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -26,10 +26,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TelephoneType;
  * @method self setTelefax(TelefaxType|string $value)
  * @method ElectronicMailType getElectronicMail()
  * @method self setElectronicMail(ElectronicMailType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
- * @method CommunicationType getOtherCommunication()
+ * @method CommunicationType[] getOtherCommunication()
  * @method self addOtherCommunication(CommunicationType $value)
  * @method self setOtherCommunication(CommunicationType ...$values)
  */

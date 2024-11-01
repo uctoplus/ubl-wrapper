@@ -10,14 +10,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ServiceTypeType;
 /**
  * Class ServiceProviderPartyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method ServiceTypeCodeType getServiceTypeCode()
  * @method self setServiceTypeCode(ServiceTypeCodeType|string $value)
- * @method ServiceTypeType getServiceType()
+ * @method ServiceTypeType[] getServiceType()
  * @method self addServiceType(ServiceTypeType|string $value)
  * @method self setServiceType(ServiceTypeType ...$values)
  * @method PartyType getParty()

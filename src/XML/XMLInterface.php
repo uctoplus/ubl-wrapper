@@ -2,6 +2,9 @@
 
 namespace Uctoplus\UblWrapper\XML;
 
+use DOMDocument;
+use DOMNode;
+
 interface XMLInterface
 {
     /**
@@ -25,12 +28,12 @@ interface XMLInterface
     public function getXMLNS_URI();
 
     /**
-     * @return \DOMDocument
+     * @return DOMDocument
      */
     public function toXML();
 
     /**
      * @return self
      */
-    public function fromXML(\DOMNode $node);
+    public function fromXML(DOMNode $node);
 }

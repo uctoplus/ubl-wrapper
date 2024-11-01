@@ -11,28 +11,28 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PhoneNumberType;
 /**
  * Class TelecommunicationsSupplyLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method PhoneNumberType getPhoneNumber()
  * @method self setPhoneNumber(PhoneNumberType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method LineExtensionAmountType getLineExtensionAmount()
  * @method self setLineExtensionAmount(LineExtensionAmountType|string $value)
- * @method ExchangeRateType getExchangeRate()
+ * @method ExchangeRateType[] getExchangeRate()
  * @method self addExchangeRate(ExchangeRateType $value)
  * @method self setExchangeRate(ExchangeRateType ...$values)
- * @method AllowanceChargeType getAllowanceCharge()
+ * @method AllowanceChargeType[] getAllowanceCharge()
  * @method self addAllowanceCharge(AllowanceChargeType $value)
  * @method self setAllowanceCharge(AllowanceChargeType ...$values)
- * @method TaxTotalType getTaxTotal()
+ * @method TaxTotalType[] getTaxTotal()
  * @method self addTaxTotal(TaxTotalType $value)
  * @method self setTaxTotal(TaxTotalType ...$values)
- * @method TelecommunicationsServiceType getTelecommunicationsService()
+ * @method TelecommunicationsServiceType[] getTelecommunicationsService()
  * @method self addTelecommunicationsService(TelecommunicationsServiceType $value)
  * @method self setTelecommunicationsService(TelecommunicationsServiceType ...$values)
  */

@@ -11,12 +11,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\LiabilityAmountType;
 /**
  * Class FinancialGuaranteeType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method GuaranteeTypeCodeType getGuaranteeTypeCode()
  * @method self setGuaranteeTypeCode(GuaranteeTypeCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method LiabilityAmountType getLiabilityAmount()

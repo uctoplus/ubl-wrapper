@@ -11,22 +11,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\MaximumOperatorQuantityTy
 /**
  * Class FrameworkAgreementType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method ExpectedOperatorQuantityType getExpectedOperatorQuantity()
  * @method self setExpectedOperatorQuantity(ExpectedOperatorQuantityType|string $value)
  * @method MaximumOperatorQuantityType getMaximumOperatorQuantity()
  * @method self setMaximumOperatorQuantity(MaximumOperatorQuantityType|string $value)
- * @method JustificationType getJustification()
+ * @method JustificationType[] getJustification()
  * @method self addJustification(JustificationType|string $value)
  * @method self setJustification(JustificationType ...$values)
- * @method FrequencyType getFrequency()
+ * @method FrequencyType[] getFrequency()
  * @method self addFrequency(FrequencyType|string $value)
  * @method self setFrequency(FrequencyType ...$values)
  * @method PeriodType getDurationPeriod()
  * @method self setDurationPeriod(PeriodType $value)
- * @method TenderRequirementType getSubsequentProcessTenderRequirement()
+ * @method TenderRequirementType[] getSubsequentProcessTenderRequirement()
  * @method self addSubsequentProcessTenderRequirement(TenderRequirementType $value)
  * @method self setSubsequentProcessTenderRequirement(TenderRequirementType ...$values)
  */

@@ -13,12 +13,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdQuantityType;
 /**
  * Class EvaluationCriterionType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method EvaluationCriterionTypeCodeType getEvaluationCriterionTypeCode()
  * @method self setEvaluationCriterionTypeCode(EvaluationCriterionTypeCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method ThresholdAmountType getThresholdAmount()
@@ -27,12 +27,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ThresholdQuantityType;
  * @method self setThresholdQuantity(ThresholdQuantityType|string $value)
  * @method ExpressionCodeType getExpressionCode()
  * @method self setExpressionCode(ExpressionCodeType|string $value)
- * @method ExpressionType getExpression()
+ * @method ExpressionType[] getExpression()
  * @method self addExpression(ExpressionType|string $value)
  * @method self setExpression(ExpressionType ...$values)
  * @method PeriodType getDurationPeriod()
  * @method self setDurationPeriod(PeriodType $value)
- * @method EvidenceType getSuggestedEvidence()
+ * @method EvidenceType[] getSuggestedEvidence()
  * @method self addSuggestedEvidence(EvidenceType $value)
  * @method self setSuggestedEvidence(EvidenceType ...$values)
  */

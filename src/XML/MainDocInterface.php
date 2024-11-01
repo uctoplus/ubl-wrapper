@@ -2,10 +2,12 @@
 
 namespace Uctoplus\UblWrapper\XML;
 
+use DOMDocument;
+
 interface MainDocInterface
 {
     /**
-     * @return \DOMDocument
+     * @return DOMDocument
      */
     public function toXML();
 }

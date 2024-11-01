@@ -10,19 +10,19 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NoteType;
 /**
  * Class CatalogueRequestLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method ContractSubdivisionType getContractSubdivision()
  * @method self setContractSubdivision(ContractSubdivisionType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method PeriodType getLineValidityPeriod()
  * @method self setLineValidityPeriod(PeriodType $value)
- * @method ItemLocationQuantityType getRequiredItemLocationQuantity()
+ * @method ItemLocationQuantityType[] getRequiredItemLocationQuantity()
  * @method self addRequiredItemLocationQuantity(ItemLocationQuantityType $value)
  * @method self setRequiredItemLocationQuantity(ItemLocationQuantityType ...$values)
  * @method ItemType getItem()

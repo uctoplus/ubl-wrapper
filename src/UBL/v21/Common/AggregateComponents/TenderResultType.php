@@ -18,12 +18,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TenderResultCodeType;
 /**
  * Class TenderResultType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method TenderResultCodeType getTenderResultCode()
  * @method self setTenderResultCode(TenderResultCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method AdvertisementAmountType getAdvertisementAmount()
@@ -50,10 +50,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TenderResultCodeType;
  * @method self setAwardedTenderedProject(TenderedProjectType $value)
  * @method PeriodType getContractFormalizationPeriod()
  * @method self setContractFormalizationPeriod(PeriodType $value)
- * @method SubcontractTermsType getSubcontractTerms()
+ * @method SubcontractTermsType[] getSubcontractTerms()
  * @method self addSubcontractTerms(SubcontractTermsType $value)
  * @method self setSubcontractTerms(SubcontractTermsType ...$values)
- * @method WinningPartyType getWinningParty()
+ * @method WinningPartyType[] getWinningParty()
  * @method self addWinningParty(WinningPartyType $value)
  * @method self setWinningParty(WinningPartyType ...$values)
  */

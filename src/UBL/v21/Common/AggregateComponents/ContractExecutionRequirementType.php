@@ -10,15 +10,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 /**
  * Class ContractExecutionRequirementType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method NameType getName()
+ * @method NameType[] getName()
  * @method self addName(NameType|string $value)
  * @method self setName(NameType ...$values)
  * @method ExecutionRequirementCodeType getExecutionRequirementCode()
  * @method self setExecutionRequirementCode(ExecutionRequirementCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  */

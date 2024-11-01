@@ -9,12 +9,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RoleDescriptionType;
 /**
  * Class EconomicOperatorRoleType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method RoleCodeType getRoleCode()
  * @method self setRoleCode(RoleCodeType|string $value)
- * @method RoleDescriptionType getRoleDescription()
+ * @method RoleDescriptionType[] getRoleDescription()
  * @method self addRoleDescription(RoleDescriptionType|string $value)
  * @method self setRoleDescription(RoleDescriptionType ...$values)
  */

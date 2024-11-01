@@ -5,11 +5,12 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DutyCodeType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DutyType;
 
 /**
  * Class DutyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method AmountType getAmount()

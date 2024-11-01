@@ -22,14 +22,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 /**
  * Class ReceiptLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method UUIDType getUUID()
  * @method self setUUID(UUIDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method ReceivedQuantityType getReceivedQuantity()
@@ -42,7 +42,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @method self setRejectedQuantity(RejectedQuantityType|string $value)
  * @method RejectReasonCodeType getRejectReasonCode()
  * @method self setRejectReasonCode(RejectReasonCodeType|string $value)
- * @method RejectReasonType getRejectReason()
+ * @method RejectReasonType[] getRejectReason()
  * @method self addRejectReason(RejectReasonType|string $value)
  * @method self setRejectReason(RejectReasonType ...$values)
  * @method RejectActionCodeType getRejectActionCode()
@@ -59,16 +59,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @method self setTimingComplaint(TimingComplaintType|string $value)
  * @method OrderLineReferenceType getOrderLineReference()
  * @method self setOrderLineReference(OrderLineReferenceType $value)
- * @method LineReferenceType getDespatchLineReference()
+ * @method LineReferenceType[] getDespatchLineReference()
  * @method self addDespatchLineReference(LineReferenceType $value)
  * @method self setDespatchLineReference(LineReferenceType ...$values)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
- * @method ItemType getItem()
+ * @method ItemType[] getItem()
  * @method self addItem(ItemType $value)
  * @method self setItem(ItemType ...$values)
- * @method ShipmentType getShipment()
+ * @method ShipmentType[] getShipment()
  * @method self addShipment(ShipmentType $value)
  * @method self setShipment(ShipmentType ...$values)
  */

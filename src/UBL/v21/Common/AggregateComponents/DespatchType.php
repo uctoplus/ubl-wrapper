@@ -18,7 +18,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequestedDespatchTimeType
 /**
  * Class DespatchType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -41,7 +41,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequestedDespatchTimeType
  * @method self setGuaranteedDespatchTime(GuaranteedDespatchTimeType|string $value)
  * @method ReleaseIDType getReleaseID()
  * @method self setReleaseID(ReleaseIDType|string $value)
- * @method InstructionsType getInstructions()
+ * @method InstructionsType[] getInstructions()
  * @method self addInstructions(InstructionsType|string $value)
  * @method self setInstructions(InstructionsType ...$values)
  * @method AddressType getDespatchAddress()
@@ -52,7 +52,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RequestedDespatchTimeType
  * @method self setDespatchParty(PartyType $value)
  * @method PartyType getCarrierParty()
  * @method self setCarrierParty(PartyType $value)
- * @method PartyType getNotifyParty()
+ * @method PartyType[] getNotifyParty()
  * @method self addNotifyParty(PartyType $value)
  * @method self setNotifyParty(PartyType ...$values)
  * @method ContactType getContact()

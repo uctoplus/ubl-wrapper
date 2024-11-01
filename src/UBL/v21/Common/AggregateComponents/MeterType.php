@@ -12,7 +12,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalDeliveredQuantityTyp
 /**
  * Class MeterType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method MeterNumberType getMeterNumber()
@@ -25,10 +25,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalDeliveredQuantityTyp
  * @method self setMeterConstantCode(MeterConstantCodeType|string $value)
  * @method TotalDeliveredQuantityType getTotalDeliveredQuantity()
  * @method self setTotalDeliveredQuantity(TotalDeliveredQuantityType|string $value)
- * @method MeterReadingType getMeterReading()
+ * @method MeterReadingType[] getMeterReading()
  * @method self addMeterReading(MeterReadingType $value)
  * @method self setMeterReading(MeterReadingType ...$values)
- * @method MeterPropertyType getMeterProperty()
+ * @method MeterPropertyType[] getMeterProperty()
  * @method self addMeterProperty(MeterPropertyType $value)
  * @method self setMeterProperty(MeterPropertyType ...$values)
  */

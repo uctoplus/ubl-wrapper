@@ -12,7 +12,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
 /**
  * Class MeterPropertyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method NameType getName()
@@ -23,7 +23,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
  * @method self setValue(ValueType|string $value)
  * @method ValueQuantityType getValueQuantity()
  * @method self setValueQuantity(ValueQuantityType|string $value)
- * @method ValueQualifierType getValueQualifier()
+ * @method ValueQualifierType[] getValueQualifier()
  * @method self addValueQualifier(ValueQualifierType|string $value)
  * @method self setValueQualifier(ValueQualifierType ...$values)
  */

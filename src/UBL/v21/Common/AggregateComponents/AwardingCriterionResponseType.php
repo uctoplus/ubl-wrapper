@@ -13,24 +13,24 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
 /**
  * Class AwardingCriterionResponseType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method AwardingCriterionIDType getAwardingCriterionID()
  * @method self setAwardingCriterionID(AwardingCriterionIDType|string $value)
- * @method AwardingCriterionDescriptionType getAwardingCriterionDescription()
+ * @method AwardingCriterionDescriptionType[] getAwardingCriterionDescription()
  * @method self addAwardingCriterionDescription(AwardingCriterionDescriptionType|string $value)
  * @method self setAwardingCriterionDescription(AwardingCriterionDescriptionType ...$values)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method QuantityType getQuantity()
  * @method self setQuantity(QuantityType|string $value)
  * @method AmountType getAmount()
  * @method self setAmount(AmountType|string $value)
- * @method AwardingCriterionResponseType getSubordinateAwardingCriterionResponse()
+ * @method AwardingCriterionResponseType[] getSubordinateAwardingCriterionResponse()
  * @method self addSubordinateAwardingCriterionResponse(AwardingCriterionResponseType $value)
  * @method self setSubordinateAwardingCriterionResponse(AwardingCriterionResponseType ...$values)
  */

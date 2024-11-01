@@ -12,7 +12,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
 /**
  * Class TransportScheduleType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method SequenceNumericType getSequenceNumeric()
@@ -23,7 +23,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SequenceNumericType;
  * @method self setReferenceTime(ReferenceTimeType|string $value)
  * @method ReliabilityPercentType getReliabilityPercent()
  * @method self setReliabilityPercent(ReliabilityPercentType|string $value)
- * @method RemarksType getRemarks()
+ * @method RemarksType[] getRemarks()
  * @method self addRemarks(RemarksType|string $value)
  * @method self setRemarks(RemarksType ...$values)
  * @method LocationType getStatusLocation()

@@ -16,7 +16,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
 /**
  * Class ItemPropertyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -31,17 +31,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ValueType;
  * @method self setValue(ValueType|string $value)
  * @method ValueQuantityType getValueQuantity()
  * @method self setValueQuantity(ValueQuantityType|string $value)
- * @method ValueQualifierType getValueQualifier()
+ * @method ValueQualifierType[] getValueQualifier()
  * @method self addValueQualifier(ValueQualifierType|string $value)
  * @method self setValueQualifier(ValueQualifierType ...$values)
  * @method ImportanceCodeType getImportanceCode()
  * @method self setImportanceCode(ImportanceCodeType|string $value)
- * @method ListValueType getListValue()
+ * @method ListValueType[] getListValue()
  * @method self addListValue(ListValueType|string $value)
  * @method self setListValue(ListValueType ...$values)
  * @method PeriodType getUsabilityPeriod()
  * @method self setUsabilityPeriod(PeriodType $value)
- * @method ItemPropertyGroupType getItemPropertyGroup()
+ * @method ItemPropertyGroupType[] getItemPropertyGroup()
  * @method self addItemPropertyGroup(ItemPropertyGroupType $value)
  * @method self setItemPropertyGroup(ItemPropertyGroupType ...$values)
  * @method DimensionType getRangeDimension()

@@ -13,14 +13,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PriceTypeType;
 /**
  * Class PriceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method PriceAmountType getPriceAmount()
  * @method self setPriceAmount(PriceAmountType|string $value)
  * @method BaseQuantityType getBaseQuantity()
  * @method self setBaseQuantity(BaseQuantityType|string $value)
- * @method PriceChangeReasonType getPriceChangeReason()
+ * @method PriceChangeReasonType[] getPriceChangeReason()
  * @method self addPriceChangeReason(PriceChangeReasonType|string $value)
  * @method self setPriceChangeReason(PriceChangeReasonType ...$values)
  * @method PriceTypeCodeType getPriceTypeCode()
@@ -29,12 +29,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PriceTypeType;
  * @method self setPriceType(PriceTypeType|string $value)
  * @method OrderableUnitFactorRateType getOrderableUnitFactorRate()
  * @method self setOrderableUnitFactorRate(OrderableUnitFactorRateType|string $value)
- * @method PeriodType getValidityPeriod()
+ * @method PeriodType[] getValidityPeriod()
  * @method self addValidityPeriod(PeriodType $value)
  * @method self setValidityPeriod(PeriodType ...$values)
  * @method PriceListType getPriceList()
  * @method self setPriceList(PriceListType $value)
- * @method AllowanceChargeType getAllowanceCharge()
+ * @method AllowanceChargeType[] getAllowanceCharge()
  * @method self addAllowanceCharge(AllowanceChargeType $value)
  * @method self setAllowanceCharge(AllowanceChargeType ...$values)
  * @method ExchangeRateType getPricingExchangeRate()

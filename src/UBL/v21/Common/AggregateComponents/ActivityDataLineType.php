@@ -9,7 +9,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplyChainActivityTypeCo
 /**
  * Class ActivityDataLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -26,7 +26,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SupplyChainActivityTypeCo
  * @method self setActivityOriginLocation(LocationType $value)
  * @method LocationType getActivityFinalLocation()
  * @method self setActivityFinalLocation(LocationType $value)
- * @method SalesItemType getSalesItem()
+ * @method SalesItemType[] getSalesItem()
  * @method self addSalesItem(SalesItemType $value)
  * @method self setSalesItem(SalesItemType ...$values)
  */

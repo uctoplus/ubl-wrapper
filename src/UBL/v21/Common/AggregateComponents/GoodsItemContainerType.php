@@ -9,14 +9,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
 /**
  * Class GoodsItemContainerType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method QuantityType getQuantity()
  * @method self setQuantity(QuantityType|string $value)
- * @method TransportEquipmentType getTransportEquipment()
+ * @method TransportEquipmentType[] getTransportEquipment()
  * @method self addTransportEquipment(TransportEquipmentType $value)
  * @method self setTransportEquipment(TransportEquipmentType ...$values)
  */

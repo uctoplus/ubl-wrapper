@@ -8,10 +8,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
 /**
  * Class SupplierConsumptionType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method PartyType getUtilitySupplierParty()
@@ -22,7 +22,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DescriptionType;
  * @method self setConsumption(ConsumptionType $value)
  * @method ContractType getContract()
  * @method self setContract(ContractType $value)
- * @method ConsumptionLineType getConsumptionLine()
+ * @method ConsumptionLineType[] getConsumptionLine()
  * @method self addConsumptionLine(ConsumptionLineType $value)
  * @method self setConsumptionLine(ConsumptionLineType ...$values)
  */

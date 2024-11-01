@@ -15,15 +15,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
 /**
  * Class LocationType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
- * @method ConditionsType getConditions()
+ * @method ConditionsType[] getConditions()
  * @method self addConditions(ConditionsType|string $value)
  * @method self setConditions(ConditionsType ...$values)
  * @method CountrySubentityType getCountrySubentity()
@@ -36,15 +36,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\NameType;
  * @method self setInformationURI(InformationURIType|string $value)
  * @method NameType getName()
  * @method self setName(NameType|string $value)
- * @method PeriodType getValidityPeriod()
+ * @method PeriodType[] getValidityPeriod()
  * @method self addValidityPeriod(PeriodType $value)
  * @method self setValidityPeriod(PeriodType ...$values)
  * @method AddressType getAddress()
  * @method self setAddress(AddressType $value)
- * @method LocationType getSubsidiaryLocation()
+ * @method LocationType[] getSubsidiaryLocation()
  * @method self addSubsidiaryLocation(LocationType $value)
  * @method self setSubsidiaryLocation(LocationType ...$values)
- * @method LocationCoordinateType getLocationCoordinate()
+ * @method LocationCoordinateType[] getLocationCoordinate()
  * @method self addLocationCoordinate(LocationCoordinateType $value)
  * @method self setLocationCoordinate(LocationCoordinateType ...$values)
  */

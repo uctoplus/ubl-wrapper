@@ -10,7 +10,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\OntologyURIType;
 /**
  * Class RegulationType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method NameType getName()

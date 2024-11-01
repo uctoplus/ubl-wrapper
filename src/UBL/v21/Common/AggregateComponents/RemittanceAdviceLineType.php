@@ -15,12 +15,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
 /**
  * Class RemittanceAdviceLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method UUIDType getUUID()
@@ -47,13 +47,13 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UUIDType;
  * @method self setOriginatorCustomerParty(CustomerPartyType $value)
  * @method PartyType getPayeeParty()
  * @method self setPayeeParty(PartyType $value)
- * @method PeriodType getInvoicePeriod()
+ * @method PeriodType[] getInvoicePeriod()
  * @method self addInvoicePeriod(PeriodType $value)
  * @method self setInvoicePeriod(PeriodType ...$values)
- * @method BillingReferenceType getBillingReference()
+ * @method BillingReferenceType[] getBillingReference()
  * @method self addBillingReference(BillingReferenceType $value)
  * @method self setBillingReference(BillingReferenceType ...$values)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
  * @method ExchangeRateType getExchangeRate()

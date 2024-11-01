@@ -18,7 +18,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\URIType;
 /**
  * Class ExternalReferenceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method URIType getURI()
@@ -41,7 +41,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\URIType;
  * @method self setCharacterSetCode(CharacterSetCodeType|string $value)
  * @method FileNameType getFileName()
  * @method self setFileName(FileNameType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  */

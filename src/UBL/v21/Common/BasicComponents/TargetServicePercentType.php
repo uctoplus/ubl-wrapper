@@ -2,12 +2,14 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
+use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\PercentType;
+
 /**
  * Class TargetServicePercentType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class TargetServicePercentType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\PercentType
+class TargetServicePercentType extends PercentType
 {
 }

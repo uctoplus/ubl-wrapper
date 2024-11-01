@@ -19,12 +19,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WarrantyInformationType;
 /**
  * Class TenderLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method QuantityType getQuantity()
@@ -43,27 +43,27 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WarrantyInformationType;
  * @method self setMinimumOrderQuantity(MinimumOrderQuantityType|string $value)
  * @method MaximumOrderQuantityType getMaximumOrderQuantity()
  * @method self setMaximumOrderQuantity(MaximumOrderQuantityType|string $value)
- * @method WarrantyInformationType getWarrantyInformation()
+ * @method WarrantyInformationType[] getWarrantyInformation()
  * @method self addWarrantyInformation(WarrantyInformationType|string $value)
  * @method self setWarrantyInformation(WarrantyInformationType ...$values)
  * @method PackLevelCodeType getPackLevelCode()
  * @method self setPackLevelCode(PackLevelCodeType|string $value)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
  * @method ItemType getItem()
  * @method self setItem(ItemType $value)
- * @method ItemLocationQuantityType getOfferedItemLocationQuantity()
+ * @method ItemLocationQuantityType[] getOfferedItemLocationQuantity()
  * @method self addOfferedItemLocationQuantity(ItemLocationQuantityType $value)
  * @method self setOfferedItemLocationQuantity(ItemLocationQuantityType ...$values)
- * @method RelatedItemType getReplacementRelatedItem()
+ * @method RelatedItemType[] getReplacementRelatedItem()
  * @method self addReplacementRelatedItem(RelatedItemType $value)
  * @method self setReplacementRelatedItem(RelatedItemType ...$values)
  * @method PartyType getWarrantyParty()
  * @method self setWarrantyParty(PartyType $value)
  * @method PeriodType getWarrantyValidityPeriod()
  * @method self setWarrantyValidityPeriod(PeriodType $value)
- * @method TenderLineType getSubTenderLine()
+ * @method TenderLineType[] getSubTenderLine()
  * @method self addSubTenderLine(TenderLineType $value)
  * @method self setSubTenderLine(TenderLineType ...$values)
  * @method LineReferenceType getCallForTendersLineReference()

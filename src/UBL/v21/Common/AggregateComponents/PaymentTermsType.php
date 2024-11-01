@@ -22,17 +22,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SettlementDiscountPercent
 /**
  * Class PaymentTermsType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method PaymentMeansIDType getPaymentMeansID()
+ * @method PaymentMeansIDType[] getPaymentMeansID()
  * @method self addPaymentMeansID(PaymentMeansIDType|string $value)
  * @method self setPaymentMeansID(PaymentMeansIDType ...$values)
  * @method PrepaidPaymentReferenceIDType getPrepaidPaymentReferenceID()
  * @method self setPrepaidPaymentReferenceID(PrepaidPaymentReferenceIDType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method ReferenceEventCodeType getReferenceEventCode()

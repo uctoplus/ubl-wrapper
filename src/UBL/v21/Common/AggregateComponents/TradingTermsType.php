@@ -9,10 +9,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ReferenceType;
 /**
  * Class TradingTermsType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method InformationType getInformation()
+ * @method InformationType[] getInformation()
  * @method self addInformation(InformationType|string $value)
  * @method self setInformation(InformationType ...$values)
  * @method ReferenceType getReference()

@@ -14,7 +14,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalAmountType;
 /**
  * Class RequestedTenderTotalType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method EstimatedOverallContractAmountType getEstimatedOverallContractAmount()
@@ -27,12 +27,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalAmountType;
  * @method self setMinimumAmount(MinimumAmountType|string $value)
  * @method MaximumAmountType getMaximumAmount()
  * @method self setMaximumAmount(MaximumAmountType|string $value)
- * @method MonetaryScopeType getMonetaryScope()
+ * @method MonetaryScopeType[] getMonetaryScope()
  * @method self addMonetaryScope(MonetaryScopeType|string $value)
  * @method self setMonetaryScope(MonetaryScopeType ...$values)
  * @method AverageSubsequentContractAmountType getAverageSubsequentContractAmount()
  * @method self setAverageSubsequentContractAmount(AverageSubsequentContractAmountType|string $value)
- * @method TaxCategoryType getApplicableTaxCategory()
+ * @method TaxCategoryType[] getApplicableTaxCategory()
  * @method self addApplicableTaxCategory(TaxCategoryType $value)
  * @method self setApplicableTaxCategory(TaxCategoryType ...$values)
  */

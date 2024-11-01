@@ -19,17 +19,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UrgencyCodeType;
 /**
  * Class TenderingProcessType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method OriginalContractingSystemIDType getOriginalContractingSystemID()
  * @method self setOriginalContractingSystemID(OriginalContractingSystemIDType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
- * @method NegotiationDescriptionType getNegotiationDescription()
+ * @method NegotiationDescriptionType[] getNegotiationDescription()
  * @method self addNegotiationDescription(NegotiationDescriptionType|string $value)
  * @method self setNegotiationDescription(NegotiationDescriptionType ...$values)
  * @method ProcedureCodeType getProcedureCode()
@@ -56,18 +56,18 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UrgencyCodeType;
  * @method self setInvitationSubmissionPeriod(PeriodType $value)
  * @method PeriodType getParticipationRequestReceptionPeriod()
  * @method self setParticipationRequestReceptionPeriod(PeriodType $value)
- * @method DocumentReferenceType getNoticeDocumentReference()
+ * @method DocumentReferenceType[] getNoticeDocumentReference()
  * @method self addNoticeDocumentReference(DocumentReferenceType $value)
  * @method self setNoticeDocumentReference(DocumentReferenceType ...$values)
- * @method DocumentReferenceType getAdditionalDocumentReference()
+ * @method DocumentReferenceType[] getAdditionalDocumentReference()
  * @method self addAdditionalDocumentReference(DocumentReferenceType $value)
  * @method self setAdditionalDocumentReference(DocumentReferenceType ...$values)
- * @method ProcessJustificationType getProcessJustification()
+ * @method ProcessJustificationType[] getProcessJustification()
  * @method self addProcessJustification(ProcessJustificationType $value)
  * @method self setProcessJustification(ProcessJustificationType ...$values)
  * @method EconomicOperatorShortListType getEconomicOperatorShortList()
  * @method self setEconomicOperatorShortList(EconomicOperatorShortListType $value)
- * @method EventType getOpenTenderEvent()
+ * @method EventType[] getOpenTenderEvent()
  * @method self addOpenTenderEvent(EventType $value)
  * @method self setOpenTenderEvent(EventType ...$values)
  * @method AuctionTermsType getAuctionTerms()

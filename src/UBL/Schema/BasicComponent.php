@@ -16,7 +16,7 @@ use ValueError;
  * Class BasicComponent
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\Schema
  */
 abstract class BasicComponent implements XMLInterface

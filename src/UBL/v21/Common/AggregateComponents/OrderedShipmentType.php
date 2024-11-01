@@ -7,12 +7,12 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 /**
  * Class OrderedShipmentType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method ShipmentType getShipment()
  * @method self setShipment(ShipmentType $value)
- * @method PackageType getPackage()
+ * @method PackageType[] getPackage()
  * @method self addPackage(PackageType $value)
  * @method self setPackage(PackageType ...$values)
  */

@@ -19,7 +19,7 @@ use Uctoplus\UblWrapper\UBL\v21\MainDoc\Invoice;
  * Class InvoiceGeneratorTest
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  */
 class AggregatedGeneratorTest extends TestCase
 {

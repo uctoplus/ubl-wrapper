@@ -18,7 +18,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TextType;
 /**
  * Class StatusType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method ConditionCodeType getConditionCode()
@@ -27,17 +27,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TextType;
  * @method self setReferenceDate(ReferenceDateType|string $value)
  * @method ReferenceTimeType getReferenceTime()
  * @method self setReferenceTime(ReferenceTimeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method StatusReasonCodeType getStatusReasonCode()
  * @method self setStatusReasonCode(StatusReasonCodeType|string $value)
- * @method StatusReasonType getStatusReason()
+ * @method StatusReasonType[] getStatusReason()
  * @method self addStatusReason(StatusReasonType|string $value)
  * @method self setStatusReason(StatusReasonType ...$values)
  * @method SequenceIDType getSequenceID()
  * @method self setSequenceID(SequenceIDType|string $value)
- * @method TextType getText()
+ * @method TextType[] getText()
  * @method self addText(TextType|string $value)
  * @method self setText(TextType ...$values)
  * @method IndicationIndicatorType getIndicationIndicator()
@@ -46,7 +46,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TextType;
  * @method self setPercent(PercentType|string $value)
  * @method ReliabilityPercentType getReliabilityPercent()
  * @method self setReliabilityPercent(ReliabilityPercentType|string $value)
- * @method ConditionType getCondition()
+ * @method ConditionType[] getCondition()
  * @method self addCondition(ConditionType $value)
  * @method self setCondition(ConditionType ...$values)
  */

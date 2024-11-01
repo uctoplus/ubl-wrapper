@@ -13,7 +13,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SerialIDType;
 /**
  * Class ItemInstanceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method ProductTraceIDType getProductTraceID()
@@ -28,7 +28,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SerialIDType;
  * @method self setRegistrationID(RegistrationIDType|string $value)
  * @method SerialIDType getSerialID()
  * @method self setSerialID(SerialIDType|string $value)
- * @method ItemPropertyType getAdditionalItemProperty()
+ * @method ItemPropertyType[] getAdditionalItemProperty()
  * @method self addAdditionalItemProperty(ItemPropertyType $value)
  * @method self setAdditionalItemProperty(ItemPropertyType ...$values)
  * @method LotIdentificationType getLotIdentification()

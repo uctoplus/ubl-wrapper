@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxIncludedIndicatorType;
 /**
  * Class TaxTotalType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method TaxAmountType getTaxAmount()
@@ -22,7 +22,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxIncludedIndicatorType;
  * @method self setTaxEvidenceIndicator(TaxEvidenceIndicatorType|string $value)
  * @method TaxIncludedIndicatorType getTaxIncludedIndicator()
  * @method self setTaxIncludedIndicator(TaxIncludedIndicatorType|string $value)
- * @method TaxSubtotalType getTaxSubtotal()
+ * @method TaxSubtotalType[] getTaxSubtotal()
  * @method self addTaxSubtotal(TaxSubtotalType $value)
  * @method self setTaxSubtotal(TaxSubtotalType ...$values)
  */

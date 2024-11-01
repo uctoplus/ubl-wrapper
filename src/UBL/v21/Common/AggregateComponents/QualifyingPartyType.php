@@ -14,12 +14,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TendererRoleCodeType;
 /**
  * Class QualifyingPartyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method ParticipationPercentType getParticipationPercent()
  * @method self setParticipationPercent(ParticipationPercentType|string $value)
- * @method PersonalSituationType getPersonalSituation()
+ * @method PersonalSituationType[] getPersonalSituation()
  * @method self addPersonalSituation(PersonalSituationType|string $value)
  * @method self setPersonalSituation(PersonalSituationType ...$values)
  * @method OperatingYearsQuantityType getOperatingYearsQuantity()
@@ -34,16 +34,16 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TendererRoleCodeType;
  * @method self setTendererRoleCode(TendererRoleCodeType|string $value)
  * @method ClassificationSchemeType getBusinessClassificationScheme()
  * @method self setBusinessClassificationScheme(ClassificationSchemeType $value)
- * @method CapabilityType getTechnicalCapability()
+ * @method CapabilityType[] getTechnicalCapability()
  * @method self addTechnicalCapability(CapabilityType $value)
  * @method self setTechnicalCapability(CapabilityType ...$values)
- * @method CapabilityType getFinancialCapability()
+ * @method CapabilityType[] getFinancialCapability()
  * @method self addFinancialCapability(CapabilityType $value)
  * @method self setFinancialCapability(CapabilityType ...$values)
- * @method CompletedTaskType getCompletedTask()
+ * @method CompletedTaskType[] getCompletedTask()
  * @method self addCompletedTask(CompletedTaskType $value)
  * @method self setCompletedTask(CompletedTaskType ...$values)
- * @method DeclarationType getDeclaration()
+ * @method DeclarationType[] getDeclaration()
  * @method self addDeclaration(DeclarationType $value)
  * @method self setDeclaration(DeclarationType ...$values)
  * @method PartyType getParty()

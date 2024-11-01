@@ -13,7 +13,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TypeCodeType;
 /**
  * Class EventType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IdentificationIDType getIdentificationID()
@@ -24,15 +24,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TypeCodeType;
  * @method self setOccurrenceTime(OccurrenceTimeType|string $value)
  * @method TypeCodeType getTypeCode()
  * @method self setTypeCode(TypeCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method CompletionIndicatorType getCompletionIndicator()
  * @method self setCompletionIndicator(CompletionIndicatorType|string $value)
- * @method StatusType getCurrentStatus()
+ * @method StatusType[] getCurrentStatus()
  * @method self addCurrentStatus(StatusType $value)
  * @method self setCurrentStatus(StatusType ...$values)
- * @method ContactType getContact()
+ * @method ContactType[] getContact()
  * @method self addContact(ContactType $value)
  * @method self setContact(ContactType ...$values)
  * @method LocationType getOccurenceLocation()

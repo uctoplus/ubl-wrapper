@@ -10,22 +10,22 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportUserSpecialTerms
 /**
  * Class TransportExecutionTermsType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
- * @method TransportUserSpecialTermsType getTransportUserSpecialTerms()
+ * @method TransportUserSpecialTermsType[] getTransportUserSpecialTerms()
  * @method self addTransportUserSpecialTerms(TransportUserSpecialTermsType|string $value)
  * @method self setTransportUserSpecialTerms(TransportUserSpecialTermsType ...$values)
- * @method TransportServiceProviderSpecialTermsType getTransportServiceProviderSpecialTerms()
+ * @method TransportServiceProviderSpecialTermsType[] getTransportServiceProviderSpecialTerms()
  * @method self addTransportServiceProviderSpecialTerms(TransportServiceProviderSpecialTermsType|string $value)
  * @method self setTransportServiceProviderSpecialTerms(TransportServiceProviderSpecialTermsType ...$values)
- * @method ChangeConditionsType getChangeConditions()
+ * @method ChangeConditionsType[] getChangeConditions()
  * @method self addChangeConditions(ChangeConditionsType|string $value)
  * @method self setChangeConditions(ChangeConditionsType ...$values)
- * @method PaymentTermsType getPaymentTerms()
+ * @method PaymentTermsType[] getPaymentTerms()
  * @method self addPaymentTerms(PaymentTermsType $value)
  * @method self setPaymentTerms(PaymentTermsType ...$values)
- * @method DeliveryTermsType getDeliveryTerms()
+ * @method DeliveryTermsType[] getDeliveryTerms()
  * @method self addDeliveryTerms(DeliveryTermsType $value)
  * @method self setDeliveryTerms(DeliveryTermsType ...$values)
  * @method PaymentTermsType getBonusPaymentTerms()
@@ -34,10 +34,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TransportUserSpecialTerms
  * @method self setCommissionPaymentTerms(PaymentTermsType $value)
  * @method PaymentTermsType getPenaltyPaymentTerms()
  * @method self setPenaltyPaymentTerms(PaymentTermsType $value)
- * @method EnvironmentalEmissionType getEnvironmentalEmission()
+ * @method EnvironmentalEmissionType[] getEnvironmentalEmission()
  * @method self addEnvironmentalEmission(EnvironmentalEmissionType $value)
  * @method self setEnvironmentalEmission(EnvironmentalEmissionType ...$values)
- * @method NotificationRequirementType getNotificationRequirement()
+ * @method NotificationRequirementType[] getNotificationRequirement()
  * @method self addNotificationRequirement(NotificationRequirementType $value)
  * @method self setNotificationRequirement(NotificationRequirementType ...$values)
  * @method PaymentTermsType getServiceChargePaymentTerms()

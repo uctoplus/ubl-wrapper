@@ -13,7 +13,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
 /**
  * Class ConsumptionHistoryType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method MeterNumberType getMeterNumber()
@@ -26,7 +26,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\QuantityType;
  * @method self setConsumptionLevelCode(ConsumptionLevelCodeType|string $value)
  * @method ConsumptionLevelType getConsumptionLevel()
  * @method self setConsumptionLevel(ConsumptionLevelType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method PeriodType getPeriod()

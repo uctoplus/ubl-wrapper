@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimeFrequencyCodeType;
 /**
  * Class ItemInformationRequestLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method TimeFrequencyCodeType getTimeFrequencyCode()
@@ -22,10 +22,10 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimeFrequencyCodeType;
  * @method self setForecastTypeCode(ForecastTypeCodeType|string $value)
  * @method PerformanceMetricTypeCodeType getPerformanceMetricTypeCode()
  * @method self setPerformanceMetricTypeCode(PerformanceMetricTypeCodeType|string $value)
- * @method PeriodType getPeriod()
+ * @method PeriodType[] getPeriod()
  * @method self addPeriod(PeriodType $value)
  * @method self setPeriod(PeriodType ...$values)
- * @method SalesItemType getSalesItem()
+ * @method SalesItemType[] getSalesItem()
  * @method self addSalesItem(SalesItemType $value)
  * @method self setSalesItem(SalesItemType ...$values)
  */

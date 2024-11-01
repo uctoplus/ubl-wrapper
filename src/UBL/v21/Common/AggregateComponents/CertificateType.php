@@ -11,7 +11,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
 /**
  * Class CertificateType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -20,15 +20,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\RemarksType;
  * @method self setCertificateTypeCode(CertificateTypeCodeType|string $value)
  * @method CertificateTypeType getCertificateType()
  * @method self setCertificateType(CertificateTypeType|string $value)
- * @method RemarksType getRemarks()
+ * @method RemarksType[] getRemarks()
  * @method self addRemarks(RemarksType|string $value)
  * @method self setRemarks(RemarksType ...$values)
  * @method PartyType getIssuerParty()
  * @method self setIssuerParty(PartyType $value)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
- * @method SignatureType getSignature()
+ * @method SignatureType[] getSignature()
  * @method self addSignature(SignatureType $value)
  * @method self setSignature(SignatureType ...$values)
  */

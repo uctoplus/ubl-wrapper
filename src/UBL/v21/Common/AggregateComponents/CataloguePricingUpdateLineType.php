@@ -8,7 +8,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 /**
  * Class CataloguePricingUpdateLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -17,7 +17,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @method self setContractorCustomerParty(CustomerPartyType $value)
  * @method SupplierPartyType getSellerSupplierParty()
  * @method self setSellerSupplierParty(SupplierPartyType $value)
- * @method ItemLocationQuantityType getRequiredItemLocationQuantity()
+ * @method ItemLocationQuantityType[] getRequiredItemLocationQuantity()
  * @method self addRequiredItemLocationQuantity(ItemLocationQuantityType $value)
  * @method self setRequiredItemLocationQuantity(ItemLocationQuantityType ...$values)
  */

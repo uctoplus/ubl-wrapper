@@ -31,7 +31,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimezoneOffsetType;
 /**
  * Class AddressType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -82,12 +82,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TimezoneOffsetType;
  * @method self setDistrict(DistrictType|string $value)
  * @method TimezoneOffsetType getTimezoneOffset()
  * @method self setTimezoneOffset(TimezoneOffsetType|string $value)
- * @method AddressLineType getAddressLine()
+ * @method AddressLineType[] getAddressLine()
  * @method self addAddressLine(AddressLineType $value)
  * @method self setAddressLine(AddressLineType ...$values)
  * @method CountryType getCountry()
  * @method self setCountry(CountryType $value)
- * @method LocationCoordinateType getLocationCoordinate()
+ * @method LocationCoordinateType[] getLocationCoordinate()
  * @method self addLocationCoordinate(LocationCoordinateType $value)
  * @method self setLocationCoordinate(LocationCoordinateType ...$values)
  */

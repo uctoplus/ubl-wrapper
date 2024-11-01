@@ -11,17 +11,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ProcessReasonType;
 /**
  * Class ProcessJustificationType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method PreviousCancellationReasonCodeType getPreviousCancellationReasonCode()
  * @method self setPreviousCancellationReasonCode(PreviousCancellationReasonCodeType|string $value)
  * @method ProcessReasonCodeType getProcessReasonCode()
  * @method self setProcessReasonCode(ProcessReasonCodeType|string $value)
- * @method ProcessReasonType getProcessReason()
+ * @method ProcessReasonType[] getProcessReason()
  * @method self addProcessReason(ProcessReasonType|string $value)
  * @method self setProcessReason(ProcessReasonType ...$values)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  */

@@ -12,7 +12,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxLevelCodeType;
 /**
  * Class PartyTaxSchemeType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method RegistrationNameType getRegistrationName()
@@ -23,7 +23,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TaxLevelCodeType;
  * @method self setTaxLevelCode(TaxLevelCodeType|string $value)
  * @method ExemptionReasonCodeType getExemptionReasonCode()
  * @method self setExemptionReasonCode(ExemptionReasonCodeType|string $value)
- * @method ExemptionReasonType getExemptionReason()
+ * @method ExemptionReasonType[] getExemptionReason()
  * @method self addExemptionReason(ExemptionReasonType|string $value)
  * @method self setExemptionReason(ExemptionReasonType ...$values)
  * @method AddressType getRegistrationAddress()

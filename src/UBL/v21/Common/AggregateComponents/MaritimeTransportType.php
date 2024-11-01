@@ -13,7 +13,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VesselNameType;
 /**
  * Class MaritimeTransportType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method VesselIDType getVesselID()
@@ -22,7 +22,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VesselNameType;
  * @method self setVesselName(VesselNameType|string $value)
  * @method RadioCallSignIDType getRadioCallSignID()
  * @method self setRadioCallSignID(RadioCallSignIDType|string $value)
- * @method ShipsRequirementsType getShipsRequirements()
+ * @method ShipsRequirementsType[] getShipsRequirements()
  * @method self addShipsRequirements(ShipsRequirementsType|string $value)
  * @method self setShipsRequirements(ShipsRequirementsType ...$values)
  * @method GrossTonnageMeasureType getGrossTonnageMeasure()

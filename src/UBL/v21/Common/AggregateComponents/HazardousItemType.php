@@ -24,7 +24,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UpperOrangeHazardPlacardI
 /**
  * Class HazardousItemType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -33,7 +33,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UpperOrangeHazardPlacardI
  * @method self setPlacardNotation(PlacardNotationType|string $value)
  * @method PlacardEndorsementType getPlacardEndorsement()
  * @method self setPlacardEndorsement(PlacardEndorsementType|string $value)
- * @method AdditionalInformationType getAdditionalInformation()
+ * @method AdditionalInformationType[] getAdditionalInformation()
  * @method self addAdditionalInformation(AdditionalInformationType|string $value)
  * @method self setAdditionalInformation(AdditionalInformationType ...$values)
  * @method UNDGCodeType getUNDGCode()
@@ -64,17 +64,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UpperOrangeHazardPlacardI
  * @method self setQuantity(QuantityType|string $value)
  * @method PartyType getContactParty()
  * @method self setContactParty(PartyType $value)
- * @method SecondaryHazardType getSecondaryHazard()
+ * @method SecondaryHazardType[] getSecondaryHazard()
  * @method self addSecondaryHazard(SecondaryHazardType $value)
  * @method self setSecondaryHazard(SecondaryHazardType ...$values)
- * @method HazardousGoodsTransitType getHazardousGoodsTransit()
+ * @method HazardousGoodsTransitType[] getHazardousGoodsTransit()
  * @method self addHazardousGoodsTransit(HazardousGoodsTransitType $value)
  * @method self setHazardousGoodsTransit(HazardousGoodsTransitType ...$values)
  * @method TemperatureType getEmergencyTemperature()
  * @method self setEmergencyTemperature(TemperatureType $value)
  * @method TemperatureType getFlashpointTemperature()
  * @method self setFlashpointTemperature(TemperatureType $value)
- * @method TemperatureType getAdditionalTemperature()
+ * @method TemperatureType[] getAdditionalTemperature()
  * @method self addAdditionalTemperature(TemperatureType $value)
  * @method self setAdditionalTemperature(TemperatureType ...$values)
  */

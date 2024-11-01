@@ -7,12 +7,12 @@ use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 /**
  * Class LineResponseType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method LineReferenceType getLineReference()
  * @method self setLineReference(LineReferenceType $value)
- * @method ResponseType getResponse()
+ * @method ResponseType[] getResponse()
  * @method self addResponse(ResponseType $value)
  * @method self setResponse(ResponseType ...$values)
  */

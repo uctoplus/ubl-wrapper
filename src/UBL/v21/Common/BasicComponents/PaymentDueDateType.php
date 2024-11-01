@@ -2,12 +2,14 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
+use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\DateType;
+
 /**
  * Class PaymentDueDateType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class PaymentDueDateType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\DateType
+class PaymentDueDateType extends DateType
 {
 }

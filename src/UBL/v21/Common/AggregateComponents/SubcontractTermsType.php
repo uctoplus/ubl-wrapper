@@ -14,14 +14,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\UnknownPriceIndicatorType
 /**
  * Class SubcontractTermsType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method RateType getRate()
  * @method self setRate(RateType|string $value)
  * @method UnknownPriceIndicatorType getUnknownPriceIndicator()
  * @method self setUnknownPriceIndicator(UnknownPriceIndicatorType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method AmountType getAmount()

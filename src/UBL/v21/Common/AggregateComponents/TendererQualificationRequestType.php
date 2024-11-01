@@ -13,36 +13,36 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\PersonalSituationType;
 /**
  * Class TendererQualificationRequestType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method CompanyLegalFormCodeType getCompanyLegalFormCode()
  * @method self setCompanyLegalFormCode(CompanyLegalFormCodeType|string $value)
  * @method CompanyLegalFormType getCompanyLegalForm()
  * @method self setCompanyLegalForm(CompanyLegalFormType|string $value)
- * @method PersonalSituationType getPersonalSituation()
+ * @method PersonalSituationType[] getPersonalSituation()
  * @method self addPersonalSituation(PersonalSituationType|string $value)
  * @method self setPersonalSituation(PersonalSituationType ...$values)
  * @method OperatingYearsQuantityType getOperatingYearsQuantity()
  * @method self setOperatingYearsQuantity(OperatingYearsQuantityType|string $value)
  * @method EmployeeQuantityType getEmployeeQuantity()
  * @method self setEmployeeQuantity(EmployeeQuantityType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
- * @method ClassificationSchemeType getRequiredBusinessClassificationScheme()
+ * @method ClassificationSchemeType[] getRequiredBusinessClassificationScheme()
  * @method self addRequiredBusinessClassificationScheme(ClassificationSchemeType $value)
  * @method self setRequiredBusinessClassificationScheme(ClassificationSchemeType ...$values)
- * @method EvaluationCriterionType getTechnicalEvaluationCriterion()
+ * @method EvaluationCriterionType[] getTechnicalEvaluationCriterion()
  * @method self addTechnicalEvaluationCriterion(EvaluationCriterionType $value)
  * @method self setTechnicalEvaluationCriterion(EvaluationCriterionType ...$values)
- * @method EvaluationCriterionType getFinancialEvaluationCriterion()
+ * @method EvaluationCriterionType[] getFinancialEvaluationCriterion()
  * @method self addFinancialEvaluationCriterion(EvaluationCriterionType $value)
  * @method self setFinancialEvaluationCriterion(EvaluationCriterionType ...$values)
- * @method TendererRequirementType getSpecificTendererRequirement()
+ * @method TendererRequirementType[] getSpecificTendererRequirement()
  * @method self addSpecificTendererRequirement(TendererRequirementType $value)
  * @method self setSpecificTendererRequirement(TendererRequirementType ...$values)
- * @method EconomicOperatorRoleType getEconomicOperatorRole()
+ * @method EconomicOperatorRoleType[] getEconomicOperatorRole()
  * @method self addEconomicOperatorRole(EconomicOperatorRoleType $value)
  * @method self setEconomicOperatorRole(EconomicOperatorRoleType ...$values)
  */

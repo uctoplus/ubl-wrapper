@@ -9,12 +9,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 /**
  * Class ClauseType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
- * @method ContentType getContent()
+ * @method ContentType[] getContent()
  * @method self addContent(ContentType|string $value)
  * @method self setContent(ContentType ...$values)
  */

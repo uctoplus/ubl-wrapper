@@ -9,33 +9,33 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\SubstitutionStatusCodeTyp
 /**
  * Class OrderLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method SubstitutionStatusCodeType getSubstitutionStatusCode()
  * @method self setSubstitutionStatusCode(SubstitutionStatusCodeType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method LineItemType getLineItem()
  * @method self setLineItem(LineItemType $value)
- * @method LineItemType getSellerProposedSubstituteLineItem()
+ * @method LineItemType[] getSellerProposedSubstituteLineItem()
  * @method self addSellerProposedSubstituteLineItem(LineItemType $value)
  * @method self setSellerProposedSubstituteLineItem(LineItemType ...$values)
- * @method LineItemType getSellerSubstitutedLineItem()
+ * @method LineItemType[] getSellerSubstitutedLineItem()
  * @method self addSellerSubstitutedLineItem(LineItemType $value)
  * @method self setSellerSubstitutedLineItem(LineItemType ...$values)
- * @method LineItemType getBuyerProposedSubstituteLineItem()
+ * @method LineItemType[] getBuyerProposedSubstituteLineItem()
  * @method self addBuyerProposedSubstituteLineItem(LineItemType $value)
  * @method self setBuyerProposedSubstituteLineItem(LineItemType ...$values)
  * @method LineReferenceType getCatalogueLineReference()
  * @method self setCatalogueLineReference(LineReferenceType $value)
  * @method LineReferenceType getQuotationLineReference()
  * @method self setQuotationLineReference(LineReferenceType $value)
- * @method OrderLineReferenceType getOrderLineReference()
+ * @method OrderLineReferenceType[] getOrderLineReference()
  * @method self addOrderLineReference(OrderLineReferenceType $value)
  * @method self setOrderLineReference(OrderLineReferenceType ...$values)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
  */

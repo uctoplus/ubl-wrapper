@@ -10,7 +10,7 @@ use Uctoplus\UblWrapper\XML\XMLInterface;
  * Class AggregateComponent
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\Schema
  */
 abstract class AggregateComponent extends BaseXMLElement implements XMLInterface

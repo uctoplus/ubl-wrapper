@@ -2,12 +2,14 @@
 
 namespace Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents;
 
+use Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\AmountType;
+
 /**
  * Class TaxInclusiveAmountType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents
  */
-class TaxInclusiveAmountType extends \Uctoplus\UblWrapper\UBL\v21\Common\UnqualifiedDataTypes\AmountType
+class TaxInclusiveAmountType extends AmountType
 {
 }

@@ -12,15 +12,15 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\ResolutionType;
 /**
  * Class QualificationResolutionType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method AdmissionCodeType getAdmissionCode()
  * @method self setAdmissionCode(AdmissionCodeType|string $value)
- * @method ExclusionReasonType getExclusionReason()
+ * @method ExclusionReasonType[] getExclusionReason()
  * @method self addExclusionReason(ExclusionReasonType|string $value)
  * @method self setExclusionReason(ExclusionReasonType ...$values)
- * @method ResolutionType getResolution()
+ * @method ResolutionType[] getResolution()
  * @method self addResolution(ResolutionType|string $value)
  * @method self setResolution(ResolutionType ...$values)
  * @method ResolutionDateType getResolutionDate()

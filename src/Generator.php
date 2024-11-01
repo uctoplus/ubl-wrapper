@@ -3,6 +3,7 @@
 namespace Uctoplus\UblWrapper;
 
 use DOMDocument;
+use Exception;
 use Uctoplus\UblWrapper\UBL\Schema\MainDoc;
 use Uctoplus\UblWrapper\UBL\v21\Version;
 use Uctoplus\UblWrapper\UCT\UctList;
@@ -14,7 +15,7 @@ use ZipArchive;
  * Class Generator
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper
  */
 class Generator
@@ -74,7 +75,7 @@ class Generator
     public function output($aggregated = false)
     {
         if (count($this->documents) == 0) {
-            throw new \Exception("No document has been added!");
+            throw new Exception("No document has been added!");
         }
 
         if ($aggregated) {
@@ -95,15 +96,15 @@ class Generator
 
         $resultFileType = $this->guessResultFileType($aggregated);
         if ($file_extension != $resultFileType) {
-            throw new \Exception("Incorrect file extension choosed");
+            throw new Exception("Incorrect file extension choosed");
         }
 
         $resultFileType = $this->guessResultFileType($aggregated);
         if ($resultFileType === "zip") {
-            $zip = new \ZipArchive();
+            $zip = new ZipArchive();
             $open = $zip->open($file_path, ZipArchive::CREATE);
             if ($open === false) {
-                throw new \Exception("Unable to create ZIP!");
+                throw new Exception("Unable to create ZIP!");
             }
 
             /** @var MainDoc $document */

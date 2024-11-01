@@ -16,36 +16,36 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\WeightingAlgorithmCodeTyp
 /**
  * Class AwardingTermsType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method WeightingAlgorithmCodeType getWeightingAlgorithmCode()
  * @method self setWeightingAlgorithmCode(WeightingAlgorithmCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
- * @method TechnicalCommitteeDescriptionType getTechnicalCommitteeDescription()
+ * @method TechnicalCommitteeDescriptionType[] getTechnicalCommitteeDescription()
  * @method self addTechnicalCommitteeDescription(TechnicalCommitteeDescriptionType|string $value)
  * @method self setTechnicalCommitteeDescription(TechnicalCommitteeDescriptionType ...$values)
- * @method LowTendersDescriptionType getLowTendersDescription()
+ * @method LowTendersDescriptionType[] getLowTendersDescription()
  * @method self addLowTendersDescription(LowTendersDescriptionType|string $value)
  * @method self setLowTendersDescription(LowTendersDescriptionType ...$values)
  * @method PrizeIndicatorType getPrizeIndicator()
  * @method self setPrizeIndicator(PrizeIndicatorType|string $value)
- * @method PrizeDescriptionType getPrizeDescription()
+ * @method PrizeDescriptionType[] getPrizeDescription()
  * @method self addPrizeDescription(PrizeDescriptionType|string $value)
  * @method self setPrizeDescription(PrizeDescriptionType ...$values)
- * @method PaymentDescriptionType getPaymentDescription()
+ * @method PaymentDescriptionType[] getPaymentDescription()
  * @method self addPaymentDescription(PaymentDescriptionType|string $value)
  * @method self setPaymentDescription(PaymentDescriptionType ...$values)
  * @method FollowupContractIndicatorType getFollowupContractIndicator()
  * @method self setFollowupContractIndicator(FollowupContractIndicatorType|string $value)
  * @method BindingOnBuyerIndicatorType getBindingOnBuyerIndicator()
  * @method self setBindingOnBuyerIndicator(BindingOnBuyerIndicatorType|string $value)
- * @method AwardingCriterionType getAwardingCriterion()
+ * @method AwardingCriterionType[] getAwardingCriterion()
  * @method self addAwardingCriterion(AwardingCriterionType $value)
  * @method self setAwardingCriterion(AwardingCriterionType ...$values)
- * @method PersonType getTechnicalCommitteePerson()
+ * @method PersonType[] getTechnicalCommitteePerson()
  * @method self addTechnicalCommitteePerson(PersonType $value)
  * @method self setTechnicalCommitteePerson(PersonType ...$values)
  */

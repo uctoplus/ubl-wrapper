@@ -9,7 +9,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
 /**
  * Class TradeFinancingType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -18,14 +18,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\IDType;
  * @method self setFinancingInstrumentCode(FinancingInstrumentCodeType|string $value)
  * @method DocumentReferenceType getContractDocumentReference()
  * @method self setContractDocumentReference(DocumentReferenceType $value)
- * @method DocumentReferenceType getDocumentReference()
+ * @method DocumentReferenceType[] getDocumentReference()
  * @method self addDocumentReference(DocumentReferenceType $value)
  * @method self setDocumentReference(DocumentReferenceType ...$values)
  * @method PartyType getFinancingParty()
  * @method self setFinancingParty(PartyType $value)
  * @method FinancialAccountType getFinancingFinancialAccount()
  * @method self setFinancingFinancialAccount(FinancialAccountType $value)
- * @method ClauseType getClause()
+ * @method ClauseType[] getClause()
  * @method self addClause(ClauseType $value)
  * @method self setClause(ClauseType ...$values)
  */

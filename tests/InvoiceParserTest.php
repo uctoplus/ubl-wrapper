@@ -10,7 +10,7 @@ use Uctoplus\UblWrapper\Parser;
  * Class InvoiceParserTest
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  */
 class InvoiceParserTest extends TestCase
 {

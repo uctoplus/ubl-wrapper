@@ -9,14 +9,14 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalAmountType;
 /**
  * Class BudgetAccountLineType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
  * @method self setID(IDType|string $value)
  * @method TotalAmountType getTotalAmount()
  * @method self setTotalAmount(TotalAmountType|string $value)
- * @method BudgetAccountType getBudgetAccount()
+ * @method BudgetAccountType[] getBudgetAccount()
  * @method self addBudgetAccount(BudgetAccountType $value)
  * @method self setBudgetAccount(BudgetAccountType ...$values)
  */

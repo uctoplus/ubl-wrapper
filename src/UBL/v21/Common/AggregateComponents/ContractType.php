@@ -17,7 +17,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
 /**
  * Class ContractType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -34,17 +34,17 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\VersionIDType;
  * @method self setContractTypeCode(ContractTypeCodeType|string $value)
  * @method ContractTypeType getContractType()
  * @method self setContractType(ContractTypeType|string $value)
- * @method NoteType getNote()
+ * @method NoteType[] getNote()
  * @method self addNote(NoteType|string $value)
  * @method self setNote(NoteType ...$values)
  * @method VersionIDType getVersionID()
  * @method self setVersionID(VersionIDType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method PeriodType getValidityPeriod()
  * @method self setValidityPeriod(PeriodType $value)
- * @method DocumentReferenceType getContractDocumentReference()
+ * @method DocumentReferenceType[] getContractDocumentReference()
  * @method self addContractDocumentReference(DocumentReferenceType $value)
  * @method self setContractDocumentReference(DocumentReferenceType ...$values)
  * @method PeriodType getNominationPeriod()

@@ -20,7 +20,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\XPathType;
 /**
  * Class DocumentReferenceType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -37,7 +37,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\XPathType;
  * @method self setDocumentTypeCode(DocumentTypeCodeType|string $value)
  * @method DocumentTypeType getDocumentType()
  * @method self setDocumentType(DocumentTypeType|string $value)
- * @method XPathType getXPath()
+ * @method XPathType[] getXPath()
  * @method self addXPath(XPathType|string $value)
  * @method self setXPath(XPathType ...$values)
  * @method LanguageIDType getLanguageID()
@@ -48,7 +48,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\XPathType;
  * @method self setVersionID(VersionIDType|string $value)
  * @method DocumentStatusCodeType getDocumentStatusCode()
  * @method self setDocumentStatusCode(DocumentStatusCodeType|string $value)
- * @method DocumentDescriptionType getDocumentDescription()
+ * @method DocumentDescriptionType[] getDocumentDescription()
  * @method self addDocumentDescription(DocumentDescriptionType|string $value)
  * @method self setDocumentDescription(DocumentDescriptionType ...$values)
  * @method AttachmentType getAttachment()

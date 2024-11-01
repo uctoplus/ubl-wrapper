@@ -16,7 +16,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TierRatePercentType;
 /**
  * Class TaxCategoryType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method IDType getID()
@@ -31,7 +31,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TierRatePercentType;
  * @method self setPerUnitAmount(PerUnitAmountType|string $value)
  * @method TaxExemptionReasonCodeType getTaxExemptionReasonCode()
  * @method self setTaxExemptionReasonCode(TaxExemptionReasonCodeType|string $value)
- * @method TaxExemptionReasonType getTaxExemptionReason()
+ * @method TaxExemptionReasonType[] getTaxExemptionReason()
  * @method self addTaxExemptionReason(TaxExemptionReasonType|string $value)
  * @method self setTaxExemptionReason(TaxExemptionReasonType ...$values)
  * @method TierRangeType getTierRange()

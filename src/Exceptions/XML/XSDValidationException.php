@@ -9,7 +9,7 @@ use Throwable;
  * Class XSDValidationException
  *
  * @author Mário <mario@uctoplus.sk>
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\XML\Exceptions
  */
 class XSDValidationException extends Exception

@@ -12,7 +12,7 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalAmountType;
 /**
  * Class TelecommunicationsSupplyType
  *
- * @copyright uctoplus.sk, s.r.o.
+ * @copyright uctoplus.sk, a.s.
  * @package Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents
  *
  * @method TelecommunicationsSupplyTypeType getTelecommunicationsSupplyType()
@@ -21,12 +21,12 @@ use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\TotalAmountType;
  * @method self setTelecommunicationsSupplyTypeCode(TelecommunicationsSupplyTypeCodeType|string $value)
  * @method PrivacyCodeType getPrivacyCode()
  * @method self setPrivacyCode(PrivacyCodeType|string $value)
- * @method DescriptionType getDescription()
+ * @method DescriptionType[] getDescription()
  * @method self addDescription(DescriptionType|string $value)
  * @method self setDescription(DescriptionType ...$values)
  * @method TotalAmountType getTotalAmount()
  * @method self setTotalAmount(TotalAmountType|string $value)
- * @method TelecommunicationsSupplyLineType getTelecommunicationsSupplyLine()
+ * @method TelecommunicationsSupplyLineType[] getTelecommunicationsSupplyLine()
  * @method self addTelecommunicationsSupplyLine(TelecommunicationsSupplyLineType $value)
  * @method self setTelecommunicationsSupplyLine(TelecommunicationsSupplyLineType ...$values)
  */
