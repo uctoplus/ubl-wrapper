@@ -27,6 +27,8 @@ jobs:
           XDEBUG_MODE: coverage
           TEST_NAME: Scarlett
         with:
+          version: 9
+          php_version: "8.1"
           php_extensions: xdebug zip
           memory_limit: 256M
           bootstrap: vendor/autoload.php
