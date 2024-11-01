@@ -5,7 +5,7 @@ namespace Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents;
 use Uctoplus\UblWrapper\UBL\Schema\AggregateComponent;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\AmountType;
 use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DutyCodeType;
-use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DutyType;
+use Uctoplus\UblWrapper\UBL\v21\Common\BasicComponents\DutyType as BasicDutyType;
 
 /**
  * Class DutyType
@@ -26,7 +26,7 @@ class DutyType extends AggregateComponent
 {
     protected $casts = [
         "cbc:Amount" => AmountType::class,
-        "cbc:Duty" => DutyType::class,
+        "cbc:Duty" => BasicDutyType::class,
         "cbc:DutyCode" => DutyCodeType::class,
         "cac:TaxCategory" => TaxCategoryType::class,
     ];
