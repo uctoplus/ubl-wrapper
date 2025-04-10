@@ -4,6 +4,7 @@ namespace Tests\Uctoplus\UblWrapper;
 
 use Carbon\Carbon;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framwork\Attributes\Depends;
 use Uctoplus\UblWrapper\Parser;
 use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\CustomerPartyType;
 use Uctoplus\UblWrapper\UBL\v21\Common\AggregateComponents\InvoiceLineType;
@@ -69,10 +70,7 @@ class AggregatedGeneratorTest extends TestCase
         $this->assertTrue($generator->save("generated.xml", true));
     }
 
-    /**
-     * @depends test_generate_xml
-     *
-     */
+    #[Depends('test_generate_xml')]
     public function test_parse_aggregated_file_xml()
     {
         $parser = new Parser();
@@ -136,10 +134,7 @@ class AggregatedGeneratorTest extends TestCase
         $this->assertTrue($generator->save("generated.zip"));
     }
 
-    /**
-     * @depends test_generate_zip
-     *
-     */
+    #[Depends('test_generate_zip')]
     public function test_parse_generated_zip()
     {
         $parser = new Parser();

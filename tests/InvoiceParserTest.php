@@ -3,6 +3,7 @@
 namespace Tests\Uctoplus\UblWrapper;
 
 use Greenter\Ubl\UblValidator;
+use PHPUnit\Framework\Attributes\Depends;
 use PHPUnit\Framework\TestCase;
 use Uctoplus\UblWrapper\Parser;
 
@@ -24,10 +25,7 @@ class InvoiceParserTest extends TestCase
         $this->assertFileExists("generated.xml");
     }
 
-    /**
-     * @depends test_parse_xml
-     *
-     */
+    #[Depends('test_parse_xml')]
     public function test_validate_final_xml()
     {
         $ubl = new UblValidator();
