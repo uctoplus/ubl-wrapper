@@ -19,16 +19,17 @@ jobs:
 
       - uses: php-actions/composer@v6
         with:
+          php_version: "8.2"
           php_extensions: zip
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v2
+        uses: php-actions/phpunit@v4
         env:
           XDEBUG_MODE: coverage
           TEST_NAME: Scarlett
         with:
-          version: 9
-          php_version: "8.1"
+          version: 11
+          php_version: "8.2"
           php_extensions: xdebug zip
           memory_limit: 256M
           bootstrap: vendor/autoload.php

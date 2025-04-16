@@ -6,6 +6,7 @@ use BadMethodCallException;
 use Carbon\Carbon;
 use Exception;
 use Greenter\Ubl\UblValidator;
+use PHPUnit\Framework\Attributes\Depends;
 use PHPUnit\Framework\TestCase;
 use Uctoplus\UblWrapper\Exceptions\XML\XSDMinOccurException;
 use Uctoplus\UblWrapper\Exceptions\XML\XSDRequiredAttributeException;
@@ -89,10 +90,7 @@ class InvoiceGeneratorTest extends TestCase
         $this->assertTrue($generator->save("generated.xml"));
     }
 
-    /**
-     * @depends test_generate_xml
-     *
-     */
+    #[Depends('test_generate_xml')]
     public function test_validate_final_xml()
     {
         $ubl = new UblValidator();
