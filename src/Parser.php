@@ -7,6 +7,7 @@ use DOMNode;
 use Exception;
 use Uctoplus\UblWrapper\Exceptions\FileNotFoundException;
 use Uctoplus\UblWrapper\Exceptions\FileNotReadableException;
+use Uctoplus\UblWrapper\SBDH\StandardBusinessDocument;
 use Uctoplus\UblWrapper\UBL\Schema\MainDoc;
 use Uctoplus\UblWrapper\UCT\UctList;
 use ZipArchive;
@@ -71,6 +72,19 @@ class Parser
                         }
                     }
                 }
+            } elseif (StandardBusinessDocument::class == $class) {
+                /** @var DOMNode $uctDocument */
+                foreach ($childNode->childNodes as $uctDocument) {
+                    if ($uctDocument->nodeType != XML_ELEMENT_NODE)
+                        continue;
+
+                    $class = $this->guessNodeClass($uctDocument);
+                    $model = new $class();
+
+                    if ($model instanceof MainDoc) {
+                        $this->documents[] = $model->fromXML($uctDocument);
+                    }
+                }
             } else {
                 $model = new $class();
 
@@ -106,6 +120,10 @@ class Parser
 
         if ($node->nodeName === "uct:list") {
             return UctList::class;
+        }
+
+        if (str_contains($node->nodeName, "StandardBusinessDocument")) {
+            return StandardBusinessDocument::class;
         }
 
         throw new Exception("Unable to guess model of " . $node->nodeName);

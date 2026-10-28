@@ -33,4 +33,14 @@ class InvoiceParserTest extends TestCase
         $this->assertTrue($ubl->isValid($xml));
     }
 
+    public function test_parse_xml_sbdh()
+    {
+        $parser = new Parser();
+        $parser->fromFile('tests/resources/sbdh.xml');
+
+        dump($parser->getDocuments()[0]);
+        file_put_contents("generated.xml", $parser->getDocuments()[0]->toXML()->saveXML());
+        $this->assertFileExists("generated.xml");
+    }
+
 }

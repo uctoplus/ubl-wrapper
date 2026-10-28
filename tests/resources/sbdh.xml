@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sh:StandardBusinessDocument xmlns:sh="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader">
+    <sh:StandardBusinessDocumentHeader>
+        <sh:HeaderVersion>1.0</sh:HeaderVersion>
+        <sh:Sender>
+            <sh:Identifier Authority="iso6523-actorid-upis">0245:2120429817</sh:Identifier>
+        </sh:Sender>
+        <sh:Receiver>
+            <sh:Identifier Authority="iso6523-actorid-upis">0245:2120803949</sh:Identifier>
+        </sh:Receiver>
+        <sh:DocumentIdentification>
+            <sh:Standard>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</sh:Standard>
+            <sh:TypeVersion>2.1</sh:TypeVersion>
+            <sh:InstanceIdentifier>01a17e3a-f0ec-767c-a766-770c0b7b9d71</sh:InstanceIdentifier>
+            <sh:Type>Invoice</sh:Type>
+            <sh:CreationDateAndTime>2026-10-27T17:39:14+01:00</sh:CreationDateAndTime>
+        </sh:DocumentIdentification>
+        <sh:BusinessScope>
+            <sh:Scope>
+                <sh:Type>DOCUMENTID</sh:Type>
+                <sh:InstanceIdentifier>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2::Invoice##urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0::2.1</sh:InstanceIdentifier>
+                <sh:Identifier>busdox-docid-qns</sh:Identifier>
+            </sh:Scope>
+            <sh:Scope>
+                <sh:Type>PROCESSID</sh:Type>
+                <sh:InstanceIdentifier>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</sh:InstanceIdentifier>
+                <sh:Identifier>cenbii-procid-ubl</sh:Identifier>
+            </sh:Scope>
+            <sh:Scope>
+                <sh:Type>COUNTRY_C1</sh:Type>
+                <sh:InstanceIdentifier>SK</sh:InstanceIdentifier>
+            </sh:Scope>
+            <sh:Scope>
+                <sh:Type>MLS_TO</sh:Type>
+                <sh:InstanceIdentifier>0242:000834</sh:InstanceIdentifier>
+                <sh:Identifier>iso6523-actorid-upis</sh:Identifier>
+            </sh:Scope>
+            <sh:Scope>
+                <sh:Type>MLS_TYPE</sh:Type>
+                <sh:InstanceIdentifier>ALWAYS_SEND</sh:InstanceIdentifier>
+            </sh:Scope>
+        </sh:BusinessScope>
+    </sh:StandardBusinessDocumentHeader>
+    <Invoice xmlns:cec="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+        <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+        <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+        <cbc:ID>2608011</cbc:ID>
+        <cbc:IssueDate>2026-10-27</cbc:IssueDate>
+        <cbc:DueDate>2026-11-03</cbc:DueDate>
+        <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+        <cbc:TaxPointDate>2026-10-27</cbc:TaxPointDate>
+        <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+        <cbc:BuyerReference>2608011</cbc:BuyerReference>
+        <cac:AccountingSupplierParty>
+            <cac:Party>
+                <cbc:EndpointID schemeID="0245">2120429817</cbc:EndpointID>
+                <cac:PartyIdentification>
+                    <cbc:ID schemeID="0158">51781891</cbc:ID>
+                </cac:PartyIdentification>
+                <cac:PostalAddress>
+                    <cbc:StreetName>Ivánska cesta 8</cbc:StreetName>
+                    <cbc:CityName>Bratislava</cbc:CityName>
+                    <cbc:PostalZone>831 05</cbc:PostalZone>
+                    <cac:Country>
+                        <cbc:IdentificationCode>SK</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:PostalAddress>
+                <cac:PartyTaxScheme>
+                    <cbc:CompanyID>SK2120429817</cbc:CompanyID>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:PartyTaxScheme>
+                <cac:PartyLegalEntity>
+                    <cbc:RegistrationName>Company One s.r.o.</cbc:RegistrationName>
+                    <cbc:CompanyID schemeID="0158">51781891</cbc:CompanyID>
+                    <cbc:CompanyLegalForm>Mestský súd Bratislava III.</cbc:CompanyLegalForm>
+                </cac:PartyLegalEntity>
+                <cac:Contact>
+                    <cbc:Name>Mário Čechovič</cbc:Name>
+                </cac:Contact>
+            </cac:Party>
+        </cac:AccountingSupplierParty>
+        <cac:AccountingCustomerParty>
+            <cac:Party>
+                <cbc:EndpointID schemeID="0245">2120803949</cbc:EndpointID>
+                <cac:PartyIdentification>
+                    <cbc:ID schemeID="0158">50716484</cbc:ID>
+                </cac:PartyIdentification>
+                <cac:PostalAddress>
+                    <cbc:StreetName>Ivánska cesta 15</cbc:StreetName>
+                    <cbc:CityName>Bratislava</cbc:CityName>
+                    <cbc:PostalZone>821 09</cbc:PostalZone>
+                    <cac:Country>
+                        <cbc:IdentificationCode>SK</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:PostalAddress>
+                <cac:PartyTaxScheme>
+                    <cbc:CompanyID>SK2120803949</cbc:CompanyID>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:PartyTaxScheme>
+                <cac:PartyLegalEntity>
+                    <cbc:RegistrationName>Company Two, s.r.o.</cbc:RegistrationName>
+                    <cbc:CompanyID schemeID="0158">50716484</cbc:CompanyID>
+                </cac:PartyLegalEntity>
+            </cac:Party>
+        </cac:AccountingCustomerParty>
+        <cac:Delivery>
+            <cbc:ActualDeliveryDate>2026-10-27</cbc:ActualDeliveryDate>
+            <cac:DeliveryLocation>
+                <cac:Address>
+                    <cbc:StreetName>Ivánska cesta 8</cbc:StreetName>
+                    <cbc:CityName>Bratislava</cbc:CityName>
+                    <cbc:PostalZone>821 09</cbc:PostalZone>
+                    <cac:Country>
+                        <cbc:IdentificationCode>SK</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:Address>
+            </cac:DeliveryLocation>
+        </cac:Delivery>
+        <cac:PaymentMeans>
+            <cbc:PaymentMeansCode name="príkazom">30</cbc:PaymentMeansCode>
+            <cbc:PaymentID>2608011</cbc:PaymentID>
+            <cac:PayeeFinancialAccount>
+                <cbc:ID>SK65110000002618181236</cbc:ID>
+                <cac:FinancialInstitutionBranch>
+                    <cbc:ID>TATRSKBX</cbc:ID>
+                </cac:FinancialInstitutionBranch>
+            </cac:PayeeFinancialAccount>
+        </cac:PaymentMeans>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">23.92</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxableAmount currencyID="EUR">104.00</cbc:TaxableAmount>
+                <cbc:TaxAmount currencyID="EUR">23.92</cbc:TaxAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>23.00</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:LegalMonetaryTotal>
+            <cbc:LineExtensionAmount currencyID="EUR">104.00</cbc:LineExtensionAmount>
+            <cbc:TaxExclusiveAmount currencyID="EUR">104.00</cbc:TaxExclusiveAmount>
+            <cbc:TaxInclusiveAmount currencyID="EUR">127.92</cbc:TaxInclusiveAmount>
+            <cbc:PrepaidAmount currencyID="EUR">0.00</cbc:PrepaidAmount>
+            <cbc:PayableRoundingAmount currencyID="EUR">0.00</cbc:PayableRoundingAmount>
+            <cbc:PayableAmount currencyID="EUR">127.92</cbc:PayableAmount>
+        </cac:LegalMonetaryTotal>
+        <cac:InvoiceLine>
+            <cbc:ID>1</cbc:ID>
+            <cbc:InvoicedQuantity unitCode="C62">1.0000</cbc:InvoicedQuantity>
+            <cbc:LineExtensionAmount currencyID="EUR">104.00</cbc:LineExtensionAmount>
+            <cac:Item>
+                <cbc:Name>Položka</cbc:Name>
+                <cac:ClassifiedTaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>23.00</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:ClassifiedTaxCategory>
+            </cac:Item>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="EUR">104.0000</cbc:PriceAmount>
+            </cac:Price>
+        </cac:InvoiceLine>
+    </Invoice>
+</sh:StandardBusinessDocument>
